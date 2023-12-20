@@ -30,22 +30,22 @@ namespace SonicWallGen7.Model
     /// Web proxy base settings.
     /// </summary>
     [DataContract(Name = "web_proxy")]
-    public partial class WebProxy : IEquatable<WebProxy>, IValidatableObject
+    public partial class SonicWebProxy : IEquatable<SonicWebProxy>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="WebProxy" /> class.
+        /// Initializes a new instance of the <see cref="SonicWebProxy" /> class.
         /// </summary>
-        /// <param name="varWebProxy">varWebProxy.</param>
-        public WebProxy(WebProxyWebProxy varWebProxy = default(WebProxyWebProxy))
+        /// <param name="varSonicWebProxy">varSonicWebProxy.</param>
+        public SonicWebProxy(SonicWebProxySonicWebProxy varSonicWebProxy = default(SonicWebProxySonicWebProxy))
         {
-            this.VarWebProxy = varWebProxy;
+            this.VarSonicWebProxy = varSonicWebProxy;
         }
 
         /// <summary>
-        /// Gets or Sets VarWebProxy
+        /// Gets or Sets VarSonicWebProxy
         /// </summary>
         [DataMember(Name = "web_proxy", EmitDefaultValue = false)]
-        public WebProxyWebProxy VarWebProxy { get; set; }
+        public SonicWebProxySonicWebProxy VarSonicWebProxy { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,8 +54,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class WebProxy {\n");
-            sb.Append("  VarWebProxy: ").Append(VarWebProxy).Append("\n");
+            sb.Append("class SonicWebProxy {\n");
+            sb.Append("  VarSonicWebProxy: ").Append(VarSonicWebProxy).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as WebProxy);
+            return this.Equals(input as SonicWebProxy);
         }
 
         /// <summary>
-        /// Returns true if WebProxy instances are equal
+        /// Returns true if SonicWebProxy instances are equal
         /// </summary>
-        /// <param name="input">Instance of WebProxy to be compared</param>
+        /// <param name="input">Instance of SonicWebProxy to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(WebProxy input)
+        public bool Equals(SonicWebProxy input)
         {
             if (input == null)
             {
@@ -92,9 +92,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.VarWebProxy == input.VarWebProxy ||
-                    (this.VarWebProxy != null &&
-                    this.VarWebProxy.Equals(input.VarWebProxy))
+                    this.VarSonicWebProxy == input.VarSonicWebProxy ||
+                    (this.VarSonicWebProxy != null &&
+                    this.VarSonicWebProxy.Equals(input.VarSonicWebProxy))
                 );
         }
 
@@ -107,9 +107,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.VarWebProxy != null)
+                if (this.VarSonicWebProxy != null)
                 {
-                    hashCode = (hashCode * 59) + this.VarWebProxy.GetHashCode();
+                    hashCode = (hashCode * 59) + this.VarSonicWebProxy.GetHashCode();
                 }
                 return hashCode;
             }

@@ -24,7 +24,7 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IWebProxyApiSync : IApiAccessor
+    public interface ISonicWebProxyApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
@@ -35,8 +35,8 @@ namespace SonicWallGen7.Api
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>WebProxy</returns>
-        WebProxy WebProxyBaseGet(int operationIndex = 0);
+        /// <returns>SonicWebProxy</returns>
+        SonicWebProxy SonicWebProxyBaseGet(int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -46,8 +46,8 @@ namespace SonicWallGen7.Api
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of WebProxy</returns>
-        ApiResponse<WebProxy> WebProxyBaseGetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of SonicWebProxy</returns>
+        ApiResponse<SonicWebProxy> SonicWebProxyBaseGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
@@ -55,10 +55,10 @@ namespace SonicWallGen7.Api
         /// Update web proxy base settings.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="webProxy"> (optional)</param>
+        /// <param name="SonicWebProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus WebProxyBasePut(WebProxy? webProxy = default(WebProxy?), int operationIndex = 0);
+        ApiStatus SonicWebProxyBasePut(SonicWebProxy? SonicWebProxy = default(SonicWebProxy?), int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -67,17 +67,17 @@ namespace SonicWallGen7.Api
         /// Update web proxy base settings.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="webProxy"> (optional)</param>
+        /// <param name="SonicWebProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> WebProxyBasePutWithHttpInfo(WebProxy? webProxy = default(WebProxy?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicWebProxyBasePutWithHttpInfo(SonicWebProxy? SonicWebProxy = default(SonicWebProxy?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IWebProxyApiAsync : IApiAccessor
+    public interface ISonicWebProxyApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
@@ -89,8 +89,8 @@ namespace SonicWallGen7.Api
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of WebProxy</returns>
-        System.Threading.Tasks.Task<WebProxy> WebProxyBaseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of SonicWebProxy</returns>
+        System.Threading.Tasks.Task<SonicWebProxy> SonicWebProxyBaseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -101,8 +101,8 @@ namespace SonicWallGen7.Api
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (WebProxy)</returns>
-        System.Threading.Tasks.Task<ApiResponse<WebProxy>> WebProxyBaseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (SonicWebProxy)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SonicWebProxy>> SonicWebProxyBaseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -110,11 +110,11 @@ namespace SonicWallGen7.Api
         /// Update web proxy base settings.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="webProxy"> (optional)</param>
+        /// <param name="SonicWebProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> WebProxyBasePutAsync(WebProxy? webProxy = default(WebProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicWebProxyBasePutAsync(SonicWebProxy? SonicWebProxy = default(SonicWebProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -123,18 +123,18 @@ namespace SonicWallGen7.Api
         /// Update web proxy base settings.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="webProxy"> (optional)</param>
+        /// <param name="SonicWebProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> WebProxyBasePutWithHttpInfoAsync(WebProxy? webProxy = default(WebProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicWebProxyBasePutWithHttpInfoAsync(SonicWebProxy? SonicWebProxy = default(SonicWebProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IWebProxyApi : IWebProxyApiSync, IWebProxyApiAsync
+    public interface ISonicWebProxyApi : ISonicWebProxyApiSync, ISonicWebProxyApiAsync
     {
 
     }
@@ -142,23 +142,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class WebProxyApi : IWebProxyApi
+    public partial class SonicWebProxyApi : ISonicWebProxyApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="WebProxyApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicWebProxyApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public WebProxyApi() : this((string)null)
+        public SonicWebProxyApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="WebProxyApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicWebProxyApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public WebProxyApi(string basePath)
+        public SonicWebProxyApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -170,12 +170,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="WebProxyApi"/> class
+        /// Initializes a new instance of the <see cref="SonicWebProxyApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public WebProxyApi(SonicWallGen7.Client.Configuration configuration)
+        public SonicWebProxyApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -189,13 +189,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="WebProxyApi"/> class
+        /// Initializes a new instance of the <see cref="SonicWebProxyApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public WebProxyApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicWebProxyApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -253,10 +253,10 @@ namespace SonicWallGen7.Api
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>WebProxy</returns>
-        public WebProxy WebProxyBaseGet(int operationIndex = 0)
+        /// <returns>SonicWebProxy</returns>
+        public SonicWebProxy SonicWebProxyBaseGet(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<WebProxy> localVarResponse = WebProxyBaseGetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<SonicWebProxy> localVarResponse = SonicWebProxyBaseGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
@@ -265,8 +265,8 @@ namespace SonicWallGen7.Api
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of WebProxy</returns>
-        public SonicWallGen7.Client.ApiResponse<WebProxy> WebProxyBaseGetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of SonicWebProxy</returns>
+        public SonicWallGen7.Client.ApiResponse<SonicWebProxy> SonicWebProxyBaseGetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -291,7 +291,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "WebProxyApi.WebProxyBaseGet";
+            localVarRequestOptions.Operation = "SonicWebProxyApi.SonicWebProxyBaseGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -302,10 +302,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<WebProxy>("/web-proxy/base", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<SonicWebProxy>("/web-proxy/base", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("WebProxyBaseGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicWebProxyBaseGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -321,10 +321,10 @@ namespace SonicWallGen7.Api
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of WebProxy</returns>
-        public async System.Threading.Tasks.Task<WebProxy> WebProxyBaseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of SonicWebProxy</returns>
+        public async System.Threading.Tasks.Task<SonicWebProxy> SonicWebProxyBaseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<WebProxy> localVarResponse = await WebProxyBaseGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<SonicWebProxy> localVarResponse = await SonicWebProxyBaseGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -334,8 +334,8 @@ namespace SonicWallGen7.Api
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (WebProxy)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<WebProxy>> WebProxyBaseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (SonicWebProxy)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<SonicWebProxy>> SonicWebProxyBaseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -361,7 +361,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "WebProxyApi.WebProxyBaseGet";
+            localVarRequestOptions.Operation = "SonicWebProxyApi.SonicWebProxyBaseGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -372,11 +372,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<WebProxy>("/web-proxy/base", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<SonicWebProxy>("/web-proxy/base", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("WebProxyBaseGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicWebProxyBaseGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -390,12 +390,12 @@ namespace SonicWallGen7.Api
         ///  Update web proxy base settings.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="webProxy"> (optional)</param>
+        /// <param name="SonicWebProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus WebProxyBasePut(WebProxy? webProxy = default(WebProxy?), int operationIndex = 0)
+        public ApiStatus SonicWebProxyBasePut(SonicWebProxy? SonicWebProxy = default(SonicWebProxy?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = WebProxyBasePutWithHttpInfo(webProxy);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicWebProxyBasePutWithHttpInfo(SonicWebProxy);
             return localVarResponse.Data;
         }
 
@@ -403,10 +403,10 @@ namespace SonicWallGen7.Api
         ///  Update web proxy base settings.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="webProxy"> (optional)</param>
+        /// <param name="SonicWebProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> WebProxyBasePutWithHttpInfo(WebProxy? webProxy = default(WebProxy?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicWebProxyBasePutWithHttpInfo(SonicWebProxy? SonicWebProxy = default(SonicWebProxy?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -431,9 +431,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = webProxy;
+            localVarRequestOptions.Data = SonicWebProxy;
 
-            localVarRequestOptions.Operation = "WebProxyApi.WebProxyBasePut";
+            localVarRequestOptions.Operation = "SonicWebProxyApi.SonicWebProxyBasePut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -447,7 +447,7 @@ namespace SonicWallGen7.Api
             var localVarResponse = this.Client.Put<ApiStatus>("/web-proxy/base", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("WebProxyBasePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicWebProxyBasePut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -461,13 +461,13 @@ namespace SonicWallGen7.Api
         ///  Update web proxy base settings.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="webProxy"> (optional)</param>
+        /// <param name="SonicWebProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> WebProxyBasePutAsync(WebProxy? webProxy = default(WebProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicWebProxyBasePutAsync(SonicWebProxy? SonicWebProxy = default(SonicWebProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await WebProxyBasePutWithHttpInfoAsync(webProxy, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicWebProxyBasePutWithHttpInfoAsync(SonicWebProxy, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -475,11 +475,11 @@ namespace SonicWallGen7.Api
         ///  Update web proxy base settings.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="webProxy"> (optional)</param>
+        /// <param name="SonicWebProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> WebProxyBasePutWithHttpInfoAsync(WebProxy? webProxy = default(WebProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicWebProxyBasePutWithHttpInfoAsync(SonicWebProxy? SonicWebProxy = default(SonicWebProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -505,9 +505,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = webProxy;
+            localVarRequestOptions.Data = SonicWebProxy;
 
-            localVarRequestOptions.Operation = "WebProxyApi.WebProxyBasePut";
+            localVarRequestOptions.Operation = "SonicWebProxyApi.SonicWebProxyBasePut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -522,7 +522,7 @@ namespace SonicWallGen7.Api
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("WebProxyBasePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicWebProxyBasePut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

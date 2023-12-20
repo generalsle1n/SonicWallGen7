@@ -30,13 +30,13 @@ namespace SonicWallGen7.Model
     /// Set automatic proxy forwarding (web only).
     /// </summary>
     [DataContract(Name = "web_proxy_servers_collection_web_proxy")]
-    public partial class WebProxyServersCollectionWebProxy : IEquatable<WebProxyServersCollectionWebProxy>, IValidatableObject
+    public partial class SonicWebProxyServersCollectionSonicWebProxy : IEquatable<SonicWebProxyServersCollectionSonicWebProxy>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="WebProxyServersCollectionWebProxy" /> class.
+        /// Initializes a new instance of the <see cref="SonicWebProxyServersCollectionSonicWebProxy" /> class.
         /// </summary>
         /// <param name="userProxyServer">Add proxy server through which users&#39; web requests may come..</param>
-        public WebProxyServersCollectionWebProxy(List<WebProxyServers> userProxyServer = default(List<WebProxyServers>))
+        public SonicWebProxyServersCollectionSonicWebProxy(List<SonicWebProxyServers> userProxyServer = default(List<SonicWebProxyServers>))
         {
             this.UserProxyServer = userProxyServer;
         }
@@ -46,7 +46,7 @@ namespace SonicWallGen7.Model
         /// </summary>
         /// <value>Add proxy server through which users&#39; web requests may come.</value>
         [DataMember(Name = "user_proxy_server", EmitDefaultValue = false)]
-        public List<WebProxyServers> UserProxyServer { get; set; }
+        public List<SonicWebProxyServers> UserProxyServer { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class WebProxyServersCollectionWebProxy {\n");
+            sb.Append("class SonicWebProxyServersCollectionSonicWebProxy {\n");
             sb.Append("  UserProxyServer: ").Append(UserProxyServer).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as WebProxyServersCollectionWebProxy);
+            return this.Equals(input as SonicWebProxyServersCollectionSonicWebProxy);
         }
 
         /// <summary>
-        /// Returns true if WebProxyServersCollectionWebProxy instances are equal
+        /// Returns true if SonicWebProxyServersCollectionSonicWebProxy instances are equal
         /// </summary>
-        /// <param name="input">Instance of WebProxyServersCollectionWebProxy to be compared</param>
+        /// <param name="input">Instance of SonicWebProxyServersCollectionSonicWebProxy to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(WebProxyServersCollectionWebProxy input)
+        public bool Equals(SonicWebProxyServersCollectionSonicWebProxy input)
         {
             if (input == null)
             {

@@ -30,13 +30,13 @@ namespace SonicWallGen7.Model
     /// Web proxy TCP port. * Set to null or {} to represent  an unconfigured state.
     /// </summary>
     [DataContract(Name = "web_proxy_web_proxy_port")]
-    public partial class WebProxyWebProxyPort : IEquatable<WebProxyWebProxyPort>, IValidatableObject
+    public partial class SonicWebProxySonicWebProxyPort : IEquatable<SonicWebProxySonicWebProxyPort>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="WebProxyWebProxyPort" /> class.
+        /// Initializes a new instance of the <see cref="SonicWebProxySonicWebProxyPort" /> class.
         /// </summary>
         /// <param name="value">value.</param>
-        public WebProxyWebProxyPort(decimal value = default(decimal))
+        public SonicWebProxySonicWebProxyPort(decimal value = default(decimal))
         {
             this.Value = value;
         }
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class WebProxyWebProxyPort {\n");
+            sb.Append("class SonicWebProxySonicWebProxyPort {\n");
             sb.Append("  Value: ").Append(Value).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as WebProxyWebProxyPort);
+            return this.Equals(input as SonicWebProxySonicWebProxyPort);
         }
 
         /// <summary>
-        /// Returns true if WebProxyWebProxyPort instances are equal
+        /// Returns true if SonicWebProxySonicWebProxyPort instances are equal
         /// </summary>
-        /// <param name="input">Instance of WebProxyWebProxyPort to be compared</param>
+        /// <param name="input">Instance of SonicWebProxySonicWebProxyPort to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(WebProxyWebProxyPort input)
+        public bool Equals(SonicWebProxySonicWebProxyPort input)
         {
             if (input == null)
             {

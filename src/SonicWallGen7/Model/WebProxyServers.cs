@@ -30,13 +30,13 @@ namespace SonicWallGen7.Model
     /// Web user proxy servers setting.
     /// </summary>
     [DataContract(Name = "web_proxy_servers")]
-    public partial class WebProxyServers : IEquatable<WebProxyServers>, IValidatableObject
+    public partial class SonicWebProxyServers : IEquatable<SonicWebProxyServers>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="WebProxyServers" /> class.
+        /// Initializes a new instance of the <see cref="SonicWebProxyServers" /> class.
         /// </summary>
         /// <param name="serverHost">serverHost.</param>
-        public WebProxyServers(string serverHost = default(string))
+        public SonicWebProxyServers(string serverHost = default(string))
         {
             this.ServerHost = serverHost;
         }
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class WebProxyServers {\n");
+            sb.Append("class SonicWebProxyServers {\n");
             sb.Append("  ServerHost: ").Append(ServerHost).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as WebProxyServers);
+            return this.Equals(input as SonicWebProxyServers);
         }
 
         /// <summary>
-        /// Returns true if WebProxyServers instances are equal
+        /// Returns true if SonicWebProxyServers instances are equal
         /// </summary>
-        /// <param name="input">Instance of WebProxyServers to be compared</param>
+        /// <param name="input">Instance of SonicWebProxyServers to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(WebProxyServers input)
+        public bool Equals(SonicWebProxyServers input)
         {
             if (input == null)
             {

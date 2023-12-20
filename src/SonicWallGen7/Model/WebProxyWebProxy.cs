@@ -30,16 +30,16 @@ namespace SonicWallGen7.Model
     /// Set automatic proxy forwarding (web only).
     /// </summary>
     [DataContract(Name = "web_proxy_web_proxy")]
-    public partial class WebProxyWebProxy : IEquatable<WebProxyWebProxy>, IValidatableObject
+    public partial class SonicWebProxySonicWebProxy : IEquatable<SonicWebProxySonicWebProxy>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="WebProxyWebProxy" /> class.
+        /// Initializes a new instance of the <see cref="SonicWebProxySonicWebProxy" /> class.
         /// </summary>
         /// <param name="server">Set web proxy hostname/IP and port..</param>
         /// <param name="port">port.</param>
         /// <param name="bypassUponFailure">Enable bypass proxy servers upon proxy server failure..</param>
         /// <param name="forwardPublicRequests">Enable forward public zone client requests to proxy server..</param>
-        public WebProxyWebProxy(string server = default(string), WebProxyWebProxyPort port = default(WebProxyWebProxyPort), bool bypassUponFailure = default(bool), bool forwardPublicRequests = default(bool))
+        public SonicWebProxySonicWebProxy(string server = default(string), SonicWebProxySonicWebProxyPort port = default(SonicWebProxySonicWebProxyPort), bool bypassUponFailure = default(bool), bool forwardPublicRequests = default(bool))
         {
             this.Server = server;
             this.Port = port;
@@ -58,7 +58,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Port
         /// </summary>
         [DataMember(Name = "port", EmitDefaultValue = true)]
-        public WebProxyWebProxyPort Port { get; set; }
+        public SonicWebProxySonicWebProxyPort Port { get; set; }
 
         /// <summary>
         /// Enable bypass proxy servers upon proxy server failure.
@@ -81,7 +81,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class WebProxyWebProxy {\n");
+            sb.Append("class SonicWebProxySonicWebProxy {\n");
             sb.Append("  Server: ").Append(Server).Append("\n");
             sb.Append("  Port: ").Append(Port).Append("\n");
             sb.Append("  BypassUponFailure: ").Append(BypassUponFailure).Append("\n");
@@ -106,15 +106,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as WebProxyWebProxy);
+            return this.Equals(input as SonicWebProxySonicWebProxy);
         }
 
         /// <summary>
-        /// Returns true if WebProxyWebProxy instances are equal
+        /// Returns true if SonicWebProxySonicWebProxy instances are equal
         /// </summary>
-        /// <param name="input">Instance of WebProxyWebProxy to be compared</param>
+        /// <param name="input">Instance of SonicWebProxySonicWebProxy to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(WebProxyWebProxy input)
+        public bool Equals(SonicWebProxySonicWebProxy input)
         {
             if (input == null)
             {

@@ -27,25 +27,25 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// WebProxyServersCollection
+    /// SonicWebProxyServersCollection
     /// </summary>
     [DataContract(Name = "web_proxy_servers_collection")]
-    public partial class WebProxyServersCollection : IEquatable<WebProxyServersCollection>, IValidatableObject
+    public partial class SonicWebProxyServersCollection : IEquatable<SonicWebProxyServersCollection>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="WebProxyServersCollection" /> class.
+        /// Initializes a new instance of the <see cref="SonicWebProxyServersCollection" /> class.
         /// </summary>
-        /// <param name="webProxy">webProxy.</param>
-        public WebProxyServersCollection(WebProxyServersCollectionWebProxy webProxy = default(WebProxyServersCollectionWebProxy))
+        /// <param name="SonicWebProxy">SonicWebProxy.</param>
+        public SonicWebProxyServersCollection(SonicWebProxyServersCollectionSonicWebProxy SonicWebProxy = default(SonicWebProxyServersCollectionSonicWebProxy))
         {
-            this.WebProxy = webProxy;
+            this.SonicWebProxy = SonicWebProxy;
         }
 
         /// <summary>
-        /// Gets or Sets WebProxy
+        /// Gets or Sets SonicWebProxy
         /// </summary>
         [DataMember(Name = "web_proxy", EmitDefaultValue = false)]
-        public WebProxyServersCollectionWebProxy WebProxy { get; set; }
+        public SonicWebProxyServersCollectionSonicWebProxy SonicWebProxy { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,8 +54,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class WebProxyServersCollection {\n");
-            sb.Append("  WebProxy: ").Append(WebProxy).Append("\n");
+            sb.Append("class SonicWebProxyServersCollection {\n");
+            sb.Append("  SonicWebProxy: ").Append(SonicWebProxy).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as WebProxyServersCollection);
+            return this.Equals(input as SonicWebProxyServersCollection);
         }
 
         /// <summary>
-        /// Returns true if WebProxyServersCollection instances are equal
+        /// Returns true if SonicWebProxyServersCollection instances are equal
         /// </summary>
-        /// <param name="input">Instance of WebProxyServersCollection to be compared</param>
+        /// <param name="input">Instance of SonicWebProxyServersCollection to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(WebProxyServersCollection input)
+        public bool Equals(SonicWebProxyServersCollection input)
         {
             if (input == null)
             {
@@ -92,9 +92,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.WebProxy == input.WebProxy ||
-                    (this.WebProxy != null &&
-                    this.WebProxy.Equals(input.WebProxy))
+                    this.SonicWebProxy == input.SonicWebProxy ||
+                    (this.SonicWebProxy != null &&
+                    this.SonicWebProxy.Equals(input.SonicWebProxy))
                 );
         }
 
@@ -107,9 +107,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.WebProxy != null)
+                if (this.SonicWebProxy != null)
                 {
-                    hashCode = (hashCode * 59) + this.WebProxy.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicWebProxy.GetHashCode();
                 }
                 return hashCode;
             }
