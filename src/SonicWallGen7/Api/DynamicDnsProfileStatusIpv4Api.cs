@@ -24,117 +24,117 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDynamicDnsProfileStatusIpv4ApiSync : IApiAccessor
+    public interface IDynamicSonicDnsProfileStatusIpv4ApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve IPv4 dynamic DNS profiles status.
+        /// Retrieve IPv4 dynamic SonicDns profiles status.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>List&lt;ShowStatusDynamicDnsStatusListInner&gt;</returns>
-        List<ShowStatusDynamicDnsStatusListInner> ReportingDynamicDnsProfilesIpv4Get(int operationIndex = 0);
+        /// <returns>List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;</returns>
+        List<ShowStatusDynamicSonicDnsStatusListInner> ReportingDynamicSonicDnsProfilesIpv4Get(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve IPv4 dynamic DNS profiles status.
+        /// Retrieve IPv4 dynamic SonicDns profiles status.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of List&lt;ShowStatusDynamicDnsStatusListInner&gt;</returns>
-        ApiResponse<List<ShowStatusDynamicDnsStatusListInner>> ReportingDynamicDnsProfilesIpv4GetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;</returns>
+        ApiResponse<List<ShowStatusDynamicSonicDnsStatusListInner>> ReportingDynamicSonicDnsProfilesIpv4GetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve IPv4 dynamic DNS profiles status.
+        /// Retrieve IPv4 dynamic SonicDns profiles status.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Dynamic DNS profile name.</param>
+        /// <param name="NAME">Dynamic SonicDns profile name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>List&lt;ShowStatusDynamicDnsStatusListInner&gt;</returns>
-        List<ShowStatusDynamicDnsStatusListInner> ReportingDynamicDnsProfilesIpv4NameNAMEGet(string NAME, int operationIndex = 0);
+        /// <returns>List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;</returns>
+        List<ShowStatusDynamicSonicDnsStatusListInner> ReportingDynamicSonicDnsProfilesIpv4NameNAMEGet(string NAME, int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve IPv4 dynamic DNS profiles status.
+        /// Retrieve IPv4 dynamic SonicDns profiles status.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Dynamic DNS profile name.</param>
+        /// <param name="NAME">Dynamic SonicDns profile name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of List&lt;ShowStatusDynamicDnsStatusListInner&gt;</returns>
-        ApiResponse<List<ShowStatusDynamicDnsStatusListInner>> ReportingDynamicDnsProfilesIpv4NameNAMEGetWithHttpInfo(string NAME, int operationIndex = 0);
+        /// <returns>ApiResponse of List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;</returns>
+        ApiResponse<List<ShowStatusDynamicSonicDnsStatusListInner>> ReportingDynamicSonicDnsProfilesIpv4NameNAMEGetWithHttpInfo(string NAME, int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDynamicDnsProfileStatusIpv4ApiAsync : IApiAccessor
+    public interface IDynamicSonicDnsProfileStatusIpv4ApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve IPv4 dynamic DNS profiles status.
+        /// Retrieve IPv4 dynamic SonicDns profiles status.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of List&lt;ShowStatusDynamicDnsStatusListInner&gt;</returns>
-        System.Threading.Tasks.Task<List<ShowStatusDynamicDnsStatusListInner>> ReportingDynamicDnsProfilesIpv4GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;</returns>
+        System.Threading.Tasks.Task<List<ShowStatusDynamicSonicDnsStatusListInner>> ReportingDynamicSonicDnsProfilesIpv4GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve IPv4 dynamic DNS profiles status.
+        /// Retrieve IPv4 dynamic SonicDns profiles status.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (List&lt;ShowStatusDynamicDnsStatusListInner&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<ShowStatusDynamicDnsStatusListInner>>> ReportingDynamicDnsProfilesIpv4GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ShowStatusDynamicSonicDnsStatusListInner>>> ReportingDynamicSonicDnsProfilesIpv4GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve IPv4 dynamic DNS profiles status.
+        /// Retrieve IPv4 dynamic SonicDns profiles status.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Dynamic DNS profile name.</param>
+        /// <param name="NAME">Dynamic SonicDns profile name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of List&lt;ShowStatusDynamicDnsStatusListInner&gt;</returns>
-        System.Threading.Tasks.Task<List<ShowStatusDynamicDnsStatusListInner>> ReportingDynamicDnsProfilesIpv4NameNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;</returns>
+        System.Threading.Tasks.Task<List<ShowStatusDynamicSonicDnsStatusListInner>> ReportingDynamicSonicDnsProfilesIpv4NameNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve IPv4 dynamic DNS profiles status.
+        /// Retrieve IPv4 dynamic SonicDns profiles status.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Dynamic DNS profile name.</param>
+        /// <param name="NAME">Dynamic SonicDns profile name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (List&lt;ShowStatusDynamicDnsStatusListInner&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<ShowStatusDynamicDnsStatusListInner>>> ReportingDynamicDnsProfilesIpv4NameNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ShowStatusDynamicSonicDnsStatusListInner>>> ReportingDynamicSonicDnsProfilesIpv4NameNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDynamicDnsProfileStatusIpv4Api : IDynamicDnsProfileStatusIpv4ApiSync, IDynamicDnsProfileStatusIpv4ApiAsync
+    public interface IDynamicSonicDnsProfileStatusIpv4Api : IDynamicSonicDnsProfileStatusIpv4ApiSync, IDynamicSonicDnsProfileStatusIpv4ApiAsync
     {
 
     }
@@ -142,23 +142,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DynamicDnsProfileStatusIpv4Api : IDynamicDnsProfileStatusIpv4Api
+    public partial class DynamicSonicDnsProfileStatusIpv4Api : IDynamicSonicDnsProfileStatusIpv4Api
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileStatusIpv4Api"/> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileStatusIpv4Api"/> class.
         /// </summary>
         /// <returns></returns>
-        public DynamicDnsProfileStatusIpv4Api() : this((string)null)
+        public DynamicSonicDnsProfileStatusIpv4Api() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileStatusIpv4Api"/> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileStatusIpv4Api"/> class.
         /// </summary>
         /// <returns></returns>
-        public DynamicDnsProfileStatusIpv4Api(string basePath)
+        public DynamicSonicDnsProfileStatusIpv4Api(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -170,12 +170,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileStatusIpv4Api"/> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileStatusIpv4Api"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DynamicDnsProfileStatusIpv4Api(SonicWallGen7.Client.Configuration configuration)
+        public DynamicSonicDnsProfileStatusIpv4Api(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -189,13 +189,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileStatusIpv4Api"/> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileStatusIpv4Api"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DynamicDnsProfileStatusIpv4Api(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public DynamicSonicDnsProfileStatusIpv4Api(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -249,24 +249,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve IPv4 dynamic DNS profiles status.
+        ///  Retrieve IPv4 dynamic SonicDns profiles status.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>List&lt;ShowStatusDynamicDnsStatusListInner&gt;</returns>
-        public List<ShowStatusDynamicDnsStatusListInner> ReportingDynamicDnsProfilesIpv4Get(int operationIndex = 0)
+        /// <returns>List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;</returns>
+        public List<ShowStatusDynamicSonicDnsStatusListInner> ReportingDynamicSonicDnsProfilesIpv4Get(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicDnsStatusListInner>> localVarResponse = ReportingDynamicDnsProfilesIpv4GetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicSonicDnsStatusListInner>> localVarResponse = ReportingDynamicSonicDnsProfilesIpv4GetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve IPv4 dynamic DNS profiles status.
+        ///  Retrieve IPv4 dynamic SonicDns profiles status.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of List&lt;ShowStatusDynamicDnsStatusListInner&gt;</returns>
-        public SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicDnsStatusListInner>> ReportingDynamicDnsProfilesIpv4GetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;</returns>
+        public SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicSonicDnsStatusListInner>> ReportingDynamicSonicDnsProfilesIpv4GetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -291,7 +291,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DynamicDnsProfileStatusIpv4Api.ReportingDynamicDnsProfilesIpv4Get";
+            localVarRequestOptions.Operation = "DynamicSonicDnsProfileStatusIpv4Api.ReportingDynamicSonicDnsProfilesIpv4Get";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -302,10 +302,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<List<ShowStatusDynamicDnsStatusListInner>>("/reporting/dynamic-dns/profiles/ipv4", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<List<ShowStatusDynamicSonicDnsStatusListInner>>("/reporting/dynamic-SonicDns/profiles/ipv4", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDynamicDnsProfilesIpv4Get", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingDynamicSonicDnsProfilesIpv4Get", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -316,26 +316,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve IPv4 dynamic DNS profiles status.
+        ///  Retrieve IPv4 dynamic SonicDns profiles status.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of List&lt;ShowStatusDynamicDnsStatusListInner&gt;</returns>
-        public async System.Threading.Tasks.Task<List<ShowStatusDynamicDnsStatusListInner>> ReportingDynamicDnsProfilesIpv4GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ShowStatusDynamicSonicDnsStatusListInner>> ReportingDynamicSonicDnsProfilesIpv4GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicDnsStatusListInner>> localVarResponse = await ReportingDynamicDnsProfilesIpv4GetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicSonicDnsStatusListInner>> localVarResponse = await ReportingDynamicSonicDnsProfilesIpv4GetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve IPv4 dynamic DNS profiles status.
+        ///  Retrieve IPv4 dynamic SonicDns profiles status.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (List&lt;ShowStatusDynamicDnsStatusListInner&gt;)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicDnsStatusListInner>>> ReportingDynamicDnsProfilesIpv4GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicSonicDnsStatusListInner>>> ReportingDynamicSonicDnsProfilesIpv4GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -361,7 +361,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DynamicDnsProfileStatusIpv4Api.ReportingDynamicDnsProfilesIpv4Get";
+            localVarRequestOptions.Operation = "DynamicSonicDnsProfileStatusIpv4Api.ReportingDynamicSonicDnsProfilesIpv4Get";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -372,11 +372,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<List<ShowStatusDynamicDnsStatusListInner>>("/reporting/dynamic-dns/profiles/ipv4", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<List<ShowStatusDynamicSonicDnsStatusListInner>>("/reporting/dynamic-SonicDns/profiles/ipv4", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDynamicDnsProfilesIpv4Get", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingDynamicSonicDnsProfilesIpv4Get", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -387,31 +387,31 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve IPv4 dynamic DNS profiles status.
+        ///  Retrieve IPv4 dynamic SonicDns profiles status.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Dynamic DNS profile name.</param>
+        /// <param name="NAME">Dynamic SonicDns profile name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>List&lt;ShowStatusDynamicDnsStatusListInner&gt;</returns>
-        public List<ShowStatusDynamicDnsStatusListInner> ReportingDynamicDnsProfilesIpv4NameNAMEGet(string NAME, int operationIndex = 0)
+        /// <returns>List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;</returns>
+        public List<ShowStatusDynamicSonicDnsStatusListInner> ReportingDynamicSonicDnsProfilesIpv4NameNAMEGet(string NAME, int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicDnsStatusListInner>> localVarResponse = ReportingDynamicDnsProfilesIpv4NameNAMEGetWithHttpInfo(NAME);
+            SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicSonicDnsStatusListInner>> localVarResponse = ReportingDynamicSonicDnsProfilesIpv4NameNAMEGetWithHttpInfo(NAME);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve IPv4 dynamic DNS profiles status.
+        ///  Retrieve IPv4 dynamic SonicDns profiles status.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Dynamic DNS profile name.</param>
+        /// <param name="NAME">Dynamic SonicDns profile name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of List&lt;ShowStatusDynamicDnsStatusListInner&gt;</returns>
-        public SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicDnsStatusListInner>> ReportingDynamicDnsProfilesIpv4NameNAMEGetWithHttpInfo(string NAME, int operationIndex = 0)
+        /// <returns>ApiResponse of List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;</returns>
+        public SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicSonicDnsStatusListInner>> ReportingDynamicSonicDnsProfilesIpv4NameNAMEGetWithHttpInfo(string NAME, int operationIndex = 0)
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DynamicDnsProfileStatusIpv4Api->ReportingDynamicDnsProfilesIpv4NameNAMEGet");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DynamicSonicDnsProfileStatusIpv4Api->ReportingDynamicSonicDnsProfilesIpv4NameNAMEGet");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -438,7 +438,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
 
-            localVarRequestOptions.Operation = "DynamicDnsProfileStatusIpv4Api.ReportingDynamicDnsProfilesIpv4NameNAMEGet";
+            localVarRequestOptions.Operation = "DynamicSonicDnsProfileStatusIpv4Api.ReportingDynamicSonicDnsProfilesIpv4NameNAMEGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -449,10 +449,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<List<ShowStatusDynamicDnsStatusListInner>>("/reporting/dynamic-dns/profiles/ipv4/name/{NAME}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<List<ShowStatusDynamicSonicDnsStatusListInner>>("/reporting/dynamic-SonicDns/profiles/ipv4/name/{NAME}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDynamicDnsProfilesIpv4NameNAMEGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingDynamicSonicDnsProfilesIpv4NameNAMEGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -463,33 +463,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve IPv4 dynamic DNS profiles status.
+        ///  Retrieve IPv4 dynamic SonicDns profiles status.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Dynamic DNS profile name.</param>
+        /// <param name="NAME">Dynamic SonicDns profile name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of List&lt;ShowStatusDynamicDnsStatusListInner&gt;</returns>
-        public async System.Threading.Tasks.Task<List<ShowStatusDynamicDnsStatusListInner>> ReportingDynamicDnsProfilesIpv4NameNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ShowStatusDynamicSonicDnsStatusListInner>> ReportingDynamicSonicDnsProfilesIpv4NameNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicDnsStatusListInner>> localVarResponse = await ReportingDynamicDnsProfilesIpv4NameNAMEGetWithHttpInfoAsync(NAME, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicSonicDnsStatusListInner>> localVarResponse = await ReportingDynamicSonicDnsProfilesIpv4NameNAMEGetWithHttpInfoAsync(NAME, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve IPv4 dynamic DNS profiles status.
+        ///  Retrieve IPv4 dynamic SonicDns profiles status.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Dynamic DNS profile name.</param>
+        /// <param name="NAME">Dynamic SonicDns profile name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (List&lt;ShowStatusDynamicDnsStatusListInner&gt;)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicDnsStatusListInner>>> ReportingDynamicDnsProfilesIpv4NameNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (List&lt;ShowStatusDynamicSonicDnsStatusListInner&gt;)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<List<ShowStatusDynamicSonicDnsStatusListInner>>> ReportingDynamicSonicDnsProfilesIpv4NameNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DynamicDnsProfileStatusIpv4Api->ReportingDynamicDnsProfilesIpv4NameNAMEGet");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DynamicSonicDnsProfileStatusIpv4Api->ReportingDynamicSonicDnsProfilesIpv4NameNAMEGet");
             }
 
 
@@ -517,7 +517,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
 
-            localVarRequestOptions.Operation = "DynamicDnsProfileStatusIpv4Api.ReportingDynamicDnsProfilesIpv4NameNAMEGet";
+            localVarRequestOptions.Operation = "DynamicSonicDnsProfileStatusIpv4Api.ReportingDynamicSonicDnsProfilesIpv4NameNAMEGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -528,11 +528,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<List<ShowStatusDynamicDnsStatusListInner>>("/reporting/dynamic-dns/profiles/ipv4/name/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<List<ShowStatusDynamicSonicDnsStatusListInner>>("/reporting/dynamic-SonicDns/profiles/ipv4/name/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDynamicDnsProfilesIpv4NameNAMEGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingDynamicSonicDnsProfilesIpv4NameNAMEGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

@@ -99,12 +99,12 @@ namespace SonicWallGen7.Model
         /// <param name="priority">priority.</param>
         /// <param name="comment">Set comment to help identify this NAT policy..</param>
         /// <param name="ticket">ticket.</param>
-        /// <param name="dnsDoctoring">Enable NAT policy DNS doctoring..</param>
+        /// <param name="SonicDnsDoctoring">Enable NAT policy SonicDns doctoring..</param>
         /// <param name="reflexive">Configure a reflexive rule..</param>
         /// <param name="natMethod">Set the NAT destination translation method..</param>
         /// <param name="sourcePortRemap">Enable source port remap..</param>
         /// <param name="highAvailability">highAvailability.</param>
-        public NatPolicyIpv4Ipv4(string inbound = default(string), string outbound = default(string), NatPolicyIpv4Ipv4Source source = default(NatPolicyIpv4Ipv4Source), NatPolicyIpv4Ipv4TranslatedSource translatedSource = default(NatPolicyIpv4Ipv4TranslatedSource), NatPolicyIpv4Ipv4Destination destination = default(NatPolicyIpv4Ipv4Destination), NatPolicyIpv4Ipv4TranslatedDestination translatedDestination = default(NatPolicyIpv4Ipv4TranslatedDestination), NatPolicyIpv4Ipv4Service service = default(NatPolicyIpv4Ipv4Service), NatPolicyIpv4Ipv4TranslatedService translatedService = default(NatPolicyIpv4Ipv4TranslatedService), string uuid = default(string), string name = default(string), bool enable = default(bool), NatPolicyIpv4Ipv4Priority priority = default(NatPolicyIpv4Ipv4Priority), string comment = default(string), NatPolicyIpv4Ipv4Ticket ticket = default(NatPolicyIpv4Ipv4Ticket), bool dnsDoctoring = default(bool), bool reflexive = default(bool), NatMethodEnum? natMethod = default(NatMethodEnum?), bool sourcePortRemap = default(bool), NatPolicyIpv4Ipv4HighAvailability highAvailability = default(NatPolicyIpv4Ipv4HighAvailability))
+        public NatPolicyIpv4Ipv4(string inbound = default(string), string outbound = default(string), NatPolicyIpv4Ipv4Source source = default(NatPolicyIpv4Ipv4Source), NatPolicyIpv4Ipv4TranslatedSource translatedSource = default(NatPolicyIpv4Ipv4TranslatedSource), NatPolicyIpv4Ipv4Destination destination = default(NatPolicyIpv4Ipv4Destination), NatPolicyIpv4Ipv4TranslatedDestination translatedDestination = default(NatPolicyIpv4Ipv4TranslatedDestination), NatPolicyIpv4Ipv4Service service = default(NatPolicyIpv4Ipv4Service), NatPolicyIpv4Ipv4TranslatedService translatedService = default(NatPolicyIpv4Ipv4TranslatedService), string uuid = default(string), string name = default(string), bool enable = default(bool), NatPolicyIpv4Ipv4Priority priority = default(NatPolicyIpv4Ipv4Priority), string comment = default(string), NatPolicyIpv4Ipv4Ticket ticket = default(NatPolicyIpv4Ipv4Ticket), bool SonicDnsDoctoring = default(bool), bool reflexive = default(bool), NatMethodEnum? natMethod = default(NatMethodEnum?), bool sourcePortRemap = default(bool), NatPolicyIpv4Ipv4HighAvailability highAvailability = default(NatPolicyIpv4Ipv4HighAvailability))
         {
             // to ensure "inbound" is required (not null)
             if (inbound == null)
@@ -160,7 +160,7 @@ namespace SonicWallGen7.Model
             this.Priority = priority;
             this.Comment = comment;
             this.Ticket = ticket;
-            this.DnsDoctoring = dnsDoctoring;
+            this.SonicDnsDoctoring = SonicDnsDoctoring;
             this.Reflexive = reflexive;
             this.NatMethod = natMethod;
             this.SourcePortRemap = sourcePortRemap;
@@ -258,11 +258,11 @@ namespace SonicWallGen7.Model
         public NatPolicyIpv4Ipv4Ticket Ticket { get; set; }
 
         /// <summary>
-        /// Enable NAT policy DNS doctoring.
+        /// Enable NAT policy SonicDns doctoring.
         /// </summary>
-        /// <value>Enable NAT policy DNS doctoring.</value>
-        [DataMember(Name = "dns_doctoring", EmitDefaultValue = true)]
-        public bool DnsDoctoring { get; set; }
+        /// <value>Enable NAT policy SonicDns doctoring.</value>
+        [DataMember(Name = "SonicDns_doctoring", EmitDefaultValue = true)]
+        public bool SonicDnsDoctoring { get; set; }
 
         /// <summary>
         /// Configure a reflexive rule.
@@ -306,7 +306,7 @@ namespace SonicWallGen7.Model
             sb.Append("  Priority: ").Append(Priority).Append("\n");
             sb.Append("  Comment: ").Append(Comment).Append("\n");
             sb.Append("  Ticket: ").Append(Ticket).Append("\n");
-            sb.Append("  DnsDoctoring: ").Append(DnsDoctoring).Append("\n");
+            sb.Append("  SonicDnsDoctoring: ").Append(SonicDnsDoctoring).Append("\n");
             sb.Append("  Reflexive: ").Append(Reflexive).Append("\n");
             sb.Append("  NatMethod: ").Append(NatMethod).Append("\n");
             sb.Append("  SourcePortRemap: ").Append(SourcePortRemap).Append("\n");
@@ -416,8 +416,8 @@ namespace SonicWallGen7.Model
                     this.Ticket.Equals(input.Ticket))
                 ) && 
                 (
-                    this.DnsDoctoring == input.DnsDoctoring ||
-                    this.DnsDoctoring.Equals(input.DnsDoctoring)
+                    this.SonicDnsDoctoring == input.SonicDnsDoctoring ||
+                    this.SonicDnsDoctoring.Equals(input.SonicDnsDoctoring)
                 ) && 
                 (
                     this.Reflexive == input.Reflexive ||
@@ -500,7 +500,7 @@ namespace SonicWallGen7.Model
                 {
                     hashCode = (hashCode * 59) + this.Ticket.GetHashCode();
                 }
-                hashCode = (hashCode * 59) + this.DnsDoctoring.GetHashCode();
+                hashCode = (hashCode * 59) + this.SonicDnsDoctoring.GetHashCode();
                 hashCode = (hashCode * 59) + this.Reflexive.GetHashCode();
                 hashCode = (hashCode * 59) + this.NatMethod.GetHashCode();
                 hashCode = (hashCode * 59) + this.SourcePortRemap.GetHashCode();

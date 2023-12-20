@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Primary DNS server IP address. * Set to null or {} to represent  an unconfigured state.
+    /// Primary SonicDns server IP address. * Set to null or {} to represent  an unconfigured state.
     /// </summary>
-    [DataContract(Name = "ssl_vpn_device_profile_client_dns_primary")]
-    public partial class SslVpnDeviceProfileClientDnsPrimary : IEquatable<SslVpnDeviceProfileClientDnsPrimary>, IValidatableObject
+    [DataContract(Name = "ssl_vpn_device_profile_client_SonicDns_primary")]
+    public partial class SslVpnDeviceProfileClientSonicDnsPrimary : IEquatable<SslVpnDeviceProfileClientSonicDnsPrimary>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientDnsPrimary" /> class.
+        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientSonicDnsPrimary" /> class.
         /// </summary>
         /// <param name="value">value.</param>
-        public SslVpnDeviceProfileClientDnsPrimary(string value = default(string))
+        public SslVpnDeviceProfileClientSonicDnsPrimary(string value = default(string))
         {
             this.Value = value;
         }
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class SslVpnDeviceProfileClientDnsPrimary {\n");
+            sb.Append("class SslVpnDeviceProfileClientSonicDnsPrimary {\n");
             sb.Append("  Value: ").Append(Value).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as SslVpnDeviceProfileClientDnsPrimary);
+            return this.Equals(input as SslVpnDeviceProfileClientSonicDnsPrimary);
         }
 
         /// <summary>
-        /// Returns true if SslVpnDeviceProfileClientDnsPrimary instances are equal
+        /// Returns true if SslVpnDeviceProfileClientSonicDnsPrimary instances are equal
         /// </summary>
-        /// <param name="input">Instance of SslVpnDeviceProfileClientDnsPrimary to be compared</param>
+        /// <param name="input">Instance of SslVpnDeviceProfileClientSonicDnsPrimary to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(SslVpnDeviceProfileClientDnsPrimary input)
+        public bool Equals(SslVpnDeviceProfileClientSonicDnsPrimary input)
         {
             if (input == null)
             {

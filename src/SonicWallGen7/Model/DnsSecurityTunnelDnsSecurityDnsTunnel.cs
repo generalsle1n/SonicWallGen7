@@ -27,33 +27,33 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Enter DNS tunnel mode
+    /// Enter SonicDns tunnel mode
     /// </summary>
-    [DataContract(Name = "dns_security_tunnel_dns_security_dns_tunnel")]
-    public partial class DnsSecurityTunnelDnsSecurityDnsTunnel : IEquatable<DnsSecurityTunnelDnsSecurityDnsTunnel>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_tunnel_SonicDns_security_SonicDns_tunnel")]
+    public partial class SonicDnsSecurityTunnelSonicDnsSecuritySonicDnsTunnel : IEquatable<SonicDnsSecurityTunnelSonicDnsSecuritySonicDnsTunnel>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecurityTunnelDnsSecurityDnsTunnel" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecurityTunnelSonicDnsSecuritySonicDnsTunnel" /> class.
         /// </summary>
-        /// <param name="enable">Enable DNS tunnel detection.</param>
-        /// <param name="blockAll">Block DNS traffic for all the detected clients.</param>
-        public DnsSecurityTunnelDnsSecurityDnsTunnel(bool enable = default(bool), bool blockAll = default(bool))
+        /// <param name="enable">Enable SonicDns tunnel detection.</param>
+        /// <param name="blockAll">Block SonicDns traffic for all the detected clients.</param>
+        public SonicDnsSecurityTunnelSonicDnsSecuritySonicDnsTunnel(bool enable = default(bool), bool blockAll = default(bool))
         {
             this.Enable = enable;
             this.BlockAll = blockAll;
         }
 
         /// <summary>
-        /// Enable DNS tunnel detection
+        /// Enable SonicDns tunnel detection
         /// </summary>
-        /// <value>Enable DNS tunnel detection</value>
+        /// <value>Enable SonicDns tunnel detection</value>
         [DataMember(Name = "enable", EmitDefaultValue = true)]
         public bool Enable { get; set; }
 
         /// <summary>
-        /// Block DNS traffic for all the detected clients
+        /// Block SonicDns traffic for all the detected clients
         /// </summary>
-        /// <value>Block DNS traffic for all the detected clients</value>
+        /// <value>Block SonicDns traffic for all the detected clients</value>
         [DataMember(Name = "block_all", EmitDefaultValue = true)]
         public bool BlockAll { get; set; }
 
@@ -64,7 +64,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecurityTunnelDnsSecurityDnsTunnel {\n");
+            sb.Append("class SonicDnsSecurityTunnelSonicDnsSecuritySonicDnsTunnel {\n");
             sb.Append("  Enable: ").Append(Enable).Append("\n");
             sb.Append("  BlockAll: ").Append(BlockAll).Append("\n");
             sb.Append("}\n");
@@ -87,15 +87,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecurityTunnelDnsSecurityDnsTunnel);
+            return this.Equals(input as SonicDnsSecurityTunnelSonicDnsSecuritySonicDnsTunnel);
         }
 
         /// <summary>
-        /// Returns true if DnsSecurityTunnelDnsSecurityDnsTunnel instances are equal
+        /// Returns true if SonicDnsSecurityTunnelSonicDnsSecuritySonicDnsTunnel instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecurityTunnelDnsSecurityDnsTunnel to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecurityTunnelSonicDnsSecuritySonicDnsTunnel to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecurityTunnelDnsSecurityDnsTunnel input)
+        public bool Equals(SonicDnsSecurityTunnelSonicDnsSecuritySonicDnsTunnel input)
         {
             if (input == null)
             {

@@ -27,13 +27,13 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// ShowStatusDynamicDnsStatusListInner
+    /// ShowStatusDynamicSonicDnsStatusListInner
     /// </summary>
-    [DataContract(Name = "show_status_dynamic_dns_status_list_inner")]
-    public partial class ShowStatusDynamicDnsStatusListInner : IEquatable<ShowStatusDynamicDnsStatusListInner>, IValidatableObject
+    [DataContract(Name = "show_status_dynamic_SonicDns_status_list_inner")]
+    public partial class ShowStatusDynamicSonicDnsStatusListInner : IEquatable<ShowStatusDynamicSonicDnsStatusListInner>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ShowStatusDynamicDnsStatusListInner" /> class.
+        /// Initializes a new instance of the <see cref="ShowStatusDynamicSonicDnsStatusListInner" /> class.
         /// </summary>
         /// <param name="profileName">profileName.</param>
         /// <param name="domain">domain.</param>
@@ -43,7 +43,7 @@ namespace SonicWallGen7.Model
         /// <param name="varInterface">varInterface.</param>
         /// <param name="enabled">enabled.</param>
         /// <param name="online">online.</param>
-        public ShowStatusDynamicDnsStatusListInner(string profileName = default(string), string domain = default(string), string provider = default(string), string providerUrl = default(string), string status = default(string), string varInterface = default(string), string enabled = default(string), string online = default(string))
+        public ShowStatusDynamicSonicDnsStatusListInner(string profileName = default(string), string domain = default(string), string provider = default(string), string providerUrl = default(string), string status = default(string), string varInterface = default(string), string enabled = default(string), string online = default(string))
         {
             this.ProfileName = profileName;
             this.Domain = domain;
@@ -110,7 +110,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class ShowStatusDynamicDnsStatusListInner {\n");
+            sb.Append("class ShowStatusDynamicSonicDnsStatusListInner {\n");
             sb.Append("  ProfileName: ").Append(ProfileName).Append("\n");
             sb.Append("  Domain: ").Append(Domain).Append("\n");
             sb.Append("  Provider: ").Append(Provider).Append("\n");
@@ -139,15 +139,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as ShowStatusDynamicDnsStatusListInner);
+            return this.Equals(input as ShowStatusDynamicSonicDnsStatusListInner);
         }
 
         /// <summary>
-        /// Returns true if ShowStatusDynamicDnsStatusListInner instances are equal
+        /// Returns true if ShowStatusDynamicSonicDnsStatusListInner instances are equal
         /// </summary>
-        /// <param name="input">Instance of ShowStatusDynamicDnsStatusListInner to be compared</param>
+        /// <param name="input">Instance of ShowStatusDynamicSonicDnsStatusListInner to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ShowStatusDynamicDnsStatusListInner input)
+        public bool Equals(ShowStatusDynamicSonicDnsStatusListInner input)
         {
             if (input == null)
             {

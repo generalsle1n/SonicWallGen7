@@ -43,8 +43,8 @@ namespace SonicWallGen7.Model
         /// <param name="name">Address object name. (required).</param>
         /// <param name="domain">Set address object fully qualified domain name (FQDN)..</param>
         /// <param name="zone">Address object zone..</param>
-        /// <param name="dnsTtl">Manually set DNS entries&#39; TTL..</param>
-        public AddressObjectFqdnFqdn(string name = default(string), string domain = default(string), string zone = default(string), decimal dnsTtl = default(decimal))
+        /// <param name="SonicDnsTtl">Manually set SonicDns entries&#39; TTL..</param>
+        public AddressObjectFqdnFqdn(string name = default(string), string domain = default(string), string zone = default(string), decimal SonicDnsTtl = default(decimal))
         {
             // to ensure "name" is required (not null)
             if (name == null)
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
             this.Name = name;
             this.Domain = domain;
             this.Zone = zone;
-            this.DnsTtl = dnsTtl;
+            this.SonicDnsTtl = SonicDnsTtl;
         }
 
         /// <summary>
@@ -94,11 +94,11 @@ namespace SonicWallGen7.Model
         public string Zone { get; set; }
 
         /// <summary>
-        /// Manually set DNS entries&#39; TTL.
+        /// Manually set SonicDns entries&#39; TTL.
         /// </summary>
-        /// <value>Manually set DNS entries&#39; TTL.</value>
-        [DataMember(Name = "dns_ttl", EmitDefaultValue = false)]
-        public decimal DnsTtl { get; set; }
+        /// <value>Manually set SonicDns entries&#39; TTL.</value>
+        [DataMember(Name = "SonicDns_ttl", EmitDefaultValue = false)]
+        public decimal SonicDnsTtl { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -112,7 +112,7 @@ namespace SonicWallGen7.Model
             sb.Append("  Uuid: ").Append(Uuid).Append("\n");
             sb.Append("  Domain: ").Append(Domain).Append("\n");
             sb.Append("  Zone: ").Append(Zone).Append("\n");
-            sb.Append("  DnsTtl: ").Append(DnsTtl).Append("\n");
+            sb.Append("  SonicDnsTtl: ").Append(SonicDnsTtl).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -169,8 +169,8 @@ namespace SonicWallGen7.Model
                     this.Zone.Equals(input.Zone))
                 ) && 
                 (
-                    this.DnsTtl == input.DnsTtl ||
-                    this.DnsTtl.Equals(input.DnsTtl)
+                    this.SonicDnsTtl == input.SonicDnsTtl ||
+                    this.SonicDnsTtl.Equals(input.SonicDnsTtl)
                 );
         }
 
@@ -199,7 +199,7 @@ namespace SonicWallGen7.Model
                 {
                     hashCode = (hashCode * 59) + this.Zone.GetHashCode();
                 }
-                hashCode = (hashCode * 59) + this.DnsTtl.GetHashCode();
+                hashCode = (hashCode * 59) + this.SonicDnsTtl.GetHashCode();
                 return hashCode;
             }
         }

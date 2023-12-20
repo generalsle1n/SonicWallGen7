@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS security tunnel white list entry configuration schema.
+    /// SonicDns security tunnel white list entry configuration schema.
     /// </summary>
-    [DataContract(Name = "dns_security_tunnel_white_list_entry")]
-    public partial class DnsSecurityTunnelWhiteListEntry : IEquatable<DnsSecurityTunnelWhiteListEntry>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_tunnel_white_list_entry")]
+    public partial class SonicDnsSecurityTunnelWhiteListEntry : IEquatable<SonicDnsSecurityTunnelWhiteListEntry>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecurityTunnelWhiteListEntry" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecurityTunnelWhiteListEntry" /> class.
         /// </summary>
         /// <param name="name">name.</param>
-        public DnsSecurityTunnelWhiteListEntry(string name = default(string))
+        public SonicDnsSecurityTunnelWhiteListEntry(string name = default(string))
         {
             this.Name = name;
         }
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecurityTunnelWhiteListEntry {\n");
+            sb.Append("class SonicDnsSecurityTunnelWhiteListEntry {\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecurityTunnelWhiteListEntry);
+            return this.Equals(input as SonicDnsSecurityTunnelWhiteListEntry);
         }
 
         /// <summary>
-        /// Returns true if DnsSecurityTunnelWhiteListEntry instances are equal
+        /// Returns true if SonicDnsSecurityTunnelWhiteListEntry instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecurityTunnelWhiteListEntry to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecurityTunnelWhiteListEntry to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecurityTunnelWhiteListEntry input)
+        public bool Equals(SonicDnsSecurityTunnelWhiteListEntry input)
         {
             if (input == null)
             {

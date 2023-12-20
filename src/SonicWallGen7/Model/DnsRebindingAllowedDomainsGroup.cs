@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DnsRebindingAllowedDomainsGroup
+    /// SonicDnsRebindingAllowedDomainsGroup
     /// </summary>
-    [DataContract(Name = "dns_rebinding_allowed_domains_group")]
-    public partial class DnsRebindingAllowedDomainsGroup : IEquatable<DnsRebindingAllowedDomainsGroup>, IValidatableObject
+    [DataContract(Name = "SonicDns_rebinding_allowed_domains_group")]
+    public partial class SonicDnsRebindingAllowedDomainsGroup : IEquatable<SonicDnsRebindingAllowedDomainsGroup>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsRebindingAllowedDomainsGroup" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsRebindingAllowedDomainsGroup" /> class.
         /// </summary>
         /// <param name="group">Specify FQDN group name..</param>
-        public DnsRebindingAllowedDomainsGroup(string group = default(string))
+        public SonicDnsRebindingAllowedDomainsGroup(string group = default(string))
         {
             this.Group = group;
         }
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsRebindingAllowedDomainsGroup {\n");
+            sb.Append("class SonicDnsRebindingAllowedDomainsGroup {\n");
             sb.Append("  Group: ").Append(Group).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsRebindingAllowedDomainsGroup);
+            return this.Equals(input as SonicDnsRebindingAllowedDomainsGroup);
         }
 
         /// <summary>
-        /// Returns true if DnsRebindingAllowedDomainsGroup instances are equal
+        /// Returns true if SonicDnsRebindingAllowedDomainsGroup instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsRebindingAllowedDomainsGroup to be compared</param>
+        /// <param name="input">Instance of SonicDnsRebindingAllowedDomainsGroup to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsRebindingAllowedDomainsGroup input)
+        public bool Equals(SonicDnsRebindingAllowedDomainsGroup input)
         {
             if (input == null)
             {

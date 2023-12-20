@@ -27,26 +27,26 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp
+    /// UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp
     /// </summary>
-    [DataContract(Name = "user_sso_base_sso_redirect_browser_domain_name_reverse_dns_look_up")]
-    public partial class UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp : IEquatable<UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp>, IValidatableObject
+    [DataContract(Name = "user_sso_base_sso_redirect_browser_domain_name_reverse_SonicDns_look_up")]
+    public partial class UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp : IEquatable<UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp" /> class.
+        /// Initializes a new instance of the <see cref="UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp" /> class.
         /// </summary>
-        /// <param name="reverseDnsLookUp">Via its domain name from a reverse DNS lookup of the interface IP address.</param>
-        public UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp(bool reverseDnsLookUp = default(bool))
+        /// <param name="reverseSonicDnsLookUp">Via its domain name from a reverse SonicDns lookup of the interface IP address.</param>
+        public UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp(bool reverseSonicDnsLookUp = default(bool))
         {
-            this.ReverseDnsLookUp = reverseDnsLookUp;
+            this.ReverseSonicDnsLookUp = reverseSonicDnsLookUp;
         }
 
         /// <summary>
-        /// Via its domain name from a reverse DNS lookup of the interface IP address
+        /// Via its domain name from a reverse SonicDns lookup of the interface IP address
         /// </summary>
-        /// <value>Via its domain name from a reverse DNS lookup of the interface IP address</value>
-        [DataMember(Name = "reverse_dns_look_up", EmitDefaultValue = true)]
-        public bool ReverseDnsLookUp { get; set; }
+        /// <value>Via its domain name from a reverse SonicDns lookup of the interface IP address</value>
+        [DataMember(Name = "reverse_SonicDns_look_up", EmitDefaultValue = true)]
+        public bool ReverseSonicDnsLookUp { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -55,8 +55,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp {\n");
-            sb.Append("  ReverseDnsLookUp: ").Append(ReverseDnsLookUp).Append("\n");
+            sb.Append("class UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp {\n");
+            sb.Append("  ReverseSonicDnsLookUp: ").Append(ReverseSonicDnsLookUp).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp);
+            return this.Equals(input as UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp);
         }
 
         /// <summary>
-        /// Returns true if UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp instances are equal
+        /// Returns true if UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp instances are equal
         /// </summary>
-        /// <param name="input">Instance of UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp to be compared</param>
+        /// <param name="input">Instance of UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp input)
+        public bool Equals(UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp input)
         {
             if (input == null)
             {
@@ -93,8 +93,8 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.ReverseDnsLookUp == input.ReverseDnsLookUp ||
-                    this.ReverseDnsLookUp.Equals(input.ReverseDnsLookUp)
+                    this.ReverseSonicDnsLookUp == input.ReverseSonicDnsLookUp ||
+                    this.ReverseSonicDnsLookUp.Equals(input.ReverseSonicDnsLookUp)
                 );
         }
 
@@ -107,7 +107,7 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                hashCode = (hashCode * 59) + this.ReverseDnsLookUp.GetHashCode();
+                hashCode = (hashCode * 59) + this.ReverseSonicDnsLookUp.GetHashCode();
                 return hashCode;
             }
         }

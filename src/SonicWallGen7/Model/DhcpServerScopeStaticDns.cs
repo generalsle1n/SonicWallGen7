@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS server settings.
+    /// SonicDns server settings.
     /// </summary>
-    [DataContract(Name = "dhcp_server_scope_static_dns")]
-    public partial class DhcpServerScopeStaticDns : IEquatable<DhcpServerScopeStaticDns>, IValidatableObject
+    [DataContract(Name = "dhcp_server_scope_static_SonicDns")]
+    public partial class DhcpServerScopeStaticSonicDns : IEquatable<DhcpServerScopeStaticSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DhcpServerScopeStaticDns" /> class.
+        /// Initializes a new instance of the <see cref="DhcpServerScopeStaticSonicDns" /> class.
         /// </summary>
         /// <param name="server">server.</param>
-        public DhcpServerScopeStaticDns(DhcpServerScopeStaticDnsServer server = default(DhcpServerScopeStaticDnsServer))
+        public DhcpServerScopeStaticSonicDns(DhcpServerScopeStaticSonicDnsServer server = default(DhcpServerScopeStaticSonicDnsServer))
         {
             this.Server = server;
         }
@@ -45,7 +45,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Server
         /// </summary>
         [DataMember(Name = "server", EmitDefaultValue = false)]
-        public DhcpServerScopeStaticDnsServer Server { get; set; }
+        public DhcpServerScopeStaticSonicDnsServer Server { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DhcpServerScopeStaticDns {\n");
+            sb.Append("class DhcpServerScopeStaticSonicDns {\n");
             sb.Append("  Server: ").Append(Server).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DhcpServerScopeStaticDns);
+            return this.Equals(input as DhcpServerScopeStaticSonicDns);
         }
 
         /// <summary>
-        /// Returns true if DhcpServerScopeStaticDns instances are equal
+        /// Returns true if DhcpServerScopeStaticSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of DhcpServerScopeStaticDns to be compared</param>
+        /// <param name="input">Instance of DhcpServerScopeStaticSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DhcpServerScopeStaticDns input)
+        public bool Equals(DhcpServerScopeStaticSonicDns input)
         {
             if (input == null)
             {

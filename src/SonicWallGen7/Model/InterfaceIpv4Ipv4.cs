@@ -59,7 +59,7 @@ namespace SonicWallGen7.Model
         /// <param name="excludeRoute">Enable exclude from route advertisement (NSM, OSPF, BGP, RIP)..</param>
         /// <param name="asymmetricRoute">Enable asymmetric route..</param>
         /// <param name="managementTrafficOnly">Enable management traffic only..</param>
-        /// <param name="dnsProxy">Enable DNS proxy on the interface..</param>
+        /// <param name="SonicDnsProxy">Enable SonicDns proxy on the interface..</param>
         /// <param name="shutdownPort">Enable shutdown port..</param>
         /// <param name="secondary">secondary.</param>
         /// <param name="default8021pCos">default8021pCos.</param>
@@ -67,7 +67,7 @@ namespace SonicWallGen7.Model
         /// <param name="routedMode">routedMode.</param>
         /// <param name="oneArmMode">Enable one-arm mode on the interface.</param>
         /// <param name="oneArmPeer">Set interface one-arm-peer..</param>
-        public InterfaceIpv4Ipv4(string name = default(string), decimal vlan = default(decimal), InterfaceIpv4Ipv4IpAssignment ipAssignment = default(InterfaceIpv4Ipv4IpAssignment), string comment = default(string), decimal mtu = default(decimal), InterfaceIpv4Ipv4Mac mac = default(InterfaceIpv4Ipv4Mac), InterfaceIpv4Ipv4LinkSpeed linkSpeed = default(InterfaceIpv4Ipv4LinkSpeed), InterfaceIpv4Ipv4Management management = default(InterfaceIpv4Ipv4Management), InterfaceIpv4Ipv4UserLogin userLogin = default(InterfaceIpv4Ipv4UserLogin), bool httpsRedirect = default(bool), bool sendIcmpFragmentation = default(bool), bool fragmentPackets = default(bool), bool ignoreDfBit = default(bool), bool flowReporting = default(bool), bool multicast = default(bool), bool cos8021p = default(bool), bool excludeRoute = default(bool), bool asymmetricRoute = default(bool), bool managementTrafficOnly = default(bool), bool dnsProxy = default(bool), bool shutdownPort = default(bool), InterfaceIpv4Ipv4Secondary secondary = default(InterfaceIpv4Ipv4Secondary), InterfaceIpv4Ipv4Default8021pCos default8021pCos = default(InterfaceIpv4Ipv4Default8021pCos), InterfaceIpv4Ipv4BandwidthManagement bandwidthManagement = default(InterfaceIpv4Ipv4BandwidthManagement), InterfaceIpv4Ipv4RoutedMode routedMode = default(InterfaceIpv4Ipv4RoutedMode), bool oneArmMode = default(bool), string oneArmPeer = default(string))
+        public InterfaceIpv4Ipv4(string name = default(string), decimal vlan = default(decimal), InterfaceIpv4Ipv4IpAssignment ipAssignment = default(InterfaceIpv4Ipv4IpAssignment), string comment = default(string), decimal mtu = default(decimal), InterfaceIpv4Ipv4Mac mac = default(InterfaceIpv4Ipv4Mac), InterfaceIpv4Ipv4LinkSpeed linkSpeed = default(InterfaceIpv4Ipv4LinkSpeed), InterfaceIpv4Ipv4Management management = default(InterfaceIpv4Ipv4Management), InterfaceIpv4Ipv4UserLogin userLogin = default(InterfaceIpv4Ipv4UserLogin), bool httpsRedirect = default(bool), bool sendIcmpFragmentation = default(bool), bool fragmentPackets = default(bool), bool ignoreDfBit = default(bool), bool flowReporting = default(bool), bool multicast = default(bool), bool cos8021p = default(bool), bool excludeRoute = default(bool), bool asymmetricRoute = default(bool), bool managementTrafficOnly = default(bool), bool SonicDnsProxy = default(bool), bool shutdownPort = default(bool), InterfaceIpv4Ipv4Secondary secondary = default(InterfaceIpv4Ipv4Secondary), InterfaceIpv4Ipv4Default8021pCos default8021pCos = default(InterfaceIpv4Ipv4Default8021pCos), InterfaceIpv4Ipv4BandwidthManagement bandwidthManagement = default(InterfaceIpv4Ipv4BandwidthManagement), InterfaceIpv4Ipv4RoutedMode routedMode = default(InterfaceIpv4Ipv4RoutedMode), bool oneArmMode = default(bool), string oneArmPeer = default(string))
         {
             // to ensure "name" is required (not null)
             if (name == null)
@@ -93,7 +93,7 @@ namespace SonicWallGen7.Model
             this.ExcludeRoute = excludeRoute;
             this.AsymmetricRoute = asymmetricRoute;
             this.ManagementTrafficOnly = managementTrafficOnly;
-            this.DnsProxy = dnsProxy;
+            this.SonicDnsProxy = SonicDnsProxy;
             this.ShutdownPort = shutdownPort;
             this.Secondary = secondary;
             this.Default8021pCos = default8021pCos;
@@ -232,11 +232,11 @@ namespace SonicWallGen7.Model
         public bool ManagementTrafficOnly { get; set; }
 
         /// <summary>
-        /// Enable DNS proxy on the interface.
+        /// Enable SonicDns proxy on the interface.
         /// </summary>
-        /// <value>Enable DNS proxy on the interface.</value>
-        [DataMember(Name = "dns_proxy", EmitDefaultValue = true)]
-        public bool DnsProxy { get; set; }
+        /// <value>Enable SonicDns proxy on the interface.</value>
+        [DataMember(Name = "SonicDns_proxy", EmitDefaultValue = true)]
+        public bool SonicDnsProxy { get; set; }
 
         /// <summary>
         /// Enable shutdown port.
@@ -310,7 +310,7 @@ namespace SonicWallGen7.Model
             sb.Append("  ExcludeRoute: ").Append(ExcludeRoute).Append("\n");
             sb.Append("  AsymmetricRoute: ").Append(AsymmetricRoute).Append("\n");
             sb.Append("  ManagementTrafficOnly: ").Append(ManagementTrafficOnly).Append("\n");
-            sb.Append("  DnsProxy: ").Append(DnsProxy).Append("\n");
+            sb.Append("  SonicDnsProxy: ").Append(SonicDnsProxy).Append("\n");
             sb.Append("  ShutdownPort: ").Append(ShutdownPort).Append("\n");
             sb.Append("  Secondary: ").Append(Secondary).Append("\n");
             sb.Append("  Default8021pCos: ").Append(Default8021pCos).Append("\n");
@@ -437,8 +437,8 @@ namespace SonicWallGen7.Model
                     this.ManagementTrafficOnly.Equals(input.ManagementTrafficOnly)
                 ) && 
                 (
-                    this.DnsProxy == input.DnsProxy ||
-                    this.DnsProxy.Equals(input.DnsProxy)
+                    this.SonicDnsProxy == input.SonicDnsProxy ||
+                    this.SonicDnsProxy.Equals(input.SonicDnsProxy)
                 ) && 
                 (
                     this.ShutdownPort == input.ShutdownPort ||
@@ -524,7 +524,7 @@ namespace SonicWallGen7.Model
                 hashCode = (hashCode * 59) + this.ExcludeRoute.GetHashCode();
                 hashCode = (hashCode * 59) + this.AsymmetricRoute.GetHashCode();
                 hashCode = (hashCode * 59) + this.ManagementTrafficOnly.GetHashCode();
-                hashCode = (hashCode * 59) + this.DnsProxy.GetHashCode();
+                hashCode = (hashCode * 59) + this.SonicDnsProxy.GetHashCode();
                 hashCode = (hashCode * 59) + this.ShutdownPort.GetHashCode();
                 if (this.Secondary != null)
                 {

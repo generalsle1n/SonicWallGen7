@@ -24,113 +24,113 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsCacheApiSync : IApiAccessor
+    public interface ISonicDnsCacheApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS cache.
+        /// Retrieve SonicDns cache.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>Object</returns>
-        Object ReportingDnsCacheGet(int operationIndex = 0);
+        Object ReportingSonicDnsCacheGet(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS cache.
+        /// Retrieve SonicDns cache.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> ReportingDnsCacheGetWithHttpInfo(int operationIndex = 0);
+        ApiResponse<Object> ReportingSonicDnsCacheGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS cache.
+        /// Retrieve SonicDns cache.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>Object</returns>
-        Object ReportingDnsCacheInterfaceReverseGet(int operationIndex = 0);
+        Object ReportingSonicDnsCacheInterfaceReverseGet(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS cache.
+        /// Retrieve SonicDns cache.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> ReportingDnsCacheInterfaceReverseGetWithHttpInfo(int operationIndex = 0);
+        ApiResponse<Object> ReportingSonicDnsCacheInterfaceReverseGetWithHttpInfo(int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsCacheApiAsync : IApiAccessor
+    public interface ISonicDnsCacheApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS cache.
+        /// Retrieve SonicDns cache.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> ReportingDnsCacheGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Object> ReportingSonicDnsCacheGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS cache.
+        /// Retrieve SonicDns cache.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ReportingDnsCacheGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ReportingSonicDnsCacheGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS cache.
+        /// Retrieve SonicDns cache.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> ReportingDnsCacheInterfaceReverseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Object> ReportingSonicDnsCacheInterfaceReverseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS cache.
+        /// Retrieve SonicDns cache.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ReportingDnsCacheInterfaceReverseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ReportingSonicDnsCacheInterfaceReverseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsCacheApi : IDnsCacheApiSync, IDnsCacheApiAsync
+    public interface ISonicDnsCacheApi : ISonicDnsCacheApiSync, ISonicDnsCacheApiAsync
     {
 
     }
@@ -138,23 +138,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DnsCacheApi : IDnsCacheApi
+    public partial class SonicDnsCacheApi : ISonicDnsCacheApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsCacheApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsCacheApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsCacheApi() : this((string)null)
+        public SonicDnsCacheApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsCacheApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsCacheApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsCacheApi(string basePath)
+        public SonicDnsCacheApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -166,12 +166,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsCacheApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsCacheApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DnsCacheApi(SonicWallGen7.Client.Configuration configuration)
+        public SonicDnsCacheApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -185,13 +185,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsCacheApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsCacheApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DnsCacheApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicDnsCacheApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -245,24 +245,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS cache.
+        ///  Retrieve SonicDns cache.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>Object</returns>
-        public Object ReportingDnsCacheGet(int operationIndex = 0)
+        public Object ReportingSonicDnsCacheGet(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<Object> localVarResponse = ReportingDnsCacheGetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<Object> localVarResponse = ReportingSonicDnsCacheGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS cache.
+        ///  Retrieve SonicDns cache.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of Object</returns>
-        public SonicWallGen7.Client.ApiResponse<Object> ReportingDnsCacheGetWithHttpInfo(int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<Object> ReportingSonicDnsCacheGetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -287,7 +287,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsCacheApi.ReportingDnsCacheGet";
+            localVarRequestOptions.Operation = "SonicDnsCacheApi.ReportingSonicDnsCacheGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -298,10 +298,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Object>("/reporting/dns/cache", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Object>("/reporting/SonicDns/cache", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDnsCacheGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingSonicDnsCacheGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -312,26 +312,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS cache.
+        ///  Retrieve SonicDns cache.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> ReportingDnsCacheGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Object> ReportingSonicDnsCacheGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<Object> localVarResponse = await ReportingDnsCacheGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<Object> localVarResponse = await ReportingSonicDnsCacheGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS cache.
+        ///  Retrieve SonicDns cache.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<Object>> ReportingDnsCacheGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<Object>> ReportingSonicDnsCacheGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -357,7 +357,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsCacheApi.ReportingDnsCacheGet";
+            localVarRequestOptions.Operation = "SonicDnsCacheApi.ReportingSonicDnsCacheGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -368,11 +368,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/reporting/dns/cache", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/reporting/SonicDns/cache", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDnsCacheGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingSonicDnsCacheGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -383,24 +383,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS cache.
+        ///  Retrieve SonicDns cache.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>Object</returns>
-        public Object ReportingDnsCacheInterfaceReverseGet(int operationIndex = 0)
+        public Object ReportingSonicDnsCacheInterfaceReverseGet(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<Object> localVarResponse = ReportingDnsCacheInterfaceReverseGetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<Object> localVarResponse = ReportingSonicDnsCacheInterfaceReverseGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS cache.
+        ///  Retrieve SonicDns cache.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of Object</returns>
-        public SonicWallGen7.Client.ApiResponse<Object> ReportingDnsCacheInterfaceReverseGetWithHttpInfo(int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<Object> ReportingSonicDnsCacheInterfaceReverseGetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -425,7 +425,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsCacheApi.ReportingDnsCacheInterfaceReverseGet";
+            localVarRequestOptions.Operation = "SonicDnsCacheApi.ReportingSonicDnsCacheInterfaceReverseGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -436,10 +436,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Object>("/reporting/dns/cache/interface-reverse", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Object>("/reporting/SonicDns/cache/interface-reverse", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDnsCacheInterfaceReverseGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingSonicDnsCacheInterfaceReverseGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -450,26 +450,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS cache.
+        ///  Retrieve SonicDns cache.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> ReportingDnsCacheInterfaceReverseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Object> ReportingSonicDnsCacheInterfaceReverseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<Object> localVarResponse = await ReportingDnsCacheInterfaceReverseGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<Object> localVarResponse = await ReportingSonicDnsCacheInterfaceReverseGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS cache.
+        ///  Retrieve SonicDns cache.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<Object>> ReportingDnsCacheInterfaceReverseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<Object>> ReportingSonicDnsCacheInterfaceReverseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -495,7 +495,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsCacheApi.ReportingDnsCacheInterfaceReverseGet";
+            localVarRequestOptions.Operation = "SonicDnsCacheApi.ReportingSonicDnsCacheInterfaceReverseGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -506,11 +506,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/reporting/dns/cache/interface-reverse", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/reporting/SonicDns/cache/interface-reverse", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDnsCacheInterfaceReverseGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingSonicDnsCacheInterfaceReverseGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

@@ -65,12 +65,12 @@ namespace SonicWallGen7.Test.Model
         }
 
         /// <summary>
-        /// Test the property 'FqdnServer'
+        /// Test the property 'FqSonicDnserver'
         /// </summary>
         [Fact]
-        public void FqdnServerTest()
+        public void FqSonicDnserverTest()
         {
-            // TODO unit test for the property 'FqdnServer'
+            // TODO unit test for the property 'FqSonicDnserver'
         }
 
         /// <summary>

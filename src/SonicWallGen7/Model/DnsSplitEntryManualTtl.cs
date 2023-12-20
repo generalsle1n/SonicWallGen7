@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Enable manually set TTL value in DNS reply and set TTL value(seconds). * Set to null or {} to represent  an unconfigured state.
+    /// Enable manually set TTL value in SonicDns reply and set TTL value(seconds). * Set to null or {} to represent  an unconfigured state.
     /// </summary>
-    [DataContract(Name = "dns_split_entry_manual_ttl")]
-    public partial class DnsSplitEntryManualTtl : IEquatable<DnsSplitEntryManualTtl>, IValidatableObject
+    [DataContract(Name = "SonicDns_split_entry_manual_ttl")]
+    public partial class SonicDnsSplitEntryManualTtl : IEquatable<SonicDnsSplitEntryManualTtl>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntryManualTtl" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntryManualTtl" /> class.
         /// </summary>
         /// <param name="value">value.</param>
-        public DnsSplitEntryManualTtl(decimal value = default(decimal))
+        public SonicDnsSplitEntryManualTtl(decimal value = default(decimal))
         {
             this.Value = value;
         }
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSplitEntryManualTtl {\n");
+            sb.Append("class SonicDnsSplitEntryManualTtl {\n");
             sb.Append("  Value: ").Append(Value).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSplitEntryManualTtl);
+            return this.Equals(input as SonicDnsSplitEntryManualTtl);
         }
 
         /// <summary>
-        /// Returns true if DnsSplitEntryManualTtl instances are equal
+        /// Returns true if SonicDnsSplitEntryManualTtl instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSplitEntryManualTtl to be compared</param>
+        /// <param name="input">Instance of SonicDnsSplitEntryManualTtl to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSplitEntryManualTtl input)
+        public bool Equals(SonicDnsSplitEntryManualTtl input)
         {
             if (input == null)
             {

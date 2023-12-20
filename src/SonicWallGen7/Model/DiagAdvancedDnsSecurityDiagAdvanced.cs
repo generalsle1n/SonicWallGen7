@@ -29,23 +29,23 @@ namespace SonicWallGen7.Model
     /// <summary>
     /// Advanced device settings to be used under direction of SonicWall support.
     /// </summary>
-    [DataContract(Name = "diag_advanced_dns_security_diag_advanced")]
-    public partial class DiagAdvancedDnsSecurityDiagAdvanced : IEquatable<DiagAdvancedDnsSecurityDiagAdvanced>, IValidatableObject
+    [DataContract(Name = "diag_advanced_SonicDns_security_diag_advanced")]
+    public partial class DiagAdvancedSonicDnsSecurityDiagAdvanced : IEquatable<DiagAdvancedSonicDnsSecurityDiagAdvanced>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDnsSecurityDiagAdvanced" /> class.
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDnsSecurityDiagAdvanced" /> class.
         /// </summary>
-        /// <param name="dnsSecurity">dnsSecurity.</param>
-        public DiagAdvancedDnsSecurityDiagAdvanced(DiagAdvancedDnsSecurityDiagAdvancedDnsSecurity dnsSecurity = default(DiagAdvancedDnsSecurityDiagAdvancedDnsSecurity))
+        /// <param name="SonicDnsSecurity">SonicDnsSecurity.</param>
+        public DiagAdvancedSonicDnsSecurityDiagAdvanced(DiagAdvancedSonicDnsSecurityDiagAdvancedSonicDnsSecurity SonicDnsSecurity = default(DiagAdvancedSonicDnsSecurityDiagAdvancedSonicDnsSecurity))
         {
-            this.DnsSecurity = dnsSecurity;
+            this.SonicDnsSecurity = SonicDnsSecurity;
         }
 
         /// <summary>
-        /// Gets or Sets DnsSecurity
+        /// Gets or Sets SonicDnsSecurity
         /// </summary>
-        [DataMember(Name = "dns_security", EmitDefaultValue = false)]
-        public DiagAdvancedDnsSecurityDiagAdvancedDnsSecurity DnsSecurity { get; set; }
+        [DataMember(Name = "SonicDns_security", EmitDefaultValue = false)]
+        public DiagAdvancedSonicDnsSecurityDiagAdvancedSonicDnsSecurity SonicDnsSecurity { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,8 +54,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DiagAdvancedDnsSecurityDiagAdvanced {\n");
-            sb.Append("  DnsSecurity: ").Append(DnsSecurity).Append("\n");
+            sb.Append("class DiagAdvancedSonicDnsSecurityDiagAdvanced {\n");
+            sb.Append("  SonicDnsSecurity: ").Append(SonicDnsSecurity).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DiagAdvancedDnsSecurityDiagAdvanced);
+            return this.Equals(input as DiagAdvancedSonicDnsSecurityDiagAdvanced);
         }
 
         /// <summary>
-        /// Returns true if DiagAdvancedDnsSecurityDiagAdvanced instances are equal
+        /// Returns true if DiagAdvancedSonicDnsSecurityDiagAdvanced instances are equal
         /// </summary>
-        /// <param name="input">Instance of DiagAdvancedDnsSecurityDiagAdvanced to be compared</param>
+        /// <param name="input">Instance of DiagAdvancedSonicDnsSecurityDiagAdvanced to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DiagAdvancedDnsSecurityDiagAdvanced input)
+        public bool Equals(DiagAdvancedSonicDnsSecurityDiagAdvanced input)
         {
             if (input == null)
             {
@@ -92,9 +92,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.DnsSecurity == input.DnsSecurity ||
-                    (this.DnsSecurity != null &&
-                    this.DnsSecurity.Equals(input.DnsSecurity))
+                    this.SonicDnsSecurity == input.SonicDnsSecurity ||
+                    (this.SonicDnsSecurity != null &&
+                    this.SonicDnsSecurity.Equals(input.SonicDnsSecurity))
                 );
         }
 
@@ -107,9 +107,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.DnsSecurity != null)
+                if (this.SonicDnsSecurity != null)
                 {
-                    hashCode = (hashCode * 59) + this.DnsSecurity.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDnsSecurity.GetHashCode();
                 }
                 return hashCode;
             }

@@ -27,25 +27,25 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS proxy configuration.
+    /// SonicDns proxy configuration.
     /// </summary>
-    [DataContract(Name = "dns_proxy")]
-    public partial class DnsProxy : IEquatable<DnsProxy>, IValidatableObject
+    [DataContract(Name = "SonicDns_proxy")]
+    public partial class SonicDnsProxy : IEquatable<SonicDnsProxy>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxy" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxy" /> class.
         /// </summary>
-        /// <param name="varDnsProxy">varDnsProxy.</param>
-        public DnsProxy(DnsProxyDnsProxy varDnsProxy = default(DnsProxyDnsProxy))
+        /// <param name="varSonicDnsProxy">varSonicDnsProxy.</param>
+        public SonicDnsProxy(SonicDnsProxySonicDnsProxy varSonicDnsProxy = default(SonicDnsProxySonicDnsProxy))
         {
-            this.VarDnsProxy = varDnsProxy;
+            this.VarSonicDnsProxy = varSonicDnsProxy;
         }
 
         /// <summary>
-        /// Gets or Sets VarDnsProxy
+        /// Gets or Sets VarSonicDnsProxy
         /// </summary>
-        [DataMember(Name = "dns_proxy", EmitDefaultValue = false)]
-        public DnsProxyDnsProxy VarDnsProxy { get; set; }
+        [DataMember(Name = "SonicDns_proxy", EmitDefaultValue = false)]
+        public SonicDnsProxySonicDnsProxy VarSonicDnsProxy { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,8 +54,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsProxy {\n");
-            sb.Append("  VarDnsProxy: ").Append(VarDnsProxy).Append("\n");
+            sb.Append("class SonicDnsProxy {\n");
+            sb.Append("  VarSonicDnsProxy: ").Append(VarSonicDnsProxy).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsProxy);
+            return this.Equals(input as SonicDnsProxy);
         }
 
         /// <summary>
-        /// Returns true if DnsProxy instances are equal
+        /// Returns true if SonicDnsProxy instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsProxy to be compared</param>
+        /// <param name="input">Instance of SonicDnsProxy to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsProxy input)
+        public bool Equals(SonicDnsProxy input)
         {
             if (input == null)
             {
@@ -92,9 +92,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.VarDnsProxy == input.VarDnsProxy ||
-                    (this.VarDnsProxy != null &&
-                    this.VarDnsProxy.Equals(input.VarDnsProxy))
+                    this.VarSonicDnsProxy == input.VarSonicDnsProxy ||
+                    (this.VarSonicDnsProxy != null &&
+                    this.VarSonicDnsProxy.Equals(input.VarSonicDnsProxy))
                 );
         }
 
@@ -107,9 +107,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.VarDnsProxy != null)
+                if (this.VarSonicDnsProxy != null)
                 {
-                    hashCode = (hashCode * 59) + this.VarDnsProxy.GetHashCode();
+                    hashCode = (hashCode * 59) + this.VarSonicDnsProxy.GetHashCode();
                 }
                 return hashCode;
             }

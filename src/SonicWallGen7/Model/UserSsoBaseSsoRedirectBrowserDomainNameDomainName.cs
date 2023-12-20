@@ -36,10 +36,10 @@ namespace SonicWallGen7.Model
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="UserSsoBaseSsoRedirectBrowserDomainNameDomainName" /> class
-        /// with the <see cref="UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp" /> class
+        /// with the <see cref="UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp.</param>
-        public UserSsoBaseSsoRedirectBrowserDomainNameDomainName(UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp actualInstance)
+        /// <param name="actualInstance">An instance of UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp.</param>
+        public UserSsoBaseSsoRedirectBrowserDomainNameDomainName(UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -76,25 +76,25 @@ namespace SonicWallGen7.Model
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp))
+                else if (value.GetType() == typeof(UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp))
                 {
                     this._actualInstance = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid instance found. Must be the following types: UserSsoBaseSsoRedirectBrowserDomainNameConfigured, UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp");
+                    throw new ArgumentException("Invalid instance found. Must be the following types: UserSsoBaseSsoRedirectBrowserDomainNameConfigured, UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp");
                 }
             }
         }
 
         /// <summary>
-        /// Get the actual instance of `UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp`. If the actual instance is not `UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp`,
+        /// Get the actual instance of `UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp`. If the actual instance is not `UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp</returns>
-        public UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp GetUserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp()
+        /// <returns>An instance of UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp</returns>
+        public UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp GetUserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp()
         {
-            return (UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp)this.ActualInstance;
+            return (UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp)this.ActualInstance;
         }
 
         /// <summary>
@@ -168,21 +168,21 @@ namespace SonicWallGen7.Model
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp).GetProperty("AdditionalProperties") == null)
+                if (typeof(UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp).GetProperty("AdditionalProperties") == null)
                 {
-                    newUserSsoBaseSsoRedirectBrowserDomainNameDomainName = new UserSsoBaseSsoRedirectBrowserDomainNameDomainName(JsonConvert.DeserializeObject<UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp>(jsonString, UserSsoBaseSsoRedirectBrowserDomainNameDomainName.SerializerSettings));
+                    newUserSsoBaseSsoRedirectBrowserDomainNameDomainName = new UserSsoBaseSsoRedirectBrowserDomainNameDomainName(JsonConvert.DeserializeObject<UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp>(jsonString, UserSsoBaseSsoRedirectBrowserDomainNameDomainName.SerializerSettings));
                 }
                 else
                 {
-                    newUserSsoBaseSsoRedirectBrowserDomainNameDomainName = new UserSsoBaseSsoRedirectBrowserDomainNameDomainName(JsonConvert.DeserializeObject<UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp>(jsonString, UserSsoBaseSsoRedirectBrowserDomainNameDomainName.AdditionalPropertiesSerializerSettings));
+                    newUserSsoBaseSsoRedirectBrowserDomainNameDomainName = new UserSsoBaseSsoRedirectBrowserDomainNameDomainName(JsonConvert.DeserializeObject<UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp>(jsonString, UserSsoBaseSsoRedirectBrowserDomainNameDomainName.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp");
+                matchedTypes.Add("UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into UserSsoBaseSsoRedirectBrowserDomainNameReverseDnsLookUp: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into UserSsoBaseSsoRedirectBrowserDomainNameReverseSonicDnsLookUp: {1}", jsonString, exception.ToString()));
             }
 
             if (match == 0)

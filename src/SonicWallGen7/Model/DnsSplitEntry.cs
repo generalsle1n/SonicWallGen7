@@ -27,29 +27,29 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS split DNS entry configuration.
+    /// SonicDns split SonicDns entry configuration.
     /// </summary>
-    [DataContract(Name = "dns_split_entry")]
-    public partial class DnsSplitEntry : IEquatable<DnsSplitEntry>, IValidatableObject
+    [DataContract(Name = "SonicDns_split_entry")]
+    public partial class SonicDnsSplitEntry : IEquatable<SonicDnsSplitEntry>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntry" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntry" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected DnsSplitEntry() { }
+        protected SonicDnsSplitEntry() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntry" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntry" /> class.
         /// </summary>
-        /// <param name="domain">Set the split DNS entry domain name. (required).</param>
+        /// <param name="domain">Set the split SonicDns entry domain name. (required).</param>
         /// <param name="server">server.</param>
         /// <param name="localInterface">localInterface.</param>
         /// <param name="manualTtl">manualTtl.</param>
-        public DnsSplitEntry(string domain = default(string), DnsSplitEntryServer server = default(DnsSplitEntryServer), DnsSplitEntryLocalInterface localInterface = default(DnsSplitEntryLocalInterface), DnsSplitEntryManualTtl manualTtl = default(DnsSplitEntryManualTtl))
+        public SonicDnsSplitEntry(string domain = default(string), SonicDnsSplitEntryServer server = default(SonicDnsSplitEntryServer), SonicDnsSplitEntryLocalInterface localInterface = default(SonicDnsSplitEntryLocalInterface), SonicDnsSplitEntryManualTtl manualTtl = default(SonicDnsSplitEntryManualTtl))
         {
             // to ensure "domain" is required (not null)
             if (domain == null)
             {
-                throw new ArgumentNullException("domain is a required property for DnsSplitEntry and cannot be null");
+                throw new ArgumentNullException("domain is a required property for SonicDnsSplitEntry and cannot be null");
             }
             this.Domain = domain;
             this.Server = server;
@@ -58,9 +58,9 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Set the split DNS entry domain name.
+        /// Set the split SonicDns entry domain name.
         /// </summary>
-        /// <value>Set the split DNS entry domain name.</value>
+        /// <value>Set the split SonicDns entry domain name.</value>
         [DataMember(Name = "domain", IsRequired = true, EmitDefaultValue = true)]
         public string Domain { get; set; }
 
@@ -68,19 +68,19 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Server
         /// </summary>
         [DataMember(Name = "server", EmitDefaultValue = false)]
-        public DnsSplitEntryServer Server { get; set; }
+        public SonicDnsSplitEntryServer Server { get; set; }
 
         /// <summary>
         /// Gets or Sets LocalInterface
         /// </summary>
         [DataMember(Name = "local_interface", EmitDefaultValue = true)]
-        public DnsSplitEntryLocalInterface LocalInterface { get; set; }
+        public SonicDnsSplitEntryLocalInterface LocalInterface { get; set; }
 
         /// <summary>
         /// Gets or Sets ManualTtl
         /// </summary>
         [DataMember(Name = "manual_ttl", EmitDefaultValue = true)]
-        public DnsSplitEntryManualTtl ManualTtl { get; set; }
+        public SonicDnsSplitEntryManualTtl ManualTtl { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -89,7 +89,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSplitEntry {\n");
+            sb.Append("class SonicDnsSplitEntry {\n");
             sb.Append("  Domain: ").Append(Domain).Append("\n");
             sb.Append("  Server: ").Append(Server).Append("\n");
             sb.Append("  LocalInterface: ").Append(LocalInterface).Append("\n");
@@ -114,15 +114,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSplitEntry);
+            return this.Equals(input as SonicDnsSplitEntry);
         }
 
         /// <summary>
-        /// Returns true if DnsSplitEntry instances are equal
+        /// Returns true if SonicDnsSplitEntry instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSplitEntry to be compared</param>
+        /// <param name="input">Instance of SonicDnsSplitEntry to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSplitEntry input)
+        public bool Equals(SonicDnsSplitEntry input)
         {
             if (input == null)
             {

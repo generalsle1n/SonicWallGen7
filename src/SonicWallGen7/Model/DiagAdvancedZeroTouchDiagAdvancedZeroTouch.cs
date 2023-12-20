@@ -62,7 +62,7 @@ namespace SonicWallGen7.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="DiagAdvancedZeroTouchDiagAdvancedZeroTouch" /> class.
         /// </summary>
-        /// <param name="fqdnServer">Configure the Server FQDN..</param>
+        /// <param name="fqSonicDnserver">Configure the Server FQDN..</param>
         /// <param name="serverIpUseMode">Configure the Server IP Use Mode..</param>
         /// <param name="serverIp">Configure the Server IP..</param>
         /// <param name="reconnectingDelay">Configure the reconnecting delay in Seconds..</param>
@@ -70,9 +70,9 @@ namespace SonicWallGen7.Model
         /// <param name="skipCertificate">Enable Skip checking server certificate..</param>
         /// <param name="showDiagnosticPage">Enable the show diagnostic page..</param>
         /// <param name="debugLevel">Configure the debug level..</param>
-        public DiagAdvancedZeroTouchDiagAdvancedZeroTouch(string fqdnServer = default(string), ServerIpUseModeEnum? serverIpUseMode = default(ServerIpUseModeEnum?), string serverIp = default(string), decimal reconnectingDelay = default(decimal), decimal reconnectingAttempt = default(decimal), bool skipCertificate = default(bool), bool showDiagnosticPage = default(bool), decimal debugLevel = default(decimal))
+        public DiagAdvancedZeroTouchDiagAdvancedZeroTouch(string fqSonicDnserver = default(string), ServerIpUseModeEnum? serverIpUseMode = default(ServerIpUseModeEnum?), string serverIp = default(string), decimal reconnectingDelay = default(decimal), decimal reconnectingAttempt = default(decimal), bool skipCertificate = default(bool), bool showDiagnosticPage = default(bool), decimal debugLevel = default(decimal))
         {
-            this.FqdnServer = fqdnServer;
+            this.FqSonicDnserver = fqSonicDnserver;
             this.ServerIpUseMode = serverIpUseMode;
             this.ServerIp = serverIp;
             this.ReconnectingDelay = reconnectingDelay;
@@ -87,7 +87,7 @@ namespace SonicWallGen7.Model
         /// </summary>
         /// <value>Configure the Server FQDN.</value>
         [DataMember(Name = "fqdn_server", EmitDefaultValue = false)]
-        public string FqdnServer { get; set; }
+        public string FqSonicDnserver { get; set; }
 
         /// <summary>
         /// Configure the Server IP.
@@ -139,7 +139,7 @@ namespace SonicWallGen7.Model
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("class DiagAdvancedZeroTouchDiagAdvancedZeroTouch {\n");
-            sb.Append("  FqdnServer: ").Append(FqdnServer).Append("\n");
+            sb.Append("  FqSonicDnserver: ").Append(FqSonicDnserver).Append("\n");
             sb.Append("  ServerIpUseMode: ").Append(ServerIpUseMode).Append("\n");
             sb.Append("  ServerIp: ").Append(ServerIp).Append("\n");
             sb.Append("  ReconnectingDelay: ").Append(ReconnectingDelay).Append("\n");
@@ -183,9 +183,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.FqdnServer == input.FqdnServer ||
-                    (this.FqdnServer != null &&
-                    this.FqdnServer.Equals(input.FqdnServer))
+                    this.FqSonicDnserver == input.FqSonicDnserver ||
+                    (this.FqSonicDnserver != null &&
+                    this.FqSonicDnserver.Equals(input.FqSonicDnserver))
                 ) && 
                 (
                     this.ServerIpUseMode == input.ServerIpUseMode ||
@@ -227,9 +227,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.FqdnServer != null)
+                if (this.FqSonicDnserver != null)
                 {
-                    hashCode = (hashCode * 59) + this.FqdnServer.GetHashCode();
+                    hashCode = (hashCode * 59) + this.FqSonicDnserver.GetHashCode();
                 }
                 hashCode = (hashCode * 59) + this.ServerIpUseMode.GetHashCode();
                 if (this.ServerIp != null)

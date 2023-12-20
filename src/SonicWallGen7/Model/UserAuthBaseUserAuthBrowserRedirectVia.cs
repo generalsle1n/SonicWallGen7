@@ -48,10 +48,10 @@ namespace SonicWallGen7.Model
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UserAuthBaseUserAuthBrowserRedirectVia" /> class
-        /// with the <see cref="UserAuthBaseAuthBrowserRedirectViaReverseDns" /> class
+        /// with the <see cref="UserAuthBaseAuthBrowserRedirectViaReverseSonicDns" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of UserAuthBaseAuthBrowserRedirectViaReverseDns.</param>
-        public UserAuthBaseUserAuthBrowserRedirectVia(UserAuthBaseAuthBrowserRedirectViaReverseDns actualInstance)
+        /// <param name="actualInstance">An instance of UserAuthBaseAuthBrowserRedirectViaReverseSonicDns.</param>
+        public UserAuthBaseUserAuthBrowserRedirectVia(UserAuthBaseAuthBrowserRedirectViaReverseSonicDns actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -108,13 +108,13 @@ namespace SonicWallGen7.Model
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(UserAuthBaseAuthBrowserRedirectViaReverseDns))
+                else if (value.GetType() == typeof(UserAuthBaseAuthBrowserRedirectViaReverseSonicDns))
                 {
                     this._actualInstance = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid instance found. Must be the following types: UserAuthBaseAuthBrowserRedirectViaHostName, UserAuthBaseAuthBrowserRedirectViaInterfaceIp, UserAuthBaseAuthBrowserRedirectViaNameFromCertificate, UserAuthBaseAuthBrowserRedirectViaReverseDns");
+                    throw new ArgumentException("Invalid instance found. Must be the following types: UserAuthBaseAuthBrowserRedirectViaHostName, UserAuthBaseAuthBrowserRedirectViaInterfaceIp, UserAuthBaseAuthBrowserRedirectViaNameFromCertificate, UserAuthBaseAuthBrowserRedirectViaReverseSonicDns");
                 }
             }
         }
@@ -130,13 +130,13 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Get the actual instance of `UserAuthBaseAuthBrowserRedirectViaReverseDns`. If the actual instance is not `UserAuthBaseAuthBrowserRedirectViaReverseDns`,
+        /// Get the actual instance of `UserAuthBaseAuthBrowserRedirectViaReverseSonicDns`. If the actual instance is not `UserAuthBaseAuthBrowserRedirectViaReverseSonicDns`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of UserAuthBaseAuthBrowserRedirectViaReverseDns</returns>
-        public UserAuthBaseAuthBrowserRedirectViaReverseDns GetUserAuthBaseAuthBrowserRedirectViaReverseDns()
+        /// <returns>An instance of UserAuthBaseAuthBrowserRedirectViaReverseSonicDns</returns>
+        public UserAuthBaseAuthBrowserRedirectViaReverseSonicDns GetUserAuthBaseAuthBrowserRedirectViaReverseSonicDns()
         {
-            return (UserAuthBaseAuthBrowserRedirectViaReverseDns)this.ActualInstance;
+            return (UserAuthBaseAuthBrowserRedirectViaReverseSonicDns)this.ActualInstance;
         }
 
         /// <summary>
@@ -260,21 +260,21 @@ namespace SonicWallGen7.Model
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(UserAuthBaseAuthBrowserRedirectViaReverseDns).GetProperty("AdditionalProperties") == null)
+                if (typeof(UserAuthBaseAuthBrowserRedirectViaReverseSonicDns).GetProperty("AdditionalProperties") == null)
                 {
-                    newUserAuthBaseUserAuthBrowserRedirectVia = new UserAuthBaseUserAuthBrowserRedirectVia(JsonConvert.DeserializeObject<UserAuthBaseAuthBrowserRedirectViaReverseDns>(jsonString, UserAuthBaseUserAuthBrowserRedirectVia.SerializerSettings));
+                    newUserAuthBaseUserAuthBrowserRedirectVia = new UserAuthBaseUserAuthBrowserRedirectVia(JsonConvert.DeserializeObject<UserAuthBaseAuthBrowserRedirectViaReverseSonicDns>(jsonString, UserAuthBaseUserAuthBrowserRedirectVia.SerializerSettings));
                 }
                 else
                 {
-                    newUserAuthBaseUserAuthBrowserRedirectVia = new UserAuthBaseUserAuthBrowserRedirectVia(JsonConvert.DeserializeObject<UserAuthBaseAuthBrowserRedirectViaReverseDns>(jsonString, UserAuthBaseUserAuthBrowserRedirectVia.AdditionalPropertiesSerializerSettings));
+                    newUserAuthBaseUserAuthBrowserRedirectVia = new UserAuthBaseUserAuthBrowserRedirectVia(JsonConvert.DeserializeObject<UserAuthBaseAuthBrowserRedirectViaReverseSonicDns>(jsonString, UserAuthBaseUserAuthBrowserRedirectVia.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("UserAuthBaseAuthBrowserRedirectViaReverseDns");
+                matchedTypes.Add("UserAuthBaseAuthBrowserRedirectViaReverseSonicDns");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into UserAuthBaseAuthBrowserRedirectViaReverseDns: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into UserAuthBaseAuthBrowserRedirectViaReverseSonicDns: {1}", jsonString, exception.ToString()));
             }
 
             if (match == 0)

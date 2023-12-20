@@ -27,24 +27,24 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// VpnDnsServerInherit
+    /// VpnSonicDnsServerInherit
     /// </summary>
-    [DataContract(Name = "vpn_dns_server_inherit")]
-    public partial class VpnDnsServerInherit : IEquatable<VpnDnsServerInherit>, IValidatableObject
+    [DataContract(Name = "vpn_SonicDns_server_inherit")]
+    public partial class VpnSonicDnsServerInherit : IEquatable<VpnSonicDnsServerInherit>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="VpnDnsServerInherit" /> class.
+        /// Initializes a new instance of the <see cref="VpnSonicDnsServerInherit" /> class.
         /// </summary>
-        /// <param name="inherit">Inherit DNS servers..</param>
-        public VpnDnsServerInherit(bool inherit = default(bool))
+        /// <param name="inherit">Inherit SonicDns servers..</param>
+        public VpnSonicDnsServerInherit(bool inherit = default(bool))
         {
             this.Inherit = inherit;
         }
 
         /// <summary>
-        /// Inherit DNS servers.
+        /// Inherit SonicDns servers.
         /// </summary>
-        /// <value>Inherit DNS servers.</value>
+        /// <value>Inherit SonicDns servers.</value>
         [DataMember(Name = "inherit", EmitDefaultValue = true)]
         public bool Inherit { get; set; }
 
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class VpnDnsServerInherit {\n");
+            sb.Append("class VpnSonicDnsServerInherit {\n");
             sb.Append("  Inherit: ").Append(Inherit).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as VpnDnsServerInherit);
+            return this.Equals(input as VpnSonicDnsServerInherit);
         }
 
         /// <summary>
-        /// Returns true if VpnDnsServerInherit instances are equal
+        /// Returns true if VpnSonicDnsServerInherit instances are equal
         /// </summary>
-        /// <param name="input">Instance of VpnDnsServerInherit to be compared</param>
+        /// <param name="input">Instance of VpnSonicDnsServerInherit to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(VpnDnsServerInherit input)
+        public bool Equals(VpnSonicDnsServerInherit input)
         {
             if (input == null)
             {

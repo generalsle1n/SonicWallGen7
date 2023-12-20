@@ -27,17 +27,17 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Set the split DNS entry server.
+    /// Set the split SonicDns entry server.
     /// </summary>
-    [DataContract(Name = "dns_split_entry_server")]
-    public partial class DnsSplitEntryServer : IEquatable<DnsSplitEntryServer>, IValidatableObject
+    [DataContract(Name = "SonicDns_split_entry_server")]
+    public partial class SonicDnsSplitEntryServer : IEquatable<SonicDnsSplitEntryServer>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntryServer" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntryServer" /> class.
         /// </summary>
         /// <param name="ipv4">ipv4.</param>
         /// <param name="ipv6">ipv6.</param>
-        public DnsSplitEntryServer(DnsSplitEntryServerIpv4 ipv4 = default(DnsSplitEntryServerIpv4), DnsSplitEntryServerIpv6 ipv6 = default(DnsSplitEntryServerIpv6))
+        public SonicDnsSplitEntryServer(SonicDnsSplitEntryServerIpv4 ipv4 = default(SonicDnsSplitEntryServerIpv4), SonicDnsSplitEntryServerIpv6 ipv6 = default(SonicDnsSplitEntryServerIpv6))
         {
             this.Ipv4 = ipv4;
             this.Ipv6 = ipv6;
@@ -47,13 +47,13 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Ipv4
         /// </summary>
         [DataMember(Name = "ipv4", EmitDefaultValue = false)]
-        public DnsSplitEntryServerIpv4 Ipv4 { get; set; }
+        public SonicDnsSplitEntryServerIpv4 Ipv4 { get; set; }
 
         /// <summary>
         /// Gets or Sets Ipv6
         /// </summary>
         [DataMember(Name = "ipv6", EmitDefaultValue = false)]
-        public DnsSplitEntryServerIpv6 Ipv6 { get; set; }
+        public SonicDnsSplitEntryServerIpv6 Ipv6 { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -62,7 +62,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSplitEntryServer {\n");
+            sb.Append("class SonicDnsSplitEntryServer {\n");
             sb.Append("  Ipv4: ").Append(Ipv4).Append("\n");
             sb.Append("  Ipv6: ").Append(Ipv6).Append("\n");
             sb.Append("}\n");
@@ -85,15 +85,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSplitEntryServer);
+            return this.Equals(input as SonicDnsSplitEntryServer);
         }
 
         /// <summary>
-        /// Returns true if DnsSplitEntryServer instances are equal
+        /// Returns true if SonicDnsSplitEntryServer instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSplitEntryServer to be compared</param>
+        /// <param name="input">Instance of SonicDnsSplitEntryServer to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSplitEntryServer input)
+        public bool Equals(SonicDnsSplitEntryServer input)
         {
             if (input == null)
             {

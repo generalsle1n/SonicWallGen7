@@ -27,24 +27,24 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect
+    /// DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect
     /// </summary>
-    [DataContract(Name = "dynamic_dns_profile_ipv4_profile_ipv4_online_settings_detect")]
-    public partial class DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect : IEquatable<DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect>, IValidatableObject
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv4_profile_ipv4_online_settings_detect")]
+    public partial class DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect : IEquatable<DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect" /> class.
         /// </summary>
-        /// <param name="detect">Let the dynamic DNS provider detect the IP address..</param>
-        public DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect(bool detect = default(bool))
+        /// <param name="detect">Let the dynamic SonicDns provider detect the IP address..</param>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect(bool detect = default(bool))
         {
             this.Detect = detect;
         }
 
         /// <summary>
-        /// Let the dynamic DNS provider detect the IP address.
+        /// Let the dynamic SonicDns provider detect the IP address.
         /// </summary>
-        /// <value>Let the dynamic DNS provider detect the IP address.</value>
+        /// <value>Let the dynamic SonicDns provider detect the IP address.</value>
         [DataMember(Name = "detect", EmitDefaultValue = true)]
         public bool Detect { get; set; }
 
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect {\n");
             sb.Append("  Detect: ").Append(Detect).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect);
+            return this.Equals(input as DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect input)
+        public bool Equals(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect input)
         {
             if (input == null)
             {

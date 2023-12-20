@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious
+    /// DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious
     /// </summary>
-    [DataContract(Name = "dynamic_dns_profile_ipv6_profile_ipv6_offline_settings_use_previous")]
-    public partial class DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious : IEquatable<DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious>, IValidatableObject
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv6_profile_ipv6_offline_settings_use_previous")]
+    public partial class DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious : IEquatable<DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious" /> class.
         /// </summary>
         /// <param name="usePrevious">Use the off-line IP address previously configured at the provider&#39;s site..</param>
-        public DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious(bool usePrevious = default(bool))
+        public DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious(bool usePrevious = default(bool))
         {
             this.UsePrevious = usePrevious;
         }
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious {\n");
             sb.Append("  UsePrevious: ").Append(UsePrevious).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious);
+            return this.Equals(input as DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious input)
+        public bool Equals(DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsUsePrevious input)
         {
             if (input == null)
             {

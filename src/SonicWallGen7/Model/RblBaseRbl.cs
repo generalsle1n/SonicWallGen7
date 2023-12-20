@@ -36,11 +36,11 @@ namespace SonicWallGen7.Model
         /// Initializes a new instance of the <see cref="RblBaseRbl" /> class.
         /// </summary>
         /// <param name="enable">Enable real-time blacklist blocking..</param>
-        /// <param name="dns">dns.</param>
-        public RblBaseRbl(bool enable = default(bool), RblBaseRblDns dns = default(RblBaseRblDns))
+        /// <param name="SonicDns">SonicDns.</param>
+        public RblBaseRbl(bool enable = default(bool), RblBaseRblSonicDns SonicDns = default(RblBaseRblSonicDns))
         {
             this.Enable = enable;
-            this.Dns = dns;
+            this.SonicDns = SonicDns;
         }
 
         /// <summary>
@@ -51,10 +51,10 @@ namespace SonicWallGen7.Model
         public bool Enable { get; set; }
 
         /// <summary>
-        /// Gets or Sets Dns
+        /// Gets or Sets SonicDns
         /// </summary>
-        [DataMember(Name = "dns", EmitDefaultValue = false)]
-        public RblBaseRblDns Dns { get; set; }
+        [DataMember(Name = "SonicDns", EmitDefaultValue = false)]
+        public RblBaseRblSonicDns SonicDns { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -65,7 +65,7 @@ namespace SonicWallGen7.Model
             StringBuilder sb = new StringBuilder();
             sb.Append("class RblBaseRbl {\n");
             sb.Append("  Enable: ").Append(Enable).Append("\n");
-            sb.Append("  Dns: ").Append(Dns).Append("\n");
+            sb.Append("  SonicDns: ").Append(SonicDns).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -106,9 +106,9 @@ namespace SonicWallGen7.Model
                     this.Enable.Equals(input.Enable)
                 ) && 
                 (
-                    this.Dns == input.Dns ||
-                    (this.Dns != null &&
-                    this.Dns.Equals(input.Dns))
+                    this.SonicDns == input.SonicDns ||
+                    (this.SonicDns != null &&
+                    this.SonicDns.Equals(input.SonicDns))
                 );
         }
 
@@ -122,9 +122,9 @@ namespace SonicWallGen7.Model
             {
                 int hashCode = 41;
                 hashCode = (hashCode * 59) + this.Enable.GetHashCode();
-                if (this.Dns != null)
+                if (this.SonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.Dns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDns.GetHashCode();
                 }
                 return hashCode;
             }

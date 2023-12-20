@@ -29,23 +29,23 @@ namespace SonicWallGen7.Model
     /// <summary>
     /// Advanced device settings to be used under direction of SonicWall support.
     /// </summary>
-    [DataContract(Name = "diag_advanced_dns_proxy_diag_advanced")]
-    public partial class DiagAdvancedDnsProxyDiagAdvanced : IEquatable<DiagAdvancedDnsProxyDiagAdvanced>, IValidatableObject
+    [DataContract(Name = "diag_advanced_SonicDns_proxy_diag_advanced")]
+    public partial class DiagAdvancedSonicDnsProxyDiagAdvanced : IEquatable<DiagAdvancedSonicDnsProxyDiagAdvanced>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDnsProxyDiagAdvanced" /> class.
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDnsProxyDiagAdvanced" /> class.
         /// </summary>
-        /// <param name="dnsProxy">dnsProxy.</param>
-        public DiagAdvancedDnsProxyDiagAdvanced(DiagAdvancedDnsProxyDiagAdvancedDnsProxy dnsProxy = default(DiagAdvancedDnsProxyDiagAdvancedDnsProxy))
+        /// <param name="SonicDnsProxy">SonicDnsProxy.</param>
+        public DiagAdvancedSonicDnsProxyDiagAdvanced(DiagAdvancedSonicDnsProxyDiagAdvancedSonicDnsProxy SonicDnsProxy = default(DiagAdvancedSonicDnsProxyDiagAdvancedSonicDnsProxy))
         {
-            this.DnsProxy = dnsProxy;
+            this.SonicDnsProxy = SonicDnsProxy;
         }
 
         /// <summary>
-        /// Gets or Sets DnsProxy
+        /// Gets or Sets SonicDnsProxy
         /// </summary>
-        [DataMember(Name = "dns_proxy", EmitDefaultValue = false)]
-        public DiagAdvancedDnsProxyDiagAdvancedDnsProxy DnsProxy { get; set; }
+        [DataMember(Name = "SonicDns_proxy", EmitDefaultValue = false)]
+        public DiagAdvancedSonicDnsProxyDiagAdvancedSonicDnsProxy SonicDnsProxy { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,8 +54,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DiagAdvancedDnsProxyDiagAdvanced {\n");
-            sb.Append("  DnsProxy: ").Append(DnsProxy).Append("\n");
+            sb.Append("class DiagAdvancedSonicDnsProxyDiagAdvanced {\n");
+            sb.Append("  SonicDnsProxy: ").Append(SonicDnsProxy).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DiagAdvancedDnsProxyDiagAdvanced);
+            return this.Equals(input as DiagAdvancedSonicDnsProxyDiagAdvanced);
         }
 
         /// <summary>
-        /// Returns true if DiagAdvancedDnsProxyDiagAdvanced instances are equal
+        /// Returns true if DiagAdvancedSonicDnsProxyDiagAdvanced instances are equal
         /// </summary>
-        /// <param name="input">Instance of DiagAdvancedDnsProxyDiagAdvanced to be compared</param>
+        /// <param name="input">Instance of DiagAdvancedSonicDnsProxyDiagAdvanced to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DiagAdvancedDnsProxyDiagAdvanced input)
+        public bool Equals(DiagAdvancedSonicDnsProxyDiagAdvanced input)
         {
             if (input == null)
             {
@@ -92,9 +92,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.DnsProxy == input.DnsProxy ||
-                    (this.DnsProxy != null &&
-                    this.DnsProxy.Equals(input.DnsProxy))
+                    this.SonicDnsProxy == input.SonicDnsProxy ||
+                    (this.SonicDnsProxy != null &&
+                    this.SonicDnsProxy.Equals(input.SonicDnsProxy))
                 );
         }
 
@@ -107,9 +107,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.DnsProxy != null)
+                if (this.SonicDnsProxy != null)
                 {
-                    hashCode = (hashCode * 59) + this.DnsProxy.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDnsProxy.GetHashCode();
                 }
                 return hashCode;
             }

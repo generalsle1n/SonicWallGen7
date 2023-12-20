@@ -28,18 +28,18 @@ using System.Reflection;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS configuration.
+    /// SonicDns configuration.
     /// </summary>
-    [JsonConverter(typeof(RblBaseRblDnsJsonConverter))]
-    [DataContract(Name = "rbl_base_rbl_dns")]
-    public partial class RblBaseRblDns : AbstractOpenAPISchema, IEquatable<RblBaseRblDns>, IValidatableObject
+    [JsonConverter(typeof(RblBaseRblSonicDnsJsonConverter))]
+    [DataContract(Name = "rbl_base_rbl_SonicDns")]
+    public partial class RblBaseRblSonicDns : AbstractOpenAPISchema, IEquatable<RblBaseRblSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="RblBaseRblDns" /> class
-        /// with the <see cref="RblBaseDnsInherit" /> class
+        /// Initializes a new instance of the <see cref="RblBaseRblSonicDns" /> class
+        /// with the <see cref="RblBaseSonicDnsInherit" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of RblBaseDnsInherit.</param>
-        public RblBaseRblDns(RblBaseDnsInherit actualInstance)
+        /// <param name="actualInstance">An instance of RblBaseSonicDnsInherit.</param>
+        public RblBaseRblSonicDns(RblBaseSonicDnsInherit actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -47,11 +47,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="RblBaseRblDns" /> class
-        /// with the <see cref="RblBaseDnsStatic" /> class
+        /// Initializes a new instance of the <see cref="RblBaseRblSonicDns" /> class
+        /// with the <see cref="RblBaseSonicDnsStatic" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of RblBaseDnsStatic.</param>
-        public RblBaseRblDns(RblBaseDnsStatic actualInstance)
+        /// <param name="actualInstance">An instance of RblBaseSonicDnsStatic.</param>
+        public RblBaseRblSonicDns(RblBaseSonicDnsStatic actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -72,39 +72,39 @@ namespace SonicWallGen7.Model
             }
             set
             {
-                if (value.GetType() == typeof(RblBaseDnsInherit))
+                if (value.GetType() == typeof(RblBaseSonicDnsInherit))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(RblBaseDnsStatic))
+                else if (value.GetType() == typeof(RblBaseSonicDnsStatic))
                 {
                     this._actualInstance = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid instance found. Must be the following types: RblBaseDnsInherit, RblBaseDnsStatic");
+                    throw new ArgumentException("Invalid instance found. Must be the following types: RblBaseSonicDnsInherit, RblBaseSonicDnsStatic");
                 }
             }
         }
 
         /// <summary>
-        /// Get the actual instance of `RblBaseDnsInherit`. If the actual instance is not `RblBaseDnsInherit`,
+        /// Get the actual instance of `RblBaseSonicDnsInherit`. If the actual instance is not `RblBaseSonicDnsInherit`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of RblBaseDnsInherit</returns>
-        public RblBaseDnsInherit GetRblBaseDnsInherit()
+        /// <returns>An instance of RblBaseSonicDnsInherit</returns>
+        public RblBaseSonicDnsInherit GetRblBaseSonicDnsInherit()
         {
-            return (RblBaseDnsInherit)this.ActualInstance;
+            return (RblBaseSonicDnsInherit)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `RblBaseDnsStatic`. If the actual instance is not `RblBaseDnsStatic`,
+        /// Get the actual instance of `RblBaseSonicDnsStatic`. If the actual instance is not `RblBaseSonicDnsStatic`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of RblBaseDnsStatic</returns>
-        public RblBaseDnsStatic GetRblBaseDnsStatic()
+        /// <returns>An instance of RblBaseSonicDnsStatic</returns>
+        public RblBaseSonicDnsStatic GetRblBaseSonicDnsStatic()
         {
-            return (RblBaseDnsStatic)this.ActualInstance;
+            return (RblBaseSonicDnsStatic)this.ActualInstance;
         }
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class RblBaseRblDns {\n");
+            sb.Append("class RblBaseRblSonicDns {\n");
             sb.Append("  ActualInstance: ").Append(this.ActualInstance).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -126,21 +126,21 @@ namespace SonicWallGen7.Model
         /// <returns>JSON string presentation of the object</returns>
         public override string ToJson()
         {
-            return JsonConvert.SerializeObject(this.ActualInstance, RblBaseRblDns.SerializerSettings);
+            return JsonConvert.SerializeObject(this.ActualInstance, RblBaseRblSonicDns.SerializerSettings);
         }
 
         /// <summary>
-        /// Converts the JSON string into an instance of RblBaseRblDns
+        /// Converts the JSON string into an instance of RblBaseRblSonicDns
         /// </summary>
         /// <param name="jsonString">JSON string</param>
-        /// <returns>An instance of RblBaseRblDns</returns>
-        public static RblBaseRblDns FromJson(string jsonString)
+        /// <returns>An instance of RblBaseRblSonicDns</returns>
+        public static RblBaseRblSonicDns FromJson(string jsonString)
         {
-            RblBaseRblDns newRblBaseRblDns = null;
+            RblBaseRblSonicDns newRblBaseRblSonicDns = null;
 
             if (string.IsNullOrEmpty(jsonString))
             {
-                return newRblBaseRblDns;
+                return newRblBaseRblSonicDns;
             }
             int match = 0;
             List<string> matchedTypes = new List<string>();
@@ -148,41 +148,41 @@ namespace SonicWallGen7.Model
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(RblBaseDnsInherit).GetProperty("AdditionalProperties") == null)
+                if (typeof(RblBaseSonicDnsInherit).GetProperty("AdditionalProperties") == null)
                 {
-                    newRblBaseRblDns = new RblBaseRblDns(JsonConvert.DeserializeObject<RblBaseDnsInherit>(jsonString, RblBaseRblDns.SerializerSettings));
+                    newRblBaseRblSonicDns = new RblBaseRblSonicDns(JsonConvert.DeserializeObject<RblBaseSonicDnsInherit>(jsonString, RblBaseRblSonicDns.SerializerSettings));
                 }
                 else
                 {
-                    newRblBaseRblDns = new RblBaseRblDns(JsonConvert.DeserializeObject<RblBaseDnsInherit>(jsonString, RblBaseRblDns.AdditionalPropertiesSerializerSettings));
+                    newRblBaseRblSonicDns = new RblBaseRblSonicDns(JsonConvert.DeserializeObject<RblBaseSonicDnsInherit>(jsonString, RblBaseRblSonicDns.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("RblBaseDnsInherit");
+                matchedTypes.Add("RblBaseSonicDnsInherit");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into RblBaseDnsInherit: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into RblBaseSonicDnsInherit: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(RblBaseDnsStatic).GetProperty("AdditionalProperties") == null)
+                if (typeof(RblBaseSonicDnsStatic).GetProperty("AdditionalProperties") == null)
                 {
-                    newRblBaseRblDns = new RblBaseRblDns(JsonConvert.DeserializeObject<RblBaseDnsStatic>(jsonString, RblBaseRblDns.SerializerSettings));
+                    newRblBaseRblSonicDns = new RblBaseRblSonicDns(JsonConvert.DeserializeObject<RblBaseSonicDnsStatic>(jsonString, RblBaseRblSonicDns.SerializerSettings));
                 }
                 else
                 {
-                    newRblBaseRblDns = new RblBaseRblDns(JsonConvert.DeserializeObject<RblBaseDnsStatic>(jsonString, RblBaseRblDns.AdditionalPropertiesSerializerSettings));
+                    newRblBaseRblSonicDns = new RblBaseRblSonicDns(JsonConvert.DeserializeObject<RblBaseSonicDnsStatic>(jsonString, RblBaseRblSonicDns.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("RblBaseDnsStatic");
+                matchedTypes.Add("RblBaseSonicDnsStatic");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into RblBaseDnsStatic: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into RblBaseSonicDnsStatic: {1}", jsonString, exception.ToString()));
             }
 
             if (match == 0)
@@ -195,7 +195,7 @@ namespace SonicWallGen7.Model
             }
 
             // deserialization is considered successful at this point if no exception has been thrown.
-            return newRblBaseRblDns;
+            return newRblBaseRblSonicDns;
         }
 
         /// <summary>
@@ -205,15 +205,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as RblBaseRblDns);
+            return this.Equals(input as RblBaseRblSonicDns);
         }
 
         /// <summary>
-        /// Returns true if RblBaseRblDns instances are equal
+        /// Returns true if RblBaseRblSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of RblBaseRblDns to be compared</param>
+        /// <param name="input">Instance of RblBaseRblSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(RblBaseRblDns input)
+        public bool Equals(RblBaseRblSonicDns input)
         {
             if (input == null)
                 return false;
@@ -248,9 +248,9 @@ namespace SonicWallGen7.Model
     }
 
     /// <summary>
-    /// Custom JSON converter for RblBaseRblDns
+    /// Custom JSON converter for RblBaseRblSonicDns
     /// </summary>
-    public class RblBaseRblDnsJsonConverter : JsonConverter
+    public class RblBaseRblSonicDnsJsonConverter : JsonConverter
     {
         /// <summary>
         /// To write the JSON string
@@ -260,7 +260,7 @@ namespace SonicWallGen7.Model
         /// <param name="serializer">JSON Serializer</param>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            writer.WriteRawValue((string)(typeof(RblBaseRblDns).GetMethod("ToJson").Invoke(value, null)));
+            writer.WriteRawValue((string)(typeof(RblBaseRblSonicDns).GetMethod("ToJson").Invoke(value, null)));
         }
 
         /// <summary>
@@ -275,7 +275,7 @@ namespace SonicWallGen7.Model
         {
             if(reader.TokenType != JsonToken.Null)
             {
-                return RblBaseRblDns.FromJson(JObject.Load(reader).ToString(Formatting.None));
+                return RblBaseRblSonicDns.FromJson(JObject.Load(reader).ToString(Formatting.None));
             }
             return null;
         }

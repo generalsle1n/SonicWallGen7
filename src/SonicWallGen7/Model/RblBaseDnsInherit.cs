@@ -27,24 +27,24 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// RblBaseDnsInherit
+    /// RblBaseSonicDnsInherit
     /// </summary>
-    [DataContract(Name = "rbl_base_dns_inherit")]
-    public partial class RblBaseDnsInherit : IEquatable<RblBaseDnsInherit>, IValidatableObject
+    [DataContract(Name = "rbl_base_SonicDns_inherit")]
+    public partial class RblBaseSonicDnsInherit : IEquatable<RblBaseSonicDnsInherit>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="RblBaseDnsInherit" /> class.
+        /// Initializes a new instance of the <see cref="RblBaseSonicDnsInherit" /> class.
         /// </summary>
-        /// <param name="inherit">Inherit DNS servers..</param>
-        public RblBaseDnsInherit(bool inherit = default(bool))
+        /// <param name="inherit">Inherit SonicDns servers..</param>
+        public RblBaseSonicDnsInherit(bool inherit = default(bool))
         {
             this.Inherit = inherit;
         }
 
         /// <summary>
-        /// Inherit DNS servers.
+        /// Inherit SonicDns servers.
         /// </summary>
-        /// <value>Inherit DNS servers.</value>
+        /// <value>Inherit SonicDns servers.</value>
         [DataMember(Name = "inherit", EmitDefaultValue = true)]
         public bool Inherit { get; set; }
 
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class RblBaseDnsInherit {\n");
+            sb.Append("class RblBaseSonicDnsInherit {\n");
             sb.Append("  Inherit: ").Append(Inherit).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as RblBaseDnsInherit);
+            return this.Equals(input as RblBaseSonicDnsInherit);
         }
 
         /// <summary>
-        /// Returns true if RblBaseDnsInherit instances are equal
+        /// Returns true if RblBaseSonicDnsInherit instances are equal
         /// </summary>
-        /// <param name="input">Instance of RblBaseDnsInherit to be compared</param>
+        /// <param name="input">Instance of RblBaseSonicDnsInherit to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(RblBaseDnsInherit input)
+        public bool Equals(RblBaseSonicDnsInherit input)
         {
             if (input == null)
             {

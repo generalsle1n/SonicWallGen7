@@ -30,16 +30,16 @@ namespace SonicWallGen7.Model
     /// <summary>
     /// Specify the domains for which checking is not done.
     /// </summary>
-    [JsonConverter(typeof(DnsDnsRebindingAllowedDomainsJsonConverter))]
-    [DataContract(Name = "dns_dns_rebinding_allowed_domains")]
-    public partial class DnsDnsRebindingAllowedDomains : AbstractOpenAPISchema, IEquatable<DnsDnsRebindingAllowedDomains>, IValidatableObject
+    [JsonConverter(typeof(SonicDnsSonicDnsRebindingAllowedDomainsJsonConverter))]
+    [DataContract(Name = "SonicDns_SonicDns_rebinding_allowed_domains")]
+    public partial class SonicDnsSonicDnsRebindingAllowedDomains : AbstractOpenAPISchema, IEquatable<SonicDnsSonicDnsRebindingAllowedDomains>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsDnsRebindingAllowedDomains" /> class
-        /// with the <see cref="DnsRebindingAllowedDomainsName" /> class
+        /// Initializes a new instance of the <see cref="SonicDnsSonicDnsRebindingAllowedDomains" /> class
+        /// with the <see cref="SonicDnsRebindingAllowedDomainsName" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DnsRebindingAllowedDomainsName.</param>
-        public DnsDnsRebindingAllowedDomains(DnsRebindingAllowedDomainsName actualInstance)
+        /// <param name="actualInstance">An instance of SonicDnsRebindingAllowedDomainsName.</param>
+        public SonicDnsSonicDnsRebindingAllowedDomains(SonicDnsRebindingAllowedDomainsName actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -47,11 +47,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsDnsRebindingAllowedDomains" /> class
-        /// with the <see cref="DnsRebindingAllowedDomainsGroup" /> class
+        /// Initializes a new instance of the <see cref="SonicDnsSonicDnsRebindingAllowedDomains" /> class
+        /// with the <see cref="SonicDnsRebindingAllowedDomainsGroup" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DnsRebindingAllowedDomainsGroup.</param>
-        public DnsDnsRebindingAllowedDomains(DnsRebindingAllowedDomainsGroup actualInstance)
+        /// <param name="actualInstance">An instance of SonicDnsRebindingAllowedDomainsGroup.</param>
+        public SonicDnsSonicDnsRebindingAllowedDomains(SonicDnsRebindingAllowedDomainsGroup actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -72,39 +72,39 @@ namespace SonicWallGen7.Model
             }
             set
             {
-                if (value.GetType() == typeof(DnsRebindingAllowedDomainsGroup))
+                if (value.GetType() == typeof(SonicDnsRebindingAllowedDomainsGroup))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(DnsRebindingAllowedDomainsName))
+                else if (value.GetType() == typeof(SonicDnsRebindingAllowedDomainsName))
                 {
                     this._actualInstance = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid instance found. Must be the following types: DnsRebindingAllowedDomainsGroup, DnsRebindingAllowedDomainsName");
+                    throw new ArgumentException("Invalid instance found. Must be the following types: SonicDnsRebindingAllowedDomainsGroup, SonicDnsRebindingAllowedDomainsName");
                 }
             }
         }
 
         /// <summary>
-        /// Get the actual instance of `DnsRebindingAllowedDomainsName`. If the actual instance is not `DnsRebindingAllowedDomainsName`,
+        /// Get the actual instance of `SonicDnsRebindingAllowedDomainsName`. If the actual instance is not `SonicDnsRebindingAllowedDomainsName`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DnsRebindingAllowedDomainsName</returns>
-        public DnsRebindingAllowedDomainsName GetDnsRebindingAllowedDomainsName()
+        /// <returns>An instance of SonicDnsRebindingAllowedDomainsName</returns>
+        public SonicDnsRebindingAllowedDomainsName GetSonicDnsRebindingAllowedDomainsName()
         {
-            return (DnsRebindingAllowedDomainsName)this.ActualInstance;
+            return (SonicDnsRebindingAllowedDomainsName)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `DnsRebindingAllowedDomainsGroup`. If the actual instance is not `DnsRebindingAllowedDomainsGroup`,
+        /// Get the actual instance of `SonicDnsRebindingAllowedDomainsGroup`. If the actual instance is not `SonicDnsRebindingAllowedDomainsGroup`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DnsRebindingAllowedDomainsGroup</returns>
-        public DnsRebindingAllowedDomainsGroup GetDnsRebindingAllowedDomainsGroup()
+        /// <returns>An instance of SonicDnsRebindingAllowedDomainsGroup</returns>
+        public SonicDnsRebindingAllowedDomainsGroup GetSonicDnsRebindingAllowedDomainsGroup()
         {
-            return (DnsRebindingAllowedDomainsGroup)this.ActualInstance;
+            return (SonicDnsRebindingAllowedDomainsGroup)this.ActualInstance;
         }
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class DnsDnsRebindingAllowedDomains {\n");
+            sb.Append("class SonicDnsSonicDnsRebindingAllowedDomains {\n");
             sb.Append("  ActualInstance: ").Append(this.ActualInstance).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -126,21 +126,21 @@ namespace SonicWallGen7.Model
         /// <returns>JSON string presentation of the object</returns>
         public override string ToJson()
         {
-            return JsonConvert.SerializeObject(this.ActualInstance, DnsDnsRebindingAllowedDomains.SerializerSettings);
+            return JsonConvert.SerializeObject(this.ActualInstance, SonicDnsSonicDnsRebindingAllowedDomains.SerializerSettings);
         }
 
         /// <summary>
-        /// Converts the JSON string into an instance of DnsDnsRebindingAllowedDomains
+        /// Converts the JSON string into an instance of SonicDnsSonicDnsRebindingAllowedDomains
         /// </summary>
         /// <param name="jsonString">JSON string</param>
-        /// <returns>An instance of DnsDnsRebindingAllowedDomains</returns>
-        public static DnsDnsRebindingAllowedDomains FromJson(string jsonString)
+        /// <returns>An instance of SonicDnsSonicDnsRebindingAllowedDomains</returns>
+        public static SonicDnsSonicDnsRebindingAllowedDomains FromJson(string jsonString)
         {
-            DnsDnsRebindingAllowedDomains newDnsDnsRebindingAllowedDomains = null;
+            SonicDnsSonicDnsRebindingAllowedDomains newSonicDnsSonicDnsRebindingAllowedDomains = null;
 
             if (string.IsNullOrEmpty(jsonString))
             {
-                return newDnsDnsRebindingAllowedDomains;
+                return newSonicDnsSonicDnsRebindingAllowedDomains;
             }
             int match = 0;
             List<string> matchedTypes = new List<string>();
@@ -148,41 +148,41 @@ namespace SonicWallGen7.Model
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DnsRebindingAllowedDomainsGroup).GetProperty("AdditionalProperties") == null)
+                if (typeof(SonicDnsRebindingAllowedDomainsGroup).GetProperty("AdditionalProperties") == null)
                 {
-                    newDnsDnsRebindingAllowedDomains = new DnsDnsRebindingAllowedDomains(JsonConvert.DeserializeObject<DnsRebindingAllowedDomainsGroup>(jsonString, DnsDnsRebindingAllowedDomains.SerializerSettings));
+                    newSonicDnsSonicDnsRebindingAllowedDomains = new SonicDnsSonicDnsRebindingAllowedDomains(JsonConvert.DeserializeObject<SonicDnsRebindingAllowedDomainsGroup>(jsonString, SonicDnsSonicDnsRebindingAllowedDomains.SerializerSettings));
                 }
                 else
                 {
-                    newDnsDnsRebindingAllowedDomains = new DnsDnsRebindingAllowedDomains(JsonConvert.DeserializeObject<DnsRebindingAllowedDomainsGroup>(jsonString, DnsDnsRebindingAllowedDomains.AdditionalPropertiesSerializerSettings));
+                    newSonicDnsSonicDnsRebindingAllowedDomains = new SonicDnsSonicDnsRebindingAllowedDomains(JsonConvert.DeserializeObject<SonicDnsRebindingAllowedDomainsGroup>(jsonString, SonicDnsSonicDnsRebindingAllowedDomains.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DnsRebindingAllowedDomainsGroup");
+                matchedTypes.Add("SonicDnsRebindingAllowedDomainsGroup");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DnsRebindingAllowedDomainsGroup: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into SonicDnsRebindingAllowedDomainsGroup: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DnsRebindingAllowedDomainsName).GetProperty("AdditionalProperties") == null)
+                if (typeof(SonicDnsRebindingAllowedDomainsName).GetProperty("AdditionalProperties") == null)
                 {
-                    newDnsDnsRebindingAllowedDomains = new DnsDnsRebindingAllowedDomains(JsonConvert.DeserializeObject<DnsRebindingAllowedDomainsName>(jsonString, DnsDnsRebindingAllowedDomains.SerializerSettings));
+                    newSonicDnsSonicDnsRebindingAllowedDomains = new SonicDnsSonicDnsRebindingAllowedDomains(JsonConvert.DeserializeObject<SonicDnsRebindingAllowedDomainsName>(jsonString, SonicDnsSonicDnsRebindingAllowedDomains.SerializerSettings));
                 }
                 else
                 {
-                    newDnsDnsRebindingAllowedDomains = new DnsDnsRebindingAllowedDomains(JsonConvert.DeserializeObject<DnsRebindingAllowedDomainsName>(jsonString, DnsDnsRebindingAllowedDomains.AdditionalPropertiesSerializerSettings));
+                    newSonicDnsSonicDnsRebindingAllowedDomains = new SonicDnsSonicDnsRebindingAllowedDomains(JsonConvert.DeserializeObject<SonicDnsRebindingAllowedDomainsName>(jsonString, SonicDnsSonicDnsRebindingAllowedDomains.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DnsRebindingAllowedDomainsName");
+                matchedTypes.Add("SonicDnsRebindingAllowedDomainsName");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DnsRebindingAllowedDomainsName: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into SonicDnsRebindingAllowedDomainsName: {1}", jsonString, exception.ToString()));
             }
 
             if (match == 0)
@@ -195,7 +195,7 @@ namespace SonicWallGen7.Model
             }
 
             // deserialization is considered successful at this point if no exception has been thrown.
-            return newDnsDnsRebindingAllowedDomains;
+            return newSonicDnsSonicDnsRebindingAllowedDomains;
         }
 
         /// <summary>
@@ -205,15 +205,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsDnsRebindingAllowedDomains);
+            return this.Equals(input as SonicDnsSonicDnsRebindingAllowedDomains);
         }
 
         /// <summary>
-        /// Returns true if DnsDnsRebindingAllowedDomains instances are equal
+        /// Returns true if SonicDnsSonicDnsRebindingAllowedDomains instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsDnsRebindingAllowedDomains to be compared</param>
+        /// <param name="input">Instance of SonicDnsSonicDnsRebindingAllowedDomains to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsDnsRebindingAllowedDomains input)
+        public bool Equals(SonicDnsSonicDnsRebindingAllowedDomains input)
         {
             if (input == null)
                 return false;
@@ -248,9 +248,9 @@ namespace SonicWallGen7.Model
     }
 
     /// <summary>
-    /// Custom JSON converter for DnsDnsRebindingAllowedDomains
+    /// Custom JSON converter for SonicDnsSonicDnsRebindingAllowedDomains
     /// </summary>
-    public class DnsDnsRebindingAllowedDomainsJsonConverter : JsonConverter
+    public class SonicDnsSonicDnsRebindingAllowedDomainsJsonConverter : JsonConverter
     {
         /// <summary>
         /// To write the JSON string
@@ -260,7 +260,7 @@ namespace SonicWallGen7.Model
         /// <param name="serializer">JSON Serializer</param>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            writer.WriteRawValue((string)(typeof(DnsDnsRebindingAllowedDomains).GetMethod("ToJson").Invoke(value, null)));
+            writer.WriteRawValue((string)(typeof(SonicDnsSonicDnsRebindingAllowedDomains).GetMethod("ToJson").Invoke(value, null)));
         }
 
         /// <summary>
@@ -275,7 +275,7 @@ namespace SonicWallGen7.Model
         {
             if(reader.TokenType != JsonToken.Null)
             {
-                return DnsDnsRebindingAllowedDomains.FromJson(JObject.Load(reader).ToString(Formatting.None));
+                return SonicDnsSonicDnsRebindingAllowedDomains.FromJson(JObject.Load(reader).ToString(Formatting.None));
             }
             return null;
         }

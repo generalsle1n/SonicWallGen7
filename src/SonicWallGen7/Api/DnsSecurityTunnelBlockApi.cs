@@ -24,96 +24,96 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSecurityTunnelBlockApiSync : IApiAccessor
+    public interface ISonicDnsSecurityTunnelBlockApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Disable the operation of block DNS traffic for detected client per demand.
+        /// Disable the operation of block SonicDns traffic for detected client per demand.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsSecurityDnsTunnelBlockIPDelete(string IP, int operationIndex = 0);
+        ApiStatus SonicDnsSecuritySonicDnsTunnelBlockIPDelete(string IP, int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Disable the operation of block DNS traffic for detected client per demand.
+        /// Disable the operation of block SonicDns traffic for detected client per demand.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsSecurityDnsTunnelBlockIPDeleteWithHttpInfo(string IP, int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsSecuritySonicDnsTunnelBlockIPDeleteWithHttpInfo(string IP, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Block DNS traffic for detected client per demand.
+        /// Block SonicDns traffic for detected client per demand.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsSecurityDnsTunnelBlockIPPost(string IP, Object? body = default(Object?), int operationIndex = 0);
+        ApiStatus SonicDnsSecuritySonicDnsTunnelBlockIPPost(string IP, Object? body = default(Object?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Block DNS traffic for detected client per demand.
+        /// Block SonicDns traffic for detected client per demand.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsSecurityDnsTunnelBlockIPPostWithHttpInfo(string IP, Object? body = default(Object?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsSecuritySonicDnsTunnelBlockIPPostWithHttpInfo(string IP, Object? body = default(Object?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSecurityTunnelBlockApiAsync : IApiAccessor
+    public interface ISonicDnsSecurityTunnelBlockApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Disable the operation of block DNS traffic for detected client per demand.
+        /// Disable the operation of block SonicDns traffic for detected client per demand.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsSecurityDnsTunnelBlockIPDeleteAsync(string IP, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsSecuritySonicDnsTunnelBlockIPDeleteAsync(string IP, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Disable the operation of block DNS traffic for detected client per demand.
+        /// Disable the operation of block SonicDns traffic for detected client per demand.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsSecurityDnsTunnelBlockIPDeleteWithHttpInfoAsync(string IP, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsSecuritySonicDnsTunnelBlockIPDeleteWithHttpInfoAsync(string IP, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Block DNS traffic for detected client per demand.
+        /// Block SonicDns traffic for detected client per demand.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
@@ -121,13 +121,13 @@ namespace SonicWallGen7.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsSecurityDnsTunnelBlockIPPostAsync(string IP, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsSecuritySonicDnsTunnelBlockIPPostAsync(string IP, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Block DNS traffic for detected client per demand.
+        /// Block SonicDns traffic for detected client per demand.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
@@ -135,14 +135,14 @@ namespace SonicWallGen7.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsSecurityDnsTunnelBlockIPPostWithHttpInfoAsync(string IP, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsSecuritySonicDnsTunnelBlockIPPostWithHttpInfoAsync(string IP, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSecurityTunnelBlockApi : IDnsSecurityTunnelBlockApiSync, IDnsSecurityTunnelBlockApiAsync
+    public interface ISonicDnsSecurityTunnelBlockApi : ISonicDnsSecurityTunnelBlockApiSync, ISonicDnsSecurityTunnelBlockApiAsync
     {
 
     }
@@ -150,23 +150,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DnsSecurityTunnelBlockApi : IDnsSecurityTunnelBlockApi
+    public partial class SonicDnsSecurityTunnelBlockApi : ISonicDnsSecurityTunnelBlockApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecurityTunnelBlockApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecurityTunnelBlockApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsSecurityTunnelBlockApi() : this((string)null)
+        public SonicDnsSecurityTunnelBlockApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecurityTunnelBlockApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecurityTunnelBlockApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsSecurityTunnelBlockApi(string basePath)
+        public SonicDnsSecurityTunnelBlockApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -178,12 +178,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecurityTunnelBlockApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsSecurityTunnelBlockApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DnsSecurityTunnelBlockApi(SonicWallGen7.Client.Configuration configuration)
+        public SonicDnsSecurityTunnelBlockApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -197,13 +197,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecurityTunnelBlockApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsSecurityTunnelBlockApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DnsSecurityTunnelBlockApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicDnsSecurityTunnelBlockApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -257,31 +257,31 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Disable the operation of block DNS traffic for detected client per demand.
+        ///  Disable the operation of block SonicDns traffic for detected client per demand.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsSecurityDnsTunnelBlockIPDelete(string IP, int operationIndex = 0)
+        public ApiStatus SonicDnsSecuritySonicDnsTunnelBlockIPDelete(string IP, int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsSecurityDnsTunnelBlockIPDeleteWithHttpInfo(IP);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsSecuritySonicDnsTunnelBlockIPDeleteWithHttpInfo(IP);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Disable the operation of block DNS traffic for detected client per demand.
+        ///  Disable the operation of block SonicDns traffic for detected client per demand.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsSecurityDnsTunnelBlockIPDeleteWithHttpInfo(string IP, int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsSecuritySonicDnsTunnelBlockIPDeleteWithHttpInfo(string IP, int operationIndex = 0)
         {
             // verify the required parameter 'IP' is set
             if (IP == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'IP' when calling DnsSecurityTunnelBlockApi->DnsSecurityDnsTunnelBlockIPDelete");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'IP' when calling SonicDnsSecurityTunnelBlockApi->SonicDnsSecuritySonicDnsTunnelBlockIPDelete");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -308,7 +308,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("IP", SonicWallGen7.Client.ClientUtils.ParameterToString(IP)); // path parameter
 
-            localVarRequestOptions.Operation = "DnsSecurityTunnelBlockApi.DnsSecurityDnsTunnelBlockIPDelete";
+            localVarRequestOptions.Operation = "SonicDnsSecurityTunnelBlockApi.SonicDnsSecuritySonicDnsTunnelBlockIPDelete";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -319,10 +319,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Delete<ApiStatus>("/dns-security/dns-tunnel/block/{IP}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Delete<ApiStatus>("/SonicDns-security/SonicDns-tunnel/block/{IP}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsTunnelBlockIPDelete", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsTunnelBlockIPDelete", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -333,33 +333,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Disable the operation of block DNS traffic for detected client per demand.
+        ///  Disable the operation of block SonicDns traffic for detected client per demand.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsSecurityDnsTunnelBlockIPDeleteAsync(string IP, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsSecuritySonicDnsTunnelBlockIPDeleteAsync(string IP, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsSecurityDnsTunnelBlockIPDeleteWithHttpInfoAsync(IP, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsSecuritySonicDnsTunnelBlockIPDeleteWithHttpInfoAsync(IP, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Disable the operation of block DNS traffic for detected client per demand.
+        ///  Disable the operation of block SonicDns traffic for detected client per demand.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsSecurityDnsTunnelBlockIPDeleteWithHttpInfoAsync(string IP, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsSecuritySonicDnsTunnelBlockIPDeleteWithHttpInfoAsync(string IP, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'IP' is set
             if (IP == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'IP' when calling DnsSecurityTunnelBlockApi->DnsSecurityDnsTunnelBlockIPDelete");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'IP' when calling SonicDnsSecurityTunnelBlockApi->SonicDnsSecuritySonicDnsTunnelBlockIPDelete");
             }
 
 
@@ -387,7 +387,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("IP", SonicWallGen7.Client.ClientUtils.ParameterToString(IP)); // path parameter
 
-            localVarRequestOptions.Operation = "DnsSecurityTunnelBlockApi.DnsSecurityDnsTunnelBlockIPDelete";
+            localVarRequestOptions.Operation = "SonicDnsSecurityTunnelBlockApi.SonicDnsSecuritySonicDnsTunnelBlockIPDelete";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -398,11 +398,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.DeleteAsync<ApiStatus>("/dns-security/dns-tunnel/block/{IP}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.DeleteAsync<ApiStatus>("/SonicDns-security/SonicDns-tunnel/block/{IP}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsTunnelBlockIPDelete", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsTunnelBlockIPDelete", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -413,33 +413,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Block DNS traffic for detected client per demand.
+        ///  Block SonicDns traffic for detected client per demand.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsSecurityDnsTunnelBlockIPPost(string IP, Object? body = default(Object?), int operationIndex = 0)
+        public ApiStatus SonicDnsSecuritySonicDnsTunnelBlockIPPost(string IP, Object? body = default(Object?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsSecurityDnsTunnelBlockIPPostWithHttpInfo(IP, body);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsSecuritySonicDnsTunnelBlockIPPostWithHttpInfo(IP, body);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Block DNS traffic for detected client per demand.
+        ///  Block SonicDns traffic for detected client per demand.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsSecurityDnsTunnelBlockIPPostWithHttpInfo(string IP, Object? body = default(Object?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsSecuritySonicDnsTunnelBlockIPPostWithHttpInfo(string IP, Object? body = default(Object?), int operationIndex = 0)
         {
             // verify the required parameter 'IP' is set
             if (IP == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'IP' when calling DnsSecurityTunnelBlockApi->DnsSecurityDnsTunnelBlockIPPost");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'IP' when calling SonicDnsSecurityTunnelBlockApi->SonicDnsSecuritySonicDnsTunnelBlockIPPost");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -468,7 +468,7 @@ namespace SonicWallGen7.Api
             localVarRequestOptions.PathParameters.Add("IP", SonicWallGen7.Client.ClientUtils.ParameterToString(IP)); // path parameter
             localVarRequestOptions.Data = body;
 
-            localVarRequestOptions.Operation = "DnsSecurityTunnelBlockApi.DnsSecurityDnsTunnelBlockIPPost";
+            localVarRequestOptions.Operation = "SonicDnsSecurityTunnelBlockApi.SonicDnsSecuritySonicDnsTunnelBlockIPPost";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -479,10 +479,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<ApiStatus>("/dns-security/dns-tunnel/block/{IP}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<ApiStatus>("/SonicDns-security/SonicDns-tunnel/block/{IP}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsTunnelBlockIPPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsTunnelBlockIPPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -493,7 +493,7 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Block DNS traffic for detected client per demand.
+        ///  Block SonicDns traffic for detected client per demand.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
@@ -501,14 +501,14 @@ namespace SonicWallGen7.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsSecurityDnsTunnelBlockIPPostAsync(string IP, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsSecuritySonicDnsTunnelBlockIPPostAsync(string IP, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsSecurityDnsTunnelBlockIPPostWithHttpInfoAsync(IP, body, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsSecuritySonicDnsTunnelBlockIPPostWithHttpInfoAsync(IP, body, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Block DNS traffic for detected client per demand.
+        ///  Block SonicDns traffic for detected client per demand.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="IP">IPV4 Address in the form: a.b.c.d</param>
@@ -516,12 +516,12 @@ namespace SonicWallGen7.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsSecurityDnsTunnelBlockIPPostWithHttpInfoAsync(string IP, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsSecuritySonicDnsTunnelBlockIPPostWithHttpInfoAsync(string IP, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'IP' is set
             if (IP == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'IP' when calling DnsSecurityTunnelBlockApi->DnsSecurityDnsTunnelBlockIPPost");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'IP' when calling SonicDnsSecurityTunnelBlockApi->SonicDnsSecuritySonicDnsTunnelBlockIPPost");
             }
 
 
@@ -551,7 +551,7 @@ namespace SonicWallGen7.Api
             localVarRequestOptions.PathParameters.Add("IP", SonicWallGen7.Client.ClientUtils.ParameterToString(IP)); // path parameter
             localVarRequestOptions.Data = body;
 
-            localVarRequestOptions.Operation = "DnsSecurityTunnelBlockApi.DnsSecurityDnsTunnelBlockIPPost";
+            localVarRequestOptions.Operation = "SonicDnsSecurityTunnelBlockApi.SonicDnsSecuritySonicDnsTunnelBlockIPPost";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -562,11 +562,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/dns-security/dns-tunnel/block/{IP}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/SonicDns-security/SonicDns-tunnel/block/{IP}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsTunnelBlockIPPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsTunnelBlockIPPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

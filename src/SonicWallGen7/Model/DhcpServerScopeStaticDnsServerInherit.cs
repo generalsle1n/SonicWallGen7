@@ -27,24 +27,24 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DhcpServerScopeStaticDnsServerInherit
+    /// DhcpServerScopeStaticSonicDnsServerInherit
     /// </summary>
-    [DataContract(Name = "dhcp_server_scope_static_dns_server_inherit")]
-    public partial class DhcpServerScopeStaticDnsServerInherit : IEquatable<DhcpServerScopeStaticDnsServerInherit>, IValidatableObject
+    [DataContract(Name = "dhcp_server_scope_static_SonicDns_server_inherit")]
+    public partial class DhcpServerScopeStaticSonicDnsServerInherit : IEquatable<DhcpServerScopeStaticSonicDnsServerInherit>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DhcpServerScopeStaticDnsServerInherit" /> class.
+        /// Initializes a new instance of the <see cref="DhcpServerScopeStaticSonicDnsServerInherit" /> class.
         /// </summary>
-        /// <param name="inherit">Inherit DNS servers..</param>
-        public DhcpServerScopeStaticDnsServerInherit(bool inherit = default(bool))
+        /// <param name="inherit">Inherit SonicDns servers..</param>
+        public DhcpServerScopeStaticSonicDnsServerInherit(bool inherit = default(bool))
         {
             this.Inherit = inherit;
         }
 
         /// <summary>
-        /// Inherit DNS servers.
+        /// Inherit SonicDns servers.
         /// </summary>
-        /// <value>Inherit DNS servers.</value>
+        /// <value>Inherit SonicDns servers.</value>
         [DataMember(Name = "inherit", EmitDefaultValue = true)]
         public bool Inherit { get; set; }
 
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DhcpServerScopeStaticDnsServerInherit {\n");
+            sb.Append("class DhcpServerScopeStaticSonicDnsServerInherit {\n");
             sb.Append("  Inherit: ").Append(Inherit).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DhcpServerScopeStaticDnsServerInherit);
+            return this.Equals(input as DhcpServerScopeStaticSonicDnsServerInherit);
         }
 
         /// <summary>
-        /// Returns true if DhcpServerScopeStaticDnsServerInherit instances are equal
+        /// Returns true if DhcpServerScopeStaticSonicDnsServerInherit instances are equal
         /// </summary>
-        /// <param name="input">Instance of DhcpServerScopeStaticDnsServerInherit to be compared</param>
+        /// <param name="input">Instance of DhcpServerScopeStaticSonicDnsServerInherit to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DhcpServerScopeStaticDnsServerInherit input)
+        public bool Equals(DhcpServerScopeStaticSonicDnsServerInherit input)
         {
             if (input == null)
             {

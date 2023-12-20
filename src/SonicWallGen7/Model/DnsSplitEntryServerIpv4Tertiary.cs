@@ -29,14 +29,14 @@ namespace SonicWallGen7.Model
     /// <summary>
     /// Tertiary server. * Set to null or {} to represent  an unconfigured state.
     /// </summary>
-    [DataContract(Name = "dns_split_entry_server_ipv4_tertiary")]
-    public partial class DnsSplitEntryServerIpv4Tertiary : IEquatable<DnsSplitEntryServerIpv4Tertiary>, IValidatableObject
+    [DataContract(Name = "SonicDns_split_entry_server_ipv4_tertiary")]
+    public partial class SonicDnsSplitEntryServerIpv4Tertiary : IEquatable<SonicDnsSplitEntryServerIpv4Tertiary>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntryServerIpv4Tertiary" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntryServerIpv4Tertiary" /> class.
         /// </summary>
         /// <param name="value">value.</param>
-        public DnsSplitEntryServerIpv4Tertiary(string value = default(string))
+        public SonicDnsSplitEntryServerIpv4Tertiary(string value = default(string))
         {
             this.Value = value;
         }
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSplitEntryServerIpv4Tertiary {\n");
+            sb.Append("class SonicDnsSplitEntryServerIpv4Tertiary {\n");
             sb.Append("  Value: ").Append(Value).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSplitEntryServerIpv4Tertiary);
+            return this.Equals(input as SonicDnsSplitEntryServerIpv4Tertiary);
         }
 
         /// <summary>
-        /// Returns true if DnsSplitEntryServerIpv4Tertiary instances are equal
+        /// Returns true if SonicDnsSplitEntryServerIpv4Tertiary instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSplitEntryServerIpv4Tertiary to be compared</param>
+        /// <param name="input">Instance of SonicDnsSplitEntryServerIpv4Tertiary to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSplitEntryServerIpv4Tertiary input)
+        public bool Equals(SonicDnsSplitEntryServerIpv4Tertiary input)
         {
             if (input == null)
             {

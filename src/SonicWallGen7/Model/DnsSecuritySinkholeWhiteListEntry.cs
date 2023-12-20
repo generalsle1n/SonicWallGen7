@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS security sinkhole white list entry configuration schema.
+    /// SonicDns security sinkhole white list entry configuration schema.
     /// </summary>
-    [DataContract(Name = "dns_security_sinkhole_white_list_entry")]
-    public partial class DnsSecuritySinkholeWhiteListEntry : IEquatable<DnsSecuritySinkholeWhiteListEntry>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_sinkhole_white_list_entry")]
+    public partial class SonicDnsSecuritySinkholeWhiteListEntry : IEquatable<SonicDnsSecuritySinkholeWhiteListEntry>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeWhiteListEntry" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeWhiteListEntry" /> class.
         /// </summary>
         /// <param name="name">name.</param>
-        public DnsSecuritySinkholeWhiteListEntry(string name = default(string))
+        public SonicDnsSecuritySinkholeWhiteListEntry(string name = default(string))
         {
             this.Name = name;
         }
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecuritySinkholeWhiteListEntry {\n");
+            sb.Append("class SonicDnsSecuritySinkholeWhiteListEntry {\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecuritySinkholeWhiteListEntry);
+            return this.Equals(input as SonicDnsSecuritySinkholeWhiteListEntry);
         }
 
         /// <summary>
-        /// Returns true if DnsSecuritySinkholeWhiteListEntry instances are equal
+        /// Returns true if SonicDnsSecuritySinkholeWhiteListEntry instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecuritySinkholeWhiteListEntry to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecuritySinkholeWhiteListEntry to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecuritySinkholeWhiteListEntry input)
+        public bool Equals(SonicDnsSecuritySinkholeWhiteListEntry input)
         {
             if (input == null)
             {

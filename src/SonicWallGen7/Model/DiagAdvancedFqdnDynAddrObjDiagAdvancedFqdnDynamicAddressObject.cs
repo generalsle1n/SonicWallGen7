@@ -35,34 +35,34 @@ namespace SonicWallGen7.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="DiagAdvancedFqdnDynAddrObjDiagAdvancedFqdnDynamicAddressObject" /> class.
         /// </summary>
-        /// <param name="cacheDnsReply">Enable FQDN object only cache DNS reply from sanctioned server..</param>
+        /// <param name="cacheSonicDnsReply">Enable FQDN object only cache SonicDns reply from sanctioned server..</param>
         /// <param name="offsetForFqdnObjects">Offset for FQDN objects(seconds)..</param>
         /// <param name="refreshSubDomains">Enable refresh sub domains of wildcard FQDN dynamic address objects..</param>
         /// <param name="expiredHostDeletion">Enable donot delete expired hosts of an FQDN network object with active connections..</param>
-        /// <param name="retainExpiredFqdnHosts">Enable retain expired FQDN hosts until a successfull DNs resolutions occurs..</param>
+        /// <param name="retainExpiredFqdnHosts">Enable retain expired FQDN hosts until a successfull SonicDns resolutions occurs..</param>
         /// <param name="unlimitedQueries">Enable unlimited queries to resolve custom FQDN obects..</param>
-        /// <param name="stopDnsQueries">Enable stop dns queries for default FQDN objects after maximumthreshold..</param>
+        /// <param name="stopSonicDnsQueries">Enable stop SonicDns queries for default FQDN objects after maximumthreshold..</param>
         /// <param name="maxRetryThreshold">FQDN maximum retry threshold before stopping query..</param>
         /// <param name="minAllowedTtl">Minimum allowed ttl for FQDN objects..</param>
-        public DiagAdvancedFqdnDynAddrObjDiagAdvancedFqdnDynamicAddressObject(bool cacheDnsReply = default(bool), decimal offsetForFqdnObjects = default(decimal), bool refreshSubDomains = default(bool), bool expiredHostDeletion = default(bool), bool retainExpiredFqdnHosts = default(bool), bool unlimitedQueries = default(bool), bool stopDnsQueries = default(bool), decimal maxRetryThreshold = default(decimal), decimal minAllowedTtl = default(decimal))
+        public DiagAdvancedFqdnDynAddrObjDiagAdvancedFqdnDynamicAddressObject(bool cacheSonicDnsReply = default(bool), decimal offsetForFqdnObjects = default(decimal), bool refreshSubDomains = default(bool), bool expiredHostDeletion = default(bool), bool retainExpiredFqdnHosts = default(bool), bool unlimitedQueries = default(bool), bool stopSonicDnsQueries = default(bool), decimal maxRetryThreshold = default(decimal), decimal minAllowedTtl = default(decimal))
         {
-            this.CacheDnsReply = cacheDnsReply;
+            this.CacheSonicDnsReply = cacheSonicDnsReply;
             this.OffsetForFqdnObjects = offsetForFqdnObjects;
             this.RefreshSubDomains = refreshSubDomains;
             this.ExpiredHostDeletion = expiredHostDeletion;
             this.RetainExpiredFqdnHosts = retainExpiredFqdnHosts;
             this.UnlimitedQueries = unlimitedQueries;
-            this.StopDnsQueries = stopDnsQueries;
+            this.StopSonicDnsQueries = stopSonicDnsQueries;
             this.MaxRetryThreshold = maxRetryThreshold;
             this.MinAllowedTtl = minAllowedTtl;
         }
 
         /// <summary>
-        /// Enable FQDN object only cache DNS reply from sanctioned server.
+        /// Enable FQDN object only cache SonicDns reply from sanctioned server.
         /// </summary>
-        /// <value>Enable FQDN object only cache DNS reply from sanctioned server.</value>
-        [DataMember(Name = "cache_dns_reply", EmitDefaultValue = true)]
-        public bool CacheDnsReply { get; set; }
+        /// <value>Enable FQDN object only cache SonicDns reply from sanctioned server.</value>
+        [DataMember(Name = "cache_SonicDns_reply", EmitDefaultValue = true)]
+        public bool CacheSonicDnsReply { get; set; }
 
         /// <summary>
         /// Offset for FQDN objects(seconds).
@@ -86,9 +86,9 @@ namespace SonicWallGen7.Model
         public bool ExpiredHostDeletion { get; set; }
 
         /// <summary>
-        /// Enable retain expired FQDN hosts until a successfull DNs resolutions occurs.
+        /// Enable retain expired FQDN hosts until a successfull SonicDns resolutions occurs.
         /// </summary>
-        /// <value>Enable retain expired FQDN hosts until a successfull DNs resolutions occurs.</value>
+        /// <value>Enable retain expired FQDN hosts until a successfull SonicDns resolutions occurs.</value>
         [DataMember(Name = "retain_expired_fqdn_hosts", EmitDefaultValue = true)]
         public bool RetainExpiredFqdnHosts { get; set; }
 
@@ -100,11 +100,11 @@ namespace SonicWallGen7.Model
         public bool UnlimitedQueries { get; set; }
 
         /// <summary>
-        /// Enable stop dns queries for default FQDN objects after maximumthreshold.
+        /// Enable stop SonicDns queries for default FQDN objects after maximumthreshold.
         /// </summary>
-        /// <value>Enable stop dns queries for default FQDN objects after maximumthreshold.</value>
-        [DataMember(Name = "stop_dns_queries", EmitDefaultValue = true)]
-        public bool StopDnsQueries { get; set; }
+        /// <value>Enable stop SonicDns queries for default FQDN objects after maximumthreshold.</value>
+        [DataMember(Name = "stop_SonicDns_queries", EmitDefaultValue = true)]
+        public bool StopSonicDnsQueries { get; set; }
 
         /// <summary>
         /// FQDN maximum retry threshold before stopping query.
@@ -128,13 +128,13 @@ namespace SonicWallGen7.Model
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("class DiagAdvancedFqdnDynAddrObjDiagAdvancedFqdnDynamicAddressObject {\n");
-            sb.Append("  CacheDnsReply: ").Append(CacheDnsReply).Append("\n");
+            sb.Append("  CacheSonicDnsReply: ").Append(CacheSonicDnsReply).Append("\n");
             sb.Append("  OffsetForFqdnObjects: ").Append(OffsetForFqdnObjects).Append("\n");
             sb.Append("  RefreshSubDomains: ").Append(RefreshSubDomains).Append("\n");
             sb.Append("  ExpiredHostDeletion: ").Append(ExpiredHostDeletion).Append("\n");
             sb.Append("  RetainExpiredFqdnHosts: ").Append(RetainExpiredFqdnHosts).Append("\n");
             sb.Append("  UnlimitedQueries: ").Append(UnlimitedQueries).Append("\n");
-            sb.Append("  StopDnsQueries: ").Append(StopDnsQueries).Append("\n");
+            sb.Append("  StopSonicDnsQueries: ").Append(StopSonicDnsQueries).Append("\n");
             sb.Append("  MaxRetryThreshold: ").Append(MaxRetryThreshold).Append("\n");
             sb.Append("  MinAllowedTtl: ").Append(MinAllowedTtl).Append("\n");
             sb.Append("}\n");
@@ -173,8 +173,8 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.CacheDnsReply == input.CacheDnsReply ||
-                    this.CacheDnsReply.Equals(input.CacheDnsReply)
+                    this.CacheSonicDnsReply == input.CacheSonicDnsReply ||
+                    this.CacheSonicDnsReply.Equals(input.CacheSonicDnsReply)
                 ) && 
                 (
                     this.OffsetForFqdnObjects == input.OffsetForFqdnObjects ||
@@ -197,8 +197,8 @@ namespace SonicWallGen7.Model
                     this.UnlimitedQueries.Equals(input.UnlimitedQueries)
                 ) && 
                 (
-                    this.StopDnsQueries == input.StopDnsQueries ||
-                    this.StopDnsQueries.Equals(input.StopDnsQueries)
+                    this.StopSonicDnsQueries == input.StopSonicDnsQueries ||
+                    this.StopSonicDnsQueries.Equals(input.StopSonicDnsQueries)
                 ) && 
                 (
                     this.MaxRetryThreshold == input.MaxRetryThreshold ||
@@ -219,13 +219,13 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                hashCode = (hashCode * 59) + this.CacheDnsReply.GetHashCode();
+                hashCode = (hashCode * 59) + this.CacheSonicDnsReply.GetHashCode();
                 hashCode = (hashCode * 59) + this.OffsetForFqdnObjects.GetHashCode();
                 hashCode = (hashCode * 59) + this.RefreshSubDomains.GetHashCode();
                 hashCode = (hashCode * 59) + this.ExpiredHostDeletion.GetHashCode();
                 hashCode = (hashCode * 59) + this.RetainExpiredFqdnHosts.GetHashCode();
                 hashCode = (hashCode * 59) + this.UnlimitedQueries.GetHashCode();
-                hashCode = (hashCode * 59) + this.StopDnsQueries.GetHashCode();
+                hashCode = (hashCode * 59) + this.StopSonicDnsQueries.GetHashCode();
                 hashCode = (hashCode * 59) + this.MaxRetryThreshold.GetHashCode();
                 hashCode = (hashCode * 59) + this.MinAllowedTtl.GetHashCode();
                 return hashCode;

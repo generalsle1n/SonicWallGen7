@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS server settings.
+    /// SonicDns server settings.
     /// </summary>
-    [DataContract(Name = "dhcp_server_scope_dynamic_dns")]
-    public partial class DhcpServerScopeDynamicDns : IEquatable<DhcpServerScopeDynamicDns>, IValidatableObject
+    [DataContract(Name = "dhcp_server_scope_dynamic_SonicDns")]
+    public partial class DhcpServerScopeDynamicSonicDns : IEquatable<DhcpServerScopeDynamicSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DhcpServerScopeDynamicDns" /> class.
+        /// Initializes a new instance of the <see cref="DhcpServerScopeDynamicSonicDns" /> class.
         /// </summary>
         /// <param name="server">server.</param>
-        public DhcpServerScopeDynamicDns(DhcpServerScopeDynamicDnsServer server = default(DhcpServerScopeDynamicDnsServer))
+        public DhcpServerScopeDynamicSonicDns(DhcpServerScopeDynamicSonicDnsServer server = default(DhcpServerScopeDynamicSonicDnsServer))
         {
             this.Server = server;
         }
@@ -45,7 +45,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Server
         /// </summary>
         [DataMember(Name = "server", EmitDefaultValue = false)]
-        public DhcpServerScopeDynamicDnsServer Server { get; set; }
+        public DhcpServerScopeDynamicSonicDnsServer Server { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DhcpServerScopeDynamicDns {\n");
+            sb.Append("class DhcpServerScopeDynamicSonicDns {\n");
             sb.Append("  Server: ").Append(Server).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DhcpServerScopeDynamicDns);
+            return this.Equals(input as DhcpServerScopeDynamicSonicDns);
         }
 
         /// <summary>
-        /// Returns true if DhcpServerScopeDynamicDns instances are equal
+        /// Returns true if DhcpServerScopeDynamicSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of DhcpServerScopeDynamicDns to be compared</param>
+        /// <param name="input">Instance of DhcpServerScopeDynamicSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DhcpServerScopeDynamicDns input)
+        public bool Equals(DhcpServerScopeDynamicSonicDns input)
         {
             if (input == null)
             {

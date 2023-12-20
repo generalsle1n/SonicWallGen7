@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// SslVpnDeviceProfileClientDnsSearchListInner
+    /// SslVpnDeviceProfileClientSonicDnsSearchListInner
     /// </summary>
-    [DataContract(Name = "ssl_vpn_device_profile_client_dns_search_list_inner")]
-    public partial class SslVpnDeviceProfileClientDnsSearchListInner : IEquatable<SslVpnDeviceProfileClientDnsSearchListInner>, IValidatableObject
+    [DataContract(Name = "ssl_vpn_device_profile_client_SonicDns_search_list_inner")]
+    public partial class SslVpnDeviceProfileClientSonicDnsSearchListInner : IEquatable<SslVpnDeviceProfileClientSonicDnsSearchListInner>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientDnsSearchListInner" /> class.
+        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientSonicDnsSearchListInner" /> class.
         /// </summary>
         /// <param name="searchList">searchList.</param>
-        public SslVpnDeviceProfileClientDnsSearchListInner(string searchList = default(string))
+        public SslVpnDeviceProfileClientSonicDnsSearchListInner(string searchList = default(string))
         {
             this.SearchList = searchList;
         }
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class SslVpnDeviceProfileClientDnsSearchListInner {\n");
+            sb.Append("class SslVpnDeviceProfileClientSonicDnsSearchListInner {\n");
             sb.Append("  SearchList: ").Append(SearchList).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as SslVpnDeviceProfileClientDnsSearchListInner);
+            return this.Equals(input as SslVpnDeviceProfileClientSonicDnsSearchListInner);
         }
 
         /// <summary>
-        /// Returns true if SslVpnDeviceProfileClientDnsSearchListInner instances are equal
+        /// Returns true if SslVpnDeviceProfileClientSonicDnsSearchListInner instances are equal
         /// </summary>
-        /// <param name="input">Instance of SslVpnDeviceProfileClientDnsSearchListInner to be compared</param>
+        /// <param name="input">Instance of SslVpnDeviceProfileClientSonicDnsSearchListInner to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(SslVpnDeviceProfileClientDnsSearchListInner input)
+        public bool Equals(SslVpnDeviceProfileClientSonicDnsSearchListInner input)
         {
             if (input == null)
             {

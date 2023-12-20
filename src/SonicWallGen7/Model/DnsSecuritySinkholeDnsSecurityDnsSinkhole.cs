@@ -27,26 +27,26 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Enter DNS Sinkhole mode
+    /// Enter SonicDns Sinkhole mode
     /// </summary>
-    [DataContract(Name = "dns_security_sinkhole_dns_security_dns_sinkhole")]
-    public partial class DnsSecuritySinkholeDnsSecurityDnsSinkhole : IEquatable<DnsSecuritySinkholeDnsSecurityDnsSinkhole>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_sinkhole_SonicDns_security_SonicDns_sinkhole")]
+    public partial class SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkhole : IEquatable<SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkhole>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeDnsSecurityDnsSinkhole" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkhole" /> class.
         /// </summary>
-        /// <param name="enable">Enable DNS Sinkhole.</param>
+        /// <param name="enable">Enable SonicDns Sinkhole.</param>
         /// <param name="actionType">actionType.</param>
-        public DnsSecuritySinkholeDnsSecurityDnsSinkhole(bool enable = default(bool), DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType actionType = default(DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType))
+        public SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkhole(bool enable = default(bool), SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType actionType = default(SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType))
         {
             this.Enable = enable;
             this.ActionType = actionType;
         }
 
         /// <summary>
-        /// Enable DNS Sinkhole
+        /// Enable SonicDns Sinkhole
         /// </summary>
-        /// <value>Enable DNS Sinkhole</value>
+        /// <value>Enable SonicDns Sinkhole</value>
         [DataMember(Name = "enable", EmitDefaultValue = true)]
         public bool Enable { get; set; }
 
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets ActionType
         /// </summary>
         [DataMember(Name = "action_type", EmitDefaultValue = false)]
-        public DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType ActionType { get; set; }
+        public SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType ActionType { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -63,7 +63,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecuritySinkholeDnsSecurityDnsSinkhole {\n");
+            sb.Append("class SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkhole {\n");
             sb.Append("  Enable: ").Append(Enable).Append("\n");
             sb.Append("  ActionType: ").Append(ActionType).Append("\n");
             sb.Append("}\n");
@@ -86,15 +86,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecuritySinkholeDnsSecurityDnsSinkhole);
+            return this.Equals(input as SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkhole);
         }
 
         /// <summary>
-        /// Returns true if DnsSecuritySinkholeDnsSecurityDnsSinkhole instances are equal
+        /// Returns true if SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkhole instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecuritySinkholeDnsSecurityDnsSinkhole to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkhole to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecuritySinkholeDnsSecurityDnsSinkhole input)
+        public bool Equals(SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkhole input)
         {
             if (input == null)
             {

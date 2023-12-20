@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Set the local interface for split DNS entry. * Set to null or {} to represent  an unconfigured state.
+    /// Set the local interface for split SonicDns entry. * Set to null or {} to represent  an unconfigured state.
     /// </summary>
-    [DataContract(Name = "dns_split_entry_local_interface")]
-    public partial class DnsSplitEntryLocalInterface : IEquatable<DnsSplitEntryLocalInterface>, IValidatableObject
+    [DataContract(Name = "SonicDns_split_entry_local_interface")]
+    public partial class SonicDnsSplitEntryLocalInterface : IEquatable<SonicDnsSplitEntryLocalInterface>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntryLocalInterface" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntryLocalInterface" /> class.
         /// </summary>
         /// <param name="value">value.</param>
-        public DnsSplitEntryLocalInterface(string value = default(string))
+        public SonicDnsSplitEntryLocalInterface(string value = default(string))
         {
             this.Value = value;
         }
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSplitEntryLocalInterface {\n");
+            sb.Append("class SonicDnsSplitEntryLocalInterface {\n");
             sb.Append("  Value: ").Append(Value).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSplitEntryLocalInterface);
+            return this.Equals(input as SonicDnsSplitEntryLocalInterface);
         }
 
         /// <summary>
-        /// Returns true if DnsSplitEntryLocalInterface instances are equal
+        /// Returns true if SonicDnsSplitEntryLocalInterface instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSplitEntryLocalInterface to be compared</param>
+        /// <param name="input">Instance of SonicDnsSplitEntryLocalInterface to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSplitEntryLocalInterface input)
+        public bool Equals(SonicDnsSplitEntryLocalInterface input)
         {
             if (input == null)
             {

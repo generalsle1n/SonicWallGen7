@@ -29,14 +29,14 @@ namespace SonicWallGen7.Model
     /// <summary>
     /// The primary address * Set to null or {} to represent  an unconfigured state.
     /// </summary>
-    [DataContract(Name = "dns_proxy_cache_entry_address_ipv4_primary")]
-    public partial class DnsProxyCacheEntryAddressIpv4Primary : IEquatable<DnsProxyCacheEntryAddressIpv4Primary>, IValidatableObject
+    [DataContract(Name = "SonicDns_proxy_cache_entry_address_ipv4_primary")]
+    public partial class SonicDnsProxyCacheEntryAddressIpv4Primary : IEquatable<SonicDnsProxyCacheEntryAddressIpv4Primary>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyCacheEntryAddressIpv4Primary" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxyCacheEntryAddressIpv4Primary" /> class.
         /// </summary>
         /// <param name="value">value.</param>
-        public DnsProxyCacheEntryAddressIpv4Primary(string value = default(string))
+        public SonicDnsProxyCacheEntryAddressIpv4Primary(string value = default(string))
         {
             this.Value = value;
         }
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsProxyCacheEntryAddressIpv4Primary {\n");
+            sb.Append("class SonicDnsProxyCacheEntryAddressIpv4Primary {\n");
             sb.Append("  Value: ").Append(Value).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsProxyCacheEntryAddressIpv4Primary);
+            return this.Equals(input as SonicDnsProxyCacheEntryAddressIpv4Primary);
         }
 
         /// <summary>
-        /// Returns true if DnsProxyCacheEntryAddressIpv4Primary instances are equal
+        /// Returns true if SonicDnsProxyCacheEntryAddressIpv4Primary instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsProxyCacheEntryAddressIpv4Primary to be compared</param>
+        /// <param name="input">Instance of SonicDnsProxyCacheEntryAddressIpv4Primary to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsProxyCacheEntryAddressIpv4Primary input)
+        public bool Equals(SonicDnsProxyCacheEntryAddressIpv4Primary input)
         {
             if (input == null)
             {

@@ -27,18 +27,18 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Static DNS server.
+    /// Static SonicDns server.
     /// </summary>
-    [DataContract(Name = "dhcp_server_scope_dynamic_dns_server_static_static")]
-    public partial class DhcpServerScopeDynamicDnsServerStaticStatic : IEquatable<DhcpServerScopeDynamicDnsServerStaticStatic>, IValidatableObject
+    [DataContract(Name = "dhcp_server_scope_dynamic_SonicDns_server_static_static")]
+    public partial class DhcpServerScopeDynamicSonicDnsServerStaticStatic : IEquatable<DhcpServerScopeDynamicSonicDnsServerStaticStatic>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DhcpServerScopeDynamicDnsServerStaticStatic" /> class.
+        /// Initializes a new instance of the <see cref="DhcpServerScopeDynamicSonicDnsServerStaticStatic" /> class.
         /// </summary>
-        /// <param name="primary">Specify primary DNS server IP address. * Set to null to represent an unconfigured state..</param>
-        /// <param name="secondary">Specify secondary DNS server IP address. * Set to null to represent an unconfigured state..</param>
-        /// <param name="tertiary">Specify tertiary DNS server IP address. * Set to null to represent an unconfigured state..</param>
-        public DhcpServerScopeDynamicDnsServerStaticStatic(string primary = default(string), string secondary = default(string), string tertiary = default(string))
+        /// <param name="primary">Specify primary SonicDns server IP address. * Set to null to represent an unconfigured state..</param>
+        /// <param name="secondary">Specify secondary SonicDns server IP address. * Set to null to represent an unconfigured state..</param>
+        /// <param name="tertiary">Specify tertiary SonicDns server IP address. * Set to null to represent an unconfigured state..</param>
+        public DhcpServerScopeDynamicSonicDnsServerStaticStatic(string primary = default(string), string secondary = default(string), string tertiary = default(string))
         {
             this.Primary = primary;
             this.Secondary = secondary;
@@ -46,23 +46,23 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Specify primary DNS server IP address. * Set to null to represent an unconfigured state.
+        /// Specify primary SonicDns server IP address. * Set to null to represent an unconfigured state.
         /// </summary>
-        /// <value>Specify primary DNS server IP address. * Set to null to represent an unconfigured state.</value>
+        /// <value>Specify primary SonicDns server IP address. * Set to null to represent an unconfigured state.</value>
         [DataMember(Name = "primary", EmitDefaultValue = true)]
         public string Primary { get; set; }
 
         /// <summary>
-        /// Specify secondary DNS server IP address. * Set to null to represent an unconfigured state.
+        /// Specify secondary SonicDns server IP address. * Set to null to represent an unconfigured state.
         /// </summary>
-        /// <value>Specify secondary DNS server IP address. * Set to null to represent an unconfigured state.</value>
+        /// <value>Specify secondary SonicDns server IP address. * Set to null to represent an unconfigured state.</value>
         [DataMember(Name = "secondary", EmitDefaultValue = true)]
         public string Secondary { get; set; }
 
         /// <summary>
-        /// Specify tertiary DNS server IP address. * Set to null to represent an unconfigured state.
+        /// Specify tertiary SonicDns server IP address. * Set to null to represent an unconfigured state.
         /// </summary>
-        /// <value>Specify tertiary DNS server IP address. * Set to null to represent an unconfigured state.</value>
+        /// <value>Specify tertiary SonicDns server IP address. * Set to null to represent an unconfigured state.</value>
         [DataMember(Name = "tertiary", EmitDefaultValue = true)]
         public string Tertiary { get; set; }
 
@@ -73,7 +73,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DhcpServerScopeDynamicDnsServerStaticStatic {\n");
+            sb.Append("class DhcpServerScopeDynamicSonicDnsServerStaticStatic {\n");
             sb.Append("  Primary: ").Append(Primary).Append("\n");
             sb.Append("  Secondary: ").Append(Secondary).Append("\n");
             sb.Append("  Tertiary: ").Append(Tertiary).Append("\n");
@@ -97,15 +97,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DhcpServerScopeDynamicDnsServerStaticStatic);
+            return this.Equals(input as DhcpServerScopeDynamicSonicDnsServerStaticStatic);
         }
 
         /// <summary>
-        /// Returns true if DhcpServerScopeDynamicDnsServerStaticStatic instances are equal
+        /// Returns true if DhcpServerScopeDynamicSonicDnsServerStaticStatic instances are equal
         /// </summary>
-        /// <param name="input">Instance of DhcpServerScopeDynamicDnsServerStaticStatic to be compared</param>
+        /// <param name="input">Instance of DhcpServerScopeDynamicSonicDnsServerStaticStatic to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DhcpServerScopeDynamicDnsServerStaticStatic input)
+        public bool Equals(DhcpServerScopeDynamicSonicDnsServerStaticStatic input)
         {
             if (input == null)
             {

@@ -27,26 +27,26 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS configuration.
+    /// SonicDns configuration.
     /// </summary>
-    [DataContract(Name = "dns_split_entry_collection_dns")]
-    public partial class DnsSplitEntryCollectionDns : IEquatable<DnsSplitEntryCollectionDns>, IValidatableObject
+    [DataContract(Name = "SonicDns_split_entry_collection_SonicDns")]
+    public partial class SonicDnsSplitEntryCollectionSonicDns : IEquatable<SonicDnsSplitEntryCollectionSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntryCollectionDns" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntryCollectionSonicDns" /> class.
         /// </summary>
-        /// <param name="splitEntry">Add/edit a split DNS entry and enter to its configuration mode.</param>
-        public DnsSplitEntryCollectionDns(List<DnsSplitEntry> splitEntry = default(List<DnsSplitEntry>))
+        /// <param name="splitEntry">Add/edit a split SonicDns entry and enter to its configuration mode.</param>
+        public SonicDnsSplitEntryCollectionSonicDns(List<SonicDnsSplitEntry> splitEntry = default(List<SonicDnsSplitEntry>))
         {
             this.SplitEntry = splitEntry;
         }
 
         /// <summary>
-        /// Add/edit a split DNS entry and enter to its configuration mode
+        /// Add/edit a split SonicDns entry and enter to its configuration mode
         /// </summary>
-        /// <value>Add/edit a split DNS entry and enter to its configuration mode</value>
+        /// <value>Add/edit a split SonicDns entry and enter to its configuration mode</value>
         [DataMember(Name = "split_entry", EmitDefaultValue = false)]
-        public List<DnsSplitEntry> SplitEntry { get; set; }
+        public List<SonicDnsSplitEntry> SplitEntry { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSplitEntryCollectionDns {\n");
+            sb.Append("class SonicDnsSplitEntryCollectionSonicDns {\n");
             sb.Append("  SplitEntry: ").Append(SplitEntry).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSplitEntryCollectionDns);
+            return this.Equals(input as SonicDnsSplitEntryCollectionSonicDns);
         }
 
         /// <summary>
-        /// Returns true if DnsSplitEntryCollectionDns instances are equal
+        /// Returns true if SonicDnsSplitEntryCollectionSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSplitEntryCollectionDns to be compared</param>
+        /// <param name="input">Instance of SonicDnsSplitEntryCollectionSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSplitEntryCollectionDns input)
+        public bool Equals(SonicDnsSplitEntryCollectionSonicDns input)
         {
             if (input == null)
             {

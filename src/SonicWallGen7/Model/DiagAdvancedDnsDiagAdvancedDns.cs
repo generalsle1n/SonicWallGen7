@@ -27,26 +27,26 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Configure advanced diag DNS settings.
+    /// Configure advanced diag SonicDns settings.
     /// </summary>
-    [DataContract(Name = "diag_advanced_dns_diag_advanced_dns")]
-    public partial class DiagAdvancedDnsDiagAdvancedDns : IEquatable<DiagAdvancedDnsDiagAdvancedDns>, IValidatableObject
+    [DataContract(Name = "diag_advanced_SonicDns_diag_advanced_SonicDns")]
+    public partial class DiagAdvancedSonicDnsDiagAdvancedSonicDns : IEquatable<DiagAdvancedSonicDnsDiagAdvancedSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDnsDiagAdvancedDns" /> class.
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDnsDiagAdvancedSonicDns" /> class.
         /// </summary>
-        /// <param name="preferArpa">Enable prefer arpa as suffix when commit ipv6 DNS reverse name resolution..</param>
+        /// <param name="preferArpa">Enable prefer arpa as suffix when commit ipv6 SonicDns reverse name resolution..</param>
         /// <param name="stackTrafficByDp">Enable stack traffic sending by DP core..</param>
-        public DiagAdvancedDnsDiagAdvancedDns(bool preferArpa = default(bool), bool stackTrafficByDp = default(bool))
+        public DiagAdvancedSonicDnsDiagAdvancedSonicDns(bool preferArpa = default(bool), bool stackTrafficByDp = default(bool))
         {
             this.PreferArpa = preferArpa;
             this.StackTrafficByDp = stackTrafficByDp;
         }
 
         /// <summary>
-        /// Enable prefer arpa as suffix when commit ipv6 DNS reverse name resolution.
+        /// Enable prefer arpa as suffix when commit ipv6 SonicDns reverse name resolution.
         /// </summary>
-        /// <value>Enable prefer arpa as suffix when commit ipv6 DNS reverse name resolution.</value>
+        /// <value>Enable prefer arpa as suffix when commit ipv6 SonicDns reverse name resolution.</value>
         [DataMember(Name = "prefer_arpa", EmitDefaultValue = true)]
         public bool PreferArpa { get; set; }
 
@@ -64,7 +64,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DiagAdvancedDnsDiagAdvancedDns {\n");
+            sb.Append("class DiagAdvancedSonicDnsDiagAdvancedSonicDns {\n");
             sb.Append("  PreferArpa: ").Append(PreferArpa).Append("\n");
             sb.Append("  StackTrafficByDp: ").Append(StackTrafficByDp).Append("\n");
             sb.Append("}\n");
@@ -87,15 +87,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DiagAdvancedDnsDiagAdvancedDns);
+            return this.Equals(input as DiagAdvancedSonicDnsDiagAdvancedSonicDns);
         }
 
         /// <summary>
-        /// Returns true if DiagAdvancedDnsDiagAdvancedDns instances are equal
+        /// Returns true if DiagAdvancedSonicDnsDiagAdvancedSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of DiagAdvancedDnsDiagAdvancedDns to be compared</param>
+        /// <param name="input">Instance of DiagAdvancedSonicDnsDiagAdvancedSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DiagAdvancedDnsDiagAdvancedDns input)
+        public bool Equals(DiagAdvancedSonicDnsDiagAdvancedSonicDns input)
         {
             if (input == null)
             {

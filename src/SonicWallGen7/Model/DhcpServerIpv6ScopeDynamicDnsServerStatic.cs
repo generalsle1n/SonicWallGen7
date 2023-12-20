@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DhcpServerIpv6ScopeDynamicDnsServerStatic
+    /// DhcpServerIpv6ScopeDynamicSonicDnsServerStatic
     /// </summary>
-    [DataContract(Name = "dhcp_server_ipv6_scope_dynamic_dns_server_static")]
-    public partial class DhcpServerIpv6ScopeDynamicDnsServerStatic : IEquatable<DhcpServerIpv6ScopeDynamicDnsServerStatic>, IValidatableObject
+    [DataContract(Name = "dhcp_server_ipv6_scope_dynamic_SonicDns_server_static")]
+    public partial class DhcpServerIpv6ScopeDynamicSonicDnsServerStatic : IEquatable<DhcpServerIpv6ScopeDynamicSonicDnsServerStatic>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DhcpServerIpv6ScopeDynamicDnsServerStatic" /> class.
+        /// Initializes a new instance of the <see cref="DhcpServerIpv6ScopeDynamicSonicDnsServerStatic" /> class.
         /// </summary>
         /// <param name="varStatic">varStatic.</param>
-        public DhcpServerIpv6ScopeDynamicDnsServerStatic(DhcpServerScopeDynamicDnsServerStaticStatic varStatic = default(DhcpServerScopeDynamicDnsServerStaticStatic))
+        public DhcpServerIpv6ScopeDynamicSonicDnsServerStatic(DhcpServerScopeDynamicSonicDnsServerStaticStatic varStatic = default(DhcpServerScopeDynamicSonicDnsServerStaticStatic))
         {
             this.VarStatic = varStatic;
         }
@@ -45,7 +45,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets VarStatic
         /// </summary>
         [DataMember(Name = "static", EmitDefaultValue = false)]
-        public DhcpServerScopeDynamicDnsServerStaticStatic VarStatic { get; set; }
+        public DhcpServerScopeDynamicSonicDnsServerStaticStatic VarStatic { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DhcpServerIpv6ScopeDynamicDnsServerStatic {\n");
+            sb.Append("class DhcpServerIpv6ScopeDynamicSonicDnsServerStatic {\n");
             sb.Append("  VarStatic: ").Append(VarStatic).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DhcpServerIpv6ScopeDynamicDnsServerStatic);
+            return this.Equals(input as DhcpServerIpv6ScopeDynamicSonicDnsServerStatic);
         }
 
         /// <summary>
-        /// Returns true if DhcpServerIpv6ScopeDynamicDnsServerStatic instances are equal
+        /// Returns true if DhcpServerIpv6ScopeDynamicSonicDnsServerStatic instances are equal
         /// </summary>
-        /// <param name="input">Instance of DhcpServerIpv6ScopeDynamicDnsServerStatic to be compared</param>
+        /// <param name="input">Instance of DhcpServerIpv6ScopeDynamicSonicDnsServerStatic to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DhcpServerIpv6ScopeDynamicDnsServerStatic input)
+        public bool Equals(DhcpServerIpv6ScopeDynamicSonicDnsServerStatic input)
         {
             if (input == null)
             {

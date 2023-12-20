@@ -40,17 +40,17 @@ namespace SonicWallGen7.Model
         /// <param name="ikeDpd">ikeDpd.</param>
         /// <param name="fragPackets">fragPackets.</param>
         /// <param name="natTraversal">Enable NAT traversal..</param>
-        /// <param name="cleanupTunnels">Enable clean up active tunnels when peer gateway DNS name resolves to a different IP address..</param>
+        /// <param name="cleanupTunnels">Enable clean up active tunnels when peer gateway SonicDns name resolves to a different IP address..</param>
         /// <param name="preserveIkePort">Enable preserve IKE port for pass through connections..</param>
         /// <param name="ocspChecking">Enable OCSP checking..</param>
         /// <param name="responderUrl">OCSP responder URL..</param>
         /// <param name="trapsOnChange">Enable VPN tunnel traps only when tunnel status changes..</param>
         /// <param name="useRadius">useRadius.</param>
-        /// <param name="dns">dns.</param>
+        /// <param name="SonicDns">SonicDns.</param>
         /// <param name="wins">wins.</param>
         /// <param name="autoRule">Enable UPE Auto Rule..</param>
         /// <param name="ikev2">ikev2.</param>
-        public VpnVpn(bool enable = default(bool), string firewallIdentifier = default(string), VpnVpnIkeDpd ikeDpd = default(VpnVpnIkeDpd), VpnVpnFragPackets fragPackets = default(VpnVpnFragPackets), bool natTraversal = default(bool), bool cleanupTunnels = default(bool), bool preserveIkePort = default(bool), bool ocspChecking = default(bool), string responderUrl = default(string), bool trapsOnChange = default(bool), VpnVpnUseRadius useRadius = default(VpnVpnUseRadius), VpnVpnDns dns = default(VpnVpnDns), DhcpServerScopeDynamicWins wins = default(DhcpServerScopeDynamicWins), bool autoRule = default(bool), VpnVpnIkev2 ikev2 = default(VpnVpnIkev2))
+        public VpnVpn(bool enable = default(bool), string firewallIdentifier = default(string), VpnVpnIkeDpd ikeDpd = default(VpnVpnIkeDpd), VpnVpnFragPackets fragPackets = default(VpnVpnFragPackets), bool natTraversal = default(bool), bool cleanupTunnels = default(bool), bool preserveIkePort = default(bool), bool ocspChecking = default(bool), string responderUrl = default(string), bool trapsOnChange = default(bool), VpnVpnUseRadius useRadius = default(VpnVpnUseRadius), VpnVpnSonicDns SonicDns = default(VpnVpnSonicDns), DhcpServerScopeDynamicWins wins = default(DhcpServerScopeDynamicWins), bool autoRule = default(bool), VpnVpnIkev2 ikev2 = default(VpnVpnIkev2))
         {
             this.Enable = enable;
             this.FirewallIdentifier = firewallIdentifier;
@@ -63,7 +63,7 @@ namespace SonicWallGen7.Model
             this.ResponderUrl = responderUrl;
             this.TrapsOnChange = trapsOnChange;
             this.UseRadius = useRadius;
-            this.Dns = dns;
+            this.SonicDns = SonicDns;
             this.Wins = wins;
             this.AutoRule = autoRule;
             this.Ikev2 = ikev2;
@@ -103,9 +103,9 @@ namespace SonicWallGen7.Model
         public bool NatTraversal { get; set; }
 
         /// <summary>
-        /// Enable clean up active tunnels when peer gateway DNS name resolves to a different IP address.
+        /// Enable clean up active tunnels when peer gateway SonicDns name resolves to a different IP address.
         /// </summary>
-        /// <value>Enable clean up active tunnels when peer gateway DNS name resolves to a different IP address.</value>
+        /// <value>Enable clean up active tunnels when peer gateway SonicDns name resolves to a different IP address.</value>
         [DataMember(Name = "cleanup_tunnels", EmitDefaultValue = true)]
         public bool CleanupTunnels { get; set; }
 
@@ -144,10 +144,10 @@ namespace SonicWallGen7.Model
         public VpnVpnUseRadius UseRadius { get; set; }
 
         /// <summary>
-        /// Gets or Sets Dns
+        /// Gets or Sets SonicDns
         /// </summary>
-        [DataMember(Name = "dns", EmitDefaultValue = false)]
-        public VpnVpnDns Dns { get; set; }
+        [DataMember(Name = "SonicDns", EmitDefaultValue = false)]
+        public VpnVpnSonicDns SonicDns { get; set; }
 
         /// <summary>
         /// Gets or Sets Wins
@@ -187,7 +187,7 @@ namespace SonicWallGen7.Model
             sb.Append("  ResponderUrl: ").Append(ResponderUrl).Append("\n");
             sb.Append("  TrapsOnChange: ").Append(TrapsOnChange).Append("\n");
             sb.Append("  UseRadius: ").Append(UseRadius).Append("\n");
-            sb.Append("  Dns: ").Append(Dns).Append("\n");
+            sb.Append("  SonicDns: ").Append(SonicDns).Append("\n");
             sb.Append("  Wins: ").Append(Wins).Append("\n");
             sb.Append("  AutoRule: ").Append(AutoRule).Append("\n");
             sb.Append("  Ikev2: ").Append(Ikev2).Append("\n");
@@ -276,9 +276,9 @@ namespace SonicWallGen7.Model
                     this.UseRadius.Equals(input.UseRadius))
                 ) && 
                 (
-                    this.Dns == input.Dns ||
-                    (this.Dns != null &&
-                    this.Dns.Equals(input.Dns))
+                    this.SonicDns == input.SonicDns ||
+                    (this.SonicDns != null &&
+                    this.SonicDns.Equals(input.SonicDns))
                 ) && 
                 (
                     this.Wins == input.Wins ||
@@ -331,9 +331,9 @@ namespace SonicWallGen7.Model
                 {
                     hashCode = (hashCode * 59) + this.UseRadius.GetHashCode();
                 }
-                if (this.Dns != null)
+                if (this.SonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.Dns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDns.GetHashCode();
                 }
                 if (this.Wins != null)
                 {

@@ -27,26 +27,26 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource
+    /// SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource
     /// </summary>
-    [DataContract(Name = "dns_security_sinkhole_dns_sinkhole_action_type_dropping_with_negative_dns_reply_to_source")]
-    public partial class DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource : IEquatable<DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_sinkhole_SonicDns_sinkhole_action_type_dropping_with_negative_SonicDns_reply_to_source")]
+    public partial class SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource : IEquatable<SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource" /> class.
         /// </summary>
-        /// <param name="droppingWithNegativeDnsReplyToSource">Dropping, with negative DNS reply to Source.</param>
-        public DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource(bool droppingWithNegativeDnsReplyToSource = default(bool))
+        /// <param name="droppingWithNegativeSonicDnsReplyToSource">Dropping, with negative SonicDns reply to Source.</param>
+        public SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource(bool droppingWithNegativeSonicDnsReplyToSource = default(bool))
         {
-            this.DroppingWithNegativeDnsReplyToSource = droppingWithNegativeDnsReplyToSource;
+            this.DroppingWithNegativeSonicDnsReplyToSource = droppingWithNegativeSonicDnsReplyToSource;
         }
 
         /// <summary>
-        /// Dropping, with negative DNS reply to Source
+        /// Dropping, with negative SonicDns reply to Source
         /// </summary>
-        /// <value>Dropping, with negative DNS reply to Source</value>
-        [DataMember(Name = "dropping_with_negative_dns_reply_to_source", EmitDefaultValue = true)]
-        public bool DroppingWithNegativeDnsReplyToSource { get; set; }
+        /// <value>Dropping, with negative SonicDns reply to Source</value>
+        [DataMember(Name = "dropping_with_negative_SonicDns_reply_to_source", EmitDefaultValue = true)]
+        public bool DroppingWithNegativeSonicDnsReplyToSource { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -55,8 +55,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource {\n");
-            sb.Append("  DroppingWithNegativeDnsReplyToSource: ").Append(DroppingWithNegativeDnsReplyToSource).Append("\n");
+            sb.Append("class SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource {\n");
+            sb.Append("  DroppingWithNegativeSonicDnsReplyToSource: ").Append(DroppingWithNegativeSonicDnsReplyToSource).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource);
+            return this.Equals(input as SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource);
         }
 
         /// <summary>
-        /// Returns true if DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource instances are equal
+        /// Returns true if SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource input)
+        public bool Equals(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource input)
         {
             if (input == null)
             {
@@ -93,8 +93,8 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.DroppingWithNegativeDnsReplyToSource == input.DroppingWithNegativeDnsReplyToSource ||
-                    this.DroppingWithNegativeDnsReplyToSource.Equals(input.DroppingWithNegativeDnsReplyToSource)
+                    this.DroppingWithNegativeSonicDnsReplyToSource == input.DroppingWithNegativeSonicDnsReplyToSource ||
+                    this.DroppingWithNegativeSonicDnsReplyToSource.Equals(input.DroppingWithNegativeSonicDnsReplyToSource)
                 );
         }
 
@@ -107,7 +107,7 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                hashCode = (hashCode * 59) + this.DroppingWithNegativeDnsReplyToSource.GetHashCode();
+                hashCode = (hashCode * 59) + this.DroppingWithNegativeSonicDnsReplyToSource.GetHashCode();
                 return hashCode;
             }
         }

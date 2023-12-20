@@ -51,9 +51,9 @@ namespace SonicWallGen7.Model
         /// <param name="pptpSubnetMask">pptpSubnetMask.</param>
         /// <param name="pptpDefaultGateway">pptpDefaultGateway.</param>
         /// <param name="linkStatus">linkStatus.</param>
-        /// <param name="primaryDns">primaryDns.</param>
-        /// <param name="secondaryDns">secondaryDns.</param>
-        /// <param name="tertiaryDns">tertiaryDns.</param>
+        /// <param name="primarySonicDns">primarySonicDns.</param>
+        /// <param name="secondarySonicDns">secondarySonicDns.</param>
+        /// <param name="tertiarySonicDns">tertiarySonicDns.</param>
         /// <param name="leaseExpires">leaseExpires.</param>
         /// <param name="linkSetting">linkSetting.</param>
         /// <param name="linkIsgigbit">linkIsgigbit.</param>
@@ -64,7 +64,7 @@ namespace SonicWallGen7.Model
         /// <param name="configurable">configurable.</param>
         /// <param name="deletable">deletable.</param>
         /// <param name="comment">comment.</param>
-        public ShowStatusInterfaceStatusDetail(string interfaceName = default(string), string zone = default(string), string type = default(string), string ipMode = default(string), string ipAddress = default(string), string subnetMask = default(string), string connected = default(string), string defaultGateway = default(string), string pppoeMru = default(string), string l2tpIpAddress = default(string), string l2tpSubnetMask = default(string), string l2tpDefaultGateway = default(string), string pptpIpAddress = default(string), string pptpSubnetMask = default(string), string pptpDefaultGateway = default(string), string linkStatus = default(string), string primaryDns = default(string), string secondaryDns = default(string), string tertiaryDns = default(string), string leaseExpires = default(string), string linkSetting = default(string), string linkIsgigbit = default(string), string linkAbilityBmpLow = default(string), string linkAbilityBmpHigh = default(string), string group = default(string), string enabled = default(string), string configurable = default(string), string deletable = default(string), string comment = default(string))
+        public ShowStatusInterfaceStatusDetail(string interfaceName = default(string), string zone = default(string), string type = default(string), string ipMode = default(string), string ipAddress = default(string), string subnetMask = default(string), string connected = default(string), string defaultGateway = default(string), string pppoeMru = default(string), string l2tpIpAddress = default(string), string l2tpSubnetMask = default(string), string l2tpDefaultGateway = default(string), string pptpIpAddress = default(string), string pptpSubnetMask = default(string), string pptpDefaultGateway = default(string), string linkStatus = default(string), string primarySonicDns = default(string), string secondarySonicDns = default(string), string tertiarySonicDns = default(string), string leaseExpires = default(string), string linkSetting = default(string), string linkIsgigbit = default(string), string linkAbilityBmpLow = default(string), string linkAbilityBmpHigh = default(string), string group = default(string), string enabled = default(string), string configurable = default(string), string deletable = default(string), string comment = default(string))
         {
             this.InterfaceName = interfaceName;
             this.Zone = zone;
@@ -82,9 +82,9 @@ namespace SonicWallGen7.Model
             this.PptpSubnetMask = pptpSubnetMask;
             this.PptpDefaultGateway = pptpDefaultGateway;
             this.LinkStatus = linkStatus;
-            this.PrimaryDns = primaryDns;
-            this.SecondaryDns = secondaryDns;
-            this.TertiaryDns = tertiaryDns;
+            this.PrimarySonicDns = primarySonicDns;
+            this.SecondarySonicDns = secondarySonicDns;
+            this.TertiarySonicDns = tertiarySonicDns;
             this.LeaseExpires = leaseExpires;
             this.LinkSetting = linkSetting;
             this.LinkIsgigbit = linkIsgigbit;
@@ -194,22 +194,22 @@ namespace SonicWallGen7.Model
         public string LinkStatus { get; set; }
 
         /// <summary>
-        /// Gets or Sets PrimaryDns
+        /// Gets or Sets PrimarySonicDns
         /// </summary>
-        [DataMember(Name = "primary_dns", EmitDefaultValue = false)]
-        public string PrimaryDns { get; set; }
+        [DataMember(Name = "primary_SonicDns", EmitDefaultValue = false)]
+        public string PrimarySonicDns { get; set; }
 
         /// <summary>
-        /// Gets or Sets SecondaryDns
+        /// Gets or Sets SecondarySonicDns
         /// </summary>
-        [DataMember(Name = "secondary_dns", EmitDefaultValue = false)]
-        public string SecondaryDns { get; set; }
+        [DataMember(Name = "secondary_SonicDns", EmitDefaultValue = false)]
+        public string SecondarySonicDns { get; set; }
 
         /// <summary>
-        /// Gets or Sets TertiaryDns
+        /// Gets or Sets TertiarySonicDns
         /// </summary>
-        [DataMember(Name = "tertiary_dns", EmitDefaultValue = false)]
-        public string TertiaryDns { get; set; }
+        [DataMember(Name = "tertiary_SonicDns", EmitDefaultValue = false)]
+        public string TertiarySonicDns { get; set; }
 
         /// <summary>
         /// Gets or Sets LeaseExpires
@@ -295,9 +295,9 @@ namespace SonicWallGen7.Model
             sb.Append("  PptpSubnetMask: ").Append(PptpSubnetMask).Append("\n");
             sb.Append("  PptpDefaultGateway: ").Append(PptpDefaultGateway).Append("\n");
             sb.Append("  LinkStatus: ").Append(LinkStatus).Append("\n");
-            sb.Append("  PrimaryDns: ").Append(PrimaryDns).Append("\n");
-            sb.Append("  SecondaryDns: ").Append(SecondaryDns).Append("\n");
-            sb.Append("  TertiaryDns: ").Append(TertiaryDns).Append("\n");
+            sb.Append("  PrimarySonicDns: ").Append(PrimarySonicDns).Append("\n");
+            sb.Append("  SecondarySonicDns: ").Append(SecondarySonicDns).Append("\n");
+            sb.Append("  TertiarySonicDns: ").Append(TertiarySonicDns).Append("\n");
             sb.Append("  LeaseExpires: ").Append(LeaseExpires).Append("\n");
             sb.Append("  LinkSetting: ").Append(LinkSetting).Append("\n");
             sb.Append("  LinkIsgigbit: ").Append(LinkIsgigbit).Append("\n");
@@ -424,19 +424,19 @@ namespace SonicWallGen7.Model
                     this.LinkStatus.Equals(input.LinkStatus))
                 ) && 
                 (
-                    this.PrimaryDns == input.PrimaryDns ||
-                    (this.PrimaryDns != null &&
-                    this.PrimaryDns.Equals(input.PrimaryDns))
+                    this.PrimarySonicDns == input.PrimarySonicDns ||
+                    (this.PrimarySonicDns != null &&
+                    this.PrimarySonicDns.Equals(input.PrimarySonicDns))
                 ) && 
                 (
-                    this.SecondaryDns == input.SecondaryDns ||
-                    (this.SecondaryDns != null &&
-                    this.SecondaryDns.Equals(input.SecondaryDns))
+                    this.SecondarySonicDns == input.SecondarySonicDns ||
+                    (this.SecondarySonicDns != null &&
+                    this.SecondarySonicDns.Equals(input.SecondarySonicDns))
                 ) && 
                 (
-                    this.TertiaryDns == input.TertiaryDns ||
-                    (this.TertiaryDns != null &&
-                    this.TertiaryDns.Equals(input.TertiaryDns))
+                    this.TertiarySonicDns == input.TertiarySonicDns ||
+                    (this.TertiarySonicDns != null &&
+                    this.TertiarySonicDns.Equals(input.TertiarySonicDns))
                 ) && 
                 (
                     this.LeaseExpires == input.LeaseExpires ||
@@ -563,17 +563,17 @@ namespace SonicWallGen7.Model
                 {
                     hashCode = (hashCode * 59) + this.LinkStatus.GetHashCode();
                 }
-                if (this.PrimaryDns != null)
+                if (this.PrimarySonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.PrimaryDns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.PrimarySonicDns.GetHashCode();
                 }
-                if (this.SecondaryDns != null)
+                if (this.SecondarySonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.SecondaryDns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SecondarySonicDns.GetHashCode();
                 }
-                if (this.TertiaryDns != null)
+                if (this.TertiarySonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.TertiaryDns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.TertiarySonicDns.GetHashCode();
                 }
                 if (this.LeaseExpires != null)
                 {

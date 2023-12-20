@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Enter DNS Sinkhole mode
+    /// Enter SonicDns Sinkhole mode
     /// </summary>
-    [DataContract(Name = "dns_security_sinkhole_white_list_entry_collection_dns_security_dns_sinkhole")]
-    public partial class DnsSecuritySinkholeWhiteListEntryCollectionDnsSecurityDnsSinkhole : IEquatable<DnsSecuritySinkholeWhiteListEntryCollectionDnsSecurityDnsSinkhole>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_sinkhole_white_list_entry_collection_SonicDns_security_SonicDns_sinkhole")]
+    public partial class SonicDnsSecuritySinkholeWhiteListEntryCollectionSonicDnsSecuritySonicDnsSinkhole : IEquatable<SonicDnsSecuritySinkholeWhiteListEntryCollectionSonicDnsSecuritySonicDnsSinkhole>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeWhiteListEntryCollectionDnsSecurityDnsSinkhole" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeWhiteListEntryCollectionSonicDnsSecuritySonicDnsSinkhole" /> class.
         /// </summary>
         /// <param name="whiteListEntry">Add white list entry..</param>
-        public DnsSecuritySinkholeWhiteListEntryCollectionDnsSecurityDnsSinkhole(List<DnsSecuritySinkholeWhiteListEntry> whiteListEntry = default(List<DnsSecuritySinkholeWhiteListEntry>))
+        public SonicDnsSecuritySinkholeWhiteListEntryCollectionSonicDnsSecuritySonicDnsSinkhole(List<SonicDnsSecuritySinkholeWhiteListEntry> whiteListEntry = default(List<SonicDnsSecuritySinkholeWhiteListEntry>))
         {
             this.WhiteListEntry = whiteListEntry;
         }
@@ -46,7 +46,7 @@ namespace SonicWallGen7.Model
         /// </summary>
         /// <value>Add white list entry.</value>
         [DataMember(Name = "white_list_entry", EmitDefaultValue = false)]
-        public List<DnsSecuritySinkholeWhiteListEntry> WhiteListEntry { get; set; }
+        public List<SonicDnsSecuritySinkholeWhiteListEntry> WhiteListEntry { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecuritySinkholeWhiteListEntryCollectionDnsSecurityDnsSinkhole {\n");
+            sb.Append("class SonicDnsSecuritySinkholeWhiteListEntryCollectionSonicDnsSecuritySonicDnsSinkhole {\n");
             sb.Append("  WhiteListEntry: ").Append(WhiteListEntry).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecuritySinkholeWhiteListEntryCollectionDnsSecurityDnsSinkhole);
+            return this.Equals(input as SonicDnsSecuritySinkholeWhiteListEntryCollectionSonicDnsSecuritySonicDnsSinkhole);
         }
 
         /// <summary>
-        /// Returns true if DnsSecuritySinkholeWhiteListEntryCollectionDnsSecurityDnsSinkhole instances are equal
+        /// Returns true if SonicDnsSecuritySinkholeWhiteListEntryCollectionSonicDnsSecuritySonicDnsSinkhole instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecuritySinkholeWhiteListEntryCollectionDnsSecurityDnsSinkhole to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecuritySinkholeWhiteListEntryCollectionSonicDnsSecuritySonicDnsSinkhole to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecuritySinkholeWhiteListEntryCollectionDnsSecurityDnsSinkhole input)
+        public bool Equals(SonicDnsSecuritySinkholeWhiteListEntryCollectionSonicDnsSecuritySonicDnsSinkhole input)
         {
             if (input == null)
             {

@@ -27,19 +27,19 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// ShowStatusDnsProxyCacheListInner
+    /// ShowStatusSonicDnsProxyCacheListInner
     /// </summary>
-    [DataContract(Name = "show_status_dns_proxy_cache_list_inner")]
-    public partial class ShowStatusDnsProxyCacheListInner : IEquatable<ShowStatusDnsProxyCacheListInner>, IValidatableObject
+    [DataContract(Name = "show_status_SonicDns_proxy_cache_list_inner")]
+    public partial class ShowStatusSonicDnsProxyCacheListInner : IEquatable<ShowStatusSonicDnsProxyCacheListInner>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ShowStatusDnsProxyCacheListInner" /> class.
+        /// Initializes a new instance of the <see cref="ShowStatusSonicDnsProxyCacheListInner" /> class.
         /// </summary>
         /// <param name="domainName">domainName.</param>
         /// <param name="type">type.</param>
         /// <param name="ipAddress">ipAddress.</param>
         /// <param name="timeToLive">timeToLive.</param>
-        public ShowStatusDnsProxyCacheListInner(string domainName = default(string), string type = default(string), string ipAddress = default(string), string timeToLive = default(string))
+        public ShowStatusSonicDnsProxyCacheListInner(string domainName = default(string), string type = default(string), string ipAddress = default(string), string timeToLive = default(string))
         {
             this.DomainName = domainName;
             this.Type = type;
@@ -78,7 +78,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class ShowStatusDnsProxyCacheListInner {\n");
+            sb.Append("class ShowStatusSonicDnsProxyCacheListInner {\n");
             sb.Append("  DomainName: ").Append(DomainName).Append("\n");
             sb.Append("  Type: ").Append(Type).Append("\n");
             sb.Append("  IpAddress: ").Append(IpAddress).Append("\n");
@@ -103,15 +103,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as ShowStatusDnsProxyCacheListInner);
+            return this.Equals(input as ShowStatusSonicDnsProxyCacheListInner);
         }
 
         /// <summary>
-        /// Returns true if ShowStatusDnsProxyCacheListInner instances are equal
+        /// Returns true if ShowStatusSonicDnsProxyCacheListInner instances are equal
         /// </summary>
-        /// <param name="input">Instance of ShowStatusDnsProxyCacheListInner to be compared</param>
+        /// <param name="input">Instance of ShowStatusSonicDnsProxyCacheListInner to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ShowStatusDnsProxyCacheListInner input)
+        public bool Equals(ShowStatusSonicDnsProxyCacheListInner input)
         {
             if (input == null)
             {

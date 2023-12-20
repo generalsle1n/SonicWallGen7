@@ -24,117 +24,117 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDiagAdvancedDnsProxyApiSync : IApiAccessor
+    public interface IDiagAdvancedSonicDnsProxyApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve advanced diag DNS proxy configuration.
+        /// Retrieve advanced diag SonicDns proxy configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DiagAdvancedDnsProxy</returns>
-        DiagAdvancedDnsProxy DiagAdvancedDnsProxyGet(int operationIndex = 0);
+        /// <returns>DiagAdvancedSonicDnsProxy</returns>
+        DiagAdvancedSonicDnsProxy DiagAdvancedSonicDnsProxyGet(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve advanced diag DNS proxy configuration.
+        /// Retrieve advanced diag SonicDns proxy configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DiagAdvancedDnsProxy</returns>
-        ApiResponse<DiagAdvancedDnsProxy> DiagAdvancedDnsProxyGetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of DiagAdvancedSonicDnsProxy</returns>
+        ApiResponse<DiagAdvancedSonicDnsProxy> DiagAdvancedSonicDnsProxyGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update advanced diag DNS proxy configuration.
+        /// Update advanced diag SonicDns proxy configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="diagAdvancedDnsProxy"> (optional)</param>
+        /// <param name="diagAdvancedSonicDnsProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DiagAdvancedDnsProxyPut(DiagAdvancedDnsProxy? diagAdvancedDnsProxy = default(DiagAdvancedDnsProxy?), int operationIndex = 0);
+        ApiStatus DiagAdvancedSonicDnsProxyPut(DiagAdvancedSonicDnsProxy? diagAdvancedSonicDnsProxy = default(DiagAdvancedSonicDnsProxy?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update advanced diag DNS proxy configuration.
+        /// Update advanced diag SonicDns proxy configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="diagAdvancedDnsProxy"> (optional)</param>
+        /// <param name="diagAdvancedSonicDnsProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DiagAdvancedDnsProxyPutWithHttpInfo(DiagAdvancedDnsProxy? diagAdvancedDnsProxy = default(DiagAdvancedDnsProxy?), int operationIndex = 0);
+        ApiResponse<ApiStatus> DiagAdvancedSonicDnsProxyPutWithHttpInfo(DiagAdvancedSonicDnsProxy? diagAdvancedSonicDnsProxy = default(DiagAdvancedSonicDnsProxy?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDiagAdvancedDnsProxyApiAsync : IApiAccessor
+    public interface IDiagAdvancedSonicDnsProxyApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve advanced diag DNS proxy configuration.
+        /// Retrieve advanced diag SonicDns proxy configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DiagAdvancedDnsProxy</returns>
-        System.Threading.Tasks.Task<DiagAdvancedDnsProxy> DiagAdvancedDnsProxyGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of DiagAdvancedSonicDnsProxy</returns>
+        System.Threading.Tasks.Task<DiagAdvancedSonicDnsProxy> DiagAdvancedSonicDnsProxyGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve advanced diag DNS proxy configuration.
+        /// Retrieve advanced diag SonicDns proxy configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DiagAdvancedDnsProxy)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DiagAdvancedDnsProxy>> DiagAdvancedDnsProxyGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (DiagAdvancedSonicDnsProxy)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DiagAdvancedSonicDnsProxy>> DiagAdvancedSonicDnsProxyGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update advanced diag DNS proxy configuration.
+        /// Update advanced diag SonicDns proxy configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="diagAdvancedDnsProxy"> (optional)</param>
+        /// <param name="diagAdvancedSonicDnsProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DiagAdvancedDnsProxyPutAsync(DiagAdvancedDnsProxy? diagAdvancedDnsProxy = default(DiagAdvancedDnsProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> DiagAdvancedSonicDnsProxyPutAsync(DiagAdvancedSonicDnsProxy? diagAdvancedSonicDnsProxy = default(DiagAdvancedSonicDnsProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update advanced diag DNS proxy configuration.
+        /// Update advanced diag SonicDns proxy configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="diagAdvancedDnsProxy"> (optional)</param>
+        /// <param name="diagAdvancedSonicDnsProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DiagAdvancedDnsProxyPutWithHttpInfoAsync(DiagAdvancedDnsProxy? diagAdvancedDnsProxy = default(DiagAdvancedDnsProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DiagAdvancedSonicDnsProxyPutWithHttpInfoAsync(DiagAdvancedSonicDnsProxy? diagAdvancedSonicDnsProxy = default(DiagAdvancedSonicDnsProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDiagAdvancedDnsProxyApi : IDiagAdvancedDnsProxyApiSync, IDiagAdvancedDnsProxyApiAsync
+    public interface IDiagAdvancedSonicDnsProxyApi : IDiagAdvancedSonicDnsProxyApiSync, IDiagAdvancedSonicDnsProxyApiAsync
     {
 
     }
@@ -142,23 +142,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DiagAdvancedDnsProxyApi : IDiagAdvancedDnsProxyApi
+    public partial class DiagAdvancedSonicDnsProxyApi : IDiagAdvancedSonicDnsProxyApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDnsProxyApi"/> class.
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDnsProxyApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DiagAdvancedDnsProxyApi() : this((string)null)
+        public DiagAdvancedSonicDnsProxyApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDnsProxyApi"/> class.
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDnsProxyApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DiagAdvancedDnsProxyApi(string basePath)
+        public DiagAdvancedSonicDnsProxyApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -170,12 +170,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDnsProxyApi"/> class
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDnsProxyApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DiagAdvancedDnsProxyApi(SonicWallGen7.Client.Configuration configuration)
+        public DiagAdvancedSonicDnsProxyApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -189,13 +189,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDnsProxyApi"/> class
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDnsProxyApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DiagAdvancedDnsProxyApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public DiagAdvancedSonicDnsProxyApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -249,24 +249,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve advanced diag DNS proxy configuration.
+        ///  Retrieve advanced diag SonicDns proxy configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DiagAdvancedDnsProxy</returns>
-        public DiagAdvancedDnsProxy DiagAdvancedDnsProxyGet(int operationIndex = 0)
+        /// <returns>DiagAdvancedSonicDnsProxy</returns>
+        public DiagAdvancedSonicDnsProxy DiagAdvancedSonicDnsProxyGet(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<DiagAdvancedDnsProxy> localVarResponse = DiagAdvancedDnsProxyGetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<DiagAdvancedSonicDnsProxy> localVarResponse = DiagAdvancedSonicDnsProxyGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve advanced diag DNS proxy configuration.
+        ///  Retrieve advanced diag SonicDns proxy configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DiagAdvancedDnsProxy</returns>
-        public SonicWallGen7.Client.ApiResponse<DiagAdvancedDnsProxy> DiagAdvancedDnsProxyGetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of DiagAdvancedSonicDnsProxy</returns>
+        public SonicWallGen7.Client.ApiResponse<DiagAdvancedSonicDnsProxy> DiagAdvancedSonicDnsProxyGetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -291,7 +291,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DiagAdvancedDnsProxyApi.DiagAdvancedDnsProxyGet";
+            localVarRequestOptions.Operation = "DiagAdvancedSonicDnsProxyApi.DiagAdvancedSonicDnsProxyGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -302,10 +302,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<DiagAdvancedDnsProxy>("/diag/advanced/dns-proxy", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<DiagAdvancedSonicDnsProxy>("/diag/advanced/SonicDns-proxy", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DiagAdvancedDnsProxyGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("DiagAdvancedSonicDnsProxyGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -316,26 +316,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve advanced diag DNS proxy configuration.
+        ///  Retrieve advanced diag SonicDns proxy configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DiagAdvancedDnsProxy</returns>
-        public async System.Threading.Tasks.Task<DiagAdvancedDnsProxy> DiagAdvancedDnsProxyGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of DiagAdvancedSonicDnsProxy</returns>
+        public async System.Threading.Tasks.Task<DiagAdvancedSonicDnsProxy> DiagAdvancedSonicDnsProxyGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<DiagAdvancedDnsProxy> localVarResponse = await DiagAdvancedDnsProxyGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<DiagAdvancedSonicDnsProxy> localVarResponse = await DiagAdvancedSonicDnsProxyGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve advanced diag DNS proxy configuration.
+        ///  Retrieve advanced diag SonicDns proxy configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DiagAdvancedDnsProxy)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<DiagAdvancedDnsProxy>> DiagAdvancedDnsProxyGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (DiagAdvancedSonicDnsProxy)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<DiagAdvancedSonicDnsProxy>> DiagAdvancedSonicDnsProxyGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -361,7 +361,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DiagAdvancedDnsProxyApi.DiagAdvancedDnsProxyGet";
+            localVarRequestOptions.Operation = "DiagAdvancedSonicDnsProxyApi.DiagAdvancedSonicDnsProxyGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -372,11 +372,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<DiagAdvancedDnsProxy>("/diag/advanced/dns-proxy", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<DiagAdvancedSonicDnsProxy>("/diag/advanced/SonicDns-proxy", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DiagAdvancedDnsProxyGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("DiagAdvancedSonicDnsProxyGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -387,26 +387,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Update advanced diag DNS proxy configuration.
+        ///  Update advanced diag SonicDns proxy configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="diagAdvancedDnsProxy"> (optional)</param>
+        /// <param name="diagAdvancedSonicDnsProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DiagAdvancedDnsProxyPut(DiagAdvancedDnsProxy? diagAdvancedDnsProxy = default(DiagAdvancedDnsProxy?), int operationIndex = 0)
+        public ApiStatus DiagAdvancedSonicDnsProxyPut(DiagAdvancedSonicDnsProxy? diagAdvancedSonicDnsProxy = default(DiagAdvancedSonicDnsProxy?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DiagAdvancedDnsProxyPutWithHttpInfo(diagAdvancedDnsProxy);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DiagAdvancedSonicDnsProxyPutWithHttpInfo(diagAdvancedSonicDnsProxy);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Update advanced diag DNS proxy configuration.
+        ///  Update advanced diag SonicDns proxy configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="diagAdvancedDnsProxy"> (optional)</param>
+        /// <param name="diagAdvancedSonicDnsProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DiagAdvancedDnsProxyPutWithHttpInfo(DiagAdvancedDnsProxy? diagAdvancedDnsProxy = default(DiagAdvancedDnsProxy?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> DiagAdvancedSonicDnsProxyPutWithHttpInfo(DiagAdvancedSonicDnsProxy? diagAdvancedSonicDnsProxy = default(DiagAdvancedSonicDnsProxy?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -431,9 +431,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = diagAdvancedDnsProxy;
+            localVarRequestOptions.Data = diagAdvancedSonicDnsProxy;
 
-            localVarRequestOptions.Operation = "DiagAdvancedDnsProxyApi.DiagAdvancedDnsProxyPut";
+            localVarRequestOptions.Operation = "DiagAdvancedSonicDnsProxyApi.DiagAdvancedSonicDnsProxyPut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -444,10 +444,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<ApiStatus>("/diag/advanced/dns-proxy", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<ApiStatus>("/diag/advanced/SonicDns-proxy", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DiagAdvancedDnsProxyPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("DiagAdvancedSonicDnsProxyPut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -458,28 +458,28 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Update advanced diag DNS proxy configuration.
+        ///  Update advanced diag SonicDns proxy configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="diagAdvancedDnsProxy"> (optional)</param>
+        /// <param name="diagAdvancedSonicDnsProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DiagAdvancedDnsProxyPutAsync(DiagAdvancedDnsProxy? diagAdvancedDnsProxy = default(DiagAdvancedDnsProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> DiagAdvancedSonicDnsProxyPutAsync(DiagAdvancedSonicDnsProxy? diagAdvancedSonicDnsProxy = default(DiagAdvancedSonicDnsProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DiagAdvancedDnsProxyPutWithHttpInfoAsync(diagAdvancedDnsProxy, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DiagAdvancedSonicDnsProxyPutWithHttpInfoAsync(diagAdvancedSonicDnsProxy, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Update advanced diag DNS proxy configuration.
+        ///  Update advanced diag SonicDns proxy configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="diagAdvancedDnsProxy"> (optional)</param>
+        /// <param name="diagAdvancedSonicDnsProxy"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DiagAdvancedDnsProxyPutWithHttpInfoAsync(DiagAdvancedDnsProxy? diagAdvancedDnsProxy = default(DiagAdvancedDnsProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DiagAdvancedSonicDnsProxyPutWithHttpInfoAsync(DiagAdvancedSonicDnsProxy? diagAdvancedSonicDnsProxy = default(DiagAdvancedSonicDnsProxy?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -505,9 +505,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = diagAdvancedDnsProxy;
+            localVarRequestOptions.Data = diagAdvancedSonicDnsProxy;
 
-            localVarRequestOptions.Operation = "DiagAdvancedDnsProxyApi.DiagAdvancedDnsProxyPut";
+            localVarRequestOptions.Operation = "DiagAdvancedSonicDnsProxyApi.DiagAdvancedSonicDnsProxyPut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -518,11 +518,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/diag/advanced/dns-proxy", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/diag/advanced/SonicDns-proxy", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DiagAdvancedDnsProxyPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("DiagAdvancedSonicDnsProxyPut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

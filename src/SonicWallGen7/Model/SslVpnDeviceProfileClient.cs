@@ -35,7 +35,7 @@ namespace SonicWallGen7.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClient" /> class.
         /// </summary>
-        /// <param name="dns">dns.</param>
+        /// <param name="SonicDns">SonicDns.</param>
         /// <param name="wins">wins.</param>
         /// <param name="autoUpdate">Enable client auto update..</param>
         /// <param name="exitAfterDisconnect">Enable exit client after disconnect..</param>
@@ -45,9 +45,9 @@ namespace SonicWallGen7.Model
         /// <param name="uninstallAfterExit">Enable uninstall client after exit..</param>
         /// <param name="createConnectionProfile">Enable create client connection profile..</param>
         /// <param name="cache">cache.</param>
-        public SslVpnDeviceProfileClient(SslVpnDeviceProfileClientDns dns = default(SslVpnDeviceProfileClientDns), SslVpnDeviceProfileClientWins wins = default(SslVpnDeviceProfileClientWins), bool autoUpdate = default(bool), bool exitAfterDisconnect = default(bool), bool netbiosOverSslvpn = default(bool), bool touchIdAuthentication = default(bool), bool fingerprintAuthentication = default(bool), bool uninstallAfterExit = default(bool), bool createConnectionProfile = default(bool), SslVpnDeviceProfileClientCache cache = default(SslVpnDeviceProfileClientCache))
+        public SslVpnDeviceProfileClient(SslVpnDeviceProfileClientSonicDns SonicDns = default(SslVpnDeviceProfileClientSonicDns), SslVpnDeviceProfileClientWins wins = default(SslVpnDeviceProfileClientWins), bool autoUpdate = default(bool), bool exitAfterDisconnect = default(bool), bool netbiosOverSslvpn = default(bool), bool touchIdAuthentication = default(bool), bool fingerprintAuthentication = default(bool), bool uninstallAfterExit = default(bool), bool createConnectionProfile = default(bool), SslVpnDeviceProfileClientCache cache = default(SslVpnDeviceProfileClientCache))
         {
-            this.Dns = dns;
+            this.SonicDns = SonicDns;
             this.Wins = wins;
             this.AutoUpdate = autoUpdate;
             this.ExitAfterDisconnect = exitAfterDisconnect;
@@ -60,10 +60,10 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Gets or Sets Dns
+        /// Gets or Sets SonicDns
         /// </summary>
-        [DataMember(Name = "dns", EmitDefaultValue = false)]
-        public SslVpnDeviceProfileClientDns Dns { get; set; }
+        [DataMember(Name = "SonicDns", EmitDefaultValue = false)]
+        public SslVpnDeviceProfileClientSonicDns SonicDns { get; set; }
 
         /// <summary>
         /// Gets or Sets Wins
@@ -134,7 +134,7 @@ namespace SonicWallGen7.Model
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("class SslVpnDeviceProfileClient {\n");
-            sb.Append("  Dns: ").Append(Dns).Append("\n");
+            sb.Append("  SonicDns: ").Append(SonicDns).Append("\n");
             sb.Append("  Wins: ").Append(Wins).Append("\n");
             sb.Append("  AutoUpdate: ").Append(AutoUpdate).Append("\n");
             sb.Append("  ExitAfterDisconnect: ").Append(ExitAfterDisconnect).Append("\n");
@@ -180,9 +180,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.Dns == input.Dns ||
-                    (this.Dns != null &&
-                    this.Dns.Equals(input.Dns))
+                    this.SonicDns == input.SonicDns ||
+                    (this.SonicDns != null &&
+                    this.SonicDns.Equals(input.SonicDns))
                 ) && 
                 (
                     this.Wins == input.Wins ||
@@ -233,9 +233,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Dns != null)
+                if (this.SonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.Dns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDns.GetHashCode();
                 }
                 if (this.Wins != null)
                 {

@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// LogNameResolutionNameResolutionDnsStatic
+    /// LogNameResolutionNameResolutionSonicDnsStatic
     /// </summary>
-    [DataContract(Name = "log_name_resolution_name_resolution_dns_static")]
-    public partial class LogNameResolutionNameResolutionDnsStatic : IEquatable<LogNameResolutionNameResolutionDnsStatic>, IValidatableObject
+    [DataContract(Name = "log_name_resolution_name_resolution_SonicDns_static")]
+    public partial class LogNameResolutionNameResolutionSonicDnsStatic : IEquatable<LogNameResolutionNameResolutionSonicDnsStatic>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="LogNameResolutionNameResolutionDnsStatic" /> class.
+        /// Initializes a new instance of the <see cref="LogNameResolutionNameResolutionSonicDnsStatic" /> class.
         /// </summary>
         /// <param name="varStatic">varStatic.</param>
-        public LogNameResolutionNameResolutionDnsStatic(LogNameResolutionNameResolutionDnsStaticStatic varStatic = default(LogNameResolutionNameResolutionDnsStaticStatic))
+        public LogNameResolutionNameResolutionSonicDnsStatic(LogNameResolutionNameResolutionSonicDnsStaticStatic varStatic = default(LogNameResolutionNameResolutionSonicDnsStaticStatic))
         {
             this.VarStatic = varStatic;
         }
@@ -45,7 +45,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets VarStatic
         /// </summary>
         [DataMember(Name = "static", EmitDefaultValue = false)]
-        public LogNameResolutionNameResolutionDnsStaticStatic VarStatic { get; set; }
+        public LogNameResolutionNameResolutionSonicDnsStaticStatic VarStatic { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class LogNameResolutionNameResolutionDnsStatic {\n");
+            sb.Append("class LogNameResolutionNameResolutionSonicDnsStatic {\n");
             sb.Append("  VarStatic: ").Append(VarStatic).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as LogNameResolutionNameResolutionDnsStatic);
+            return this.Equals(input as LogNameResolutionNameResolutionSonicDnsStatic);
         }
 
         /// <summary>
-        /// Returns true if LogNameResolutionNameResolutionDnsStatic instances are equal
+        /// Returns true if LogNameResolutionNameResolutionSonicDnsStatic instances are equal
         /// </summary>
-        /// <param name="input">Instance of LogNameResolutionNameResolutionDnsStatic to be compared</param>
+        /// <param name="input">Instance of LogNameResolutionNameResolutionSonicDnsStatic to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(LogNameResolutionNameResolutionDnsStatic input)
+        public bool Equals(LogNameResolutionNameResolutionSonicDnsStatic input)
         {
             if (input == null)
             {

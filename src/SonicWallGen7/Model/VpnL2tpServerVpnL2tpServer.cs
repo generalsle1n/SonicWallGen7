@@ -37,15 +37,15 @@ namespace SonicWallGen7.Model
         /// </summary>
         /// <param name="enable">Disable L2TP Server..</param>
         /// <param name="keepAlive">Set the Keep alive time (seconds)..</param>
-        /// <param name="dns">dns.</param>
+        /// <param name="SonicDns">SonicDns.</param>
         /// <param name="wins">wins.</param>
         /// <param name="ipPool">ipPool.</param>
         /// <param name="userGroup">Set user group for L2TP users. * Set to null to represent an unconfigured state..</param>
-        public VpnL2tpServerVpnL2tpServer(bool enable = default(bool), decimal keepAlive = default(decimal), VpnL2tpServerVpnL2tpServerDns dns = default(VpnL2tpServerVpnL2tpServerDns), DhcpServerScopeDynamicWins wins = default(DhcpServerScopeDynamicWins), VpnL2tpServerVpnL2tpServerIpPool ipPool = default(VpnL2tpServerVpnL2tpServerIpPool), string userGroup = default(string))
+        public VpnL2tpServerVpnL2tpServer(bool enable = default(bool), decimal keepAlive = default(decimal), VpnL2tpServerVpnL2tpServerSonicDns SonicDns = default(VpnL2tpServerVpnL2tpServerSonicDns), DhcpServerScopeDynamicWins wins = default(DhcpServerScopeDynamicWins), VpnL2tpServerVpnL2tpServerIpPool ipPool = default(VpnL2tpServerVpnL2tpServerIpPool), string userGroup = default(string))
         {
             this.Enable = enable;
             this.KeepAlive = keepAlive;
-            this.Dns = dns;
+            this.SonicDns = SonicDns;
             this.Wins = wins;
             this.IpPool = ipPool;
             this.UserGroup = userGroup;
@@ -66,10 +66,10 @@ namespace SonicWallGen7.Model
         public decimal KeepAlive { get; set; }
 
         /// <summary>
-        /// Gets or Sets Dns
+        /// Gets or Sets SonicDns
         /// </summary>
-        [DataMember(Name = "dns", EmitDefaultValue = false)]
-        public VpnL2tpServerVpnL2tpServerDns Dns { get; set; }
+        [DataMember(Name = "SonicDns", EmitDefaultValue = false)]
+        public VpnL2tpServerVpnL2tpServerSonicDns SonicDns { get; set; }
 
         /// <summary>
         /// Gets or Sets Wins
@@ -100,7 +100,7 @@ namespace SonicWallGen7.Model
             sb.Append("class VpnL2tpServerVpnL2tpServer {\n");
             sb.Append("  Enable: ").Append(Enable).Append("\n");
             sb.Append("  KeepAlive: ").Append(KeepAlive).Append("\n");
-            sb.Append("  Dns: ").Append(Dns).Append("\n");
+            sb.Append("  SonicDns: ").Append(SonicDns).Append("\n");
             sb.Append("  Wins: ").Append(Wins).Append("\n");
             sb.Append("  IpPool: ").Append(IpPool).Append("\n");
             sb.Append("  UserGroup: ").Append(UserGroup).Append("\n");
@@ -148,9 +148,9 @@ namespace SonicWallGen7.Model
                     this.KeepAlive.Equals(input.KeepAlive)
                 ) && 
                 (
-                    this.Dns == input.Dns ||
-                    (this.Dns != null &&
-                    this.Dns.Equals(input.Dns))
+                    this.SonicDns == input.SonicDns ||
+                    (this.SonicDns != null &&
+                    this.SonicDns.Equals(input.SonicDns))
                 ) && 
                 (
                     this.Wins == input.Wins ||
@@ -180,9 +180,9 @@ namespace SonicWallGen7.Model
                 int hashCode = 41;
                 hashCode = (hashCode * 59) + this.Enable.GetHashCode();
                 hashCode = (hashCode * 59) + this.KeepAlive.GetHashCode();
-                if (this.Dns != null)
+                if (this.SonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.Dns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDns.GetHashCode();
                 }
                 if (this.Wins != null)
                 {

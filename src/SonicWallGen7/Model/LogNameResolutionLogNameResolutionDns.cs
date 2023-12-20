@@ -28,18 +28,18 @@ using System.Reflection;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS server settings.
+    /// SonicDns server settings.
     /// </summary>
-    [JsonConverter(typeof(LogNameResolutionLogNameResolutionDnsJsonConverter))]
-    [DataContract(Name = "log_name_resolution_log_name_resolution_dns")]
-    public partial class LogNameResolutionLogNameResolutionDns : AbstractOpenAPISchema, IEquatable<LogNameResolutionLogNameResolutionDns>, IValidatableObject
+    [JsonConverter(typeof(LogNameResolutionLogNameResolutionSonicDnsJsonConverter))]
+    [DataContract(Name = "log_name_resolution_log_name_resolution_SonicDns")]
+    public partial class LogNameResolutionLogNameResolutionSonicDns : AbstractOpenAPISchema, IEquatable<LogNameResolutionLogNameResolutionSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="LogNameResolutionLogNameResolutionDns" /> class
-        /// with the <see cref="LogNameResolutionNameResolutionDnsInherit" /> class
+        /// Initializes a new instance of the <see cref="LogNameResolutionLogNameResolutionSonicDns" /> class
+        /// with the <see cref="LogNameResolutionNameResolutionSonicDnsInherit" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of LogNameResolutionNameResolutionDnsInherit.</param>
-        public LogNameResolutionLogNameResolutionDns(LogNameResolutionNameResolutionDnsInherit actualInstance)
+        /// <param name="actualInstance">An instance of LogNameResolutionNameResolutionSonicDnsInherit.</param>
+        public LogNameResolutionLogNameResolutionSonicDns(LogNameResolutionNameResolutionSonicDnsInherit actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -47,11 +47,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="LogNameResolutionLogNameResolutionDns" /> class
-        /// with the <see cref="LogNameResolutionNameResolutionDnsStatic" /> class
+        /// Initializes a new instance of the <see cref="LogNameResolutionLogNameResolutionSonicDns" /> class
+        /// with the <see cref="LogNameResolutionNameResolutionSonicDnsStatic" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of LogNameResolutionNameResolutionDnsStatic.</param>
-        public LogNameResolutionLogNameResolutionDns(LogNameResolutionNameResolutionDnsStatic actualInstance)
+        /// <param name="actualInstance">An instance of LogNameResolutionNameResolutionSonicDnsStatic.</param>
+        public LogNameResolutionLogNameResolutionSonicDns(LogNameResolutionNameResolutionSonicDnsStatic actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -72,39 +72,39 @@ namespace SonicWallGen7.Model
             }
             set
             {
-                if (value.GetType() == typeof(LogNameResolutionNameResolutionDnsInherit))
+                if (value.GetType() == typeof(LogNameResolutionNameResolutionSonicDnsInherit))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(LogNameResolutionNameResolutionDnsStatic))
+                else if (value.GetType() == typeof(LogNameResolutionNameResolutionSonicDnsStatic))
                 {
                     this._actualInstance = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid instance found. Must be the following types: LogNameResolutionNameResolutionDnsInherit, LogNameResolutionNameResolutionDnsStatic");
+                    throw new ArgumentException("Invalid instance found. Must be the following types: LogNameResolutionNameResolutionSonicDnsInherit, LogNameResolutionNameResolutionSonicDnsStatic");
                 }
             }
         }
 
         /// <summary>
-        /// Get the actual instance of `LogNameResolutionNameResolutionDnsInherit`. If the actual instance is not `LogNameResolutionNameResolutionDnsInherit`,
+        /// Get the actual instance of `LogNameResolutionNameResolutionSonicDnsInherit`. If the actual instance is not `LogNameResolutionNameResolutionSonicDnsInherit`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of LogNameResolutionNameResolutionDnsInherit</returns>
-        public LogNameResolutionNameResolutionDnsInherit GetLogNameResolutionNameResolutionDnsInherit()
+        /// <returns>An instance of LogNameResolutionNameResolutionSonicDnsInherit</returns>
+        public LogNameResolutionNameResolutionSonicDnsInherit GetLogNameResolutionNameResolutionSonicDnsInherit()
         {
-            return (LogNameResolutionNameResolutionDnsInherit)this.ActualInstance;
+            return (LogNameResolutionNameResolutionSonicDnsInherit)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `LogNameResolutionNameResolutionDnsStatic`. If the actual instance is not `LogNameResolutionNameResolutionDnsStatic`,
+        /// Get the actual instance of `LogNameResolutionNameResolutionSonicDnsStatic`. If the actual instance is not `LogNameResolutionNameResolutionSonicDnsStatic`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of LogNameResolutionNameResolutionDnsStatic</returns>
-        public LogNameResolutionNameResolutionDnsStatic GetLogNameResolutionNameResolutionDnsStatic()
+        /// <returns>An instance of LogNameResolutionNameResolutionSonicDnsStatic</returns>
+        public LogNameResolutionNameResolutionSonicDnsStatic GetLogNameResolutionNameResolutionSonicDnsStatic()
         {
-            return (LogNameResolutionNameResolutionDnsStatic)this.ActualInstance;
+            return (LogNameResolutionNameResolutionSonicDnsStatic)this.ActualInstance;
         }
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class LogNameResolutionLogNameResolutionDns {\n");
+            sb.Append("class LogNameResolutionLogNameResolutionSonicDns {\n");
             sb.Append("  ActualInstance: ").Append(this.ActualInstance).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -126,21 +126,21 @@ namespace SonicWallGen7.Model
         /// <returns>JSON string presentation of the object</returns>
         public override string ToJson()
         {
-            return JsonConvert.SerializeObject(this.ActualInstance, LogNameResolutionLogNameResolutionDns.SerializerSettings);
+            return JsonConvert.SerializeObject(this.ActualInstance, LogNameResolutionLogNameResolutionSonicDns.SerializerSettings);
         }
 
         /// <summary>
-        /// Converts the JSON string into an instance of LogNameResolutionLogNameResolutionDns
+        /// Converts the JSON string into an instance of LogNameResolutionLogNameResolutionSonicDns
         /// </summary>
         /// <param name="jsonString">JSON string</param>
-        /// <returns>An instance of LogNameResolutionLogNameResolutionDns</returns>
-        public static LogNameResolutionLogNameResolutionDns FromJson(string jsonString)
+        /// <returns>An instance of LogNameResolutionLogNameResolutionSonicDns</returns>
+        public static LogNameResolutionLogNameResolutionSonicDns FromJson(string jsonString)
         {
-            LogNameResolutionLogNameResolutionDns newLogNameResolutionLogNameResolutionDns = null;
+            LogNameResolutionLogNameResolutionSonicDns newLogNameResolutionLogNameResolutionSonicDns = null;
 
             if (string.IsNullOrEmpty(jsonString))
             {
-                return newLogNameResolutionLogNameResolutionDns;
+                return newLogNameResolutionLogNameResolutionSonicDns;
             }
             int match = 0;
             List<string> matchedTypes = new List<string>();
@@ -148,41 +148,41 @@ namespace SonicWallGen7.Model
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(LogNameResolutionNameResolutionDnsInherit).GetProperty("AdditionalProperties") == null)
+                if (typeof(LogNameResolutionNameResolutionSonicDnsInherit).GetProperty("AdditionalProperties") == null)
                 {
-                    newLogNameResolutionLogNameResolutionDns = new LogNameResolutionLogNameResolutionDns(JsonConvert.DeserializeObject<LogNameResolutionNameResolutionDnsInherit>(jsonString, LogNameResolutionLogNameResolutionDns.SerializerSettings));
+                    newLogNameResolutionLogNameResolutionSonicDns = new LogNameResolutionLogNameResolutionSonicDns(JsonConvert.DeserializeObject<LogNameResolutionNameResolutionSonicDnsInherit>(jsonString, LogNameResolutionLogNameResolutionSonicDns.SerializerSettings));
                 }
                 else
                 {
-                    newLogNameResolutionLogNameResolutionDns = new LogNameResolutionLogNameResolutionDns(JsonConvert.DeserializeObject<LogNameResolutionNameResolutionDnsInherit>(jsonString, LogNameResolutionLogNameResolutionDns.AdditionalPropertiesSerializerSettings));
+                    newLogNameResolutionLogNameResolutionSonicDns = new LogNameResolutionLogNameResolutionSonicDns(JsonConvert.DeserializeObject<LogNameResolutionNameResolutionSonicDnsInherit>(jsonString, LogNameResolutionLogNameResolutionSonicDns.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("LogNameResolutionNameResolutionDnsInherit");
+                matchedTypes.Add("LogNameResolutionNameResolutionSonicDnsInherit");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into LogNameResolutionNameResolutionDnsInherit: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into LogNameResolutionNameResolutionSonicDnsInherit: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(LogNameResolutionNameResolutionDnsStatic).GetProperty("AdditionalProperties") == null)
+                if (typeof(LogNameResolutionNameResolutionSonicDnsStatic).GetProperty("AdditionalProperties") == null)
                 {
-                    newLogNameResolutionLogNameResolutionDns = new LogNameResolutionLogNameResolutionDns(JsonConvert.DeserializeObject<LogNameResolutionNameResolutionDnsStatic>(jsonString, LogNameResolutionLogNameResolutionDns.SerializerSettings));
+                    newLogNameResolutionLogNameResolutionSonicDns = new LogNameResolutionLogNameResolutionSonicDns(JsonConvert.DeserializeObject<LogNameResolutionNameResolutionSonicDnsStatic>(jsonString, LogNameResolutionLogNameResolutionSonicDns.SerializerSettings));
                 }
                 else
                 {
-                    newLogNameResolutionLogNameResolutionDns = new LogNameResolutionLogNameResolutionDns(JsonConvert.DeserializeObject<LogNameResolutionNameResolutionDnsStatic>(jsonString, LogNameResolutionLogNameResolutionDns.AdditionalPropertiesSerializerSettings));
+                    newLogNameResolutionLogNameResolutionSonicDns = new LogNameResolutionLogNameResolutionSonicDns(JsonConvert.DeserializeObject<LogNameResolutionNameResolutionSonicDnsStatic>(jsonString, LogNameResolutionLogNameResolutionSonicDns.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("LogNameResolutionNameResolutionDnsStatic");
+                matchedTypes.Add("LogNameResolutionNameResolutionSonicDnsStatic");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into LogNameResolutionNameResolutionDnsStatic: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into LogNameResolutionNameResolutionSonicDnsStatic: {1}", jsonString, exception.ToString()));
             }
 
             if (match == 0)
@@ -195,7 +195,7 @@ namespace SonicWallGen7.Model
             }
 
             // deserialization is considered successful at this point if no exception has been thrown.
-            return newLogNameResolutionLogNameResolutionDns;
+            return newLogNameResolutionLogNameResolutionSonicDns;
         }
 
         /// <summary>
@@ -205,15 +205,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as LogNameResolutionLogNameResolutionDns);
+            return this.Equals(input as LogNameResolutionLogNameResolutionSonicDns);
         }
 
         /// <summary>
-        /// Returns true if LogNameResolutionLogNameResolutionDns instances are equal
+        /// Returns true if LogNameResolutionLogNameResolutionSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of LogNameResolutionLogNameResolutionDns to be compared</param>
+        /// <param name="input">Instance of LogNameResolutionLogNameResolutionSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(LogNameResolutionLogNameResolutionDns input)
+        public bool Equals(LogNameResolutionLogNameResolutionSonicDns input)
         {
             if (input == null)
                 return false;
@@ -248,9 +248,9 @@ namespace SonicWallGen7.Model
     }
 
     /// <summary>
-    /// Custom JSON converter for LogNameResolutionLogNameResolutionDns
+    /// Custom JSON converter for LogNameResolutionLogNameResolutionSonicDns
     /// </summary>
-    public class LogNameResolutionLogNameResolutionDnsJsonConverter : JsonConverter
+    public class LogNameResolutionLogNameResolutionSonicDnsJsonConverter : JsonConverter
     {
         /// <summary>
         /// To write the JSON string
@@ -260,7 +260,7 @@ namespace SonicWallGen7.Model
         /// <param name="serializer">JSON Serializer</param>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            writer.WriteRawValue((string)(typeof(LogNameResolutionLogNameResolutionDns).GetMethod("ToJson").Invoke(value, null)));
+            writer.WriteRawValue((string)(typeof(LogNameResolutionLogNameResolutionSonicDns).GetMethod("ToJson").Invoke(value, null)));
         }
 
         /// <summary>
@@ -275,7 +275,7 @@ namespace SonicWallGen7.Model
         {
             if(reader.TokenType != JsonToken.Null)
             {
-                return LogNameResolutionLogNameResolutionDns.FromJson(JObject.Load(reader).ToString(Formatting.None));
+                return LogNameResolutionLogNameResolutionSonicDns.FromJson(JObject.Load(reader).ToString(Formatting.None));
             }
             return null;
         }

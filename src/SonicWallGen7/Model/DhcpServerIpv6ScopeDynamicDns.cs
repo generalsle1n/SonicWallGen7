@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS server settings.
+    /// SonicDns server settings.
     /// </summary>
-    [DataContract(Name = "dhcp_server_ipv6_scope_dynamic_dns")]
-    public partial class DhcpServerIpv6ScopeDynamicDns : IEquatable<DhcpServerIpv6ScopeDynamicDns>, IValidatableObject
+    [DataContract(Name = "dhcp_server_ipv6_scope_dynamic_SonicDns")]
+    public partial class DhcpServerIpv6ScopeDynamicSonicDns : IEquatable<DhcpServerIpv6ScopeDynamicSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DhcpServerIpv6ScopeDynamicDns" /> class.
+        /// Initializes a new instance of the <see cref="DhcpServerIpv6ScopeDynamicSonicDns" /> class.
         /// </summary>
         /// <param name="server">server.</param>
-        public DhcpServerIpv6ScopeDynamicDns(DhcpServerIpv6ScopeDynamicDnsServer server = default(DhcpServerIpv6ScopeDynamicDnsServer))
+        public DhcpServerIpv6ScopeDynamicSonicDns(DhcpServerIpv6ScopeDynamicSonicDnsServer server = default(DhcpServerIpv6ScopeDynamicSonicDnsServer))
         {
             this.Server = server;
         }
@@ -45,7 +45,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Server
         /// </summary>
         [DataMember(Name = "server", EmitDefaultValue = false)]
-        public DhcpServerIpv6ScopeDynamicDnsServer Server { get; set; }
+        public DhcpServerIpv6ScopeDynamicSonicDnsServer Server { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DhcpServerIpv6ScopeDynamicDns {\n");
+            sb.Append("class DhcpServerIpv6ScopeDynamicSonicDns {\n");
             sb.Append("  Server: ").Append(Server).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DhcpServerIpv6ScopeDynamicDns);
+            return this.Equals(input as DhcpServerIpv6ScopeDynamicSonicDns);
         }
 
         /// <summary>
-        /// Returns true if DhcpServerIpv6ScopeDynamicDns instances are equal
+        /// Returns true if DhcpServerIpv6ScopeDynamicSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of DhcpServerIpv6ScopeDynamicDns to be compared</param>
+        /// <param name="input">Instance of DhcpServerIpv6ScopeDynamicSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DhcpServerIpv6ScopeDynamicDns input)
+        public bool Equals(DhcpServerIpv6ScopeDynamicSonicDns input)
         {
             if (input == null)
             {

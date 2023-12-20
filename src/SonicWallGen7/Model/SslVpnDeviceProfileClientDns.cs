@@ -27,19 +27,19 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Set all dns search list.
+    /// Set all SonicDns search list.
     /// </summary>
-    [DataContract(Name = "ssl_vpn_device_profile_client_dns")]
-    public partial class SslVpnDeviceProfileClientDns : IEquatable<SslVpnDeviceProfileClientDns>, IValidatableObject
+    [DataContract(Name = "ssl_vpn_device_profile_client_SonicDns")]
+    public partial class SslVpnDeviceProfileClientSonicDns : IEquatable<SslVpnDeviceProfileClientSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientDns" /> class.
+        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientSonicDns" /> class.
         /// </summary>
         /// <param name="primary">primary.</param>
         /// <param name="secondary">secondary.</param>
-        /// <param name="searchLists">Set all dns dns search list..</param>
-        /// <param name="searchList">Add a dns to the dns search list..</param>
-        public SslVpnDeviceProfileClientDns(SslVpnDeviceProfileClientDnsPrimary primary = default(SslVpnDeviceProfileClientDnsPrimary), SslVpnDeviceProfileClientDnsSecondary secondary = default(SslVpnDeviceProfileClientDnsSecondary), bool searchLists = default(bool), List<SslVpnDeviceProfileClientDnsSearchListInner> searchList = default(List<SslVpnDeviceProfileClientDnsSearchListInner>))
+        /// <param name="searchLists">Set all SonicDns SonicDns search list..</param>
+        /// <param name="searchList">Add a SonicDns to the SonicDns search list..</param>
+        public SslVpnDeviceProfileClientSonicDns(SslVpnDeviceProfileClientSonicDnsPrimary primary = default(SslVpnDeviceProfileClientSonicDnsPrimary), SslVpnDeviceProfileClientSonicDnsSecondary secondary = default(SslVpnDeviceProfileClientSonicDnsSecondary), bool searchLists = default(bool), List<SslVpnDeviceProfileClientSonicDnsSearchListInner> searchList = default(List<SslVpnDeviceProfileClientSonicDnsSearchListInner>))
         {
             this.Primary = primary;
             this.Secondary = secondary;
@@ -51,27 +51,27 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Primary
         /// </summary>
         [DataMember(Name = "primary", EmitDefaultValue = true)]
-        public SslVpnDeviceProfileClientDnsPrimary Primary { get; set; }
+        public SslVpnDeviceProfileClientSonicDnsPrimary Primary { get; set; }
 
         /// <summary>
         /// Gets or Sets Secondary
         /// </summary>
         [DataMember(Name = "secondary", EmitDefaultValue = true)]
-        public SslVpnDeviceProfileClientDnsSecondary Secondary { get; set; }
+        public SslVpnDeviceProfileClientSonicDnsSecondary Secondary { get; set; }
 
         /// <summary>
-        /// Set all dns dns search list.
+        /// Set all SonicDns SonicDns search list.
         /// </summary>
-        /// <value>Set all dns dns search list.</value>
+        /// <value>Set all SonicDns SonicDns search list.</value>
         [DataMember(Name = "search_lists", EmitDefaultValue = true)]
         public bool SearchLists { get; set; }
 
         /// <summary>
-        /// Add a dns to the dns search list.
+        /// Add a SonicDns to the SonicDns search list.
         /// </summary>
-        /// <value>Add a dns to the dns search list.</value>
+        /// <value>Add a SonicDns to the SonicDns search list.</value>
         [DataMember(Name = "search_list", EmitDefaultValue = false)]
-        public List<SslVpnDeviceProfileClientDnsSearchListInner> SearchList { get; set; }
+        public List<SslVpnDeviceProfileClientSonicDnsSearchListInner> SearchList { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -80,7 +80,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class SslVpnDeviceProfileClientDns {\n");
+            sb.Append("class SslVpnDeviceProfileClientSonicDns {\n");
             sb.Append("  Primary: ").Append(Primary).Append("\n");
             sb.Append("  Secondary: ").Append(Secondary).Append("\n");
             sb.Append("  SearchLists: ").Append(SearchLists).Append("\n");
@@ -105,15 +105,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as SslVpnDeviceProfileClientDns);
+            return this.Equals(input as SslVpnDeviceProfileClientSonicDns);
         }
 
         /// <summary>
-        /// Returns true if SslVpnDeviceProfileClientDns instances are equal
+        /// Returns true if SslVpnDeviceProfileClientSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of SslVpnDeviceProfileClientDns to be compared</param>
+        /// <param name="input">Instance of SslVpnDeviceProfileClientSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(SslVpnDeviceProfileClientDns input)
+        public bool Equals(SslVpnDeviceProfileClientSonicDns input)
         {
             if (input == null)
             {

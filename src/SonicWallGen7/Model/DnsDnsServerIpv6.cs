@@ -27,18 +27,18 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Set IPv6 DNS server
+    /// Set IPv6 SonicDns server
     /// </summary>
-    [DataContract(Name = "dns_dns_server_ipv6")]
-    public partial class DnsDnsServerIpv6 : IEquatable<DnsDnsServerIpv6>, IValidatableObject
+    [DataContract(Name = "SonicDns_SonicDns_server_ipv6")]
+    public partial class SonicDnsSonicDnsServerIpv6 : IEquatable<SonicDnsSonicDnsServerIpv6>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsDnsServerIpv6" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSonicDnsServerIpv6" /> class.
         /// </summary>
-        /// <param name="preferred">Prefer IPv6 DNS Servers..</param>
-        /// <param name="inherit">Inherit DNS servers..</param>
+        /// <param name="preferred">Prefer IPv6 SonicDns Servers..</param>
+        /// <param name="inherit">Inherit SonicDns servers..</param>
         /// <param name="varStatic">varStatic.</param>
-        public DnsDnsServerIpv6(bool preferred = default(bool), bool inherit = default(bool), LogNameResolutionNameResolutionDnsStaticStatic varStatic = default(LogNameResolutionNameResolutionDnsStaticStatic))
+        public SonicDnsSonicDnsServerIpv6(bool preferred = default(bool), bool inherit = default(bool), LogNameResolutionNameResolutionSonicDnsStaticStatic varStatic = default(LogNameResolutionNameResolutionSonicDnsStaticStatic))
         {
             this.Preferred = preferred;
             this.Inherit = inherit;
@@ -46,16 +46,16 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Prefer IPv6 DNS Servers.
+        /// Prefer IPv6 SonicDns Servers.
         /// </summary>
-        /// <value>Prefer IPv6 DNS Servers.</value>
+        /// <value>Prefer IPv6 SonicDns Servers.</value>
         [DataMember(Name = "preferred", EmitDefaultValue = true)]
         public bool Preferred { get; set; }
 
         /// <summary>
-        /// Inherit DNS servers.
+        /// Inherit SonicDns servers.
         /// </summary>
-        /// <value>Inherit DNS servers.</value>
+        /// <value>Inherit SonicDns servers.</value>
         [DataMember(Name = "inherit", EmitDefaultValue = true)]
         public bool Inherit { get; set; }
 
@@ -63,7 +63,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets VarStatic
         /// </summary>
         [DataMember(Name = "static", EmitDefaultValue = false)]
-        public LogNameResolutionNameResolutionDnsStaticStatic VarStatic { get; set; }
+        public LogNameResolutionNameResolutionSonicDnsStaticStatic VarStatic { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -72,7 +72,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsDnsServerIpv6 {\n");
+            sb.Append("class SonicDnsSonicDnsServerIpv6 {\n");
             sb.Append("  Preferred: ").Append(Preferred).Append("\n");
             sb.Append("  Inherit: ").Append(Inherit).Append("\n");
             sb.Append("  VarStatic: ").Append(VarStatic).Append("\n");
@@ -96,15 +96,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsDnsServerIpv6);
+            return this.Equals(input as SonicDnsSonicDnsServerIpv6);
         }
 
         /// <summary>
-        /// Returns true if DnsDnsServerIpv6 instances are equal
+        /// Returns true if SonicDnsSonicDnsServerIpv6 instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsDnsServerIpv6 to be compared</param>
+        /// <param name="input">Instance of SonicDnsSonicDnsServerIpv6 to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsDnsServerIpv6 input)
+        public bool Equals(SonicDnsSonicDnsServerIpv6 input)
         {
             if (input == null)
             {

@@ -24,125 +24,125 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsProxyFlushCacheEntryIpv6ApiSync : IApiAccessor
+    public interface ISonicDnsProxyFlushCacheEntryIpv6ApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Flush the IPv6 dynamic DNS cache entry.
+        /// Flush the IPv6 dynamic SonicDns cache entry.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">DNS proxy cache domain name.</param>
+        /// <param name="NAME">SonicDns proxy cache domain name.</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsProxyFlushCacheEntriesIpv6NameNAMEPost(string NAME, Object? body = default(Object?), int operationIndex = 0);
+        ApiStatus SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPost(string NAME, Object? body = default(Object?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Flush the IPv6 dynamic DNS cache entry.
+        /// Flush the IPv6 dynamic SonicDns cache entry.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">DNS proxy cache domain name.</param>
+        /// <param name="NAME">SonicDns proxy cache domain name.</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsProxyFlushCacheEntriesIpv6NameNAMEPostWithHttpInfo(string NAME, Object? body = default(Object?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPostWithHttpInfo(string NAME, Object? body = default(Object?), int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Flush the IPv6 dynamic DNS cache entry.
+        /// Flush the IPv6 dynamic SonicDns cache entry.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsProxyFlushCacheEntriesIpv6Post(Object? body = default(Object?), int operationIndex = 0);
+        ApiStatus SonicDnsProxyFlushCacheEntriesIpv6Post(Object? body = default(Object?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Flush the IPv6 dynamic DNS cache entry.
+        /// Flush the IPv6 dynamic SonicDns cache entry.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsProxyFlushCacheEntriesIpv6PostWithHttpInfo(Object? body = default(Object?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsProxyFlushCacheEntriesIpv6PostWithHttpInfo(Object? body = default(Object?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsProxyFlushCacheEntryIpv6ApiAsync : IApiAccessor
+    public interface ISonicDnsProxyFlushCacheEntryIpv6ApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Flush the IPv6 dynamic DNS cache entry.
+        /// Flush the IPv6 dynamic SonicDns cache entry.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">DNS proxy cache domain name.</param>
+        /// <param name="NAME">SonicDns proxy cache domain name.</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsProxyFlushCacheEntriesIpv6NameNAMEPostAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPostAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Flush the IPv6 dynamic DNS cache entry.
+        /// Flush the IPv6 dynamic SonicDns cache entry.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">DNS proxy cache domain name.</param>
+        /// <param name="NAME">SonicDns proxy cache domain name.</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsProxyFlushCacheEntriesIpv6NameNAMEPostWithHttpInfoAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPostWithHttpInfoAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Flush the IPv6 dynamic DNS cache entry.
+        /// Flush the IPv6 dynamic SonicDns cache entry.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsProxyFlushCacheEntriesIpv6PostAsync(Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyFlushCacheEntriesIpv6PostAsync(Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Flush the IPv6 dynamic DNS cache entry.
+        /// Flush the IPv6 dynamic SonicDns cache entry.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsProxyFlushCacheEntriesIpv6PostWithHttpInfoAsync(Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsProxyFlushCacheEntriesIpv6PostWithHttpInfoAsync(Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsProxyFlushCacheEntryIpv6Api : IDnsProxyFlushCacheEntryIpv6ApiSync, IDnsProxyFlushCacheEntryIpv6ApiAsync
+    public interface ISonicDnsProxyFlushCacheEntryIpv6Api : ISonicDnsProxyFlushCacheEntryIpv6ApiSync, ISonicDnsProxyFlushCacheEntryIpv6ApiAsync
     {
 
     }
@@ -150,23 +150,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DnsProxyFlushCacheEntryIpv6Api : IDnsProxyFlushCacheEntryIpv6Api
+    public partial class SonicDnsProxyFlushCacheEntryIpv6Api : ISonicDnsProxyFlushCacheEntryIpv6Api
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyFlushCacheEntryIpv6Api"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxyFlushCacheEntryIpv6Api"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsProxyFlushCacheEntryIpv6Api() : this((string)null)
+        public SonicDnsProxyFlushCacheEntryIpv6Api() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyFlushCacheEntryIpv6Api"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxyFlushCacheEntryIpv6Api"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsProxyFlushCacheEntryIpv6Api(string basePath)
+        public SonicDnsProxyFlushCacheEntryIpv6Api(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -178,12 +178,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyFlushCacheEntryIpv6Api"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsProxyFlushCacheEntryIpv6Api"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DnsProxyFlushCacheEntryIpv6Api(SonicWallGen7.Client.Configuration configuration)
+        public SonicDnsProxyFlushCacheEntryIpv6Api(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -197,13 +197,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyFlushCacheEntryIpv6Api"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsProxyFlushCacheEntryIpv6Api"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DnsProxyFlushCacheEntryIpv6Api(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicDnsProxyFlushCacheEntryIpv6Api(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -257,33 +257,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Flush the IPv6 dynamic DNS cache entry.
+        ///  Flush the IPv6 dynamic SonicDns cache entry.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">DNS proxy cache domain name.</param>
+        /// <param name="NAME">SonicDns proxy cache domain name.</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsProxyFlushCacheEntriesIpv6NameNAMEPost(string NAME, Object? body = default(Object?), int operationIndex = 0)
+        public ApiStatus SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPost(string NAME, Object? body = default(Object?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsProxyFlushCacheEntriesIpv6NameNAMEPostWithHttpInfo(NAME, body);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPostWithHttpInfo(NAME, body);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Flush the IPv6 dynamic DNS cache entry.
+        ///  Flush the IPv6 dynamic SonicDns cache entry.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">DNS proxy cache domain name.</param>
+        /// <param name="NAME">SonicDns proxy cache domain name.</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsProxyFlushCacheEntriesIpv6NameNAMEPostWithHttpInfo(string NAME, Object? body = default(Object?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPostWithHttpInfo(string NAME, Object? body = default(Object?), int operationIndex = 0)
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsProxyFlushCacheEntryIpv6Api->DnsProxyFlushCacheEntriesIpv6NameNAMEPost");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsProxyFlushCacheEntryIpv6Api->SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPost");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -312,7 +312,7 @@ namespace SonicWallGen7.Api
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
             localVarRequestOptions.Data = body;
 
-            localVarRequestOptions.Operation = "DnsProxyFlushCacheEntryIpv6Api.DnsProxyFlushCacheEntriesIpv6NameNAMEPost";
+            localVarRequestOptions.Operation = "SonicDnsProxyFlushCacheEntryIpv6Api.SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPost";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -323,10 +323,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<ApiStatus>("/dns-proxy/flush/cache-entries/ipv6/name/{NAME}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<ApiStatus>("/SonicDns-proxy/flush/cache-entries/ipv6/name/{NAME}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyFlushCacheEntriesIpv6NameNAMEPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -337,35 +337,35 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Flush the IPv6 dynamic DNS cache entry.
+        ///  Flush the IPv6 dynamic SonicDns cache entry.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">DNS proxy cache domain name.</param>
+        /// <param name="NAME">SonicDns proxy cache domain name.</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsProxyFlushCacheEntriesIpv6NameNAMEPostAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPostAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsProxyFlushCacheEntriesIpv6NameNAMEPostWithHttpInfoAsync(NAME, body, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPostWithHttpInfoAsync(NAME, body, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Flush the IPv6 dynamic DNS cache entry.
+        ///  Flush the IPv6 dynamic SonicDns cache entry.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">DNS proxy cache domain name.</param>
+        /// <param name="NAME">SonicDns proxy cache domain name.</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsProxyFlushCacheEntriesIpv6NameNAMEPostWithHttpInfoAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPostWithHttpInfoAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsProxyFlushCacheEntryIpv6Api->DnsProxyFlushCacheEntriesIpv6NameNAMEPost");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsProxyFlushCacheEntryIpv6Api->SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPost");
             }
 
 
@@ -395,7 +395,7 @@ namespace SonicWallGen7.Api
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
             localVarRequestOptions.Data = body;
 
-            localVarRequestOptions.Operation = "DnsProxyFlushCacheEntryIpv6Api.DnsProxyFlushCacheEntriesIpv6NameNAMEPost";
+            localVarRequestOptions.Operation = "SonicDnsProxyFlushCacheEntryIpv6Api.SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPost";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -406,11 +406,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/dns-proxy/flush/cache-entries/ipv6/name/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/SonicDns-proxy/flush/cache-entries/ipv6/name/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyFlushCacheEntriesIpv6NameNAMEPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyFlushCacheEntriesIpv6NameNAMEPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -421,26 +421,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Flush the IPv6 dynamic DNS cache entry.
+        ///  Flush the IPv6 dynamic SonicDns cache entry.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsProxyFlushCacheEntriesIpv6Post(Object? body = default(Object?), int operationIndex = 0)
+        public ApiStatus SonicDnsProxyFlushCacheEntriesIpv6Post(Object? body = default(Object?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsProxyFlushCacheEntriesIpv6PostWithHttpInfo(body);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsProxyFlushCacheEntriesIpv6PostWithHttpInfo(body);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Flush the IPv6 dynamic DNS cache entry.
+        ///  Flush the IPv6 dynamic SonicDns cache entry.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsProxyFlushCacheEntriesIpv6PostWithHttpInfo(Object? body = default(Object?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsProxyFlushCacheEntriesIpv6PostWithHttpInfo(Object? body = default(Object?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -467,7 +467,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.Data = body;
 
-            localVarRequestOptions.Operation = "DnsProxyFlushCacheEntryIpv6Api.DnsProxyFlushCacheEntriesIpv6Post";
+            localVarRequestOptions.Operation = "SonicDnsProxyFlushCacheEntryIpv6Api.SonicDnsProxyFlushCacheEntriesIpv6Post";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -478,10 +478,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<ApiStatus>("/dns-proxy/flush/cache-entries/ipv6", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<ApiStatus>("/SonicDns-proxy/flush/cache-entries/ipv6", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyFlushCacheEntriesIpv6Post", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyFlushCacheEntriesIpv6Post", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -492,28 +492,28 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Flush the IPv6 dynamic DNS cache entry.
+        ///  Flush the IPv6 dynamic SonicDns cache entry.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsProxyFlushCacheEntriesIpv6PostAsync(Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyFlushCacheEntriesIpv6PostAsync(Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsProxyFlushCacheEntriesIpv6PostWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsProxyFlushCacheEntriesIpv6PostWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Flush the IPv6 dynamic DNS cache entry.
+        ///  Flush the IPv6 dynamic SonicDns cache entry.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsProxyFlushCacheEntriesIpv6PostWithHttpInfoAsync(Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsProxyFlushCacheEntriesIpv6PostWithHttpInfoAsync(Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -541,7 +541,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.Data = body;
 
-            localVarRequestOptions.Operation = "DnsProxyFlushCacheEntryIpv6Api.DnsProxyFlushCacheEntriesIpv6Post";
+            localVarRequestOptions.Operation = "SonicDnsProxyFlushCacheEntryIpv6Api.SonicDnsProxyFlushCacheEntriesIpv6Post";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -552,11 +552,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/dns-proxy/flush/cache-entries/ipv6", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/SonicDns-proxy/flush/cache-entries/ipv6", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyFlushCacheEntriesIpv6Post", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyFlushCacheEntriesIpv6Post", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

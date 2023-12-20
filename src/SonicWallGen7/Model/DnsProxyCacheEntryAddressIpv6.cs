@@ -27,17 +27,17 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Set the static DNS cache entry IPv6 address.
+    /// Set the static SonicDns cache entry IPv6 address.
     /// </summary>
-    [DataContract(Name = "dns_proxy_cache_entry_address_ipv6")]
-    public partial class DnsProxyCacheEntryAddressIpv6 : IEquatable<DnsProxyCacheEntryAddressIpv6>, IValidatableObject
+    [DataContract(Name = "SonicDns_proxy_cache_entry_address_ipv6")]
+    public partial class SonicDnsProxyCacheEntryAddressIpv6 : IEquatable<SonicDnsProxyCacheEntryAddressIpv6>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyCacheEntryAddressIpv6" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxyCacheEntryAddressIpv6" /> class.
         /// </summary>
         /// <param name="primary">primary.</param>
         /// <param name="secondary">secondary.</param>
-        public DnsProxyCacheEntryAddressIpv6(DnsProxyCacheEntryAddressIpv6Primary primary = default(DnsProxyCacheEntryAddressIpv6Primary), DnsProxyCacheEntryAddressIpv6Secondary secondary = default(DnsProxyCacheEntryAddressIpv6Secondary))
+        public SonicDnsProxyCacheEntryAddressIpv6(SonicDnsProxyCacheEntryAddressIpv6Primary primary = default(SonicDnsProxyCacheEntryAddressIpv6Primary), SonicDnsProxyCacheEntryAddressIpv6Secondary secondary = default(SonicDnsProxyCacheEntryAddressIpv6Secondary))
         {
             this.Primary = primary;
             this.Secondary = secondary;
@@ -47,13 +47,13 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Primary
         /// </summary>
         [DataMember(Name = "primary", EmitDefaultValue = true)]
-        public DnsProxyCacheEntryAddressIpv6Primary Primary { get; set; }
+        public SonicDnsProxyCacheEntryAddressIpv6Primary Primary { get; set; }
 
         /// <summary>
         /// Gets or Sets Secondary
         /// </summary>
         [DataMember(Name = "secondary", EmitDefaultValue = true)]
-        public DnsProxyCacheEntryAddressIpv6Secondary Secondary { get; set; }
+        public SonicDnsProxyCacheEntryAddressIpv6Secondary Secondary { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -62,7 +62,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsProxyCacheEntryAddressIpv6 {\n");
+            sb.Append("class SonicDnsProxyCacheEntryAddressIpv6 {\n");
             sb.Append("  Primary: ").Append(Primary).Append("\n");
             sb.Append("  Secondary: ").Append(Secondary).Append("\n");
             sb.Append("}\n");
@@ -85,15 +85,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsProxyCacheEntryAddressIpv6);
+            return this.Equals(input as SonicDnsProxyCacheEntryAddressIpv6);
         }
 
         /// <summary>
-        /// Returns true if DnsProxyCacheEntryAddressIpv6 instances are equal
+        /// Returns true if SonicDnsProxyCacheEntryAddressIpv6 instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsProxyCacheEntryAddressIpv6 to be compared</param>
+        /// <param name="input">Instance of SonicDnsProxyCacheEntryAddressIpv6 to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsProxyCacheEntryAddressIpv6 input)
+        public bool Equals(SonicDnsProxyCacheEntryAddressIpv6 input)
         {
             if (input == null)
             {

@@ -24,69 +24,69 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsProxyServerApiSync : IApiAccessor
+    public interface ISonicDnsProxyServerApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy DNS server status.
+        /// Retrieve SonicDns proxy SonicDns server status.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>List&lt;ShowStatusDnsProxyServerListInner&gt;</returns>
-        List<ShowStatusDnsProxyServerListInner> ReportingDnsProxyServerGet(int operationIndex = 0);
+        /// <returns>List&lt;ShowStatusSonicDnsProxyServerListInner&gt;</returns>
+        List<ShowStatusSonicDnsProxyServerListInner> ReportingSonicDnsProxyServerGet(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy DNS server status.
+        /// Retrieve SonicDns proxy SonicDns server status.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of List&lt;ShowStatusDnsProxyServerListInner&gt;</returns>
-        ApiResponse<List<ShowStatusDnsProxyServerListInner>> ReportingDnsProxyServerGetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of List&lt;ShowStatusSonicDnsProxyServerListInner&gt;</returns>
+        ApiResponse<List<ShowStatusSonicDnsProxyServerListInner>> ReportingSonicDnsProxyServerGetWithHttpInfo(int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsProxyServerApiAsync : IApiAccessor
+    public interface ISonicDnsProxyServerApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy DNS server status.
+        /// Retrieve SonicDns proxy SonicDns server status.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of List&lt;ShowStatusDnsProxyServerListInner&gt;</returns>
-        System.Threading.Tasks.Task<List<ShowStatusDnsProxyServerListInner>> ReportingDnsProxyServerGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of List&lt;ShowStatusSonicDnsProxyServerListInner&gt;</returns>
+        System.Threading.Tasks.Task<List<ShowStatusSonicDnsProxyServerListInner>> ReportingSonicDnsProxyServerGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy DNS server status.
+        /// Retrieve SonicDns proxy SonicDns server status.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (List&lt;ShowStatusDnsProxyServerListInner&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<ShowStatusDnsProxyServerListInner>>> ReportingDnsProxyServerGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (List&lt;ShowStatusSonicDnsProxyServerListInner&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ShowStatusSonicDnsProxyServerListInner>>> ReportingSonicDnsProxyServerGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsProxyServerApi : IDnsProxyServerApiSync, IDnsProxyServerApiAsync
+    public interface ISonicDnsProxyServerApi : ISonicDnsProxyServerApiSync, ISonicDnsProxyServerApiAsync
     {
 
     }
@@ -94,23 +94,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DnsProxyServerApi : IDnsProxyServerApi
+    public partial class SonicDnsProxyServerApi : ISonicDnsProxyServerApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyServerApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxyServerApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsProxyServerApi() : this((string)null)
+        public SonicDnsProxyServerApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyServerApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxyServerApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsProxyServerApi(string basePath)
+        public SonicDnsProxyServerApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -122,12 +122,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyServerApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsProxyServerApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DnsProxyServerApi(SonicWallGen7.Client.Configuration configuration)
+        public SonicDnsProxyServerApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -141,13 +141,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyServerApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsProxyServerApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DnsProxyServerApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicDnsProxyServerApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -201,24 +201,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy DNS server status.
+        ///  Retrieve SonicDns proxy SonicDns server status.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>List&lt;ShowStatusDnsProxyServerListInner&gt;</returns>
-        public List<ShowStatusDnsProxyServerListInner> ReportingDnsProxyServerGet(int operationIndex = 0)
+        /// <returns>List&lt;ShowStatusSonicDnsProxyServerListInner&gt;</returns>
+        public List<ShowStatusSonicDnsProxyServerListInner> ReportingSonicDnsProxyServerGet(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<List<ShowStatusDnsProxyServerListInner>> localVarResponse = ReportingDnsProxyServerGetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<List<ShowStatusSonicDnsProxyServerListInner>> localVarResponse = ReportingSonicDnsProxyServerGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy DNS server status.
+        ///  Retrieve SonicDns proxy SonicDns server status.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of List&lt;ShowStatusDnsProxyServerListInner&gt;</returns>
-        public SonicWallGen7.Client.ApiResponse<List<ShowStatusDnsProxyServerListInner>> ReportingDnsProxyServerGetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of List&lt;ShowStatusSonicDnsProxyServerListInner&gt;</returns>
+        public SonicWallGen7.Client.ApiResponse<List<ShowStatusSonicDnsProxyServerListInner>> ReportingSonicDnsProxyServerGetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -243,7 +243,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsProxyServerApi.ReportingDnsProxyServerGet";
+            localVarRequestOptions.Operation = "SonicDnsProxyServerApi.ReportingSonicDnsProxyServerGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -254,10 +254,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<List<ShowStatusDnsProxyServerListInner>>("/reporting/dns-proxy/server", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<List<ShowStatusSonicDnsProxyServerListInner>>("/reporting/SonicDns-proxy/server", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDnsProxyServerGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingSonicDnsProxyServerGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -268,26 +268,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy DNS server status.
+        ///  Retrieve SonicDns proxy SonicDns server status.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of List&lt;ShowStatusDnsProxyServerListInner&gt;</returns>
-        public async System.Threading.Tasks.Task<List<ShowStatusDnsProxyServerListInner>> ReportingDnsProxyServerGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of List&lt;ShowStatusSonicDnsProxyServerListInner&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ShowStatusSonicDnsProxyServerListInner>> ReportingSonicDnsProxyServerGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<List<ShowStatusDnsProxyServerListInner>> localVarResponse = await ReportingDnsProxyServerGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<List<ShowStatusSonicDnsProxyServerListInner>> localVarResponse = await ReportingSonicDnsProxyServerGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy DNS server status.
+        ///  Retrieve SonicDns proxy SonicDns server status.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (List&lt;ShowStatusDnsProxyServerListInner&gt;)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<List<ShowStatusDnsProxyServerListInner>>> ReportingDnsProxyServerGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (List&lt;ShowStatusSonicDnsProxyServerListInner&gt;)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<List<ShowStatusSonicDnsProxyServerListInner>>> ReportingSonicDnsProxyServerGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -313,7 +313,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsProxyServerApi.ReportingDnsProxyServerGet";
+            localVarRequestOptions.Operation = "SonicDnsProxyServerApi.ReportingSonicDnsProxyServerGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -324,11 +324,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<List<ShowStatusDnsProxyServerListInner>>("/reporting/dns-proxy/server", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<List<ShowStatusSonicDnsProxyServerListInner>>("/reporting/SonicDns-proxy/server", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDnsProxyServerGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingSonicDnsProxyServerGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

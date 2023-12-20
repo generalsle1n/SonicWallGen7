@@ -27,20 +27,20 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// ShowStatusDnsSecurityTunnelClientsListInner
+    /// ShowStatusSonicDnsSecurityTunnelClientsListInner
     /// </summary>
-    [DataContract(Name = "show_status_dns_security_tunnel_clients_list_inner")]
-    public partial class ShowStatusDnsSecurityTunnelClientsListInner : IEquatable<ShowStatusDnsSecurityTunnelClientsListInner>, IValidatableObject
+    [DataContract(Name = "show_status_SonicDns_security_tunnel_clients_list_inner")]
+    public partial class ShowStatusSonicDnsSecurityTunnelClientsListInner : IEquatable<ShowStatusSonicDnsSecurityTunnelClientsListInner>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ShowStatusDnsSecurityTunnelClientsListInner" /> class.
+        /// Initializes a new instance of the <see cref="ShowStatusSonicDnsSecurityTunnelClientsListInner" /> class.
         /// </summary>
         /// <param name="ipAddress">ipAddress.</param>
         /// <param name="macAddress">macAddress.</param>
         /// <param name="detectionMethod">detectionMethod.</param>
         /// <param name="varInterface">varInterface.</param>
         /// <param name="block">block.</param>
-        public ShowStatusDnsSecurityTunnelClientsListInner(string ipAddress = default(string), string macAddress = default(string), string detectionMethod = default(string), string varInterface = default(string), string block = default(string))
+        public ShowStatusSonicDnsSecurityTunnelClientsListInner(string ipAddress = default(string), string macAddress = default(string), string detectionMethod = default(string), string varInterface = default(string), string block = default(string))
         {
             this.IpAddress = ipAddress;
             this.MacAddress = macAddress;
@@ -86,7 +86,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class ShowStatusDnsSecurityTunnelClientsListInner {\n");
+            sb.Append("class ShowStatusSonicDnsSecurityTunnelClientsListInner {\n");
             sb.Append("  IpAddress: ").Append(IpAddress).Append("\n");
             sb.Append("  MacAddress: ").Append(MacAddress).Append("\n");
             sb.Append("  DetectionMethod: ").Append(DetectionMethod).Append("\n");
@@ -112,15 +112,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as ShowStatusDnsSecurityTunnelClientsListInner);
+            return this.Equals(input as ShowStatusSonicDnsSecurityTunnelClientsListInner);
         }
 
         /// <summary>
-        /// Returns true if ShowStatusDnsSecurityTunnelClientsListInner instances are equal
+        /// Returns true if ShowStatusSonicDnsSecurityTunnelClientsListInner instances are equal
         /// </summary>
-        /// <param name="input">Instance of ShowStatusDnsSecurityTunnelClientsListInner to be compared</param>
+        /// <param name="input">Instance of ShowStatusSonicDnsSecurityTunnelClientsListInner to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ShowStatusDnsSecurityTunnelClientsListInner input)
+        public bool Equals(ShowStatusSonicDnsSecurityTunnelClientsListInner input)
         {
             if (input == null)
             {

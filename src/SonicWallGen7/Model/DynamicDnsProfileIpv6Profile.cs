@@ -27,26 +27,26 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// IPv4 Dynamic DNS profile.
+    /// IPv4 Dynamic SonicDns profile.
     /// </summary>
-    [DataContract(Name = "dynamic_dns_profile_ipv6_profile")]
-    public partial class DynamicDnsProfileIpv6Profile : IEquatable<DynamicDnsProfileIpv6Profile>, IValidatableObject
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv6_profile")]
+    public partial class DynamicSonicDnsProfileIpv6Profile : IEquatable<DynamicSonicDnsProfileIpv6Profile>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv6Profile" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv6Profile" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected DynamicDnsProfileIpv6Profile() { }
+        protected DynamicSonicDnsProfileIpv6Profile() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv6Profile" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv6Profile" /> class.
         /// </summary>
         /// <param name="ipv6">ipv6 (required).</param>
-        public DynamicDnsProfileIpv6Profile(DynamicDnsProfileIpv6ProfileIpv6 ipv6 = default(DynamicDnsProfileIpv6ProfileIpv6))
+        public DynamicSonicDnsProfileIpv6Profile(DynamicSonicDnsProfileIpv6ProfileIpv6 ipv6 = default(DynamicSonicDnsProfileIpv6ProfileIpv6))
         {
             // to ensure "ipv6" is required (not null)
             if (ipv6 == null)
             {
-                throw new ArgumentNullException("ipv6 is a required property for DynamicDnsProfileIpv6Profile and cannot be null");
+                throw new ArgumentNullException("ipv6 is a required property for DynamicSonicDnsProfileIpv6Profile and cannot be null");
             }
             this.Ipv6 = ipv6;
         }
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Ipv6
         /// </summary>
         [DataMember(Name = "ipv6", IsRequired = true, EmitDefaultValue = true)]
-        public DynamicDnsProfileIpv6ProfileIpv6 Ipv6 { get; set; }
+        public DynamicSonicDnsProfileIpv6ProfileIpv6 Ipv6 { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -64,7 +64,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv6Profile {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv6Profile {\n");
             sb.Append("  Ipv6: ").Append(Ipv6).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -86,15 +86,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv6Profile);
+            return this.Equals(input as DynamicSonicDnsProfileIpv6Profile);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv6Profile instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv6Profile instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv6Profile to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv6Profile to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv6Profile input)
+        public bool Equals(DynamicSonicDnsProfileIpv6Profile input)
         {
             if (input == null)
             {

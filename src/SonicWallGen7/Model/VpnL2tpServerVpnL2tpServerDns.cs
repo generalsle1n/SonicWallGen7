@@ -27,33 +27,33 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Set the primary and secondary DNS server IP address.
+    /// Set the primary and secondary SonicDns server IP address.
     /// </summary>
-    [DataContract(Name = "vpn_l2tp_server_vpn_l2tp_server_dns")]
-    public partial class VpnL2tpServerVpnL2tpServerDns : IEquatable<VpnL2tpServerVpnL2tpServerDns>, IValidatableObject
+    [DataContract(Name = "vpn_l2tp_server_vpn_l2tp_server_SonicDns")]
+    public partial class VpnL2tpServerVpnL2tpServerSonicDns : IEquatable<VpnL2tpServerVpnL2tpServerSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="VpnL2tpServerVpnL2tpServerDns" /> class.
+        /// Initializes a new instance of the <see cref="VpnL2tpServerVpnL2tpServerSonicDns" /> class.
         /// </summary>
-        /// <param name="primary">Primary DNS server IP address..</param>
-        /// <param name="secondary">Secondary DNS server IP address..</param>
-        public VpnL2tpServerVpnL2tpServerDns(string primary = default(string), string secondary = default(string))
+        /// <param name="primary">Primary SonicDns server IP address..</param>
+        /// <param name="secondary">Secondary SonicDns server IP address..</param>
+        public VpnL2tpServerVpnL2tpServerSonicDns(string primary = default(string), string secondary = default(string))
         {
             this.Primary = primary;
             this.Secondary = secondary;
         }
 
         /// <summary>
-        /// Primary DNS server IP address.
+        /// Primary SonicDns server IP address.
         /// </summary>
-        /// <value>Primary DNS server IP address.</value>
+        /// <value>Primary SonicDns server IP address.</value>
         [DataMember(Name = "primary", EmitDefaultValue = false)]
         public string Primary { get; set; }
 
         /// <summary>
-        /// Secondary DNS server IP address.
+        /// Secondary SonicDns server IP address.
         /// </summary>
-        /// <value>Secondary DNS server IP address.</value>
+        /// <value>Secondary SonicDns server IP address.</value>
         [DataMember(Name = "secondary", EmitDefaultValue = false)]
         public string Secondary { get; set; }
 
@@ -64,7 +64,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class VpnL2tpServerVpnL2tpServerDns {\n");
+            sb.Append("class VpnL2tpServerVpnL2tpServerSonicDns {\n");
             sb.Append("  Primary: ").Append(Primary).Append("\n");
             sb.Append("  Secondary: ").Append(Secondary).Append("\n");
             sb.Append("}\n");
@@ -87,15 +87,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as VpnL2tpServerVpnL2tpServerDns);
+            return this.Equals(input as VpnL2tpServerVpnL2tpServerSonicDns);
         }
 
         /// <summary>
-        /// Returns true if VpnL2tpServerVpnL2tpServerDns instances are equal
+        /// Returns true if VpnL2tpServerVpnL2tpServerSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of VpnL2tpServerVpnL2tpServerDns to be compared</param>
+        /// <param name="input">Instance of VpnL2tpServerVpnL2tpServerSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(VpnL2tpServerVpnL2tpServerDns input)
+        public bool Equals(VpnL2tpServerVpnL2tpServerSonicDns input)
         {
             if (input == null)
             {

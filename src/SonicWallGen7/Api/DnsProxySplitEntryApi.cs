@@ -24,117 +24,117 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsProxySplitEntryApiSync : IApiAccessor
+    public interface ISonicDnsProxySplitEntryApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy split entries statucs.
+        /// Retrieve SonicDns proxy split entries statucs.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;</returns>
-        List<ShowStatusDnsProxySplitEntriesListInner> ReportingDnsProxySplitEntriesGet(int operationIndex = 0);
+        /// <returns>List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;</returns>
+        List<ShowStatusSonicDnsProxySplitEntriesListInner> ReportingSonicDnsProxySplitEntriesGet(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy split entries statucs.
+        /// Retrieve SonicDns proxy split entries statucs.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;</returns>
-        ApiResponse<List<ShowStatusDnsProxySplitEntriesListInner>> ReportingDnsProxySplitEntriesGetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;</returns>
+        ApiResponse<List<ShowStatusSonicDnsProxySplitEntriesListInner>> ReportingSonicDnsProxySplitEntriesGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy split entries statucs.
+        /// Retrieve SonicDns proxy split entries statucs.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;</returns>
-        List<ShowStatusDnsProxySplitEntriesListInner> ReportingDnsProxySplitEntriesNameNAMEGet(string NAME, int operationIndex = 0);
+        /// <returns>List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;</returns>
+        List<ShowStatusSonicDnsProxySplitEntriesListInner> ReportingSonicDnsProxySplitEntriesNameNAMEGet(string NAME, int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy split entries statucs.
+        /// Retrieve SonicDns proxy split entries statucs.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;</returns>
-        ApiResponse<List<ShowStatusDnsProxySplitEntriesListInner>> ReportingDnsProxySplitEntriesNameNAMEGetWithHttpInfo(string NAME, int operationIndex = 0);
+        /// <returns>ApiResponse of List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;</returns>
+        ApiResponse<List<ShowStatusSonicDnsProxySplitEntriesListInner>> ReportingSonicDnsProxySplitEntriesNameNAMEGetWithHttpInfo(string NAME, int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsProxySplitEntryApiAsync : IApiAccessor
+    public interface ISonicDnsProxySplitEntryApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy split entries statucs.
+        /// Retrieve SonicDns proxy split entries statucs.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;</returns>
-        System.Threading.Tasks.Task<List<ShowStatusDnsProxySplitEntriesListInner>> ReportingDnsProxySplitEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;</returns>
+        System.Threading.Tasks.Task<List<ShowStatusSonicDnsProxySplitEntriesListInner>> ReportingSonicDnsProxySplitEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy split entries statucs.
+        /// Retrieve SonicDns proxy split entries statucs.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<ShowStatusDnsProxySplitEntriesListInner>>> ReportingDnsProxySplitEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ShowStatusSonicDnsProxySplitEntriesListInner>>> ReportingSonicDnsProxySplitEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy split entries statucs.
+        /// Retrieve SonicDns proxy split entries statucs.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;</returns>
-        System.Threading.Tasks.Task<List<ShowStatusDnsProxySplitEntriesListInner>> ReportingDnsProxySplitEntriesNameNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;</returns>
+        System.Threading.Tasks.Task<List<ShowStatusSonicDnsProxySplitEntriesListInner>> ReportingSonicDnsProxySplitEntriesNameNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy split entries statucs.
+        /// Retrieve SonicDns proxy split entries statucs.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<ShowStatusDnsProxySplitEntriesListInner>>> ReportingDnsProxySplitEntriesNameNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ShowStatusSonicDnsProxySplitEntriesListInner>>> ReportingSonicDnsProxySplitEntriesNameNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsProxySplitEntryApi : IDnsProxySplitEntryApiSync, IDnsProxySplitEntryApiAsync
+    public interface ISonicDnsProxySplitEntryApi : ISonicDnsProxySplitEntryApiSync, ISonicDnsProxySplitEntryApiAsync
     {
 
     }
@@ -142,23 +142,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DnsProxySplitEntryApi : IDnsProxySplitEntryApi
+    public partial class SonicDnsProxySplitEntryApi : ISonicDnsProxySplitEntryApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxySplitEntryApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxySplitEntryApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsProxySplitEntryApi() : this((string)null)
+        public SonicDnsProxySplitEntryApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxySplitEntryApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxySplitEntryApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsProxySplitEntryApi(string basePath)
+        public SonicDnsProxySplitEntryApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -170,12 +170,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxySplitEntryApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsProxySplitEntryApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DnsProxySplitEntryApi(SonicWallGen7.Client.Configuration configuration)
+        public SonicDnsProxySplitEntryApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -189,13 +189,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxySplitEntryApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsProxySplitEntryApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DnsProxySplitEntryApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicDnsProxySplitEntryApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -249,24 +249,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy split entries statucs.
+        ///  Retrieve SonicDns proxy split entries statucs.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;</returns>
-        public List<ShowStatusDnsProxySplitEntriesListInner> ReportingDnsProxySplitEntriesGet(int operationIndex = 0)
+        /// <returns>List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;</returns>
+        public List<ShowStatusSonicDnsProxySplitEntriesListInner> ReportingSonicDnsProxySplitEntriesGet(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<List<ShowStatusDnsProxySplitEntriesListInner>> localVarResponse = ReportingDnsProxySplitEntriesGetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<List<ShowStatusSonicDnsProxySplitEntriesListInner>> localVarResponse = ReportingSonicDnsProxySplitEntriesGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy split entries statucs.
+        ///  Retrieve SonicDns proxy split entries statucs.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;</returns>
-        public SonicWallGen7.Client.ApiResponse<List<ShowStatusDnsProxySplitEntriesListInner>> ReportingDnsProxySplitEntriesGetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;</returns>
+        public SonicWallGen7.Client.ApiResponse<List<ShowStatusSonicDnsProxySplitEntriesListInner>> ReportingSonicDnsProxySplitEntriesGetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -291,7 +291,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsProxySplitEntryApi.ReportingDnsProxySplitEntriesGet";
+            localVarRequestOptions.Operation = "SonicDnsProxySplitEntryApi.ReportingSonicDnsProxySplitEntriesGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -302,10 +302,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<List<ShowStatusDnsProxySplitEntriesListInner>>("/reporting/dns-proxy/split-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<List<ShowStatusSonicDnsProxySplitEntriesListInner>>("/reporting/SonicDns-proxy/split-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDnsProxySplitEntriesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingSonicDnsProxySplitEntriesGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -316,26 +316,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy split entries statucs.
+        ///  Retrieve SonicDns proxy split entries statucs.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;</returns>
-        public async System.Threading.Tasks.Task<List<ShowStatusDnsProxySplitEntriesListInner>> ReportingDnsProxySplitEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ShowStatusSonicDnsProxySplitEntriesListInner>> ReportingSonicDnsProxySplitEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<List<ShowStatusDnsProxySplitEntriesListInner>> localVarResponse = await ReportingDnsProxySplitEntriesGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<List<ShowStatusSonicDnsProxySplitEntriesListInner>> localVarResponse = await ReportingSonicDnsProxySplitEntriesGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy split entries statucs.
+        ///  Retrieve SonicDns proxy split entries statucs.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<List<ShowStatusDnsProxySplitEntriesListInner>>> ReportingDnsProxySplitEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<List<ShowStatusSonicDnsProxySplitEntriesListInner>>> ReportingSonicDnsProxySplitEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -361,7 +361,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsProxySplitEntryApi.ReportingDnsProxySplitEntriesGet";
+            localVarRequestOptions.Operation = "SonicDnsProxySplitEntryApi.ReportingSonicDnsProxySplitEntriesGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -372,11 +372,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<List<ShowStatusDnsProxySplitEntriesListInner>>("/reporting/dns-proxy/split-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<List<ShowStatusSonicDnsProxySplitEntriesListInner>>("/reporting/SonicDns-proxy/split-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDnsProxySplitEntriesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingSonicDnsProxySplitEntriesGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -387,31 +387,31 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy split entries statucs.
+        ///  Retrieve SonicDns proxy split entries statucs.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;</returns>
-        public List<ShowStatusDnsProxySplitEntriesListInner> ReportingDnsProxySplitEntriesNameNAMEGet(string NAME, int operationIndex = 0)
+        /// <returns>List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;</returns>
+        public List<ShowStatusSonicDnsProxySplitEntriesListInner> ReportingSonicDnsProxySplitEntriesNameNAMEGet(string NAME, int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<List<ShowStatusDnsProxySplitEntriesListInner>> localVarResponse = ReportingDnsProxySplitEntriesNameNAMEGetWithHttpInfo(NAME);
+            SonicWallGen7.Client.ApiResponse<List<ShowStatusSonicDnsProxySplitEntriesListInner>> localVarResponse = ReportingSonicDnsProxySplitEntriesNameNAMEGetWithHttpInfo(NAME);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy split entries statucs.
+        ///  Retrieve SonicDns proxy split entries statucs.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;</returns>
-        public SonicWallGen7.Client.ApiResponse<List<ShowStatusDnsProxySplitEntriesListInner>> ReportingDnsProxySplitEntriesNameNAMEGetWithHttpInfo(string NAME, int operationIndex = 0)
+        /// <returns>ApiResponse of List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;</returns>
+        public SonicWallGen7.Client.ApiResponse<List<ShowStatusSonicDnsProxySplitEntriesListInner>> ReportingSonicDnsProxySplitEntriesNameNAMEGetWithHttpInfo(string NAME, int operationIndex = 0)
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsProxySplitEntryApi->ReportingDnsProxySplitEntriesNameNAMEGet");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsProxySplitEntryApi->ReportingSonicDnsProxySplitEntriesNameNAMEGet");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -438,7 +438,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
 
-            localVarRequestOptions.Operation = "DnsProxySplitEntryApi.ReportingDnsProxySplitEntriesNameNAMEGet";
+            localVarRequestOptions.Operation = "SonicDnsProxySplitEntryApi.ReportingSonicDnsProxySplitEntriesNameNAMEGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -449,10 +449,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<List<ShowStatusDnsProxySplitEntriesListInner>>("/reporting/dns-proxy/split-entries/name/{NAME}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<List<ShowStatusSonicDnsProxySplitEntriesListInner>>("/reporting/SonicDns-proxy/split-entries/name/{NAME}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDnsProxySplitEntriesNameNAMEGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingSonicDnsProxySplitEntriesNameNAMEGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -463,33 +463,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy split entries statucs.
+        ///  Retrieve SonicDns proxy split entries statucs.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;</returns>
-        public async System.Threading.Tasks.Task<List<ShowStatusDnsProxySplitEntriesListInner>> ReportingDnsProxySplitEntriesNameNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ShowStatusSonicDnsProxySplitEntriesListInner>> ReportingSonicDnsProxySplitEntriesNameNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<List<ShowStatusDnsProxySplitEntriesListInner>> localVarResponse = await ReportingDnsProxySplitEntriesNameNAMEGetWithHttpInfoAsync(NAME, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<List<ShowStatusSonicDnsProxySplitEntriesListInner>> localVarResponse = await ReportingSonicDnsProxySplitEntriesNameNAMEGetWithHttpInfoAsync(NAME, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy split entries statucs.
+        ///  Retrieve SonicDns proxy split entries statucs.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (List&lt;ShowStatusDnsProxySplitEntriesListInner&gt;)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<List<ShowStatusDnsProxySplitEntriesListInner>>> ReportingDnsProxySplitEntriesNameNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (List&lt;ShowStatusSonicDnsProxySplitEntriesListInner&gt;)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<List<ShowStatusSonicDnsProxySplitEntriesListInner>>> ReportingSonicDnsProxySplitEntriesNameNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsProxySplitEntryApi->ReportingDnsProxySplitEntriesNameNAMEGet");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsProxySplitEntryApi->ReportingSonicDnsProxySplitEntriesNameNAMEGet");
             }
 
 
@@ -517,7 +517,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
 
-            localVarRequestOptions.Operation = "DnsProxySplitEntryApi.ReportingDnsProxySplitEntriesNameNAMEGet";
+            localVarRequestOptions.Operation = "SonicDnsProxySplitEntryApi.ReportingSonicDnsProxySplitEntriesNameNAMEGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -528,11 +528,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<List<ShowStatusDnsProxySplitEntriesListInner>>("/reporting/dns-proxy/split-entries/name/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<List<ShowStatusSonicDnsProxySplitEntriesListInner>>("/reporting/SonicDns-proxy/split-entries/name/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDnsProxySplitEntriesNameNAMEGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingSonicDnsProxySplitEntriesNameNAMEGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

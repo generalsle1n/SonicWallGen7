@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DynamicDnsProfileIpv6ProfileIpv6BoundToAny
+    /// DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny
     /// </summary>
-    [DataContract(Name = "dynamic_dns_profile_ipv6_profile_ipv6_bound_to_any")]
-    public partial class DynamicDnsProfileIpv6ProfileIpv6BoundToAny : IEquatable<DynamicDnsProfileIpv6ProfileIpv6BoundToAny>, IValidatableObject
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv6_profile_ipv6_bound_to_any")]
+    public partial class DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny : IEquatable<DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv6ProfileIpv6BoundToAny" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny" /> class.
         /// </summary>
         /// <param name="any">Any interface..</param>
-        public DynamicDnsProfileIpv6ProfileIpv6BoundToAny(bool any = default(bool))
+        public DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny(bool any = default(bool))
         {
             this.Any = any;
         }
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv6ProfileIpv6BoundToAny {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny {\n");
             sb.Append("  Any: ").Append(Any).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv6ProfileIpv6BoundToAny);
+            return this.Equals(input as DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv6ProfileIpv6BoundToAny instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv6ProfileIpv6BoundToAny to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv6ProfileIpv6BoundToAny input)
+        public bool Equals(DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny input)
         {
             if (input == null)
             {

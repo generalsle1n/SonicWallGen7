@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS security sinkhole custom malicious entry configuration schema.
+    /// SonicDns security sinkhole custom malicious entry configuration schema.
     /// </summary>
-    [DataContract(Name = "dns_security_sinkhole_custom_malicious_entry")]
-    public partial class DnsSecuritySinkholeCustomMaliciousEntry : IEquatable<DnsSecuritySinkholeCustomMaliciousEntry>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_sinkhole_custom_malicious_entry")]
+    public partial class SonicDnsSecuritySinkholeCustomMaliciousEntry : IEquatable<SonicDnsSecuritySinkholeCustomMaliciousEntry>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeCustomMaliciousEntry" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeCustomMaliciousEntry" /> class.
         /// </summary>
         /// <param name="name">name.</param>
-        public DnsSecuritySinkholeCustomMaliciousEntry(string name = default(string))
+        public SonicDnsSecuritySinkholeCustomMaliciousEntry(string name = default(string))
         {
             this.Name = name;
         }
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecuritySinkholeCustomMaliciousEntry {\n");
+            sb.Append("class SonicDnsSecuritySinkholeCustomMaliciousEntry {\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecuritySinkholeCustomMaliciousEntry);
+            return this.Equals(input as SonicDnsSecuritySinkholeCustomMaliciousEntry);
         }
 
         /// <summary>
-        /// Returns true if DnsSecuritySinkholeCustomMaliciousEntry instances are equal
+        /// Returns true if SonicDnsSecuritySinkholeCustomMaliciousEntry instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecuritySinkholeCustomMaliciousEntry to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecuritySinkholeCustomMaliciousEntry to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecuritySinkholeCustomMaliciousEntry input)
+        public bool Equals(SonicDnsSecuritySinkholeCustomMaliciousEntry input)
         {
             if (input == null)
             {

@@ -28,18 +28,18 @@ using System.Reflection;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Set dynamic DNS WAN interface to bind to.
+    /// Set dynamic SonicDns WAN interface to bind to.
     /// </summary>
-    [JsonConverter(typeof(DynamicDnsProfileIpv6ProfileIpv6BoundToJsonConverter))]
-    [DataContract(Name = "dynamic_dns_profile_ipv6_profile_ipv6_bound_to")]
-    public partial class DynamicDnsProfileIpv6ProfileIpv6BoundTo : AbstractOpenAPISchema, IEquatable<DynamicDnsProfileIpv6ProfileIpv6BoundTo>, IValidatableObject
+    [JsonConverter(typeof(DynamicSonicDnsProfileIpv6ProfileIpv6BoundToJsonConverter))]
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv6_profile_ipv6_bound_to")]
+    public partial class DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo : AbstractOpenAPISchema, IEquatable<DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv6ProfileIpv6BoundTo" /> class
-        /// with the <see cref="DynamicDnsProfileIpv6ProfileIpv6BoundToAny" /> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo" /> class
+        /// with the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DynamicDnsProfileIpv6ProfileIpv6BoundToAny.</param>
-        public DynamicDnsProfileIpv6ProfileIpv6BoundTo(DynamicDnsProfileIpv6ProfileIpv6BoundToAny actualInstance)
+        /// <param name="actualInstance">An instance of DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny.</param>
+        public DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo(DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -47,11 +47,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv6ProfileIpv6BoundTo" /> class
-        /// with the <see cref="DynamicDnsProfileIpv6ProfileIpv6BoundToInterface" /> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo" /> class
+        /// with the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DynamicDnsProfileIpv6ProfileIpv6BoundToInterface.</param>
-        public DynamicDnsProfileIpv6ProfileIpv6BoundTo(DynamicDnsProfileIpv6ProfileIpv6BoundToInterface actualInstance)
+        /// <param name="actualInstance">An instance of DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface.</param>
+        public DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo(DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -72,39 +72,39 @@ namespace SonicWallGen7.Model
             }
             set
             {
-                if (value.GetType() == typeof(DynamicDnsProfileIpv6ProfileIpv6BoundToAny))
+                if (value.GetType() == typeof(DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(DynamicDnsProfileIpv6ProfileIpv6BoundToInterface))
+                else if (value.GetType() == typeof(DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface))
                 {
                     this._actualInstance = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid instance found. Must be the following types: DynamicDnsProfileIpv6ProfileIpv6BoundToAny, DynamicDnsProfileIpv6ProfileIpv6BoundToInterface");
+                    throw new ArgumentException("Invalid instance found. Must be the following types: DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny, DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface");
                 }
             }
         }
 
         /// <summary>
-        /// Get the actual instance of `DynamicDnsProfileIpv6ProfileIpv6BoundToAny`. If the actual instance is not `DynamicDnsProfileIpv6ProfileIpv6BoundToAny`,
+        /// Get the actual instance of `DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny`. If the actual instance is not `DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DynamicDnsProfileIpv6ProfileIpv6BoundToAny</returns>
-        public DynamicDnsProfileIpv6ProfileIpv6BoundToAny GetDynamicDnsProfileIpv6ProfileIpv6BoundToAny()
+        /// <returns>An instance of DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny</returns>
+        public DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny GetDynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny()
         {
-            return (DynamicDnsProfileIpv6ProfileIpv6BoundToAny)this.ActualInstance;
+            return (DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `DynamicDnsProfileIpv6ProfileIpv6BoundToInterface`. If the actual instance is not `DynamicDnsProfileIpv6ProfileIpv6BoundToInterface`,
+        /// Get the actual instance of `DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface`. If the actual instance is not `DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DynamicDnsProfileIpv6ProfileIpv6BoundToInterface</returns>
-        public DynamicDnsProfileIpv6ProfileIpv6BoundToInterface GetDynamicDnsProfileIpv6ProfileIpv6BoundToInterface()
+        /// <returns>An instance of DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface</returns>
+        public DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface GetDynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface()
         {
-            return (DynamicDnsProfileIpv6ProfileIpv6BoundToInterface)this.ActualInstance;
+            return (DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface)this.ActualInstance;
         }
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv6ProfileIpv6BoundTo {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo {\n");
             sb.Append("  ActualInstance: ").Append(this.ActualInstance).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -126,21 +126,21 @@ namespace SonicWallGen7.Model
         /// <returns>JSON string presentation of the object</returns>
         public override string ToJson()
         {
-            return JsonConvert.SerializeObject(this.ActualInstance, DynamicDnsProfileIpv6ProfileIpv6BoundTo.SerializerSettings);
+            return JsonConvert.SerializeObject(this.ActualInstance, DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo.SerializerSettings);
         }
 
         /// <summary>
-        /// Converts the JSON string into an instance of DynamicDnsProfileIpv6ProfileIpv6BoundTo
+        /// Converts the JSON string into an instance of DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo
         /// </summary>
         /// <param name="jsonString">JSON string</param>
-        /// <returns>An instance of DynamicDnsProfileIpv6ProfileIpv6BoundTo</returns>
-        public static DynamicDnsProfileIpv6ProfileIpv6BoundTo FromJson(string jsonString)
+        /// <returns>An instance of DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo</returns>
+        public static DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo FromJson(string jsonString)
         {
-            DynamicDnsProfileIpv6ProfileIpv6BoundTo newDynamicDnsProfileIpv6ProfileIpv6BoundTo = null;
+            DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo newDynamicSonicDnsProfileIpv6ProfileIpv6BoundTo = null;
 
             if (string.IsNullOrEmpty(jsonString))
             {
-                return newDynamicDnsProfileIpv6ProfileIpv6BoundTo;
+                return newDynamicSonicDnsProfileIpv6ProfileIpv6BoundTo;
             }
             int match = 0;
             List<string> matchedTypes = new List<string>();
@@ -148,41 +148,41 @@ namespace SonicWallGen7.Model
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DynamicDnsProfileIpv6ProfileIpv6BoundToAny).GetProperty("AdditionalProperties") == null)
+                if (typeof(DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny).GetProperty("AdditionalProperties") == null)
                 {
-                    newDynamicDnsProfileIpv6ProfileIpv6BoundTo = new DynamicDnsProfileIpv6ProfileIpv6BoundTo(JsonConvert.DeserializeObject<DynamicDnsProfileIpv6ProfileIpv6BoundToAny>(jsonString, DynamicDnsProfileIpv6ProfileIpv6BoundTo.SerializerSettings));
+                    newDynamicSonicDnsProfileIpv6ProfileIpv6BoundTo = new DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny>(jsonString, DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo.SerializerSettings));
                 }
                 else
                 {
-                    newDynamicDnsProfileIpv6ProfileIpv6BoundTo = new DynamicDnsProfileIpv6ProfileIpv6BoundTo(JsonConvert.DeserializeObject<DynamicDnsProfileIpv6ProfileIpv6BoundToAny>(jsonString, DynamicDnsProfileIpv6ProfileIpv6BoundTo.AdditionalPropertiesSerializerSettings));
+                    newDynamicSonicDnsProfileIpv6ProfileIpv6BoundTo = new DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny>(jsonString, DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DynamicDnsProfileIpv6ProfileIpv6BoundToAny");
+                matchedTypes.Add("DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicDnsProfileIpv6ProfileIpv6BoundToAny: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicSonicDnsProfileIpv6ProfileIpv6BoundToAny: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DynamicDnsProfileIpv6ProfileIpv6BoundToInterface).GetProperty("AdditionalProperties") == null)
+                if (typeof(DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface).GetProperty("AdditionalProperties") == null)
                 {
-                    newDynamicDnsProfileIpv6ProfileIpv6BoundTo = new DynamicDnsProfileIpv6ProfileIpv6BoundTo(JsonConvert.DeserializeObject<DynamicDnsProfileIpv6ProfileIpv6BoundToInterface>(jsonString, DynamicDnsProfileIpv6ProfileIpv6BoundTo.SerializerSettings));
+                    newDynamicSonicDnsProfileIpv6ProfileIpv6BoundTo = new DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface>(jsonString, DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo.SerializerSettings));
                 }
                 else
                 {
-                    newDynamicDnsProfileIpv6ProfileIpv6BoundTo = new DynamicDnsProfileIpv6ProfileIpv6BoundTo(JsonConvert.DeserializeObject<DynamicDnsProfileIpv6ProfileIpv6BoundToInterface>(jsonString, DynamicDnsProfileIpv6ProfileIpv6BoundTo.AdditionalPropertiesSerializerSettings));
+                    newDynamicSonicDnsProfileIpv6ProfileIpv6BoundTo = new DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface>(jsonString, DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DynamicDnsProfileIpv6ProfileIpv6BoundToInterface");
+                matchedTypes.Add("DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicDnsProfileIpv6ProfileIpv6BoundToInterface: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface: {1}", jsonString, exception.ToString()));
             }
 
             if (match == 0)
@@ -195,7 +195,7 @@ namespace SonicWallGen7.Model
             }
 
             // deserialization is considered successful at this point if no exception has been thrown.
-            return newDynamicDnsProfileIpv6ProfileIpv6BoundTo;
+            return newDynamicSonicDnsProfileIpv6ProfileIpv6BoundTo;
         }
 
         /// <summary>
@@ -205,15 +205,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv6ProfileIpv6BoundTo);
+            return this.Equals(input as DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv6ProfileIpv6BoundTo instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv6ProfileIpv6BoundTo to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv6ProfileIpv6BoundTo input)
+        public bool Equals(DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo input)
         {
             if (input == null)
                 return false;
@@ -248,9 +248,9 @@ namespace SonicWallGen7.Model
     }
 
     /// <summary>
-    /// Custom JSON converter for DynamicDnsProfileIpv6ProfileIpv6BoundTo
+    /// Custom JSON converter for DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo
     /// </summary>
-    public class DynamicDnsProfileIpv6ProfileIpv6BoundToJsonConverter : JsonConverter
+    public class DynamicSonicDnsProfileIpv6ProfileIpv6BoundToJsonConverter : JsonConverter
     {
         /// <summary>
         /// To write the JSON string
@@ -260,7 +260,7 @@ namespace SonicWallGen7.Model
         /// <param name="serializer">JSON Serializer</param>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            writer.WriteRawValue((string)(typeof(DynamicDnsProfileIpv6ProfileIpv6BoundTo).GetMethod("ToJson").Invoke(value, null)));
+            writer.WriteRawValue((string)(typeof(DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo).GetMethod("ToJson").Invoke(value, null)));
         }
 
         /// <summary>
@@ -275,7 +275,7 @@ namespace SonicWallGen7.Model
         {
             if(reader.TokenType != JsonToken.Null)
             {
-                return DynamicDnsProfileIpv6ProfileIpv6BoundTo.FromJson(JObject.Load(reader).ToString(Formatting.None));
+                return DynamicSonicDnsProfileIpv6ProfileIpv6BoundTo.FromJson(JObject.Load(reader).ToString(Formatting.None));
             }
             return null;
         }

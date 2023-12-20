@@ -209,30 +209,30 @@ namespace SonicWallGen7.Test.Model
         }
 
         /// <summary>
-        /// Test the property 'PrimaryDns'
+        /// Test the property 'PrimarySonicDns'
         /// </summary>
         [Fact]
-        public void PrimaryDnsTest()
+        public void PrimarySonicDnsTest()
         {
-            // TODO unit test for the property 'PrimaryDns'
+            // TODO unit test for the property 'PrimarySonicDns'
         }
 
         /// <summary>
-        /// Test the property 'SecondaryDns'
+        /// Test the property 'SecondarySonicDns'
         /// </summary>
         [Fact]
-        public void SecondaryDnsTest()
+        public void SecondarySonicDnsTest()
         {
-            // TODO unit test for the property 'SecondaryDns'
+            // TODO unit test for the property 'SecondarySonicDns'
         }
 
         /// <summary>
-        /// Test the property 'TertiaryDns'
+        /// Test the property 'TertiarySonicDns'
         /// </summary>
         [Fact]
-        public void TertiaryDnsTest()
+        public void TertiarySonicDnsTest()
         {
-            // TODO unit test for the property 'TertiaryDns'
+            // TODO unit test for the property 'TertiarySonicDns'
         }
 
         /// <summary>

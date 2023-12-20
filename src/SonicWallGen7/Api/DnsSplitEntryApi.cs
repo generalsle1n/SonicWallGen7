@@ -24,413 +24,413 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSplitEntryApiSync : IApiAccessor
+    public interface ISonicDnsSplitEntryApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Delete a DNS split DNS entry object.
+        /// Delete a SonicDns split SonicDns entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsSplitEntriesDomainNAMEDelete(string NAME, int operationIndex = 0);
+        ApiStatus SonicDnsSplitEntriesDomainNAMEDelete(string NAME, int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Delete a DNS split DNS entry object.
+        /// Delete a SonicDns split SonicDns entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsSplitEntriesDomainNAMEDeleteWithHttpInfo(string NAME, int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsSplitEntriesDomainNAMEDeleteWithHttpInfo(string NAME, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS split DNS entry object configuration.
+        /// Retrieve SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsSplitEntryCollection</returns>
-        DnsSplitEntryCollection DnsSplitEntriesDomainNAMEGet(string NAME, int operationIndex = 0);
+        /// <returns>SonicDnsSplitEntryCollection</returns>
+        SonicDnsSplitEntryCollection SonicDnsSplitEntriesDomainNAMEGet(string NAME, int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS split DNS entry object configuration.
+        /// Retrieve SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsSplitEntryCollection</returns>
-        ApiResponse<DnsSplitEntryCollection> DnsSplitEntriesDomainNAMEGetWithHttpInfo(string NAME, int operationIndex = 0);
+        /// <returns>ApiResponse of SonicDnsSplitEntryCollection</returns>
+        ApiResponse<SonicDnsSplitEntryCollection> SonicDnsSplitEntriesDomainNAMEGetWithHttpInfo(string NAME, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS split DNS entry object configuration.
+        /// Patch SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsSplitEntriesDomainNAMEPatch(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0);
+        ApiStatus SonicDnsSplitEntriesDomainNAMEPatch(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS split DNS entry object configuration.
+        /// Patch SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsSplitEntriesDomainNAMEPatchWithHttpInfo(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsSplitEntriesDomainNAMEPatchWithHttpInfo(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS split DNS entry object configuration.
+        /// Edit SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsSplitEntriesDomainNAMEPut(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0);
+        ApiStatus SonicDnsSplitEntriesDomainNAMEPut(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS split DNS entry object configuration.
+        /// Edit SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsSplitEntriesDomainNAMEPutWithHttpInfo(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsSplitEntriesDomainNAMEPutWithHttpInfo(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS split DNS entry object configuration.
+        /// Retrieve SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsSplitEntryCollection</returns>
-        DnsSplitEntryCollection DnsSplitEntriesGet(int operationIndex = 0);
+        /// <returns>SonicDnsSplitEntryCollection</returns>
+        SonicDnsSplitEntryCollection SonicDnsSplitEntriesGet(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS split DNS entry object configuration.
+        /// Retrieve SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsSplitEntryCollection</returns>
-        ApiResponse<DnsSplitEntryCollection> DnsSplitEntriesGetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of SonicDnsSplitEntryCollection</returns>
+        ApiResponse<SonicDnsSplitEntryCollection> SonicDnsSplitEntriesGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS split DNS entry object configuration.
+        /// Patch SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsSplitEntriesPatch(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0);
+        ApiStatus SonicDnsSplitEntriesPatch(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS split DNS entry object configuration.
+        /// Patch SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsSplitEntriesPatchWithHttpInfo(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsSplitEntriesPatchWithHttpInfo(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS split DNS entry object.
+        /// Create a new SonicDns split SonicDns entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsSplitEntriesPost(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0);
+        ApiStatus SonicDnsSplitEntriesPost(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS split DNS entry object.
+        /// Create a new SonicDns split SonicDns entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsSplitEntriesPostWithHttpInfo(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsSplitEntriesPostWithHttpInfo(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS split DNS entry object configuration.
+        /// Edit SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsSplitEntriesPut(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0);
+        ApiStatus SonicDnsSplitEntriesPut(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS split DNS entry object configuration.
+        /// Edit SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsSplitEntriesPutWithHttpInfo(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsSplitEntriesPutWithHttpInfo(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSplitEntryApiAsync : IApiAccessor
+    public interface ISonicDnsSplitEntryApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Delete a DNS split DNS entry object.
+        /// Delete a SonicDns split SonicDns entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsSplitEntriesDomainNAMEDeleteAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsSplitEntriesDomainNAMEDeleteAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Delete a DNS split DNS entry object.
+        /// Delete a SonicDns split SonicDns entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsSplitEntriesDomainNAMEDeleteWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsSplitEntriesDomainNAMEDeleteWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS split DNS entry object configuration.
+        /// Retrieve SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsSplitEntryCollection</returns>
-        System.Threading.Tasks.Task<DnsSplitEntryCollection> DnsSplitEntriesDomainNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of SonicDnsSplitEntryCollection</returns>
+        System.Threading.Tasks.Task<SonicDnsSplitEntryCollection> SonicDnsSplitEntriesDomainNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS split DNS entry object configuration.
+        /// Retrieve SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsSplitEntryCollection)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DnsSplitEntryCollection>> DnsSplitEntriesDomainNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (SonicDnsSplitEntryCollection)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SonicDnsSplitEntryCollection>> SonicDnsSplitEntriesDomainNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS split DNS entry object configuration.
+        /// Patch SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsSplitEntriesDomainNAMEPatchAsync(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsSplitEntriesDomainNAMEPatchAsync(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS split DNS entry object configuration.
+        /// Patch SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsSplitEntriesDomainNAMEPatchWithHttpInfoAsync(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsSplitEntriesDomainNAMEPatchWithHttpInfoAsync(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS split DNS entry object configuration.
+        /// Edit SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsSplitEntriesDomainNAMEPutAsync(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsSplitEntriesDomainNAMEPutAsync(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS split DNS entry object configuration.
+        /// Edit SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsSplitEntriesDomainNAMEPutWithHttpInfoAsync(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsSplitEntriesDomainNAMEPutWithHttpInfoAsync(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS split DNS entry object configuration.
+        /// Retrieve SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsSplitEntryCollection</returns>
-        System.Threading.Tasks.Task<DnsSplitEntryCollection> DnsSplitEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of SonicDnsSplitEntryCollection</returns>
+        System.Threading.Tasks.Task<SonicDnsSplitEntryCollection> SonicDnsSplitEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS split DNS entry object configuration.
+        /// Retrieve SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsSplitEntryCollection)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DnsSplitEntryCollection>> DnsSplitEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (SonicDnsSplitEntryCollection)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SonicDnsSplitEntryCollection>> SonicDnsSplitEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS split DNS entry object configuration.
+        /// Patch SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsSplitEntriesPatchAsync(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsSplitEntriesPatchAsync(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS split DNS entry object configuration.
+        /// Patch SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsSplitEntriesPatchWithHttpInfoAsync(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsSplitEntriesPatchWithHttpInfoAsync(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS split DNS entry object.
+        /// Create a new SonicDns split SonicDns entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsSplitEntriesPostAsync(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsSplitEntriesPostAsync(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS split DNS entry object.
+        /// Create a new SonicDns split SonicDns entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsSplitEntriesPostWithHttpInfoAsync(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsSplitEntriesPostWithHttpInfoAsync(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS split DNS entry object configuration.
+        /// Edit SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsSplitEntriesPutAsync(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsSplitEntriesPutAsync(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS split DNS entry object configuration.
+        /// Edit SonicDns split SonicDns entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsSplitEntriesPutWithHttpInfoAsync(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsSplitEntriesPutWithHttpInfoAsync(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSplitEntryApi : IDnsSplitEntryApiSync, IDnsSplitEntryApiAsync
+    public interface ISonicDnsSplitEntryApi : ISonicDnsSplitEntryApiSync, ISonicDnsSplitEntryApiAsync
     {
 
     }
@@ -438,23 +438,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DnsSplitEntryApi : IDnsSplitEntryApi
+    public partial class SonicDnsSplitEntryApi : ISonicDnsSplitEntryApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntryApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntryApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsSplitEntryApi() : this((string)null)
+        public SonicDnsSplitEntryApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntryApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntryApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsSplitEntryApi(string basePath)
+        public SonicDnsSplitEntryApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -466,12 +466,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntryApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntryApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DnsSplitEntryApi(SonicWallGen7.Client.Configuration configuration)
+        public SonicDnsSplitEntryApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -485,13 +485,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntryApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntryApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DnsSplitEntryApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicDnsSplitEntryApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -545,31 +545,31 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Delete a DNS split DNS entry object.
+        ///  Delete a SonicDns split SonicDns entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsSplitEntriesDomainNAMEDelete(string NAME, int operationIndex = 0)
+        public ApiStatus SonicDnsSplitEntriesDomainNAMEDelete(string NAME, int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsSplitEntriesDomainNAMEDeleteWithHttpInfo(NAME);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsSplitEntriesDomainNAMEDeleteWithHttpInfo(NAME);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Delete a DNS split DNS entry object.
+        ///  Delete a SonicDns split SonicDns entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsSplitEntriesDomainNAMEDeleteWithHttpInfo(string NAME, int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsSplitEntriesDomainNAMEDeleteWithHttpInfo(string NAME, int operationIndex = 0)
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsSplitEntryApi->DnsSplitEntriesDomainNAMEDelete");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsSplitEntryApi->SonicDnsSplitEntriesDomainNAMEDelete");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -596,7 +596,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesDomainNAMEDelete";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesDomainNAMEDelete";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -607,10 +607,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Delete<ApiStatus>("/dns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Delete<ApiStatus>("/SonicDns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesDomainNAMEDelete", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesDomainNAMEDelete", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -621,33 +621,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Delete a DNS split DNS entry object.
+        ///  Delete a SonicDns split SonicDns entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsSplitEntriesDomainNAMEDeleteAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsSplitEntriesDomainNAMEDeleteAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsSplitEntriesDomainNAMEDeleteWithHttpInfoAsync(NAME, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsSplitEntriesDomainNAMEDeleteWithHttpInfoAsync(NAME, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Delete a DNS split DNS entry object.
+        ///  Delete a SonicDns split SonicDns entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsSplitEntriesDomainNAMEDeleteWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsSplitEntriesDomainNAMEDeleteWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsSplitEntryApi->DnsSplitEntriesDomainNAMEDelete");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsSplitEntryApi->SonicDnsSplitEntriesDomainNAMEDelete");
             }
 
 
@@ -675,7 +675,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesDomainNAMEDelete";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesDomainNAMEDelete";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -686,11 +686,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.DeleteAsync<ApiStatus>("/dns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.DeleteAsync<ApiStatus>("/SonicDns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesDomainNAMEDelete", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesDomainNAMEDelete", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -701,31 +701,31 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS split DNS entry object configuration.
+        ///  Retrieve SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsSplitEntryCollection</returns>
-        public DnsSplitEntryCollection DnsSplitEntriesDomainNAMEGet(string NAME, int operationIndex = 0)
+        /// <returns>SonicDnsSplitEntryCollection</returns>
+        public SonicDnsSplitEntryCollection SonicDnsSplitEntriesDomainNAMEGet(string NAME, int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<DnsSplitEntryCollection> localVarResponse = DnsSplitEntriesDomainNAMEGetWithHttpInfo(NAME);
+            SonicWallGen7.Client.ApiResponse<SonicDnsSplitEntryCollection> localVarResponse = SonicDnsSplitEntriesDomainNAMEGetWithHttpInfo(NAME);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS split DNS entry object configuration.
+        ///  Retrieve SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsSplitEntryCollection</returns>
-        public SonicWallGen7.Client.ApiResponse<DnsSplitEntryCollection> DnsSplitEntriesDomainNAMEGetWithHttpInfo(string NAME, int operationIndex = 0)
+        /// <returns>ApiResponse of SonicDnsSplitEntryCollection</returns>
+        public SonicWallGen7.Client.ApiResponse<SonicDnsSplitEntryCollection> SonicDnsSplitEntriesDomainNAMEGetWithHttpInfo(string NAME, int operationIndex = 0)
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsSplitEntryApi->DnsSplitEntriesDomainNAMEGet");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsSplitEntryApi->SonicDnsSplitEntriesDomainNAMEGet");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -752,7 +752,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesDomainNAMEGet";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesDomainNAMEGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -763,10 +763,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<DnsSplitEntryCollection>("/dns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<SonicDnsSplitEntryCollection>("/SonicDns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesDomainNAMEGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesDomainNAMEGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -777,33 +777,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS split DNS entry object configuration.
+        ///  Retrieve SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsSplitEntryCollection</returns>
-        public async System.Threading.Tasks.Task<DnsSplitEntryCollection> DnsSplitEntriesDomainNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of SonicDnsSplitEntryCollection</returns>
+        public async System.Threading.Tasks.Task<SonicDnsSplitEntryCollection> SonicDnsSplitEntriesDomainNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<DnsSplitEntryCollection> localVarResponse = await DnsSplitEntriesDomainNAMEGetWithHttpInfoAsync(NAME, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<SonicDnsSplitEntryCollection> localVarResponse = await SonicDnsSplitEntriesDomainNAMEGetWithHttpInfoAsync(NAME, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS split DNS entry object configuration.
+        ///  Retrieve SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsSplitEntryCollection)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<DnsSplitEntryCollection>> DnsSplitEntriesDomainNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (SonicDnsSplitEntryCollection)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<SonicDnsSplitEntryCollection>> SonicDnsSplitEntriesDomainNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsSplitEntryApi->DnsSplitEntriesDomainNAMEGet");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsSplitEntryApi->SonicDnsSplitEntriesDomainNAMEGet");
             }
 
 
@@ -831,7 +831,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesDomainNAMEGet";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesDomainNAMEGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -842,11 +842,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<DnsSplitEntryCollection>("/dns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<SonicDnsSplitEntryCollection>("/SonicDns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesDomainNAMEGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesDomainNAMEGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -857,33 +857,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Patch DNS split DNS entry object configuration.
+        ///  Patch SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsSplitEntriesDomainNAMEPatch(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0)
+        public ApiStatus SonicDnsSplitEntriesDomainNAMEPatch(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsSplitEntriesDomainNAMEPatchWithHttpInfo(NAME, dnsSplitEntryCollection);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsSplitEntriesDomainNAMEPatchWithHttpInfo(NAME, SonicDnsSplitEntryCollection);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Patch DNS split DNS entry object configuration.
+        ///  Patch SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsSplitEntriesDomainNAMEPatchWithHttpInfo(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsSplitEntriesDomainNAMEPatchWithHttpInfo(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0)
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsSplitEntryApi->DnsSplitEntriesDomainNAMEPatch");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsSplitEntryApi->SonicDnsSplitEntriesDomainNAMEPatch");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -910,9 +910,9 @@ namespace SonicWallGen7.Api
             }
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
-            localVarRequestOptions.Data = dnsSplitEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSplitEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesDomainNAMEPatch";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesDomainNAMEPatch";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -923,10 +923,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Patch<ApiStatus>("/dns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Patch<ApiStatus>("/SonicDns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesDomainNAMEPatch", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesDomainNAMEPatch", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -937,35 +937,35 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Patch DNS split DNS entry object configuration.
+        ///  Patch SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsSplitEntriesDomainNAMEPatchAsync(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsSplitEntriesDomainNAMEPatchAsync(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsSplitEntriesDomainNAMEPatchWithHttpInfoAsync(NAME, dnsSplitEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsSplitEntriesDomainNAMEPatchWithHttpInfoAsync(NAME, SonicDnsSplitEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Patch DNS split DNS entry object configuration.
+        ///  Patch SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsSplitEntriesDomainNAMEPatchWithHttpInfoAsync(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsSplitEntriesDomainNAMEPatchWithHttpInfoAsync(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsSplitEntryApi->DnsSplitEntriesDomainNAMEPatch");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsSplitEntryApi->SonicDnsSplitEntriesDomainNAMEPatch");
             }
 
 
@@ -993,9 +993,9 @@ namespace SonicWallGen7.Api
             }
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
-            localVarRequestOptions.Data = dnsSplitEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSplitEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesDomainNAMEPatch";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesDomainNAMEPatch";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1006,11 +1006,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PatchAsync<ApiStatus>("/dns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PatchAsync<ApiStatus>("/SonicDns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesDomainNAMEPatch", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesDomainNAMEPatch", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1021,33 +1021,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Edit DNS split DNS entry object configuration.
+        ///  Edit SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsSplitEntriesDomainNAMEPut(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0)
+        public ApiStatus SonicDnsSplitEntriesDomainNAMEPut(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsSplitEntriesDomainNAMEPutWithHttpInfo(NAME, dnsSplitEntryCollection);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsSplitEntriesDomainNAMEPutWithHttpInfo(NAME, SonicDnsSplitEntryCollection);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Edit DNS split DNS entry object configuration.
+        ///  Edit SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsSplitEntriesDomainNAMEPutWithHttpInfo(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsSplitEntriesDomainNAMEPutWithHttpInfo(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0)
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsSplitEntryApi->DnsSplitEntriesDomainNAMEPut");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsSplitEntryApi->SonicDnsSplitEntriesDomainNAMEPut");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -1074,9 +1074,9 @@ namespace SonicWallGen7.Api
             }
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
-            localVarRequestOptions.Data = dnsSplitEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSplitEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesDomainNAMEPut";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesDomainNAMEPut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1087,10 +1087,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<ApiStatus>("/dns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<ApiStatus>("/SonicDns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesDomainNAMEPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesDomainNAMEPut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1101,35 +1101,35 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Edit DNS split DNS entry object configuration.
+        ///  Edit SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsSplitEntriesDomainNAMEPutAsync(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsSplitEntriesDomainNAMEPutAsync(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsSplitEntriesDomainNAMEPutWithHttpInfoAsync(NAME, dnsSplitEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsSplitEntriesDomainNAMEPutWithHttpInfoAsync(NAME, SonicDnsSplitEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Edit DNS split DNS entry object configuration.
+        ///  Edit SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Split DNS entry domain name</param>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="NAME">Split SonicDns entry domain name</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsSplitEntriesDomainNAMEPutWithHttpInfoAsync(string NAME, DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsSplitEntriesDomainNAMEPutWithHttpInfoAsync(string NAME, SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsSplitEntryApi->DnsSplitEntriesDomainNAMEPut");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsSplitEntryApi->SonicDnsSplitEntriesDomainNAMEPut");
             }
 
 
@@ -1157,9 +1157,9 @@ namespace SonicWallGen7.Api
             }
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
-            localVarRequestOptions.Data = dnsSplitEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSplitEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesDomainNAMEPut";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesDomainNAMEPut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1170,11 +1170,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/dns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/SonicDns/split-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesDomainNAMEPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesDomainNAMEPut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1185,24 +1185,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS split DNS entry object configuration.
+        ///  Retrieve SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsSplitEntryCollection</returns>
-        public DnsSplitEntryCollection DnsSplitEntriesGet(int operationIndex = 0)
+        /// <returns>SonicDnsSplitEntryCollection</returns>
+        public SonicDnsSplitEntryCollection SonicDnsSplitEntriesGet(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<DnsSplitEntryCollection> localVarResponse = DnsSplitEntriesGetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<SonicDnsSplitEntryCollection> localVarResponse = SonicDnsSplitEntriesGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS split DNS entry object configuration.
+        ///  Retrieve SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsSplitEntryCollection</returns>
-        public SonicWallGen7.Client.ApiResponse<DnsSplitEntryCollection> DnsSplitEntriesGetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of SonicDnsSplitEntryCollection</returns>
+        public SonicWallGen7.Client.ApiResponse<SonicDnsSplitEntryCollection> SonicDnsSplitEntriesGetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -1227,7 +1227,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesGet";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1238,10 +1238,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<DnsSplitEntryCollection>("/dns/split-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<SonicDnsSplitEntryCollection>("/SonicDns/split-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1252,26 +1252,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS split DNS entry object configuration.
+        ///  Retrieve SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsSplitEntryCollection</returns>
-        public async System.Threading.Tasks.Task<DnsSplitEntryCollection> DnsSplitEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of SonicDnsSplitEntryCollection</returns>
+        public async System.Threading.Tasks.Task<SonicDnsSplitEntryCollection> SonicDnsSplitEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<DnsSplitEntryCollection> localVarResponse = await DnsSplitEntriesGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<SonicDnsSplitEntryCollection> localVarResponse = await SonicDnsSplitEntriesGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS split DNS entry object configuration.
+        ///  Retrieve SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsSplitEntryCollection)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<DnsSplitEntryCollection>> DnsSplitEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (SonicDnsSplitEntryCollection)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<SonicDnsSplitEntryCollection>> SonicDnsSplitEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -1297,7 +1297,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesGet";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1308,11 +1308,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<DnsSplitEntryCollection>("/dns/split-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<SonicDnsSplitEntryCollection>("/SonicDns/split-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1323,26 +1323,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Patch DNS split DNS entry object configuration.
+        ///  Patch SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsSplitEntriesPatch(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0)
+        public ApiStatus SonicDnsSplitEntriesPatch(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsSplitEntriesPatchWithHttpInfo(dnsSplitEntryCollection);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsSplitEntriesPatchWithHttpInfo(SonicDnsSplitEntryCollection);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Patch DNS split DNS entry object configuration.
+        ///  Patch SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsSplitEntriesPatchWithHttpInfo(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsSplitEntriesPatchWithHttpInfo(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -1367,9 +1367,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsSplitEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSplitEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesPatch";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesPatch";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1380,10 +1380,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Patch<ApiStatus>("/dns/split-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Patch<ApiStatus>("/SonicDns/split-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesPatch", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesPatch", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1394,28 +1394,28 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Patch DNS split DNS entry object configuration.
+        ///  Patch SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsSplitEntriesPatchAsync(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsSplitEntriesPatchAsync(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsSplitEntriesPatchWithHttpInfoAsync(dnsSplitEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsSplitEntriesPatchWithHttpInfoAsync(SonicDnsSplitEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Patch DNS split DNS entry object configuration.
+        ///  Patch SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsSplitEntriesPatchWithHttpInfoAsync(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsSplitEntriesPatchWithHttpInfoAsync(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -1441,9 +1441,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsSplitEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSplitEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesPatch";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesPatch";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1454,11 +1454,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PatchAsync<ApiStatus>("/dns/split-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PatchAsync<ApiStatus>("/SonicDns/split-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesPatch", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesPatch", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1469,26 +1469,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Create a new DNS split DNS entry object.
+        ///  Create a new SonicDns split SonicDns entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsSplitEntriesPost(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0)
+        public ApiStatus SonicDnsSplitEntriesPost(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsSplitEntriesPostWithHttpInfo(dnsSplitEntryCollection);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsSplitEntriesPostWithHttpInfo(SonicDnsSplitEntryCollection);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Create a new DNS split DNS entry object.
+        ///  Create a new SonicDns split SonicDns entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsSplitEntriesPostWithHttpInfo(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsSplitEntriesPostWithHttpInfo(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -1513,9 +1513,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsSplitEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSplitEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesPost";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesPost";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1526,10 +1526,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<ApiStatus>("/dns/split-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<ApiStatus>("/SonicDns/split-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1540,28 +1540,28 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Create a new DNS split DNS entry object.
+        ///  Create a new SonicDns split SonicDns entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsSplitEntriesPostAsync(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsSplitEntriesPostAsync(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsSplitEntriesPostWithHttpInfoAsync(dnsSplitEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsSplitEntriesPostWithHttpInfoAsync(SonicDnsSplitEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Create a new DNS split DNS entry object.
+        ///  Create a new SonicDns split SonicDns entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsSplitEntriesPostWithHttpInfoAsync(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsSplitEntriesPostWithHttpInfoAsync(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -1587,9 +1587,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsSplitEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSplitEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesPost";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesPost";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1600,11 +1600,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/dns/split-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/SonicDns/split-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1615,26 +1615,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Edit DNS split DNS entry object configuration.
+        ///  Edit SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsSplitEntriesPut(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0)
+        public ApiStatus SonicDnsSplitEntriesPut(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsSplitEntriesPutWithHttpInfo(dnsSplitEntryCollection);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsSplitEntriesPutWithHttpInfo(SonicDnsSplitEntryCollection);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Edit DNS split DNS entry object configuration.
+        ///  Edit SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsSplitEntriesPutWithHttpInfo(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsSplitEntriesPutWithHttpInfo(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -1659,9 +1659,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsSplitEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSplitEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesPut";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesPut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1672,10 +1672,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<ApiStatus>("/dns/split-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<ApiStatus>("/SonicDns/split-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesPut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1686,28 +1686,28 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Edit DNS split DNS entry object configuration.
+        ///  Edit SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsSplitEntriesPutAsync(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsSplitEntriesPutAsync(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsSplitEntriesPutWithHttpInfoAsync(dnsSplitEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsSplitEntriesPutWithHttpInfoAsync(SonicDnsSplitEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Edit DNS split DNS entry object configuration.
+        ///  Edit SonicDns split SonicDns entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSplitEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSplitEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsSplitEntriesPutWithHttpInfoAsync(DnsSplitEntryCollection? dnsSplitEntryCollection = default(DnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsSplitEntriesPutWithHttpInfoAsync(SonicDnsSplitEntryCollection? SonicDnsSplitEntryCollection = default(SonicDnsSplitEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -1733,9 +1733,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsSplitEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSplitEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSplitEntryApi.DnsSplitEntriesPut";
+            localVarRequestOptions.Operation = "SonicDnsSplitEntryApi.SonicDnsSplitEntriesPut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1746,11 +1746,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/dns/split-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/SonicDns/split-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSplitEntriesPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSplitEntriesPut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

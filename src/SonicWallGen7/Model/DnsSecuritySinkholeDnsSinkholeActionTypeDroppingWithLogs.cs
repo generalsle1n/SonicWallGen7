@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs
+    /// SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs
     /// </summary>
-    [DataContract(Name = "dns_security_sinkhole_dns_sinkhole_action_type_dropping_with_logs")]
-    public partial class DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs : IEquatable<DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_sinkhole_SonicDns_sinkhole_action_type_dropping_with_logs")]
+    public partial class SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs : IEquatable<SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs" /> class.
         /// </summary>
         /// <param name="droppingWithLogs">Dropping, with Logs.</param>
-        public DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs(bool droppingWithLogs = default(bool))
+        public SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs(bool droppingWithLogs = default(bool))
         {
             this.DroppingWithLogs = droppingWithLogs;
         }
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs {\n");
+            sb.Append("class SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs {\n");
             sb.Append("  DroppingWithLogs: ").Append(DroppingWithLogs).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs);
+            return this.Equals(input as SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs);
         }
 
         /// <summary>
-        /// Returns true if DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs instances are equal
+        /// Returns true if SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs input)
+        public bool Equals(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs input)
         {
             if (input == null)
             {

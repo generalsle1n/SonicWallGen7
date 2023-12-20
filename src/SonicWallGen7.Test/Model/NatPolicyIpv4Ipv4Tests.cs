@@ -182,12 +182,12 @@ namespace SonicWallGen7.Test.Model
         }
 
         /// <summary>
-        /// Test the property 'DnsDoctoring'
+        /// Test the property 'SonicDnsDoctoring'
         /// </summary>
         [Fact]
-        public void DnsDoctoringTest()
+        public void SonicDnsDoctoringTest()
         {
-            // TODO unit test for the property 'DnsDoctoring'
+            // TODO unit test for the property 'SonicDnsDoctoring'
         }
 
         /// <summary>

@@ -92,12 +92,12 @@ namespace SonicWallGen7.Test.Model
         }
 
         /// <summary>
-        /// Test the property 'DnsTtl'
+        /// Test the property 'SonicDnsTtl'
         /// </summary>
         [Fact]
-        public void DnsTtlTest()
+        public void SonicDnsTtlTest()
         {
-            // TODO unit test for the property 'DnsTtl'
+            // TODO unit test for the property 'SonicDnsTtl'
         }
     }
 }

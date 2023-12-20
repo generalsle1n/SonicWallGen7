@@ -24,117 +24,117 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSecuritySinkholeApiSync : IApiAccessor
+    public interface ISonicDnsSecuritySinkholeApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS security sinkhole configuration.
+        /// Retrieve SonicDns security sinkhole configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsSecuritySinkhole</returns>
-        DnsSecuritySinkhole DnsSecurityDnsSinkholeBaseGet(int operationIndex = 0);
+        /// <returns>SonicDnsSecuritySinkhole</returns>
+        SonicDnsSecuritySinkhole SonicDnsSecuritySonicDnsSinkholeBaseGet(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS security sinkhole configuration.
+        /// Retrieve SonicDns security sinkhole configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsSecuritySinkhole</returns>
-        ApiResponse<DnsSecuritySinkhole> DnsSecurityDnsSinkholeBaseGetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of SonicDnsSecuritySinkhole</returns>
+        ApiResponse<SonicDnsSecuritySinkhole> SonicDnsSecuritySonicDnsSinkholeBaseGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update DNS security sinkhole configuration.
+        /// Update SonicDns security sinkhole configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkhole"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkhole"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsSecurityDnsSinkholeBasePut(DnsSecuritySinkhole? dnsSecuritySinkhole = default(DnsSecuritySinkhole?), int operationIndex = 0);
+        ApiStatus SonicDnsSecuritySonicDnsSinkholeBasePut(SonicDnsSecuritySinkhole? SonicDnsSecuritySinkhole = default(SonicDnsSecuritySinkhole?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update DNS security sinkhole configuration.
+        /// Update SonicDns security sinkhole configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkhole"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkhole"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsSecurityDnsSinkholeBasePutWithHttpInfo(DnsSecuritySinkhole? dnsSecuritySinkhole = default(DnsSecuritySinkhole?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsSecuritySonicDnsSinkholeBasePutWithHttpInfo(SonicDnsSecuritySinkhole? SonicDnsSecuritySinkhole = default(SonicDnsSecuritySinkhole?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSecuritySinkholeApiAsync : IApiAccessor
+    public interface ISonicDnsSecuritySinkholeApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS security sinkhole configuration.
+        /// Retrieve SonicDns security sinkhole configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsSecuritySinkhole</returns>
-        System.Threading.Tasks.Task<DnsSecuritySinkhole> DnsSecurityDnsSinkholeBaseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of SonicDnsSecuritySinkhole</returns>
+        System.Threading.Tasks.Task<SonicDnsSecuritySinkhole> SonicDnsSecuritySonicDnsSinkholeBaseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS security sinkhole configuration.
+        /// Retrieve SonicDns security sinkhole configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsSecuritySinkhole)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DnsSecuritySinkhole>> DnsSecurityDnsSinkholeBaseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (SonicDnsSecuritySinkhole)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SonicDnsSecuritySinkhole>> SonicDnsSecuritySonicDnsSinkholeBaseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update DNS security sinkhole configuration.
+        /// Update SonicDns security sinkhole configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkhole"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkhole"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsSecurityDnsSinkholeBasePutAsync(DnsSecuritySinkhole? dnsSecuritySinkhole = default(DnsSecuritySinkhole?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsSecuritySonicDnsSinkholeBasePutAsync(SonicDnsSecuritySinkhole? SonicDnsSecuritySinkhole = default(SonicDnsSecuritySinkhole?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update DNS security sinkhole configuration.
+        /// Update SonicDns security sinkhole configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkhole"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkhole"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsSecurityDnsSinkholeBasePutWithHttpInfoAsync(DnsSecuritySinkhole? dnsSecuritySinkhole = default(DnsSecuritySinkhole?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsSecuritySonicDnsSinkholeBasePutWithHttpInfoAsync(SonicDnsSecuritySinkhole? SonicDnsSecuritySinkhole = default(SonicDnsSecuritySinkhole?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSecuritySinkholeApi : IDnsSecuritySinkholeApiSync, IDnsSecuritySinkholeApiAsync
+    public interface ISonicDnsSecuritySinkholeApi : ISonicDnsSecuritySinkholeApiSync, ISonicDnsSecuritySinkholeApiAsync
     {
 
     }
@@ -142,23 +142,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DnsSecuritySinkholeApi : IDnsSecuritySinkholeApi
+    public partial class SonicDnsSecuritySinkholeApi : ISonicDnsSecuritySinkholeApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsSecuritySinkholeApi() : this((string)null)
+        public SonicDnsSecuritySinkholeApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsSecuritySinkholeApi(string basePath)
+        public SonicDnsSecuritySinkholeApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -170,12 +170,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DnsSecuritySinkholeApi(SonicWallGen7.Client.Configuration configuration)
+        public SonicDnsSecuritySinkholeApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -189,13 +189,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DnsSecuritySinkholeApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicDnsSecuritySinkholeApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -249,24 +249,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS security sinkhole configuration.
+        ///  Retrieve SonicDns security sinkhole configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsSecuritySinkhole</returns>
-        public DnsSecuritySinkhole DnsSecurityDnsSinkholeBaseGet(int operationIndex = 0)
+        /// <returns>SonicDnsSecuritySinkhole</returns>
+        public SonicDnsSecuritySinkhole SonicDnsSecuritySonicDnsSinkholeBaseGet(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<DnsSecuritySinkhole> localVarResponse = DnsSecurityDnsSinkholeBaseGetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<SonicDnsSecuritySinkhole> localVarResponse = SonicDnsSecuritySonicDnsSinkholeBaseGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS security sinkhole configuration.
+        ///  Retrieve SonicDns security sinkhole configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsSecuritySinkhole</returns>
-        public SonicWallGen7.Client.ApiResponse<DnsSecuritySinkhole> DnsSecurityDnsSinkholeBaseGetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of SonicDnsSecuritySinkhole</returns>
+        public SonicWallGen7.Client.ApiResponse<SonicDnsSecuritySinkhole> SonicDnsSecuritySonicDnsSinkholeBaseGetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -291,7 +291,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsSecuritySinkholeApi.DnsSecurityDnsSinkholeBaseGet";
+            localVarRequestOptions.Operation = "SonicDnsSecuritySinkholeApi.SonicDnsSecuritySonicDnsSinkholeBaseGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -302,10 +302,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<DnsSecuritySinkhole>("/dns-security/dns-sinkhole/base", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<SonicDnsSecuritySinkhole>("/SonicDns-security/SonicDns-sinkhole/base", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsSinkholeBaseGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsSinkholeBaseGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -316,26 +316,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS security sinkhole configuration.
+        ///  Retrieve SonicDns security sinkhole configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsSecuritySinkhole</returns>
-        public async System.Threading.Tasks.Task<DnsSecuritySinkhole> DnsSecurityDnsSinkholeBaseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of SonicDnsSecuritySinkhole</returns>
+        public async System.Threading.Tasks.Task<SonicDnsSecuritySinkhole> SonicDnsSecuritySonicDnsSinkholeBaseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<DnsSecuritySinkhole> localVarResponse = await DnsSecurityDnsSinkholeBaseGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<SonicDnsSecuritySinkhole> localVarResponse = await SonicDnsSecuritySonicDnsSinkholeBaseGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS security sinkhole configuration.
+        ///  Retrieve SonicDns security sinkhole configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsSecuritySinkhole)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<DnsSecuritySinkhole>> DnsSecurityDnsSinkholeBaseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (SonicDnsSecuritySinkhole)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<SonicDnsSecuritySinkhole>> SonicDnsSecuritySonicDnsSinkholeBaseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -361,7 +361,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsSecuritySinkholeApi.DnsSecurityDnsSinkholeBaseGet";
+            localVarRequestOptions.Operation = "SonicDnsSecuritySinkholeApi.SonicDnsSecuritySonicDnsSinkholeBaseGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -372,11 +372,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<DnsSecuritySinkhole>("/dns-security/dns-sinkhole/base", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<SonicDnsSecuritySinkhole>("/SonicDns-security/SonicDns-sinkhole/base", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsSinkholeBaseGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsSinkholeBaseGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -387,26 +387,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Update DNS security sinkhole configuration.
+        ///  Update SonicDns security sinkhole configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkhole"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkhole"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsSecurityDnsSinkholeBasePut(DnsSecuritySinkhole? dnsSecuritySinkhole = default(DnsSecuritySinkhole?), int operationIndex = 0)
+        public ApiStatus SonicDnsSecuritySonicDnsSinkholeBasePut(SonicDnsSecuritySinkhole? SonicDnsSecuritySinkhole = default(SonicDnsSecuritySinkhole?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsSecurityDnsSinkholeBasePutWithHttpInfo(dnsSecuritySinkhole);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsSecuritySonicDnsSinkholeBasePutWithHttpInfo(SonicDnsSecuritySinkhole);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Update DNS security sinkhole configuration.
+        ///  Update SonicDns security sinkhole configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkhole"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkhole"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsSecurityDnsSinkholeBasePutWithHttpInfo(DnsSecuritySinkhole? dnsSecuritySinkhole = default(DnsSecuritySinkhole?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsSecuritySonicDnsSinkholeBasePutWithHttpInfo(SonicDnsSecuritySinkhole? SonicDnsSecuritySinkhole = default(SonicDnsSecuritySinkhole?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -431,9 +431,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsSecuritySinkhole;
+            localVarRequestOptions.Data = SonicDnsSecuritySinkhole;
 
-            localVarRequestOptions.Operation = "DnsSecuritySinkholeApi.DnsSecurityDnsSinkholeBasePut";
+            localVarRequestOptions.Operation = "SonicDnsSecuritySinkholeApi.SonicDnsSecuritySonicDnsSinkholeBasePut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -444,10 +444,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<ApiStatus>("/dns-security/dns-sinkhole/base", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<ApiStatus>("/SonicDns-security/SonicDns-sinkhole/base", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsSinkholeBasePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsSinkholeBasePut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -458,28 +458,28 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Update DNS security sinkhole configuration.
+        ///  Update SonicDns security sinkhole configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkhole"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkhole"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsSecurityDnsSinkholeBasePutAsync(DnsSecuritySinkhole? dnsSecuritySinkhole = default(DnsSecuritySinkhole?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsSecuritySonicDnsSinkholeBasePutAsync(SonicDnsSecuritySinkhole? SonicDnsSecuritySinkhole = default(SonicDnsSecuritySinkhole?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsSecurityDnsSinkholeBasePutWithHttpInfoAsync(dnsSecuritySinkhole, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsSecuritySonicDnsSinkholeBasePutWithHttpInfoAsync(SonicDnsSecuritySinkhole, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Update DNS security sinkhole configuration.
+        ///  Update SonicDns security sinkhole configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkhole"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkhole"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsSecurityDnsSinkholeBasePutWithHttpInfoAsync(DnsSecuritySinkhole? dnsSecuritySinkhole = default(DnsSecuritySinkhole?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsSecuritySonicDnsSinkholeBasePutWithHttpInfoAsync(SonicDnsSecuritySinkhole? SonicDnsSecuritySinkhole = default(SonicDnsSecuritySinkhole?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -505,9 +505,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsSecuritySinkhole;
+            localVarRequestOptions.Data = SonicDnsSecuritySinkhole;
 
-            localVarRequestOptions.Operation = "DnsSecuritySinkholeApi.DnsSecurityDnsSinkholeBasePut";
+            localVarRequestOptions.Operation = "SonicDnsSecuritySinkholeApi.SonicDnsSecuritySonicDnsSinkholeBasePut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -518,11 +518,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/dns-security/dns-sinkhole/base", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/SonicDns-security/SonicDns-sinkhole/base", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsSinkholeBasePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsSinkholeBasePut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

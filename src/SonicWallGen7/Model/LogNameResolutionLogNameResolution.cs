@@ -46,10 +46,10 @@ namespace SonicWallGen7.Model
             None = 1,
 
             /// <summary>
-            /// Enum Dns for value: dns
+            /// Enum SonicDns for value: SonicDns
             /// </summary>
-            [EnumMember(Value = "dns")]
-            Dns = 2,
+            [EnumMember(Value = "SonicDns")]
+            SonicDns = 2,
 
             /// <summary>
             /// Enum Netbios for value: netbios
@@ -58,10 +58,10 @@ namespace SonicWallGen7.Model
             Netbios = 3,
 
             /// <summary>
-            /// Enum DnsThenNetbios for value: dns-then-netbios
+            /// Enum SonicDnsThenNetbios for value: SonicDns-then-netbios
             /// </summary>
-            [EnumMember(Value = "dns-then-netbios")]
-            DnsThenNetbios = 4
+            [EnumMember(Value = "SonicDns-then-netbios")]
+            SonicDnsThenNetbios = 4
         }
 
 
@@ -75,18 +75,18 @@ namespace SonicWallGen7.Model
         /// Initializes a new instance of the <see cref="LogNameResolutionLogNameResolution" /> class.
         /// </summary>
         /// <param name="method">Set name resolution method..</param>
-        /// <param name="dns">dns.</param>
-        public LogNameResolutionLogNameResolution(MethodEnum? method = default(MethodEnum?), LogNameResolutionLogNameResolutionDns dns = default(LogNameResolutionLogNameResolutionDns))
+        /// <param name="SonicDns">SonicDns.</param>
+        public LogNameResolutionLogNameResolution(MethodEnum? method = default(MethodEnum?), LogNameResolutionLogNameResolutionSonicDns SonicDns = default(LogNameResolutionLogNameResolutionSonicDns))
         {
             this.Method = method;
-            this.Dns = dns;
+            this.SonicDns = SonicDns;
         }
 
         /// <summary>
-        /// Gets or Sets Dns
+        /// Gets or Sets SonicDns
         /// </summary>
-        [DataMember(Name = "dns", EmitDefaultValue = false)]
-        public LogNameResolutionLogNameResolutionDns Dns { get; set; }
+        [DataMember(Name = "SonicDns", EmitDefaultValue = false)]
+        public LogNameResolutionLogNameResolutionSonicDns SonicDns { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -97,7 +97,7 @@ namespace SonicWallGen7.Model
             StringBuilder sb = new StringBuilder();
             sb.Append("class LogNameResolutionLogNameResolution {\n");
             sb.Append("  Method: ").Append(Method).Append("\n");
-            sb.Append("  Dns: ").Append(Dns).Append("\n");
+            sb.Append("  SonicDns: ").Append(SonicDns).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -138,9 +138,9 @@ namespace SonicWallGen7.Model
                     this.Method.Equals(input.Method)
                 ) && 
                 (
-                    this.Dns == input.Dns ||
-                    (this.Dns != null &&
-                    this.Dns.Equals(input.Dns))
+                    this.SonicDns == input.SonicDns ||
+                    (this.SonicDns != null &&
+                    this.SonicDns.Equals(input.SonicDns))
                 );
         }
 
@@ -154,9 +154,9 @@ namespace SonicWallGen7.Model
             {
                 int hashCode = 41;
                 hashCode = (hashCode * 59) + this.Method.GetHashCode();
-                if (this.Dns != null)
+                if (this.SonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.Dns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDns.GetHashCode();
                 }
                 return hashCode;
             }

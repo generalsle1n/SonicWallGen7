@@ -28,18 +28,18 @@ using System.Reflection;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Configure dynamic DNS online settings.
+    /// Configure dynamic SonicDns online settings.
     /// </summary>
-    [JsonConverter(typeof(DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsJsonConverter))]
-    [DataContract(Name = "dynamic_dns_profile_ipv4_profile_ipv4_online_settings")]
-    public partial class DynamicDnsProfileIpv4ProfileIpv4OnlineSettings : AbstractOpenAPISchema, IEquatable<DynamicDnsProfileIpv4ProfileIpv4OnlineSettings>, IValidatableObject
+    [JsonConverter(typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsJsonConverter))]
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv4_profile_ipv4_online_settings")]
+    public partial class DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings : AbstractOpenAPISchema, IEquatable<DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4ProfileIpv4OnlineSettings" /> class
-        /// with the <see cref="DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan" /> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings" /> class
+        /// with the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan.</param>
-        public DynamicDnsProfileIpv4ProfileIpv4OnlineSettings(DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan actualInstance)
+        /// <param name="actualInstance">An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan.</param>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -47,11 +47,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4ProfileIpv4OnlineSettings" /> class
-        /// with the <see cref="DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect" /> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings" /> class
+        /// with the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect.</param>
-        public DynamicDnsProfileIpv4ProfileIpv4OnlineSettings(DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect actualInstance)
+        /// <param name="actualInstance">An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect.</param>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -59,11 +59,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4ProfileIpv4OnlineSettings" /> class
-        /// with the <see cref="DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual" /> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings" /> class
+        /// with the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual.</param>
-        public DynamicDnsProfileIpv4ProfileIpv4OnlineSettings(DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual actualInstance)
+        /// <param name="actualInstance">An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual.</param>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -84,53 +84,53 @@ namespace SonicWallGen7.Model
             }
             set
             {
-                if (value.GetType() == typeof(DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect))
+                if (value.GetType() == typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual))
+                else if (value.GetType() == typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan))
+                else if (value.GetType() == typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan))
                 {
                     this._actualInstance = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid instance found. Must be the following types: DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect, DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual, DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan");
+                    throw new ArgumentException("Invalid instance found. Must be the following types: DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect, DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual, DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan");
                 }
             }
         }
 
         /// <summary>
-        /// Get the actual instance of `DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan`. If the actual instance is not `DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan`,
+        /// Get the actual instance of `DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan`. If the actual instance is not `DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan</returns>
-        public DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan GetDynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan()
+        /// <returns>An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan</returns>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan GetDynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan()
         {
-            return (DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan)this.ActualInstance;
+            return (DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect`. If the actual instance is not `DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect`,
+        /// Get the actual instance of `DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect`. If the actual instance is not `DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect</returns>
-        public DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect GetDynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect()
+        /// <returns>An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect</returns>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect GetDynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect()
         {
-            return (DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect)this.ActualInstance;
+            return (DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual`. If the actual instance is not `DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual`,
+        /// Get the actual instance of `DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual`. If the actual instance is not `DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual</returns>
-        public DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual GetDynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual()
+        /// <returns>An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual</returns>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual GetDynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual()
         {
-            return (DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual)this.ActualInstance;
+            return (DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual)this.ActualInstance;
         }
 
         /// <summary>
@@ -140,7 +140,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv4ProfileIpv4OnlineSettings {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings {\n");
             sb.Append("  ActualInstance: ").Append(this.ActualInstance).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -152,21 +152,21 @@ namespace SonicWallGen7.Model
         /// <returns>JSON string presentation of the object</returns>
         public override string ToJson()
         {
-            return JsonConvert.SerializeObject(this.ActualInstance, DynamicDnsProfileIpv4ProfileIpv4OnlineSettings.SerializerSettings);
+            return JsonConvert.SerializeObject(this.ActualInstance, DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings.SerializerSettings);
         }
 
         /// <summary>
-        /// Converts the JSON string into an instance of DynamicDnsProfileIpv4ProfileIpv4OnlineSettings
+        /// Converts the JSON string into an instance of DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings
         /// </summary>
         /// <param name="jsonString">JSON string</param>
-        /// <returns>An instance of DynamicDnsProfileIpv4ProfileIpv4OnlineSettings</returns>
-        public static DynamicDnsProfileIpv4ProfileIpv4OnlineSettings FromJson(string jsonString)
+        /// <returns>An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings</returns>
+        public static DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings FromJson(string jsonString)
         {
-            DynamicDnsProfileIpv4ProfileIpv4OnlineSettings newDynamicDnsProfileIpv4ProfileIpv4OnlineSettings = null;
+            DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings newDynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings = null;
 
             if (string.IsNullOrEmpty(jsonString))
             {
-                return newDynamicDnsProfileIpv4ProfileIpv4OnlineSettings;
+                return newDynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings;
             }
             int match = 0;
             List<string> matchedTypes = new List<string>();
@@ -174,61 +174,61 @@ namespace SonicWallGen7.Model
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect).GetProperty("AdditionalProperties") == null)
+                if (typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect).GetProperty("AdditionalProperties") == null)
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OnlineSettings = new DynamicDnsProfileIpv4ProfileIpv4OnlineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OnlineSettings.SerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings.SerializerSettings));
                 }
                 else
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OnlineSettings = new DynamicDnsProfileIpv4ProfileIpv4OnlineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OnlineSettings.AdditionalPropertiesSerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect");
+                matchedTypes.Add("DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsDetect: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual).GetProperty("AdditionalProperties") == null)
+                if (typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual).GetProperty("AdditionalProperties") == null)
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OnlineSettings = new DynamicDnsProfileIpv4ProfileIpv4OnlineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OnlineSettings.SerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings.SerializerSettings));
                 }
                 else
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OnlineSettings = new DynamicDnsProfileIpv4ProfileIpv4OnlineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OnlineSettings.AdditionalPropertiesSerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual");
+                matchedTypes.Add("DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsManual: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsManual: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan).GetProperty("AdditionalProperties") == null)
+                if (typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan).GetProperty("AdditionalProperties") == null)
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OnlineSettings = new DynamicDnsProfileIpv4ProfileIpv4OnlineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OnlineSettings.SerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings.SerializerSettings));
                 }
                 else
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OnlineSettings = new DynamicDnsProfileIpv4ProfileIpv4OnlineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OnlineSettings.AdditionalPropertiesSerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan");
+                matchedTypes.Add("DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsSetToWan: {1}", jsonString, exception.ToString()));
             }
 
             if (match == 0)
@@ -241,7 +241,7 @@ namespace SonicWallGen7.Model
             }
 
             // deserialization is considered successful at this point if no exception has been thrown.
-            return newDynamicDnsProfileIpv4ProfileIpv4OnlineSettings;
+            return newDynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings;
         }
 
         /// <summary>
@@ -251,15 +251,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv4ProfileIpv4OnlineSettings);
+            return this.Equals(input as DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv4ProfileIpv4OnlineSettings instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv4ProfileIpv4OnlineSettings to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv4ProfileIpv4OnlineSettings input)
+        public bool Equals(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings input)
         {
             if (input == null)
                 return false;
@@ -294,9 +294,9 @@ namespace SonicWallGen7.Model
     }
 
     /// <summary>
-    /// Custom JSON converter for DynamicDnsProfileIpv4ProfileIpv4OnlineSettings
+    /// Custom JSON converter for DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings
     /// </summary>
-    public class DynamicDnsProfileIpv4ProfileIpv4OnlineSettingsJsonConverter : JsonConverter
+    public class DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettingsJsonConverter : JsonConverter
     {
         /// <summary>
         /// To write the JSON string
@@ -306,7 +306,7 @@ namespace SonicWallGen7.Model
         /// <param name="serializer">JSON Serializer</param>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            writer.WriteRawValue((string)(typeof(DynamicDnsProfileIpv4ProfileIpv4OnlineSettings).GetMethod("ToJson").Invoke(value, null)));
+            writer.WriteRawValue((string)(typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings).GetMethod("ToJson").Invoke(value, null)));
         }
 
         /// <summary>
@@ -321,7 +321,7 @@ namespace SonicWallGen7.Model
         {
             if(reader.TokenType != JsonToken.Null)
             {
-                return DynamicDnsProfileIpv4ProfileIpv4OnlineSettings.FromJson(JObject.Load(reader).ToString(Formatting.None));
+                return DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings.FromJson(JObject.Load(reader).ToString(Formatting.None));
             }
             return null;
         }

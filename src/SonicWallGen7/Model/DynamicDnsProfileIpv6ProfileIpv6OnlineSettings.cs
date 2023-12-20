@@ -28,18 +28,18 @@ using System.Reflection;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Configure dynamic DNS online settings.
+    /// Configure dynamic SonicDns online settings.
     /// </summary>
-    [JsonConverter(typeof(DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsJsonConverter))]
-    [DataContract(Name = "dynamic_dns_profile_ipv6_profile_ipv6_online_settings")]
-    public partial class DynamicDnsProfileIpv6ProfileIpv6OnlineSettings : AbstractOpenAPISchema, IEquatable<DynamicDnsProfileIpv6ProfileIpv6OnlineSettings>, IValidatableObject
+    [JsonConverter(typeof(DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsJsonConverter))]
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv6_profile_ipv6_online_settings")]
+    public partial class DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings : AbstractOpenAPISchema, IEquatable<DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv6ProfileIpv6OnlineSettings" /> class
-        /// with the <see cref="DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan" /> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings" /> class
+        /// with the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan.</param>
-        public DynamicDnsProfileIpv6ProfileIpv6OnlineSettings(DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan actualInstance)
+        /// <param name="actualInstance">An instance of DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan.</param>
+        public DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings(DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -47,11 +47,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv6ProfileIpv6OnlineSettings" /> class
-        /// with the <see cref="DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual" /> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings" /> class
+        /// with the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual.</param>
-        public DynamicDnsProfileIpv6ProfileIpv6OnlineSettings(DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual actualInstance)
+        /// <param name="actualInstance">An instance of DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual.</param>
+        public DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings(DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -72,39 +72,39 @@ namespace SonicWallGen7.Model
             }
             set
             {
-                if (value.GetType() == typeof(DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual))
+                if (value.GetType() == typeof(DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan))
+                else if (value.GetType() == typeof(DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan))
                 {
                     this._actualInstance = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid instance found. Must be the following types: DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual, DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan");
+                    throw new ArgumentException("Invalid instance found. Must be the following types: DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual, DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan");
                 }
             }
         }
 
         /// <summary>
-        /// Get the actual instance of `DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan`. If the actual instance is not `DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan`,
+        /// Get the actual instance of `DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan`. If the actual instance is not `DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan</returns>
-        public DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan GetDynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan()
+        /// <returns>An instance of DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan</returns>
+        public DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan GetDynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan()
         {
-            return (DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan)this.ActualInstance;
+            return (DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual`. If the actual instance is not `DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual`,
+        /// Get the actual instance of `DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual`. If the actual instance is not `DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual</returns>
-        public DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual GetDynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual()
+        /// <returns>An instance of DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual</returns>
+        public DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual GetDynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual()
         {
-            return (DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual)this.ActualInstance;
+            return (DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual)this.ActualInstance;
         }
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv6ProfileIpv6OnlineSettings {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings {\n");
             sb.Append("  ActualInstance: ").Append(this.ActualInstance).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -126,21 +126,21 @@ namespace SonicWallGen7.Model
         /// <returns>JSON string presentation of the object</returns>
         public override string ToJson()
         {
-            return JsonConvert.SerializeObject(this.ActualInstance, DynamicDnsProfileIpv6ProfileIpv6OnlineSettings.SerializerSettings);
+            return JsonConvert.SerializeObject(this.ActualInstance, DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings.SerializerSettings);
         }
 
         /// <summary>
-        /// Converts the JSON string into an instance of DynamicDnsProfileIpv6ProfileIpv6OnlineSettings
+        /// Converts the JSON string into an instance of DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings
         /// </summary>
         /// <param name="jsonString">JSON string</param>
-        /// <returns>An instance of DynamicDnsProfileIpv6ProfileIpv6OnlineSettings</returns>
-        public static DynamicDnsProfileIpv6ProfileIpv6OnlineSettings FromJson(string jsonString)
+        /// <returns>An instance of DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings</returns>
+        public static DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings FromJson(string jsonString)
         {
-            DynamicDnsProfileIpv6ProfileIpv6OnlineSettings newDynamicDnsProfileIpv6ProfileIpv6OnlineSettings = null;
+            DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings newDynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings = null;
 
             if (string.IsNullOrEmpty(jsonString))
             {
-                return newDynamicDnsProfileIpv6ProfileIpv6OnlineSettings;
+                return newDynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings;
             }
             int match = 0;
             List<string> matchedTypes = new List<string>();
@@ -148,41 +148,41 @@ namespace SonicWallGen7.Model
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual).GetProperty("AdditionalProperties") == null)
+                if (typeof(DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual).GetProperty("AdditionalProperties") == null)
                 {
-                    newDynamicDnsProfileIpv6ProfileIpv6OnlineSettings = new DynamicDnsProfileIpv6ProfileIpv6OnlineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual>(jsonString, DynamicDnsProfileIpv6ProfileIpv6OnlineSettings.SerializerSettings));
+                    newDynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings = new DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual>(jsonString, DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings.SerializerSettings));
                 }
                 else
                 {
-                    newDynamicDnsProfileIpv6ProfileIpv6OnlineSettings = new DynamicDnsProfileIpv6ProfileIpv6OnlineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual>(jsonString, DynamicDnsProfileIpv6ProfileIpv6OnlineSettings.AdditionalPropertiesSerializerSettings));
+                    newDynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings = new DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual>(jsonString, DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual");
+                matchedTypes.Add("DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan).GetProperty("AdditionalProperties") == null)
+                if (typeof(DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan).GetProperty("AdditionalProperties") == null)
                 {
-                    newDynamicDnsProfileIpv6ProfileIpv6OnlineSettings = new DynamicDnsProfileIpv6ProfileIpv6OnlineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan>(jsonString, DynamicDnsProfileIpv6ProfileIpv6OnlineSettings.SerializerSettings));
+                    newDynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings = new DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan>(jsonString, DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings.SerializerSettings));
                 }
                 else
                 {
-                    newDynamicDnsProfileIpv6ProfileIpv6OnlineSettings = new DynamicDnsProfileIpv6ProfileIpv6OnlineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan>(jsonString, DynamicDnsProfileIpv6ProfileIpv6OnlineSettings.AdditionalPropertiesSerializerSettings));
+                    newDynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings = new DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan>(jsonString, DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan");
+                matchedTypes.Add("DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan: {1}", jsonString, exception.ToString()));
             }
 
             if (match == 0)
@@ -195,7 +195,7 @@ namespace SonicWallGen7.Model
             }
 
             // deserialization is considered successful at this point if no exception has been thrown.
-            return newDynamicDnsProfileIpv6ProfileIpv6OnlineSettings;
+            return newDynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings;
         }
 
         /// <summary>
@@ -205,15 +205,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv6ProfileIpv6OnlineSettings);
+            return this.Equals(input as DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv6ProfileIpv6OnlineSettings instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv6ProfileIpv6OnlineSettings to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv6ProfileIpv6OnlineSettings input)
+        public bool Equals(DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings input)
         {
             if (input == null)
                 return false;
@@ -248,9 +248,9 @@ namespace SonicWallGen7.Model
     }
 
     /// <summary>
-    /// Custom JSON converter for DynamicDnsProfileIpv6ProfileIpv6OnlineSettings
+    /// Custom JSON converter for DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings
     /// </summary>
-    public class DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsJsonConverter : JsonConverter
+    public class DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsJsonConverter : JsonConverter
     {
         /// <summary>
         /// To write the JSON string
@@ -260,7 +260,7 @@ namespace SonicWallGen7.Model
         /// <param name="serializer">JSON Serializer</param>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            writer.WriteRawValue((string)(typeof(DynamicDnsProfileIpv6ProfileIpv6OnlineSettings).GetMethod("ToJson").Invoke(value, null)));
+            writer.WriteRawValue((string)(typeof(DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings).GetMethod("ToJson").Invoke(value, null)));
         }
 
         /// <summary>
@@ -275,7 +275,7 @@ namespace SonicWallGen7.Model
         {
             if(reader.TokenType != JsonToken.Null)
             {
-                return DynamicDnsProfileIpv6ProfileIpv6OnlineSettings.FromJson(JObject.Load(reader).ToString(Formatting.None));
+                return DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettings.FromJson(JObject.Load(reader).ToString(Formatting.None));
             }
             return null;
         }

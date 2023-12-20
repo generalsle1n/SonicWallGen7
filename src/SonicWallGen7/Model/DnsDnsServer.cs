@@ -27,18 +27,18 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS server configuration.
+    /// SonicDns server configuration.
     /// </summary>
-    [DataContract(Name = "dns_dns_server")]
-    public partial class DnsDnsServer : IEquatable<DnsDnsServer>, IValidatableObject
+    [DataContract(Name = "SonicDns_SonicDns_server")]
+    public partial class SonicDnsSonicDnsServer : IEquatable<SonicDnsSonicDnsServer>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsDnsServer" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSonicDnsServer" /> class.
         /// </summary>
-        /// <param name="inherit">Inherit DNS servers..</param>
+        /// <param name="inherit">Inherit SonicDns servers..</param>
         /// <param name="varStatic">varStatic.</param>
         /// <param name="ipv6">ipv6.</param>
-        public DnsDnsServer(bool inherit = default(bool), LogNameResolutionNameResolutionDnsStaticStatic varStatic = default(LogNameResolutionNameResolutionDnsStaticStatic), DnsDnsServerIpv6 ipv6 = default(DnsDnsServerIpv6))
+        public SonicDnsSonicDnsServer(bool inherit = default(bool), LogNameResolutionNameResolutionSonicDnsStaticStatic varStatic = default(LogNameResolutionNameResolutionSonicDnsStaticStatic), SonicDnsSonicDnsServerIpv6 ipv6 = default(SonicDnsSonicDnsServerIpv6))
         {
             this.Inherit = inherit;
             this.VarStatic = varStatic;
@@ -46,9 +46,9 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Inherit DNS servers.
+        /// Inherit SonicDns servers.
         /// </summary>
-        /// <value>Inherit DNS servers.</value>
+        /// <value>Inherit SonicDns servers.</value>
         [DataMember(Name = "inherit", EmitDefaultValue = true)]
         public bool Inherit { get; set; }
 
@@ -56,13 +56,13 @@ namespace SonicWallGen7.Model
         /// Gets or Sets VarStatic
         /// </summary>
         [DataMember(Name = "static", EmitDefaultValue = false)]
-        public LogNameResolutionNameResolutionDnsStaticStatic VarStatic { get; set; }
+        public LogNameResolutionNameResolutionSonicDnsStaticStatic VarStatic { get; set; }
 
         /// <summary>
         /// Gets or Sets Ipv6
         /// </summary>
         [DataMember(Name = "ipv6", EmitDefaultValue = false)]
-        public DnsDnsServerIpv6 Ipv6 { get; set; }
+        public SonicDnsSonicDnsServerIpv6 Ipv6 { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -71,7 +71,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsDnsServer {\n");
+            sb.Append("class SonicDnsSonicDnsServer {\n");
             sb.Append("  Inherit: ").Append(Inherit).Append("\n");
             sb.Append("  VarStatic: ").Append(VarStatic).Append("\n");
             sb.Append("  Ipv6: ").Append(Ipv6).Append("\n");
@@ -95,15 +95,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsDnsServer);
+            return this.Equals(input as SonicDnsSonicDnsServer);
         }
 
         /// <summary>
-        /// Returns true if DnsDnsServer instances are equal
+        /// Returns true if SonicDnsSonicDnsServer instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsDnsServer to be compared</param>
+        /// <param name="input">Instance of SonicDnsSonicDnsServer to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsDnsServer input)
+        public bool Equals(SonicDnsSonicDnsServer input)
         {
             if (input == null)
             {

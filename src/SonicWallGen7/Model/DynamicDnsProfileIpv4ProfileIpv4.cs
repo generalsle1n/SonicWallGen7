@@ -27,15 +27,15 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// IPv4 Dynamic DNS profile.
+    /// IPv4 Dynamic SonicDns profile.
     /// </summary>
-    [DataContract(Name = "dynamic_dns_profile_ipv4_profile_ipv4")]
-    public partial class DynamicDnsProfileIpv4ProfileIpv4 : IEquatable<DynamicDnsProfileIpv4ProfileIpv4>, IValidatableObject
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv4_profile_ipv4")]
+    public partial class DynamicSonicDnsProfileIpv4ProfileIpv4 : IEquatable<DynamicSonicDnsProfileIpv4ProfileIpv4>, IValidatableObject
     {
         /// <summary>
-        /// Select dynamic DNS provider.
+        /// Select dynamic SonicDns provider.
         /// </summary>
-        /// <value>Select dynamic DNS provider.</value>
+        /// <value>Select dynamic SonicDns provider.</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ProviderEnum
         {
@@ -60,15 +60,15 @@ namespace SonicWallGen7.Model
 
 
         /// <summary>
-        /// Select dynamic DNS provider.
+        /// Select dynamic SonicDns provider.
         /// </summary>
-        /// <value>Select dynamic DNS provider.</value>
+        /// <value>Select dynamic SonicDns provider.</value>
         [DataMember(Name = "provider", EmitDefaultValue = false)]
         public ProviderEnum? Provider { get; set; }
         /// <summary>
-        /// Configure dynamic DNS service type.
+        /// Configure dynamic SonicDns service type.
         /// </summary>
-        /// <value>Configure dynamic DNS service type.</value>
+        /// <value>Configure dynamic SonicDns service type.</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ServiceTypeEnum
         {
@@ -93,36 +93,36 @@ namespace SonicWallGen7.Model
 
 
         /// <summary>
-        /// Configure dynamic DNS service type.
+        /// Configure dynamic SonicDns service type.
         /// </summary>
-        /// <value>Configure dynamic DNS service type.</value>
+        /// <value>Configure dynamic SonicDns service type.</value>
         [DataMember(Name = "service_type", EmitDefaultValue = false)]
         public ServiceTypeEnum? ServiceType { get; set; }
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4ProfileIpv4" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected DynamicDnsProfileIpv4ProfileIpv4() { }
+        protected DynamicSonicDnsProfileIpv4ProfileIpv4() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4ProfileIpv4" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4" /> class.
         /// </summary>
-        /// <param name="profileName">Edit a dynamic DNS profile name. (required).</param>
-        /// <param name="enable">Enable dynamic DNS profile..</param>
+        /// <param name="profileName">Edit a dynamic SonicDns profile name. (required).</param>
+        /// <param name="enable">Enable dynamic SonicDns profile..</param>
         /// <param name="useOnline">Enable use online settings..</param>
-        /// <param name="provider">Select dynamic DNS provider..</param>
-        /// <param name="userName">Set dynamic DNS user name..</param>
-        /// <param name="password">Set dynamic DNS password..</param>
-        /// <param name="domain">Set dynamic DNS domain..</param>
+        /// <param name="provider">Select dynamic SonicDns provider..</param>
+        /// <param name="userName">Set dynamic SonicDns user name..</param>
+        /// <param name="password">Set dynamic SonicDns password..</param>
+        /// <param name="domain">Set dynamic SonicDns domain..</param>
         /// <param name="boundTo">boundTo.</param>
         /// <param name="onlineSettings">onlineSettings.</param>
         /// <param name="offlineSettings">offlineSettings.</param>
-        /// <param name="serviceType">Configure dynamic DNS service type..</param>
-        public DynamicDnsProfileIpv4ProfileIpv4(string profileName = default(string), bool enable = default(bool), bool useOnline = default(bool), ProviderEnum? provider = default(ProviderEnum?), string userName = default(string), string password = default(string), string domain = default(string), DynamicDnsProfileIpv4ProfileIpv4BoundTo boundTo = default(DynamicDnsProfileIpv4ProfileIpv4BoundTo), DynamicDnsProfileIpv4ProfileIpv4OnlineSettings onlineSettings = default(DynamicDnsProfileIpv4ProfileIpv4OnlineSettings), DynamicDnsProfileIpv4ProfileIpv4OfflineSettings offlineSettings = default(DynamicDnsProfileIpv4ProfileIpv4OfflineSettings), ServiceTypeEnum? serviceType = default(ServiceTypeEnum?))
+        /// <param name="serviceType">Configure dynamic SonicDns service type..</param>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4(string profileName = default(string), bool enable = default(bool), bool useOnline = default(bool), ProviderEnum? provider = default(ProviderEnum?), string userName = default(string), string password = default(string), string domain = default(string), DynamicSonicDnsProfileIpv4ProfileIpv4BoundTo boundTo = default(DynamicSonicDnsProfileIpv4ProfileIpv4BoundTo), DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings onlineSettings = default(DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings), DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings offlineSettings = default(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings), ServiceTypeEnum? serviceType = default(ServiceTypeEnum?))
         {
             // to ensure "profileName" is required (not null)
             if (profileName == null)
             {
-                throw new ArgumentNullException("profileName is a required property for DynamicDnsProfileIpv4ProfileIpv4 and cannot be null");
+                throw new ArgumentNullException("profileName is a required property for DynamicSonicDnsProfileIpv4ProfileIpv4 and cannot be null");
             }
             this.ProfileName = profileName;
             this.Enable = enable;
@@ -138,16 +138,16 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Edit a dynamic DNS profile name.
+        /// Edit a dynamic SonicDns profile name.
         /// </summary>
-        /// <value>Edit a dynamic DNS profile name.</value>
+        /// <value>Edit a dynamic SonicDns profile name.</value>
         [DataMember(Name = "profile_name", IsRequired = true, EmitDefaultValue = true)]
         public string ProfileName { get; set; }
 
         /// <summary>
-        /// Enable dynamic DNS profile.
+        /// Enable dynamic SonicDns profile.
         /// </summary>
-        /// <value>Enable dynamic DNS profile.</value>
+        /// <value>Enable dynamic SonicDns profile.</value>
         [DataMember(Name = "enable", EmitDefaultValue = true)]
         public bool Enable { get; set; }
 
@@ -159,23 +159,23 @@ namespace SonicWallGen7.Model
         public bool UseOnline { get; set; }
 
         /// <summary>
-        /// Set dynamic DNS user name.
+        /// Set dynamic SonicDns user name.
         /// </summary>
-        /// <value>Set dynamic DNS user name.</value>
+        /// <value>Set dynamic SonicDns user name.</value>
         [DataMember(Name = "user_name", EmitDefaultValue = false)]
         public string UserName { get; set; }
 
         /// <summary>
-        /// Set dynamic DNS password.
+        /// Set dynamic SonicDns password.
         /// </summary>
-        /// <value>Set dynamic DNS password.</value>
+        /// <value>Set dynamic SonicDns password.</value>
         [DataMember(Name = "password", EmitDefaultValue = false)]
         public string Password { get; set; }
 
         /// <summary>
-        /// Set dynamic DNS domain.
+        /// Set dynamic SonicDns domain.
         /// </summary>
-        /// <value>Set dynamic DNS domain.</value>
+        /// <value>Set dynamic SonicDns domain.</value>
         [DataMember(Name = "domain", EmitDefaultValue = false)]
         public string Domain { get; set; }
 
@@ -183,19 +183,19 @@ namespace SonicWallGen7.Model
         /// Gets or Sets BoundTo
         /// </summary>
         [DataMember(Name = "bound_to", EmitDefaultValue = false)]
-        public DynamicDnsProfileIpv4ProfileIpv4BoundTo BoundTo { get; set; }
+        public DynamicSonicDnsProfileIpv4ProfileIpv4BoundTo BoundTo { get; set; }
 
         /// <summary>
         /// Gets or Sets OnlineSettings
         /// </summary>
         [DataMember(Name = "online_settings", EmitDefaultValue = false)]
-        public DynamicDnsProfileIpv4ProfileIpv4OnlineSettings OnlineSettings { get; set; }
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OnlineSettings OnlineSettings { get; set; }
 
         /// <summary>
         /// Gets or Sets OfflineSettings
         /// </summary>
         [DataMember(Name = "offline_settings", EmitDefaultValue = false)]
-        public DynamicDnsProfileIpv4ProfileIpv4OfflineSettings OfflineSettings { get; set; }
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings OfflineSettings { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -204,7 +204,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv4ProfileIpv4 {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv4ProfileIpv4 {\n");
             sb.Append("  ProfileName: ").Append(ProfileName).Append("\n");
             sb.Append("  Enable: ").Append(Enable).Append("\n");
             sb.Append("  UseOnline: ").Append(UseOnline).Append("\n");
@@ -236,15 +236,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv4ProfileIpv4);
+            return this.Equals(input as DynamicSonicDnsProfileIpv4ProfileIpv4);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv4ProfileIpv4 instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv4ProfileIpv4 instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv4ProfileIpv4 to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv4ProfileIpv4 to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv4ProfileIpv4 input)
+        public bool Equals(DynamicSonicDnsProfileIpv4ProfileIpv4 input)
         {
             if (input == null)
             {

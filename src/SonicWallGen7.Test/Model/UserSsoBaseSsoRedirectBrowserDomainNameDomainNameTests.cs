@@ -56,12 +56,12 @@ namespace SonicWallGen7.Test.Model
         }
 
         /// <summary>
-        /// Test the property 'ReverseDnsLookUp'
+        /// Test the property 'ReverseSonicDnsLookUp'
         /// </summary>
         [Fact]
-        public void ReverseDnsLookUpTest()
+        public void ReverseSonicDnsLookUpTest()
         {
-            // TODO unit test for the property 'ReverseDnsLookUp'
+            // TODO unit test for the property 'ReverseSonicDnsLookUp'
         }
 
         /// <summary>

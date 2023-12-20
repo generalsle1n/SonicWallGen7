@@ -27,17 +27,17 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Dropping, with DNS reply of Forged IP
+    /// Dropping, with SonicDns reply of Forged IP
     /// </summary>
-    [DataContract(Name = "dns_security_sinkhole_dns_sinkhole_action_type_dropping_with_dns_reply_of_forged_ip_dropping_with_dns_reply_of_forged_ip")]
-    public partial class DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIpDroppingWithDnsReplyOfForgedIp : IEquatable<DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIpDroppingWithDnsReplyOfForgedIp>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_sinkhole_SonicDns_sinkhole_action_type_dropping_with_SonicDns_reply_of_forged_ip_dropping_with_SonicDns_reply_of_forged_ip")]
+    public partial class SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIpDroppingWithSonicDnsReplyOfForgedIp : IEquatable<SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIpDroppingWithSonicDnsReplyOfForgedIp>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIpDroppingWithDnsReplyOfForgedIp" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIpDroppingWithSonicDnsReplyOfForgedIp" /> class.
         /// </summary>
         /// <param name="ipv4">ipv4.</param>
         /// <param name="ipv6">ipv6.</param>
-        public DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIpDroppingWithDnsReplyOfForgedIp(string ipv4 = default(string), string ipv6 = default(string))
+        public SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIpDroppingWithSonicDnsReplyOfForgedIp(string ipv4 = default(string), string ipv6 = default(string))
         {
             this.Ipv4 = ipv4;
             this.Ipv6 = ipv6;
@@ -62,7 +62,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIpDroppingWithDnsReplyOfForgedIp {\n");
+            sb.Append("class SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIpDroppingWithSonicDnsReplyOfForgedIp {\n");
             sb.Append("  Ipv4: ").Append(Ipv4).Append("\n");
             sb.Append("  Ipv6: ").Append(Ipv6).Append("\n");
             sb.Append("}\n");
@@ -85,15 +85,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIpDroppingWithDnsReplyOfForgedIp);
+            return this.Equals(input as SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIpDroppingWithSonicDnsReplyOfForgedIp);
         }
 
         /// <summary>
-        /// Returns true if DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIpDroppingWithDnsReplyOfForgedIp instances are equal
+        /// Returns true if SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIpDroppingWithSonicDnsReplyOfForgedIp instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIpDroppingWithDnsReplyOfForgedIp to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIpDroppingWithSonicDnsReplyOfForgedIp to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIpDroppingWithDnsReplyOfForgedIp input)
+        public bool Equals(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIpDroppingWithSonicDnsReplyOfForgedIp input)
         {
             if (input == null)
             {

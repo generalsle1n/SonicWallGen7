@@ -85,10 +85,10 @@ namespace SonicWallGen7.Model
             DhcpBootp = 3,
 
             /// <summary>
-            /// Enum Dns for value: dns
+            /// Enum SonicDns for value: SonicDns
             /// </summary>
-            [EnumMember(Value = "dns")]
-            Dns = 4,
+            [EnumMember(Value = "SonicDns")]
+            SonicDns = 4,
 
             /// <summary>
             /// Enum EMail for value: e-mail

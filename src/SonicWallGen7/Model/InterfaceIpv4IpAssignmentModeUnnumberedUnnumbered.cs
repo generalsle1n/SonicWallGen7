@@ -38,13 +38,13 @@ namespace SonicWallGen7.Model
         /// <param name="ip">Set interface IP address..</param>
         /// <param name="netmask">Set interface subnet mask..</param>
         /// <param name="gateway">Set interface gateway..</param>
-        /// <param name="dns">dns.</param>
-        public InterfaceIpv4IpAssignmentModeUnnumberedUnnumbered(string ip = default(string), string netmask = default(string), string gateway = default(string), InterfaceIpv4IpAssignmentModeStaticStaticDns dns = default(InterfaceIpv4IpAssignmentModeStaticStaticDns))
+        /// <param name="SonicDns">SonicDns.</param>
+        public InterfaceIpv4IpAssignmentModeUnnumberedUnnumbered(string ip = default(string), string netmask = default(string), string gateway = default(string), InterfaceIpv4IpAssignmentModeStaticStaticSonicDns SonicDns = default(InterfaceIpv4IpAssignmentModeStaticStaticSonicDns))
         {
             this.Ip = ip;
             this.Netmask = netmask;
             this.Gateway = gateway;
-            this.Dns = dns;
+            this.SonicDns = SonicDns;
         }
 
         /// <summary>
@@ -69,10 +69,10 @@ namespace SonicWallGen7.Model
         public string Gateway { get; set; }
 
         /// <summary>
-        /// Gets or Sets Dns
+        /// Gets or Sets SonicDns
         /// </summary>
-        [DataMember(Name = "dns", EmitDefaultValue = false)]
-        public InterfaceIpv4IpAssignmentModeStaticStaticDns Dns { get; set; }
+        [DataMember(Name = "SonicDns", EmitDefaultValue = false)]
+        public InterfaceIpv4IpAssignmentModeStaticStaticSonicDns SonicDns { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -85,7 +85,7 @@ namespace SonicWallGen7.Model
             sb.Append("  Ip: ").Append(Ip).Append("\n");
             sb.Append("  Netmask: ").Append(Netmask).Append("\n");
             sb.Append("  Gateway: ").Append(Gateway).Append("\n");
-            sb.Append("  Dns: ").Append(Dns).Append("\n");
+            sb.Append("  SonicDns: ").Append(SonicDns).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -137,9 +137,9 @@ namespace SonicWallGen7.Model
                     this.Gateway.Equals(input.Gateway))
                 ) && 
                 (
-                    this.Dns == input.Dns ||
-                    (this.Dns != null &&
-                    this.Dns.Equals(input.Dns))
+                    this.SonicDns == input.SonicDns ||
+                    (this.SonicDns != null &&
+                    this.SonicDns.Equals(input.SonicDns))
                 );
         }
 
@@ -164,9 +164,9 @@ namespace SonicWallGen7.Model
                 {
                     hashCode = (hashCode * 59) + this.Gateway.GetHashCode();
                 }
-                if (this.Dns != null)
+                if (this.SonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.Dns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDns.GetHashCode();
                 }
                 return hashCode;
             }

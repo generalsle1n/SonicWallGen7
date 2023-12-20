@@ -227,12 +227,12 @@ namespace SonicWallGen7.Test.Model
         }
 
         /// <summary>
-        /// Test the property 'DnsProxy'
+        /// Test the property 'SonicDnsProxy'
         /// </summary>
         [Fact]
-        public void DnsProxyTest()
+        public void SonicDnsProxyTest()
         {
-            // TODO unit test for the property 'DnsProxy'
+            // TODO unit test for the property 'SonicDnsProxy'
         }
 
         /// <summary>

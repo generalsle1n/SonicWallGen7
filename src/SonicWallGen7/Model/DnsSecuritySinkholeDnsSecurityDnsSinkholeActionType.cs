@@ -30,16 +30,16 @@ namespace SonicWallGen7.Model
     /// <summary>
     /// Set action type.
     /// </summary>
-    [JsonConverter(typeof(DnsSecuritySinkholeDnsSecurityDnsSinkholeActionTypeJsonConverter))]
-    [DataContract(Name = "dns_security_sinkhole_dns_security_dns_sinkhole_action_type")]
-    public partial class DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType : AbstractOpenAPISchema, IEquatable<DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType>, IValidatableObject
+    [JsonConverter(typeof(SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionTypeJsonConverter))]
+    [DataContract(Name = "SonicDns_security_sinkhole_SonicDns_security_SonicDns_sinkhole_action_type")]
+    public partial class SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType : AbstractOpenAPISchema, IEquatable<SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType" /> class
-        /// with the <see cref="DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs" /> class
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType" /> class
+        /// with the <see cref="SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs.</param>
-        public DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs actualInstance)
+        /// <param name="actualInstance">An instance of SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs.</param>
+        public SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -47,11 +47,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType" /> class
-        /// with the <see cref="DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource" /> class
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType" /> class
+        /// with the <see cref="SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource.</param>
-        public DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource actualInstance)
+        /// <param name="actualInstance">An instance of SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource.</param>
+        public SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -59,11 +59,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType" /> class
-        /// with the <see cref="DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp" /> class
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType" /> class
+        /// with the <see cref="SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp.</param>
-        public DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp actualInstance)
+        /// <param name="actualInstance">An instance of SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp.</param>
+        public SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -84,53 +84,53 @@ namespace SonicWallGen7.Model
             }
             set
             {
-                if (value.GetType() == typeof(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp))
+                if (value.GetType() == typeof(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs))
+                else if (value.GetType() == typeof(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource))
+                else if (value.GetType() == typeof(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource))
                 {
                     this._actualInstance = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid instance found. Must be the following types: DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp, DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs, DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource");
+                    throw new ArgumentException("Invalid instance found. Must be the following types: SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp, SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs, SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource");
                 }
             }
         }
 
         /// <summary>
-        /// Get the actual instance of `DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs`. If the actual instance is not `DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs`,
+        /// Get the actual instance of `SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs`. If the actual instance is not `SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs</returns>
-        public DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs GetDnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs()
+        /// <returns>An instance of SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs</returns>
+        public SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs GetSonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs()
         {
-            return (DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs)this.ActualInstance;
+            return (SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource`. If the actual instance is not `DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource`,
+        /// Get the actual instance of `SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource`. If the actual instance is not `SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource</returns>
-        public DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource GetDnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource()
+        /// <returns>An instance of SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource</returns>
+        public SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource GetSonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource()
         {
-            return (DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource)this.ActualInstance;
+            return (SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp`. If the actual instance is not `DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp`,
+        /// Get the actual instance of `SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp`. If the actual instance is not `SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp</returns>
-        public DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp GetDnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp()
+        /// <returns>An instance of SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp</returns>
+        public SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp GetSonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp()
         {
-            return (DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp)this.ActualInstance;
+            return (SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp)this.ActualInstance;
         }
 
         /// <summary>
@@ -140,7 +140,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType {\n");
+            sb.Append("class SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType {\n");
             sb.Append("  ActualInstance: ").Append(this.ActualInstance).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -152,21 +152,21 @@ namespace SonicWallGen7.Model
         /// <returns>JSON string presentation of the object</returns>
         public override string ToJson()
         {
-            return JsonConvert.SerializeObject(this.ActualInstance, DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType.SerializerSettings);
+            return JsonConvert.SerializeObject(this.ActualInstance, SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType.SerializerSettings);
         }
 
         /// <summary>
-        /// Converts the JSON string into an instance of DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType
+        /// Converts the JSON string into an instance of SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType
         /// </summary>
         /// <param name="jsonString">JSON string</param>
-        /// <returns>An instance of DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType</returns>
-        public static DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType FromJson(string jsonString)
+        /// <returns>An instance of SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType</returns>
+        public static SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType FromJson(string jsonString)
         {
-            DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType newDnsSecuritySinkholeDnsSecurityDnsSinkholeActionType = null;
+            SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType newSonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType = null;
 
             if (string.IsNullOrEmpty(jsonString))
             {
-                return newDnsSecuritySinkholeDnsSecurityDnsSinkholeActionType;
+                return newSonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType;
             }
             int match = 0;
             List<string> matchedTypes = new List<string>();
@@ -174,61 +174,61 @@ namespace SonicWallGen7.Model
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp).GetProperty("AdditionalProperties") == null)
+                if (typeof(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp).GetProperty("AdditionalProperties") == null)
                 {
-                    newDnsSecuritySinkholeDnsSecurityDnsSinkholeActionType = new DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType(JsonConvert.DeserializeObject<DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp>(jsonString, DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType.SerializerSettings));
+                    newSonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType = new SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType(JsonConvert.DeserializeObject<SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp>(jsonString, SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType.SerializerSettings));
                 }
                 else
                 {
-                    newDnsSecuritySinkholeDnsSecurityDnsSinkholeActionType = new DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType(JsonConvert.DeserializeObject<DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp>(jsonString, DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType.AdditionalPropertiesSerializerSettings));
+                    newSonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType = new SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType(JsonConvert.DeserializeObject<SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp>(jsonString, SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp");
+                matchedTypes.Add("SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs).GetProperty("AdditionalProperties") == null)
+                if (typeof(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs).GetProperty("AdditionalProperties") == null)
                 {
-                    newDnsSecuritySinkholeDnsSecurityDnsSinkholeActionType = new DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType(JsonConvert.DeserializeObject<DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs>(jsonString, DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType.SerializerSettings));
+                    newSonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType = new SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType(JsonConvert.DeserializeObject<SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs>(jsonString, SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType.SerializerSettings));
                 }
                 else
                 {
-                    newDnsSecuritySinkholeDnsSecurityDnsSinkholeActionType = new DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType(JsonConvert.DeserializeObject<DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs>(jsonString, DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType.AdditionalPropertiesSerializerSettings));
+                    newSonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType = new SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType(JsonConvert.DeserializeObject<SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs>(jsonString, SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs");
+                matchedTypes.Add("SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithLogs: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithLogs: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource).GetProperty("AdditionalProperties") == null)
+                if (typeof(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource).GetProperty("AdditionalProperties") == null)
                 {
-                    newDnsSecuritySinkholeDnsSecurityDnsSinkholeActionType = new DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType(JsonConvert.DeserializeObject<DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource>(jsonString, DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType.SerializerSettings));
+                    newSonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType = new SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType(JsonConvert.DeserializeObject<SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource>(jsonString, SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType.SerializerSettings));
                 }
                 else
                 {
-                    newDnsSecuritySinkholeDnsSecurityDnsSinkholeActionType = new DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType(JsonConvert.DeserializeObject<DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource>(jsonString, DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType.AdditionalPropertiesSerializerSettings));
+                    newSonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType = new SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType(JsonConvert.DeserializeObject<SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource>(jsonString, SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource");
+                matchedTypes.Add("SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithNegativeDnsReplyToSource: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithNegativeSonicDnsReplyToSource: {1}", jsonString, exception.ToString()));
             }
 
             if (match == 0)
@@ -241,7 +241,7 @@ namespace SonicWallGen7.Model
             }
 
             // deserialization is considered successful at this point if no exception has been thrown.
-            return newDnsSecuritySinkholeDnsSecurityDnsSinkholeActionType;
+            return newSonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType;
         }
 
         /// <summary>
@@ -251,15 +251,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType);
+            return this.Equals(input as SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType);
         }
 
         /// <summary>
-        /// Returns true if DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType instances are equal
+        /// Returns true if SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType input)
+        public bool Equals(SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType input)
         {
             if (input == null)
                 return false;
@@ -294,9 +294,9 @@ namespace SonicWallGen7.Model
     }
 
     /// <summary>
-    /// Custom JSON converter for DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType
+    /// Custom JSON converter for SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType
     /// </summary>
-    public class DnsSecuritySinkholeDnsSecurityDnsSinkholeActionTypeJsonConverter : JsonConverter
+    public class SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionTypeJsonConverter : JsonConverter
     {
         /// <summary>
         /// To write the JSON string
@@ -306,7 +306,7 @@ namespace SonicWallGen7.Model
         /// <param name="serializer">JSON Serializer</param>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            writer.WriteRawValue((string)(typeof(DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType).GetMethod("ToJson").Invoke(value, null)));
+            writer.WriteRawValue((string)(typeof(SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType).GetMethod("ToJson").Invoke(value, null)));
         }
 
         /// <summary>
@@ -321,7 +321,7 @@ namespace SonicWallGen7.Model
         {
             if(reader.TokenType != JsonToken.Null)
             {
-                return DnsSecuritySinkholeDnsSecurityDnsSinkholeActionType.FromJson(JObject.Load(reader).ToString(Formatting.None));
+                return SonicDnsSecuritySinkholeSonicDnsSecuritySonicDnsSinkholeActionType.FromJson(JObject.Load(reader).ToString(Formatting.None));
             }
             return null;
         }

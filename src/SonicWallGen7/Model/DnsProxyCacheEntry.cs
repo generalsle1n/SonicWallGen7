@@ -27,36 +27,36 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS proxy cache entry configuration.
+    /// SonicDns proxy cache entry configuration.
     /// </summary>
-    [DataContract(Name = "dns_proxy_cache_entry")]
-    public partial class DnsProxyCacheEntry : IEquatable<DnsProxyCacheEntry>, IValidatableObject
+    [DataContract(Name = "SonicDns_proxy_cache_entry")]
+    public partial class SonicDnsProxyCacheEntry : IEquatable<SonicDnsProxyCacheEntry>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyCacheEntry" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxyCacheEntry" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected DnsProxyCacheEntry() { }
+        protected SonicDnsProxyCacheEntry() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyCacheEntry" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxyCacheEntry" /> class.
         /// </summary>
-        /// <param name="domain">Set the domain name of the static DNS cache entry. (required).</param>
+        /// <param name="domain">Set the domain name of the static SonicDns cache entry. (required).</param>
         /// <param name="address">address.</param>
-        public DnsProxyCacheEntry(string domain = default(string), DnsProxyCacheEntryAddress address = default(DnsProxyCacheEntryAddress))
+        public SonicDnsProxyCacheEntry(string domain = default(string), SonicDnsProxyCacheEntryAddress address = default(SonicDnsProxyCacheEntryAddress))
         {
             // to ensure "domain" is required (not null)
             if (domain == null)
             {
-                throw new ArgumentNullException("domain is a required property for DnsProxyCacheEntry and cannot be null");
+                throw new ArgumentNullException("domain is a required property for SonicDnsProxyCacheEntry and cannot be null");
             }
             this.Domain = domain;
             this.Address = address;
         }
 
         /// <summary>
-        /// Set the domain name of the static DNS cache entry.
+        /// Set the domain name of the static SonicDns cache entry.
         /// </summary>
-        /// <value>Set the domain name of the static DNS cache entry.</value>
+        /// <value>Set the domain name of the static SonicDns cache entry.</value>
         [DataMember(Name = "domain", IsRequired = true, EmitDefaultValue = true)]
         public string Domain { get; set; }
 
@@ -64,7 +64,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Address
         /// </summary>
         [DataMember(Name = "address", EmitDefaultValue = false)]
-        public DnsProxyCacheEntryAddress Address { get; set; }
+        public SonicDnsProxyCacheEntryAddress Address { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -73,7 +73,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsProxyCacheEntry {\n");
+            sb.Append("class SonicDnsProxyCacheEntry {\n");
             sb.Append("  Domain: ").Append(Domain).Append("\n");
             sb.Append("  Address: ").Append(Address).Append("\n");
             sb.Append("}\n");
@@ -96,15 +96,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsProxyCacheEntry);
+            return this.Equals(input as SonicDnsProxyCacheEntry);
         }
 
         /// <summary>
-        /// Returns true if DnsProxyCacheEntry instances are equal
+        /// Returns true if SonicDnsProxyCacheEntry instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsProxyCacheEntry to be compared</param>
+        /// <param name="input">Instance of SonicDnsProxyCacheEntry to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsProxyCacheEntry input)
+        public bool Equals(SonicDnsProxyCacheEntry input)
         {
             if (input == null)
             {

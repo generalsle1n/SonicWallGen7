@@ -49,10 +49,10 @@ namespace SonicWallGen7.Model
         /// <param name="lifetime">lifetime.</param>
         /// <param name="comment">Set IPv6 DHCP server static scope comment..</param>
         /// <param name="domainName">Set IPv6 DHCP server static scope domain name..</param>
-        /// <param name="dns">dns.</param>
+        /// <param name="SonicDns">SonicDns.</param>
         /// <param name="genericOption">genericOption.</param>
         /// <param name="alwaysSendOption">Enable send IPv6 DHCP server options always..</param>
-        public DhcpServerIpv6ScopeStatic(string name = default(string), bool enable = default(bool), string prefix = default(string), string ip = default(string), decimal iaid = default(decimal), string duid = default(string), DhcpServerIpv6ScopeStaticLifetime lifetime = default(DhcpServerIpv6ScopeStaticLifetime), string comment = default(string), string domainName = default(string), DhcpServerIpv6ScopeStaticDns dns = default(DhcpServerIpv6ScopeStaticDns), DhcpServerIpv6ScopeStaticGenericOption genericOption = default(DhcpServerIpv6ScopeStaticGenericOption), bool alwaysSendOption = default(bool))
+        public DhcpServerIpv6ScopeStatic(string name = default(string), bool enable = default(bool), string prefix = default(string), string ip = default(string), decimal iaid = default(decimal), string duid = default(string), DhcpServerIpv6ScopeStaticLifetime lifetime = default(DhcpServerIpv6ScopeStaticLifetime), string comment = default(string), string domainName = default(string), DhcpServerIpv6ScopeStaticSonicDns SonicDns = default(DhcpServerIpv6ScopeStaticSonicDns), DhcpServerIpv6ScopeStaticGenericOption genericOption = default(DhcpServerIpv6ScopeStaticGenericOption), bool alwaysSendOption = default(bool))
         {
             // to ensure "name" is required (not null)
             if (name == null)
@@ -68,7 +68,7 @@ namespace SonicWallGen7.Model
             this.Lifetime = lifetime;
             this.Comment = comment;
             this.DomainName = domainName;
-            this.Dns = dns;
+            this.SonicDns = SonicDns;
             this.GenericOption = genericOption;
             this.AlwaysSendOption = alwaysSendOption;
         }
@@ -136,10 +136,10 @@ namespace SonicWallGen7.Model
         public string DomainName { get; set; }
 
         /// <summary>
-        /// Gets or Sets Dns
+        /// Gets or Sets SonicDns
         /// </summary>
-        [DataMember(Name = "dns", EmitDefaultValue = false)]
-        public DhcpServerIpv6ScopeStaticDns Dns { get; set; }
+        [DataMember(Name = "SonicDns", EmitDefaultValue = false)]
+        public DhcpServerIpv6ScopeStaticSonicDns SonicDns { get; set; }
 
         /// <summary>
         /// Gets or Sets GenericOption
@@ -171,7 +171,7 @@ namespace SonicWallGen7.Model
             sb.Append("  Lifetime: ").Append(Lifetime).Append("\n");
             sb.Append("  Comment: ").Append(Comment).Append("\n");
             sb.Append("  DomainName: ").Append(DomainName).Append("\n");
-            sb.Append("  Dns: ").Append(Dns).Append("\n");
+            sb.Append("  SonicDns: ").Append(SonicDns).Append("\n");
             sb.Append("  GenericOption: ").Append(GenericOption).Append("\n");
             sb.Append("  AlwaysSendOption: ").Append(AlwaysSendOption).Append("\n");
             sb.Append("}\n");
@@ -253,9 +253,9 @@ namespace SonicWallGen7.Model
                     this.DomainName.Equals(input.DomainName))
                 ) && 
                 (
-                    this.Dns == input.Dns ||
-                    (this.Dns != null &&
-                    this.Dns.Equals(input.Dns))
+                    this.SonicDns == input.SonicDns ||
+                    (this.SonicDns != null &&
+                    this.SonicDns.Equals(input.SonicDns))
                 ) && 
                 (
                     this.GenericOption == input.GenericOption ||
@@ -307,9 +307,9 @@ namespace SonicWallGen7.Model
                 {
                     hashCode = (hashCode * 59) + this.DomainName.GetHashCode();
                 }
-                if (this.Dns != null)
+                if (this.SonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.Dns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDns.GetHashCode();
                 }
                 if (this.GenericOption != null)
                 {

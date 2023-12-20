@@ -56,12 +56,12 @@ namespace SonicWallGen7.Test.Model
         }
 
         /// <summary>
-        /// Test the property 'CacheDnsReply'
+        /// Test the property 'CacheSonicDnsReply'
         /// </summary>
         [Fact]
-        public void CacheDnsReplyTest()
+        public void CacheSonicDnsReplyTest()
         {
-            // TODO unit test for the property 'CacheDnsReply'
+            // TODO unit test for the property 'CacheSonicDnsReply'
         }
 
         /// <summary>
@@ -110,12 +110,12 @@ namespace SonicWallGen7.Test.Model
         }
 
         /// <summary>
-        /// Test the property 'StopDnsQueries'
+        /// Test the property 'StopSonicDnsQueries'
         /// </summary>
         [Fact]
-        public void StopDnsQueriesTest()
+        public void StopSonicDnsQueriesTest()
         {
-            // TODO unit test for the property 'StopDnsQueries'
+            // TODO unit test for the property 'StopSonicDnsQueries'
         }
 
         /// <summary>

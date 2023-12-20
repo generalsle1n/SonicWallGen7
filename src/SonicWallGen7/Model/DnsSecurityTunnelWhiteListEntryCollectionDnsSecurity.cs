@@ -27,25 +27,25 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Configure and enter DNS Security mode.
+    /// Configure and enter SonicDns Security mode.
     /// </summary>
-    [DataContract(Name = "dns_security_tunnel_white_list_entry_collection_dns_security")]
-    public partial class DnsSecurityTunnelWhiteListEntryCollectionDnsSecurity : IEquatable<DnsSecurityTunnelWhiteListEntryCollectionDnsSecurity>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_tunnel_white_list_entry_collection_SonicDns_security")]
+    public partial class SonicDnsSecurityTunnelWhiteListEntryCollectionSonicDnsSecurity : IEquatable<SonicDnsSecurityTunnelWhiteListEntryCollectionSonicDnsSecurity>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecurityTunnelWhiteListEntryCollectionDnsSecurity" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecurityTunnelWhiteListEntryCollectionSonicDnsSecurity" /> class.
         /// </summary>
-        /// <param name="dnsTunnel">dnsTunnel.</param>
-        public DnsSecurityTunnelWhiteListEntryCollectionDnsSecurity(DnsSecurityTunnelWhiteListEntryCollectionDnsSecurityDnsTunnel dnsTunnel = default(DnsSecurityTunnelWhiteListEntryCollectionDnsSecurityDnsTunnel))
+        /// <param name="SonicDnsTunnel">SonicDnsTunnel.</param>
+        public SonicDnsSecurityTunnelWhiteListEntryCollectionSonicDnsSecurity(SonicDnsSecurityTunnelWhiteListEntryCollectionSonicDnsSecuritySonicDnsTunnel SonicDnsTunnel = default(SonicDnsSecurityTunnelWhiteListEntryCollectionSonicDnsSecuritySonicDnsTunnel))
         {
-            this.DnsTunnel = dnsTunnel;
+            this.SonicDnsTunnel = SonicDnsTunnel;
         }
 
         /// <summary>
-        /// Gets or Sets DnsTunnel
+        /// Gets or Sets SonicDnsTunnel
         /// </summary>
-        [DataMember(Name = "dns_tunnel", EmitDefaultValue = false)]
-        public DnsSecurityTunnelWhiteListEntryCollectionDnsSecurityDnsTunnel DnsTunnel { get; set; }
+        [DataMember(Name = "SonicDns_tunnel", EmitDefaultValue = false)]
+        public SonicDnsSecurityTunnelWhiteListEntryCollectionSonicDnsSecuritySonicDnsTunnel SonicDnsTunnel { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,8 +54,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecurityTunnelWhiteListEntryCollectionDnsSecurity {\n");
-            sb.Append("  DnsTunnel: ").Append(DnsTunnel).Append("\n");
+            sb.Append("class SonicDnsSecurityTunnelWhiteListEntryCollectionSonicDnsSecurity {\n");
+            sb.Append("  SonicDnsTunnel: ").Append(SonicDnsTunnel).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecurityTunnelWhiteListEntryCollectionDnsSecurity);
+            return this.Equals(input as SonicDnsSecurityTunnelWhiteListEntryCollectionSonicDnsSecurity);
         }
 
         /// <summary>
-        /// Returns true if DnsSecurityTunnelWhiteListEntryCollectionDnsSecurity instances are equal
+        /// Returns true if SonicDnsSecurityTunnelWhiteListEntryCollectionSonicDnsSecurity instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecurityTunnelWhiteListEntryCollectionDnsSecurity to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecurityTunnelWhiteListEntryCollectionSonicDnsSecurity to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecurityTunnelWhiteListEntryCollectionDnsSecurity input)
+        public bool Equals(SonicDnsSecurityTunnelWhiteListEntryCollectionSonicDnsSecurity input)
         {
             if (input == null)
             {
@@ -92,9 +92,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.DnsTunnel == input.DnsTunnel ||
-                    (this.DnsTunnel != null &&
-                    this.DnsTunnel.Equals(input.DnsTunnel))
+                    this.SonicDnsTunnel == input.SonicDnsTunnel ||
+                    (this.SonicDnsTunnel != null &&
+                    this.SonicDnsTunnel.Equals(input.SonicDnsTunnel))
                 );
         }
 
@@ -107,9 +107,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.DnsTunnel != null)
+                if (this.SonicDnsTunnel != null)
                 {
-                    hashCode = (hashCode * 59) + this.DnsTunnel.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDnsTunnel.GetHashCode();
                 }
                 return hashCode;
             }

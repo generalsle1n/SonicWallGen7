@@ -24,413 +24,413 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsProxyCacheEntryApiSync : IApiAccessor
+    public interface ISonicDnsProxyCacheEntryApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Delete a DNS proxy cache entry object.
+        /// Delete a SonicDns proxy cache entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsProxyCacheEntriesDomainNAMEDelete(string NAME, int operationIndex = 0);
+        ApiStatus SonicDnsProxyCacheEntriesDomainNAMEDelete(string NAME, int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Delete a DNS proxy cache entry object.
+        /// Delete a SonicDns proxy cache entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsProxyCacheEntriesDomainNAMEDeleteWithHttpInfo(string NAME, int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsProxyCacheEntriesDomainNAMEDeleteWithHttpInfo(string NAME, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy cache entry object configuration.
+        /// Retrieve SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsProxyCacheEntryCollection</returns>
-        DnsProxyCacheEntryCollection DnsProxyCacheEntriesDomainNAMEGet(string NAME, int operationIndex = 0);
+        /// <returns>SonicDnsProxyCacheEntryCollection</returns>
+        SonicDnsProxyCacheEntryCollection SonicDnsProxyCacheEntriesDomainNAMEGet(string NAME, int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy cache entry object configuration.
+        /// Retrieve SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsProxyCacheEntryCollection</returns>
-        ApiResponse<DnsProxyCacheEntryCollection> DnsProxyCacheEntriesDomainNAMEGetWithHttpInfo(string NAME, int operationIndex = 0);
+        /// <returns>ApiResponse of SonicDnsProxyCacheEntryCollection</returns>
+        ApiResponse<SonicDnsProxyCacheEntryCollection> SonicDnsProxyCacheEntriesDomainNAMEGetWithHttpInfo(string NAME, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS proxy cache entry object configuration.
+        /// Patch SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsProxyCacheEntriesDomainNAMEPatch(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0);
+        ApiStatus SonicDnsProxyCacheEntriesDomainNAMEPatch(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS proxy cache entry object configuration.
+        /// Patch SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsProxyCacheEntriesDomainNAMEPatchWithHttpInfo(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsProxyCacheEntriesDomainNAMEPatchWithHttpInfo(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS proxy cache entry object configuration.
+        /// Edit SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsProxyCacheEntriesDomainNAMEPut(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0);
+        ApiStatus SonicDnsProxyCacheEntriesDomainNAMEPut(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS proxy cache entry object configuration.
+        /// Edit SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsProxyCacheEntriesDomainNAMEPutWithHttpInfo(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsProxyCacheEntriesDomainNAMEPutWithHttpInfo(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy cache entry object configuration.
+        /// Retrieve SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsProxyCacheEntryCollection</returns>
-        DnsProxyCacheEntryCollection DnsProxyCacheEntriesGet(int operationIndex = 0);
+        /// <returns>SonicDnsProxyCacheEntryCollection</returns>
+        SonicDnsProxyCacheEntryCollection SonicDnsProxyCacheEntriesGet(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy cache entry object configuration.
+        /// Retrieve SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsProxyCacheEntryCollection</returns>
-        ApiResponse<DnsProxyCacheEntryCollection> DnsProxyCacheEntriesGetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of SonicDnsProxyCacheEntryCollection</returns>
+        ApiResponse<SonicDnsProxyCacheEntryCollection> SonicDnsProxyCacheEntriesGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS proxy cache entry object configuration.
+        /// Patch SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsProxyCacheEntriesPatch(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0);
+        ApiStatus SonicDnsProxyCacheEntriesPatch(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS proxy cache entry object configuration.
+        /// Patch SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsProxyCacheEntriesPatchWithHttpInfo(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsProxyCacheEntriesPatchWithHttpInfo(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS proxy cache entry object.
+        /// Create a new SonicDns proxy cache entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsProxyCacheEntriesPost(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0);
+        ApiStatus SonicDnsProxyCacheEntriesPost(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS proxy cache entry object.
+        /// Create a new SonicDns proxy cache entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsProxyCacheEntriesPostWithHttpInfo(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsProxyCacheEntriesPostWithHttpInfo(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS proxy cache entry object configuration.
+        /// Edit SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsProxyCacheEntriesPut(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0);
+        ApiStatus SonicDnsProxyCacheEntriesPut(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS proxy cache entry object configuration.
+        /// Edit SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsProxyCacheEntriesPutWithHttpInfo(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsProxyCacheEntriesPutWithHttpInfo(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsProxyCacheEntryApiAsync : IApiAccessor
+    public interface ISonicDnsProxyCacheEntryApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Delete a DNS proxy cache entry object.
+        /// Delete a SonicDns proxy cache entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsProxyCacheEntriesDomainNAMEDeleteAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyCacheEntriesDomainNAMEDeleteAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Delete a DNS proxy cache entry object.
+        /// Delete a SonicDns proxy cache entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsProxyCacheEntriesDomainNAMEDeleteWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsProxyCacheEntriesDomainNAMEDeleteWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy cache entry object configuration.
+        /// Retrieve SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsProxyCacheEntryCollection</returns>
-        System.Threading.Tasks.Task<DnsProxyCacheEntryCollection> DnsProxyCacheEntriesDomainNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of SonicDnsProxyCacheEntryCollection</returns>
+        System.Threading.Tasks.Task<SonicDnsProxyCacheEntryCollection> SonicDnsProxyCacheEntriesDomainNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy cache entry object configuration.
+        /// Retrieve SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsProxyCacheEntryCollection)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DnsProxyCacheEntryCollection>> DnsProxyCacheEntriesDomainNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (SonicDnsProxyCacheEntryCollection)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SonicDnsProxyCacheEntryCollection>> SonicDnsProxyCacheEntriesDomainNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS proxy cache entry object configuration.
+        /// Patch SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsProxyCacheEntriesDomainNAMEPatchAsync(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyCacheEntriesDomainNAMEPatchAsync(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS proxy cache entry object configuration.
+        /// Patch SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsProxyCacheEntriesDomainNAMEPatchWithHttpInfoAsync(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsProxyCacheEntriesDomainNAMEPatchWithHttpInfoAsync(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS proxy cache entry object configuration.
+        /// Edit SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsProxyCacheEntriesDomainNAMEPutAsync(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyCacheEntriesDomainNAMEPutAsync(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS proxy cache entry object configuration.
+        /// Edit SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsProxyCacheEntriesDomainNAMEPutWithHttpInfoAsync(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsProxyCacheEntriesDomainNAMEPutWithHttpInfoAsync(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy cache entry object configuration.
+        /// Retrieve SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsProxyCacheEntryCollection</returns>
-        System.Threading.Tasks.Task<DnsProxyCacheEntryCollection> DnsProxyCacheEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of SonicDnsProxyCacheEntryCollection</returns>
+        System.Threading.Tasks.Task<SonicDnsProxyCacheEntryCollection> SonicDnsProxyCacheEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS proxy cache entry object configuration.
+        /// Retrieve SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsProxyCacheEntryCollection)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DnsProxyCacheEntryCollection>> DnsProxyCacheEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (SonicDnsProxyCacheEntryCollection)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SonicDnsProxyCacheEntryCollection>> SonicDnsProxyCacheEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS proxy cache entry object configuration.
+        /// Patch SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsProxyCacheEntriesPatchAsync(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyCacheEntriesPatchAsync(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Patch DNS proxy cache entry object configuration.
+        /// Patch SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsProxyCacheEntriesPatchWithHttpInfoAsync(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsProxyCacheEntriesPatchWithHttpInfoAsync(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS proxy cache entry object.
+        /// Create a new SonicDns proxy cache entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsProxyCacheEntriesPostAsync(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyCacheEntriesPostAsync(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS proxy cache entry object.
+        /// Create a new SonicDns proxy cache entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsProxyCacheEntriesPostWithHttpInfoAsync(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsProxyCacheEntriesPostWithHttpInfoAsync(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS proxy cache entry object configuration.
+        /// Edit SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsProxyCacheEntriesPutAsync(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyCacheEntriesPutAsync(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Edit DNS proxy cache entry object configuration.
+        /// Edit SonicDns proxy cache entry object configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsProxyCacheEntriesPutWithHttpInfoAsync(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsProxyCacheEntriesPutWithHttpInfoAsync(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsProxyCacheEntryApi : IDnsProxyCacheEntryApiSync, IDnsProxyCacheEntryApiAsync
+    public interface ISonicDnsProxyCacheEntryApi : ISonicDnsProxyCacheEntryApiSync, ISonicDnsProxyCacheEntryApiAsync
     {
 
     }
@@ -438,23 +438,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DnsProxyCacheEntryApi : IDnsProxyCacheEntryApi
+    public partial class SonicDnsProxyCacheEntryApi : ISonicDnsProxyCacheEntryApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyCacheEntryApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxyCacheEntryApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsProxyCacheEntryApi() : this((string)null)
+        public SonicDnsProxyCacheEntryApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyCacheEntryApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxyCacheEntryApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsProxyCacheEntryApi(string basePath)
+        public SonicDnsProxyCacheEntryApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -466,12 +466,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyCacheEntryApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsProxyCacheEntryApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DnsProxyCacheEntryApi(SonicWallGen7.Client.Configuration configuration)
+        public SonicDnsProxyCacheEntryApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -485,13 +485,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyCacheEntryApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsProxyCacheEntryApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DnsProxyCacheEntryApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicDnsProxyCacheEntryApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -545,31 +545,31 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Delete a DNS proxy cache entry object.
+        ///  Delete a SonicDns proxy cache entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsProxyCacheEntriesDomainNAMEDelete(string NAME, int operationIndex = 0)
+        public ApiStatus SonicDnsProxyCacheEntriesDomainNAMEDelete(string NAME, int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsProxyCacheEntriesDomainNAMEDeleteWithHttpInfo(NAME);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsProxyCacheEntriesDomainNAMEDeleteWithHttpInfo(NAME);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Delete a DNS proxy cache entry object.
+        ///  Delete a SonicDns proxy cache entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsProxyCacheEntriesDomainNAMEDeleteWithHttpInfo(string NAME, int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsProxyCacheEntriesDomainNAMEDeleteWithHttpInfo(string NAME, int operationIndex = 0)
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsProxyCacheEntryApi->DnsProxyCacheEntriesDomainNAMEDelete");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsProxyCacheEntryApi->SonicDnsProxyCacheEntriesDomainNAMEDelete");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -596,7 +596,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesDomainNAMEDelete";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesDomainNAMEDelete";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -607,10 +607,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Delete<ApiStatus>("/dns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Delete<ApiStatus>("/SonicDns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesDomainNAMEDelete", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesDomainNAMEDelete", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -621,33 +621,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Delete a DNS proxy cache entry object.
+        ///  Delete a SonicDns proxy cache entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsProxyCacheEntriesDomainNAMEDeleteAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyCacheEntriesDomainNAMEDeleteAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsProxyCacheEntriesDomainNAMEDeleteWithHttpInfoAsync(NAME, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsProxyCacheEntriesDomainNAMEDeleteWithHttpInfoAsync(NAME, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Delete a DNS proxy cache entry object.
+        ///  Delete a SonicDns proxy cache entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsProxyCacheEntriesDomainNAMEDeleteWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsProxyCacheEntriesDomainNAMEDeleteWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsProxyCacheEntryApi->DnsProxyCacheEntriesDomainNAMEDelete");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsProxyCacheEntryApi->SonicDnsProxyCacheEntriesDomainNAMEDelete");
             }
 
 
@@ -675,7 +675,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesDomainNAMEDelete";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesDomainNAMEDelete";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -686,11 +686,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.DeleteAsync<ApiStatus>("/dns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.DeleteAsync<ApiStatus>("/SonicDns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesDomainNAMEDelete", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesDomainNAMEDelete", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -701,31 +701,31 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy cache entry object configuration.
+        ///  Retrieve SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsProxyCacheEntryCollection</returns>
-        public DnsProxyCacheEntryCollection DnsProxyCacheEntriesDomainNAMEGet(string NAME, int operationIndex = 0)
+        /// <returns>SonicDnsProxyCacheEntryCollection</returns>
+        public SonicDnsProxyCacheEntryCollection SonicDnsProxyCacheEntriesDomainNAMEGet(string NAME, int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<DnsProxyCacheEntryCollection> localVarResponse = DnsProxyCacheEntriesDomainNAMEGetWithHttpInfo(NAME);
+            SonicWallGen7.Client.ApiResponse<SonicDnsProxyCacheEntryCollection> localVarResponse = SonicDnsProxyCacheEntriesDomainNAMEGetWithHttpInfo(NAME);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy cache entry object configuration.
+        ///  Retrieve SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsProxyCacheEntryCollection</returns>
-        public SonicWallGen7.Client.ApiResponse<DnsProxyCacheEntryCollection> DnsProxyCacheEntriesDomainNAMEGetWithHttpInfo(string NAME, int operationIndex = 0)
+        /// <returns>ApiResponse of SonicDnsProxyCacheEntryCollection</returns>
+        public SonicWallGen7.Client.ApiResponse<SonicDnsProxyCacheEntryCollection> SonicDnsProxyCacheEntriesDomainNAMEGetWithHttpInfo(string NAME, int operationIndex = 0)
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsProxyCacheEntryApi->DnsProxyCacheEntriesDomainNAMEGet");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsProxyCacheEntryApi->SonicDnsProxyCacheEntriesDomainNAMEGet");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -752,7 +752,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesDomainNAMEGet";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesDomainNAMEGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -763,10 +763,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<DnsProxyCacheEntryCollection>("/dns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<SonicDnsProxyCacheEntryCollection>("/SonicDns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesDomainNAMEGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesDomainNAMEGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -777,33 +777,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy cache entry object configuration.
+        ///  Retrieve SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsProxyCacheEntryCollection</returns>
-        public async System.Threading.Tasks.Task<DnsProxyCacheEntryCollection> DnsProxyCacheEntriesDomainNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of SonicDnsProxyCacheEntryCollection</returns>
+        public async System.Threading.Tasks.Task<SonicDnsProxyCacheEntryCollection> SonicDnsProxyCacheEntriesDomainNAMEGetAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<DnsProxyCacheEntryCollection> localVarResponse = await DnsProxyCacheEntriesDomainNAMEGetWithHttpInfoAsync(NAME, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<SonicDnsProxyCacheEntryCollection> localVarResponse = await SonicDnsProxyCacheEntriesDomainNAMEGetWithHttpInfoAsync(NAME, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy cache entry object configuration.
+        ///  Retrieve SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsProxyCacheEntryCollection)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<DnsProxyCacheEntryCollection>> DnsProxyCacheEntriesDomainNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (SonicDnsProxyCacheEntryCollection)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<SonicDnsProxyCacheEntryCollection>> SonicDnsProxyCacheEntriesDomainNAMEGetWithHttpInfoAsync(string NAME, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsProxyCacheEntryApi->DnsProxyCacheEntriesDomainNAMEGet");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsProxyCacheEntryApi->SonicDnsProxyCacheEntriesDomainNAMEGet");
             }
 
 
@@ -831,7 +831,7 @@ namespace SonicWallGen7.Api
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesDomainNAMEGet";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesDomainNAMEGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -842,11 +842,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<DnsProxyCacheEntryCollection>("/dns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<SonicDnsProxyCacheEntryCollection>("/SonicDns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesDomainNAMEGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesDomainNAMEGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -857,33 +857,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Patch DNS proxy cache entry object configuration.
+        ///  Patch SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsProxyCacheEntriesDomainNAMEPatch(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0)
+        public ApiStatus SonicDnsProxyCacheEntriesDomainNAMEPatch(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsProxyCacheEntriesDomainNAMEPatchWithHttpInfo(NAME, dnsProxyCacheEntryCollection);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsProxyCacheEntriesDomainNAMEPatchWithHttpInfo(NAME, SonicDnsProxyCacheEntryCollection);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Patch DNS proxy cache entry object configuration.
+        ///  Patch SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsProxyCacheEntriesDomainNAMEPatchWithHttpInfo(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsProxyCacheEntriesDomainNAMEPatchWithHttpInfo(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0)
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsProxyCacheEntryApi->DnsProxyCacheEntriesDomainNAMEPatch");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsProxyCacheEntryApi->SonicDnsProxyCacheEntriesDomainNAMEPatch");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -910,9 +910,9 @@ namespace SonicWallGen7.Api
             }
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
-            localVarRequestOptions.Data = dnsProxyCacheEntryCollection;
+            localVarRequestOptions.Data = SonicDnsProxyCacheEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesDomainNAMEPatch";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesDomainNAMEPatch";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -923,10 +923,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Patch<ApiStatus>("/dns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Patch<ApiStatus>("/SonicDns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesDomainNAMEPatch", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesDomainNAMEPatch", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -937,35 +937,35 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Patch DNS proxy cache entry object configuration.
+        ///  Patch SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsProxyCacheEntriesDomainNAMEPatchAsync(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyCacheEntriesDomainNAMEPatchAsync(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsProxyCacheEntriesDomainNAMEPatchWithHttpInfoAsync(NAME, dnsProxyCacheEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsProxyCacheEntriesDomainNAMEPatchWithHttpInfoAsync(NAME, SonicDnsProxyCacheEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Patch DNS proxy cache entry object configuration.
+        ///  Patch SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsProxyCacheEntriesDomainNAMEPatchWithHttpInfoAsync(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsProxyCacheEntriesDomainNAMEPatchWithHttpInfoAsync(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsProxyCacheEntryApi->DnsProxyCacheEntriesDomainNAMEPatch");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsProxyCacheEntryApi->SonicDnsProxyCacheEntriesDomainNAMEPatch");
             }
 
 
@@ -993,9 +993,9 @@ namespace SonicWallGen7.Api
             }
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
-            localVarRequestOptions.Data = dnsProxyCacheEntryCollection;
+            localVarRequestOptions.Data = SonicDnsProxyCacheEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesDomainNAMEPatch";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesDomainNAMEPatch";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1006,11 +1006,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PatchAsync<ApiStatus>("/dns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PatchAsync<ApiStatus>("/SonicDns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesDomainNAMEPatch", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesDomainNAMEPatch", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1021,33 +1021,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Edit DNS proxy cache entry object configuration.
+        ///  Edit SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsProxyCacheEntriesDomainNAMEPut(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0)
+        public ApiStatus SonicDnsProxyCacheEntriesDomainNAMEPut(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsProxyCacheEntriesDomainNAMEPutWithHttpInfo(NAME, dnsProxyCacheEntryCollection);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsProxyCacheEntriesDomainNAMEPutWithHttpInfo(NAME, SonicDnsProxyCacheEntryCollection);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Edit DNS proxy cache entry object configuration.
+        ///  Edit SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsProxyCacheEntriesDomainNAMEPutWithHttpInfo(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsProxyCacheEntriesDomainNAMEPutWithHttpInfo(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0)
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsProxyCacheEntryApi->DnsProxyCacheEntriesDomainNAMEPut");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsProxyCacheEntryApi->SonicDnsProxyCacheEntriesDomainNAMEPut");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -1074,9 +1074,9 @@ namespace SonicWallGen7.Api
             }
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
-            localVarRequestOptions.Data = dnsProxyCacheEntryCollection;
+            localVarRequestOptions.Data = SonicDnsProxyCacheEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesDomainNAMEPut";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesDomainNAMEPut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1087,10 +1087,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<ApiStatus>("/dns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<ApiStatus>("/SonicDns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesDomainNAMEPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesDomainNAMEPut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1101,35 +1101,35 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Edit DNS proxy cache entry object configuration.
+        ///  Edit SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsProxyCacheEntriesDomainNAMEPutAsync(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyCacheEntriesDomainNAMEPutAsync(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsProxyCacheEntriesDomainNAMEPutWithHttpInfoAsync(NAME, dnsProxyCacheEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsProxyCacheEntriesDomainNAMEPutWithHttpInfoAsync(NAME, SonicDnsProxyCacheEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Edit DNS proxy cache entry object configuration.
+        ///  Edit SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="NAME">Static DNS cache domain name.</param>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="NAME">Static SonicDns cache domain name.</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsProxyCacheEntriesDomainNAMEPutWithHttpInfoAsync(string NAME, DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsProxyCacheEntriesDomainNAMEPutWithHttpInfoAsync(string NAME, SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling DnsProxyCacheEntryApi->DnsProxyCacheEntriesDomainNAMEPut");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SonicDnsProxyCacheEntryApi->SonicDnsProxyCacheEntriesDomainNAMEPut");
             }
 
 
@@ -1157,9 +1157,9 @@ namespace SonicWallGen7.Api
             }
 
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
-            localVarRequestOptions.Data = dnsProxyCacheEntryCollection;
+            localVarRequestOptions.Data = SonicDnsProxyCacheEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesDomainNAMEPut";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesDomainNAMEPut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1170,11 +1170,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/dns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/SonicDns-proxy/cache-entries/domain/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesDomainNAMEPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesDomainNAMEPut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1185,24 +1185,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy cache entry object configuration.
+        ///  Retrieve SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsProxyCacheEntryCollection</returns>
-        public DnsProxyCacheEntryCollection DnsProxyCacheEntriesGet(int operationIndex = 0)
+        /// <returns>SonicDnsProxyCacheEntryCollection</returns>
+        public SonicDnsProxyCacheEntryCollection SonicDnsProxyCacheEntriesGet(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<DnsProxyCacheEntryCollection> localVarResponse = DnsProxyCacheEntriesGetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<SonicDnsProxyCacheEntryCollection> localVarResponse = SonicDnsProxyCacheEntriesGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy cache entry object configuration.
+        ///  Retrieve SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsProxyCacheEntryCollection</returns>
-        public SonicWallGen7.Client.ApiResponse<DnsProxyCacheEntryCollection> DnsProxyCacheEntriesGetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of SonicDnsProxyCacheEntryCollection</returns>
+        public SonicWallGen7.Client.ApiResponse<SonicDnsProxyCacheEntryCollection> SonicDnsProxyCacheEntriesGetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -1227,7 +1227,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesGet";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1238,10 +1238,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<DnsProxyCacheEntryCollection>("/dns-proxy/cache-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<SonicDnsProxyCacheEntryCollection>("/SonicDns-proxy/cache-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1252,26 +1252,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy cache entry object configuration.
+        ///  Retrieve SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsProxyCacheEntryCollection</returns>
-        public async System.Threading.Tasks.Task<DnsProxyCacheEntryCollection> DnsProxyCacheEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of SonicDnsProxyCacheEntryCollection</returns>
+        public async System.Threading.Tasks.Task<SonicDnsProxyCacheEntryCollection> SonicDnsProxyCacheEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<DnsProxyCacheEntryCollection> localVarResponse = await DnsProxyCacheEntriesGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<SonicDnsProxyCacheEntryCollection> localVarResponse = await SonicDnsProxyCacheEntriesGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS proxy cache entry object configuration.
+        ///  Retrieve SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsProxyCacheEntryCollection)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<DnsProxyCacheEntryCollection>> DnsProxyCacheEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (SonicDnsProxyCacheEntryCollection)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<SonicDnsProxyCacheEntryCollection>> SonicDnsProxyCacheEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -1297,7 +1297,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesGet";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1308,11 +1308,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<DnsProxyCacheEntryCollection>("/dns-proxy/cache-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<SonicDnsProxyCacheEntryCollection>("/SonicDns-proxy/cache-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1323,26 +1323,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Patch DNS proxy cache entry object configuration.
+        ///  Patch SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsProxyCacheEntriesPatch(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0)
+        public ApiStatus SonicDnsProxyCacheEntriesPatch(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsProxyCacheEntriesPatchWithHttpInfo(dnsProxyCacheEntryCollection);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsProxyCacheEntriesPatchWithHttpInfo(SonicDnsProxyCacheEntryCollection);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Patch DNS proxy cache entry object configuration.
+        ///  Patch SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsProxyCacheEntriesPatchWithHttpInfo(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsProxyCacheEntriesPatchWithHttpInfo(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -1367,9 +1367,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsProxyCacheEntryCollection;
+            localVarRequestOptions.Data = SonicDnsProxyCacheEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesPatch";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesPatch";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1380,10 +1380,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Patch<ApiStatus>("/dns-proxy/cache-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Patch<ApiStatus>("/SonicDns-proxy/cache-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesPatch", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesPatch", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1394,28 +1394,28 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Patch DNS proxy cache entry object configuration.
+        ///  Patch SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsProxyCacheEntriesPatchAsync(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyCacheEntriesPatchAsync(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsProxyCacheEntriesPatchWithHttpInfoAsync(dnsProxyCacheEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsProxyCacheEntriesPatchWithHttpInfoAsync(SonicDnsProxyCacheEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Patch DNS proxy cache entry object configuration.
+        ///  Patch SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsProxyCacheEntriesPatchWithHttpInfoAsync(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsProxyCacheEntriesPatchWithHttpInfoAsync(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -1441,9 +1441,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsProxyCacheEntryCollection;
+            localVarRequestOptions.Data = SonicDnsProxyCacheEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesPatch";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesPatch";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1454,11 +1454,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PatchAsync<ApiStatus>("/dns-proxy/cache-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PatchAsync<ApiStatus>("/SonicDns-proxy/cache-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesPatch", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesPatch", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1469,26 +1469,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Create a new DNS proxy cache entry object.
+        ///  Create a new SonicDns proxy cache entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsProxyCacheEntriesPost(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0)
+        public ApiStatus SonicDnsProxyCacheEntriesPost(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsProxyCacheEntriesPostWithHttpInfo(dnsProxyCacheEntryCollection);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsProxyCacheEntriesPostWithHttpInfo(SonicDnsProxyCacheEntryCollection);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Create a new DNS proxy cache entry object.
+        ///  Create a new SonicDns proxy cache entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsProxyCacheEntriesPostWithHttpInfo(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsProxyCacheEntriesPostWithHttpInfo(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -1513,9 +1513,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsProxyCacheEntryCollection;
+            localVarRequestOptions.Data = SonicDnsProxyCacheEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesPost";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesPost";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1526,10 +1526,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<ApiStatus>("/dns-proxy/cache-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<ApiStatus>("/SonicDns-proxy/cache-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1540,28 +1540,28 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Create a new DNS proxy cache entry object.
+        ///  Create a new SonicDns proxy cache entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsProxyCacheEntriesPostAsync(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyCacheEntriesPostAsync(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsProxyCacheEntriesPostWithHttpInfoAsync(dnsProxyCacheEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsProxyCacheEntriesPostWithHttpInfoAsync(SonicDnsProxyCacheEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Create a new DNS proxy cache entry object.
+        ///  Create a new SonicDns proxy cache entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsProxyCacheEntriesPostWithHttpInfoAsync(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsProxyCacheEntriesPostWithHttpInfoAsync(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -1587,9 +1587,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsProxyCacheEntryCollection;
+            localVarRequestOptions.Data = SonicDnsProxyCacheEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesPost";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesPost";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1600,11 +1600,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/dns-proxy/cache-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/SonicDns-proxy/cache-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1615,26 +1615,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Edit DNS proxy cache entry object configuration.
+        ///  Edit SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsProxyCacheEntriesPut(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0)
+        public ApiStatus SonicDnsProxyCacheEntriesPut(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsProxyCacheEntriesPutWithHttpInfo(dnsProxyCacheEntryCollection);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsProxyCacheEntriesPutWithHttpInfo(SonicDnsProxyCacheEntryCollection);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Edit DNS proxy cache entry object configuration.
+        ///  Edit SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsProxyCacheEntriesPutWithHttpInfo(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsProxyCacheEntriesPutWithHttpInfo(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -1659,9 +1659,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsProxyCacheEntryCollection;
+            localVarRequestOptions.Data = SonicDnsProxyCacheEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesPut";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesPut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1672,10 +1672,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<ApiStatus>("/dns-proxy/cache-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<ApiStatus>("/SonicDns-proxy/cache-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesPut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1686,28 +1686,28 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Edit DNS proxy cache entry object configuration.
+        ///  Edit SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsProxyCacheEntriesPutAsync(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsProxyCacheEntriesPutAsync(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsProxyCacheEntriesPutWithHttpInfoAsync(dnsProxyCacheEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsProxyCacheEntriesPutWithHttpInfoAsync(SonicDnsProxyCacheEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Edit DNS proxy cache entry object configuration.
+        ///  Edit SonicDns proxy cache entry object configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsProxyCacheEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsProxyCacheEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsProxyCacheEntriesPutWithHttpInfoAsync(DnsProxyCacheEntryCollection? dnsProxyCacheEntryCollection = default(DnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsProxyCacheEntriesPutWithHttpInfoAsync(SonicDnsProxyCacheEntryCollection? SonicDnsProxyCacheEntryCollection = default(SonicDnsProxyCacheEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -1733,9 +1733,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsProxyCacheEntryCollection;
+            localVarRequestOptions.Data = SonicDnsProxyCacheEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsProxyCacheEntryApi.DnsProxyCacheEntriesPut";
+            localVarRequestOptions.Operation = "SonicDnsProxyCacheEntryApi.SonicDnsProxyCacheEntriesPut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -1746,11 +1746,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/dns-proxy/cache-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/SonicDns-proxy/cache-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsProxyCacheEntriesPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsProxyCacheEntriesPut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

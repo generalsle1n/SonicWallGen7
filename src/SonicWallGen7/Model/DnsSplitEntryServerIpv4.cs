@@ -27,18 +27,18 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Set the split DNS entry IPv4 server.
+    /// Set the split SonicDns entry IPv4 server.
     /// </summary>
-    [DataContract(Name = "dns_split_entry_server_ipv4")]
-    public partial class DnsSplitEntryServerIpv4 : IEquatable<DnsSplitEntryServerIpv4>, IValidatableObject
+    [DataContract(Name = "SonicDns_split_entry_server_ipv4")]
+    public partial class SonicDnsSplitEntryServerIpv4 : IEquatable<SonicDnsSplitEntryServerIpv4>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntryServerIpv4" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntryServerIpv4" /> class.
         /// </summary>
         /// <param name="primary">primary.</param>
         /// <param name="secondary">secondary.</param>
         /// <param name="tertiary">tertiary.</param>
-        public DnsSplitEntryServerIpv4(DnsSplitEntryServerIpv4Primary primary = default(DnsSplitEntryServerIpv4Primary), DnsSplitEntryServerIpv4Secondary secondary = default(DnsSplitEntryServerIpv4Secondary), DnsSplitEntryServerIpv4Tertiary tertiary = default(DnsSplitEntryServerIpv4Tertiary))
+        public SonicDnsSplitEntryServerIpv4(SonicDnsSplitEntryServerIpv4Primary primary = default(SonicDnsSplitEntryServerIpv4Primary), SonicDnsSplitEntryServerIpv4Secondary secondary = default(SonicDnsSplitEntryServerIpv4Secondary), SonicDnsSplitEntryServerIpv4Tertiary tertiary = default(SonicDnsSplitEntryServerIpv4Tertiary))
         {
             this.Primary = primary;
             this.Secondary = secondary;
@@ -49,19 +49,19 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Primary
         /// </summary>
         [DataMember(Name = "primary", EmitDefaultValue = true)]
-        public DnsSplitEntryServerIpv4Primary Primary { get; set; }
+        public SonicDnsSplitEntryServerIpv4Primary Primary { get; set; }
 
         /// <summary>
         /// Gets or Sets Secondary
         /// </summary>
         [DataMember(Name = "secondary", EmitDefaultValue = true)]
-        public DnsSplitEntryServerIpv4Secondary Secondary { get; set; }
+        public SonicDnsSplitEntryServerIpv4Secondary Secondary { get; set; }
 
         /// <summary>
         /// Gets or Sets Tertiary
         /// </summary>
         [DataMember(Name = "tertiary", EmitDefaultValue = true)]
-        public DnsSplitEntryServerIpv4Tertiary Tertiary { get; set; }
+        public SonicDnsSplitEntryServerIpv4Tertiary Tertiary { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -70,7 +70,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSplitEntryServerIpv4 {\n");
+            sb.Append("class SonicDnsSplitEntryServerIpv4 {\n");
             sb.Append("  Primary: ").Append(Primary).Append("\n");
             sb.Append("  Secondary: ").Append(Secondary).Append("\n");
             sb.Append("  Tertiary: ").Append(Tertiary).Append("\n");
@@ -94,15 +94,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSplitEntryServerIpv4);
+            return this.Equals(input as SonicDnsSplitEntryServerIpv4);
         }
 
         /// <summary>
-        /// Returns true if DnsSplitEntryServerIpv4 instances are equal
+        /// Returns true if SonicDnsSplitEntryServerIpv4 instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSplitEntryServerIpv4 to be compared</param>
+        /// <param name="input">Instance of SonicDnsSplitEntryServerIpv4 to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSplitEntryServerIpv4 input)
+        public bool Equals(SonicDnsSplitEntryServerIpv4 input)
         {
             if (input == null)
             {

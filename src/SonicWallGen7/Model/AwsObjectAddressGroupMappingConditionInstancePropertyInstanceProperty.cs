@@ -64,10 +64,10 @@ namespace SonicWallGen7.Model
             VpcId = 4,
 
             /// <summary>
-            /// Enum PrivateDnsName for value: private-dns-name
+            /// Enum PrivateSonicDnsName for value: private-SonicDns-name
             /// </summary>
-            [EnumMember(Value = "private-dns-name")]
-            PrivateDnsName = 5,
+            [EnumMember(Value = "private-SonicDns-name")]
+            PrivateSonicDnsName = 5,
 
             /// <summary>
             /// Enum InstanceType for value: instance-type

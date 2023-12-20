@@ -28,18 +28,18 @@ using System.Reflection;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS server configuration.
+    /// SonicDns server configuration.
     /// </summary>
-    [JsonConverter(typeof(VpnVpnDnsServerJsonConverter))]
-    [DataContract(Name = "vpn_vpn_dns_server")]
-    public partial class VpnVpnDnsServer : AbstractOpenAPISchema, IEquatable<VpnVpnDnsServer>, IValidatableObject
+    [JsonConverter(typeof(VpnVpnSonicDnsServerJsonConverter))]
+    [DataContract(Name = "vpn_vpn_SonicDns_server")]
+    public partial class VpnVpnSonicDnsServer : AbstractOpenAPISchema, IEquatable<VpnVpnSonicDnsServer>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="VpnVpnDnsServer" /> class
-        /// with the <see cref="VpnDnsServerInherit" /> class
+        /// Initializes a new instance of the <see cref="VpnVpnSonicDnsServer" /> class
+        /// with the <see cref="VpnSonicDnsServerInherit" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of VpnDnsServerInherit.</param>
-        public VpnVpnDnsServer(VpnDnsServerInherit actualInstance)
+        /// <param name="actualInstance">An instance of VpnSonicDnsServerInherit.</param>
+        public VpnVpnSonicDnsServer(VpnSonicDnsServerInherit actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -47,11 +47,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="VpnVpnDnsServer" /> class
-        /// with the <see cref="VpnDnsServerStatic" /> class
+        /// Initializes a new instance of the <see cref="VpnVpnSonicDnsServer" /> class
+        /// with the <see cref="VpnSonicDnsServerStatic" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of VpnDnsServerStatic.</param>
-        public VpnVpnDnsServer(VpnDnsServerStatic actualInstance)
+        /// <param name="actualInstance">An instance of VpnSonicDnsServerStatic.</param>
+        public VpnVpnSonicDnsServer(VpnSonicDnsServerStatic actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -72,39 +72,39 @@ namespace SonicWallGen7.Model
             }
             set
             {
-                if (value.GetType() == typeof(VpnDnsServerInherit))
+                if (value.GetType() == typeof(VpnSonicDnsServerInherit))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(VpnDnsServerStatic))
+                else if (value.GetType() == typeof(VpnSonicDnsServerStatic))
                 {
                     this._actualInstance = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid instance found. Must be the following types: VpnDnsServerInherit, VpnDnsServerStatic");
+                    throw new ArgumentException("Invalid instance found. Must be the following types: VpnSonicDnsServerInherit, VpnSonicDnsServerStatic");
                 }
             }
         }
 
         /// <summary>
-        /// Get the actual instance of `VpnDnsServerInherit`. If the actual instance is not `VpnDnsServerInherit`,
+        /// Get the actual instance of `VpnSonicDnsServerInherit`. If the actual instance is not `VpnSonicDnsServerInherit`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of VpnDnsServerInherit</returns>
-        public VpnDnsServerInherit GetVpnDnsServerInherit()
+        /// <returns>An instance of VpnSonicDnsServerInherit</returns>
+        public VpnSonicDnsServerInherit GetVpnSonicDnsServerInherit()
         {
-            return (VpnDnsServerInherit)this.ActualInstance;
+            return (VpnSonicDnsServerInherit)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `VpnDnsServerStatic`. If the actual instance is not `VpnDnsServerStatic`,
+        /// Get the actual instance of `VpnSonicDnsServerStatic`. If the actual instance is not `VpnSonicDnsServerStatic`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of VpnDnsServerStatic</returns>
-        public VpnDnsServerStatic GetVpnDnsServerStatic()
+        /// <returns>An instance of VpnSonicDnsServerStatic</returns>
+        public VpnSonicDnsServerStatic GetVpnSonicDnsServerStatic()
         {
-            return (VpnDnsServerStatic)this.ActualInstance;
+            return (VpnSonicDnsServerStatic)this.ActualInstance;
         }
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class VpnVpnDnsServer {\n");
+            sb.Append("class VpnVpnSonicDnsServer {\n");
             sb.Append("  ActualInstance: ").Append(this.ActualInstance).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -126,21 +126,21 @@ namespace SonicWallGen7.Model
         /// <returns>JSON string presentation of the object</returns>
         public override string ToJson()
         {
-            return JsonConvert.SerializeObject(this.ActualInstance, VpnVpnDnsServer.SerializerSettings);
+            return JsonConvert.SerializeObject(this.ActualInstance, VpnVpnSonicDnsServer.SerializerSettings);
         }
 
         /// <summary>
-        /// Converts the JSON string into an instance of VpnVpnDnsServer
+        /// Converts the JSON string into an instance of VpnVpnSonicDnsServer
         /// </summary>
         /// <param name="jsonString">JSON string</param>
-        /// <returns>An instance of VpnVpnDnsServer</returns>
-        public static VpnVpnDnsServer FromJson(string jsonString)
+        /// <returns>An instance of VpnVpnSonicDnsServer</returns>
+        public static VpnVpnSonicDnsServer FromJson(string jsonString)
         {
-            VpnVpnDnsServer newVpnVpnDnsServer = null;
+            VpnVpnSonicDnsServer newVpnVpnSonicDnsServer = null;
 
             if (string.IsNullOrEmpty(jsonString))
             {
-                return newVpnVpnDnsServer;
+                return newVpnVpnSonicDnsServer;
             }
             int match = 0;
             List<string> matchedTypes = new List<string>();
@@ -148,41 +148,41 @@ namespace SonicWallGen7.Model
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(VpnDnsServerInherit).GetProperty("AdditionalProperties") == null)
+                if (typeof(VpnSonicDnsServerInherit).GetProperty("AdditionalProperties") == null)
                 {
-                    newVpnVpnDnsServer = new VpnVpnDnsServer(JsonConvert.DeserializeObject<VpnDnsServerInherit>(jsonString, VpnVpnDnsServer.SerializerSettings));
+                    newVpnVpnSonicDnsServer = new VpnVpnSonicDnsServer(JsonConvert.DeserializeObject<VpnSonicDnsServerInherit>(jsonString, VpnVpnSonicDnsServer.SerializerSettings));
                 }
                 else
                 {
-                    newVpnVpnDnsServer = new VpnVpnDnsServer(JsonConvert.DeserializeObject<VpnDnsServerInherit>(jsonString, VpnVpnDnsServer.AdditionalPropertiesSerializerSettings));
+                    newVpnVpnSonicDnsServer = new VpnVpnSonicDnsServer(JsonConvert.DeserializeObject<VpnSonicDnsServerInherit>(jsonString, VpnVpnSonicDnsServer.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("VpnDnsServerInherit");
+                matchedTypes.Add("VpnSonicDnsServerInherit");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into VpnDnsServerInherit: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into VpnSonicDnsServerInherit: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(VpnDnsServerStatic).GetProperty("AdditionalProperties") == null)
+                if (typeof(VpnSonicDnsServerStatic).GetProperty("AdditionalProperties") == null)
                 {
-                    newVpnVpnDnsServer = new VpnVpnDnsServer(JsonConvert.DeserializeObject<VpnDnsServerStatic>(jsonString, VpnVpnDnsServer.SerializerSettings));
+                    newVpnVpnSonicDnsServer = new VpnVpnSonicDnsServer(JsonConvert.DeserializeObject<VpnSonicDnsServerStatic>(jsonString, VpnVpnSonicDnsServer.SerializerSettings));
                 }
                 else
                 {
-                    newVpnVpnDnsServer = new VpnVpnDnsServer(JsonConvert.DeserializeObject<VpnDnsServerStatic>(jsonString, VpnVpnDnsServer.AdditionalPropertiesSerializerSettings));
+                    newVpnVpnSonicDnsServer = new VpnVpnSonicDnsServer(JsonConvert.DeserializeObject<VpnSonicDnsServerStatic>(jsonString, VpnVpnSonicDnsServer.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("VpnDnsServerStatic");
+                matchedTypes.Add("VpnSonicDnsServerStatic");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into VpnDnsServerStatic: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into VpnSonicDnsServerStatic: {1}", jsonString, exception.ToString()));
             }
 
             if (match == 0)
@@ -195,7 +195,7 @@ namespace SonicWallGen7.Model
             }
 
             // deserialization is considered successful at this point if no exception has been thrown.
-            return newVpnVpnDnsServer;
+            return newVpnVpnSonicDnsServer;
         }
 
         /// <summary>
@@ -205,15 +205,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as VpnVpnDnsServer);
+            return this.Equals(input as VpnVpnSonicDnsServer);
         }
 
         /// <summary>
-        /// Returns true if VpnVpnDnsServer instances are equal
+        /// Returns true if VpnVpnSonicDnsServer instances are equal
         /// </summary>
-        /// <param name="input">Instance of VpnVpnDnsServer to be compared</param>
+        /// <param name="input">Instance of VpnVpnSonicDnsServer to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(VpnVpnDnsServer input)
+        public bool Equals(VpnVpnSonicDnsServer input)
         {
             if (input == null)
                 return false;
@@ -248,9 +248,9 @@ namespace SonicWallGen7.Model
     }
 
     /// <summary>
-    /// Custom JSON converter for VpnVpnDnsServer
+    /// Custom JSON converter for VpnVpnSonicDnsServer
     /// </summary>
-    public class VpnVpnDnsServerJsonConverter : JsonConverter
+    public class VpnVpnSonicDnsServerJsonConverter : JsonConverter
     {
         /// <summary>
         /// To write the JSON string
@@ -260,7 +260,7 @@ namespace SonicWallGen7.Model
         /// <param name="serializer">JSON Serializer</param>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            writer.WriteRawValue((string)(typeof(VpnVpnDnsServer).GetMethod("ToJson").Invoke(value, null)));
+            writer.WriteRawValue((string)(typeof(VpnVpnSonicDnsServer).GetMethod("ToJson").Invoke(value, null)));
         }
 
         /// <summary>
@@ -275,7 +275,7 @@ namespace SonicWallGen7.Model
         {
             if(reader.TokenType != JsonToken.Null)
             {
-                return VpnVpnDnsServer.FromJson(JObject.Load(reader).ToString(Formatting.None));
+                return VpnVpnSonicDnsServer.FromJson(JObject.Load(reader).ToString(Formatting.None));
             }
             return null;
         }

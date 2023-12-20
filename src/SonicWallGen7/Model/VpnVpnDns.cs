@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS server settings.
+    /// SonicDns server settings.
     /// </summary>
-    [DataContract(Name = "vpn_vpn_dns")]
-    public partial class VpnVpnDns : IEquatable<VpnVpnDns>, IValidatableObject
+    [DataContract(Name = "vpn_vpn_SonicDns")]
+    public partial class VpnVpnSonicDns : IEquatable<VpnVpnSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="VpnVpnDns" /> class.
+        /// Initializes a new instance of the <see cref="VpnVpnSonicDns" /> class.
         /// </summary>
         /// <param name="server">server.</param>
-        public VpnVpnDns(VpnVpnDnsServer server = default(VpnVpnDnsServer))
+        public VpnVpnSonicDns(VpnVpnSonicDnsServer server = default(VpnVpnSonicDnsServer))
         {
             this.Server = server;
         }
@@ -45,7 +45,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Server
         /// </summary>
         [DataMember(Name = "server", EmitDefaultValue = false)]
-        public VpnVpnDnsServer Server { get; set; }
+        public VpnVpnSonicDnsServer Server { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class VpnVpnDns {\n");
+            sb.Append("class VpnVpnSonicDns {\n");
             sb.Append("  Server: ").Append(Server).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as VpnVpnDns);
+            return this.Equals(input as VpnVpnSonicDns);
         }
 
         /// <summary>
-        /// Returns true if VpnVpnDns instances are equal
+        /// Returns true if VpnVpnSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of VpnVpnDns to be compared</param>
+        /// <param name="input">Instance of VpnVpnSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(VpnVpnDns input)
+        public bool Equals(VpnVpnSonicDns input)
         {
             if (input == null)
             {

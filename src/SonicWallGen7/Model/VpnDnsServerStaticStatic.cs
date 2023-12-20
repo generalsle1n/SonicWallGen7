@@ -27,18 +27,18 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Static DNS server.
+    /// Static SonicDns server.
     /// </summary>
-    [DataContract(Name = "vpn_dns_server_static_static")]
-    public partial class VpnDnsServerStaticStatic : IEquatable<VpnDnsServerStaticStatic>, IValidatableObject
+    [DataContract(Name = "vpn_SonicDns_server_static_static")]
+    public partial class VpnSonicDnsServerStaticStatic : IEquatable<VpnSonicDnsServerStaticStatic>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="VpnDnsServerStaticStatic" /> class.
+        /// Initializes a new instance of the <see cref="VpnSonicDnsServerStaticStatic" /> class.
         /// </summary>
-        /// <param name="primary">Specify primary DNS server IP address..</param>
-        /// <param name="secondary">Specify secondary DNS server IP address..</param>
-        /// <param name="tertiary">Specify ternary DNS server IP address..</param>
-        public VpnDnsServerStaticStatic(string primary = default(string), string secondary = default(string), string tertiary = default(string))
+        /// <param name="primary">Specify primary SonicDns server IP address..</param>
+        /// <param name="secondary">Specify secondary SonicDns server IP address..</param>
+        /// <param name="tertiary">Specify ternary SonicDns server IP address..</param>
+        public VpnSonicDnsServerStaticStatic(string primary = default(string), string secondary = default(string), string tertiary = default(string))
         {
             this.Primary = primary;
             this.Secondary = secondary;
@@ -46,23 +46,23 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Specify primary DNS server IP address.
+        /// Specify primary SonicDns server IP address.
         /// </summary>
-        /// <value>Specify primary DNS server IP address.</value>
+        /// <value>Specify primary SonicDns server IP address.</value>
         [DataMember(Name = "primary", EmitDefaultValue = false)]
         public string Primary { get; set; }
 
         /// <summary>
-        /// Specify secondary DNS server IP address.
+        /// Specify secondary SonicDns server IP address.
         /// </summary>
-        /// <value>Specify secondary DNS server IP address.</value>
+        /// <value>Specify secondary SonicDns server IP address.</value>
         [DataMember(Name = "secondary", EmitDefaultValue = false)]
         public string Secondary { get; set; }
 
         /// <summary>
-        /// Specify ternary DNS server IP address.
+        /// Specify ternary SonicDns server IP address.
         /// </summary>
-        /// <value>Specify ternary DNS server IP address.</value>
+        /// <value>Specify ternary SonicDns server IP address.</value>
         [DataMember(Name = "tertiary", EmitDefaultValue = false)]
         public string Tertiary { get; set; }
 
@@ -73,7 +73,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class VpnDnsServerStaticStatic {\n");
+            sb.Append("class VpnSonicDnsServerStaticStatic {\n");
             sb.Append("  Primary: ").Append(Primary).Append("\n");
             sb.Append("  Secondary: ").Append(Secondary).Append("\n");
             sb.Append("  Tertiary: ").Append(Tertiary).Append("\n");
@@ -97,15 +97,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as VpnDnsServerStaticStatic);
+            return this.Equals(input as VpnSonicDnsServerStaticStatic);
         }
 
         /// <summary>
-        /// Returns true if VpnDnsServerStaticStatic instances are equal
+        /// Returns true if VpnSonicDnsServerStaticStatic instances are equal
         /// </summary>
-        /// <param name="input">Instance of VpnDnsServerStaticStatic to be compared</param>
+        /// <param name="input">Instance of VpnSonicDnsServerStaticStatic to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(VpnDnsServerStaticStatic input)
+        public bool Equals(VpnSonicDnsServerStaticStatic input)
         {
             if (input == null)
             {

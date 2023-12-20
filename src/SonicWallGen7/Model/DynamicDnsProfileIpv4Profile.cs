@@ -27,26 +27,26 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// IPv4 Dynamic DNS profile.
+    /// IPv4 Dynamic SonicDns profile.
     /// </summary>
-    [DataContract(Name = "dynamic_dns_profile_ipv4_profile")]
-    public partial class DynamicDnsProfileIpv4Profile : IEquatable<DynamicDnsProfileIpv4Profile>, IValidatableObject
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv4_profile")]
+    public partial class DynamicSonicDnsProfileIpv4Profile : IEquatable<DynamicSonicDnsProfileIpv4Profile>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4Profile" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4Profile" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected DynamicDnsProfileIpv4Profile() { }
+        protected DynamicSonicDnsProfileIpv4Profile() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4Profile" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4Profile" /> class.
         /// </summary>
         /// <param name="ipv4">ipv4 (required).</param>
-        public DynamicDnsProfileIpv4Profile(DynamicDnsProfileIpv4ProfileIpv4 ipv4 = default(DynamicDnsProfileIpv4ProfileIpv4))
+        public DynamicSonicDnsProfileIpv4Profile(DynamicSonicDnsProfileIpv4ProfileIpv4 ipv4 = default(DynamicSonicDnsProfileIpv4ProfileIpv4))
         {
             // to ensure "ipv4" is required (not null)
             if (ipv4 == null)
             {
-                throw new ArgumentNullException("ipv4 is a required property for DynamicDnsProfileIpv4Profile and cannot be null");
+                throw new ArgumentNullException("ipv4 is a required property for DynamicSonicDnsProfileIpv4Profile and cannot be null");
             }
             this.Ipv4 = ipv4;
         }
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Ipv4
         /// </summary>
         [DataMember(Name = "ipv4", IsRequired = true, EmitDefaultValue = true)]
-        public DynamicDnsProfileIpv4ProfileIpv4 Ipv4 { get; set; }
+        public DynamicSonicDnsProfileIpv4ProfileIpv4 Ipv4 { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -64,7 +64,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv4Profile {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv4Profile {\n");
             sb.Append("  Ipv4: ").Append(Ipv4).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -86,15 +86,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv4Profile);
+            return this.Equals(input as DynamicSonicDnsProfileIpv4Profile);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv4Profile instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv4Profile instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv4Profile to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv4Profile to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv4Profile input)
+        public bool Equals(DynamicSonicDnsProfileIpv4Profile input)
         {
             if (input == null)
             {

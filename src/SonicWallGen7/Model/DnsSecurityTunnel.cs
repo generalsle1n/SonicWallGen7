@@ -27,25 +27,25 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS security tunnel configuration schema.
+    /// SonicDns security tunnel configuration schema.
     /// </summary>
-    [DataContract(Name = "dns_security_tunnel")]
-    public partial class DnsSecurityTunnel : IEquatable<DnsSecurityTunnel>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_tunnel")]
+    public partial class SonicDnsSecurityTunnel : IEquatable<SonicDnsSecurityTunnel>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecurityTunnel" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecurityTunnel" /> class.
         /// </summary>
-        /// <param name="dnsSecurity">dnsSecurity.</param>
-        public DnsSecurityTunnel(DnsSecurityTunnelDnsSecurity dnsSecurity = default(DnsSecurityTunnelDnsSecurity))
+        /// <param name="SonicDnsSecurity">SonicDnsSecurity.</param>
+        public SonicDnsSecurityTunnel(SonicDnsSecurityTunnelSonicDnsSecurity SonicDnsSecurity = default(SonicDnsSecurityTunnelSonicDnsSecurity))
         {
-            this.DnsSecurity = dnsSecurity;
+            this.SonicDnsSecurity = SonicDnsSecurity;
         }
 
         /// <summary>
-        /// Gets or Sets DnsSecurity
+        /// Gets or Sets SonicDnsSecurity
         /// </summary>
-        [DataMember(Name = "dns_security", EmitDefaultValue = false)]
-        public DnsSecurityTunnelDnsSecurity DnsSecurity { get; set; }
+        [DataMember(Name = "SonicDns_security", EmitDefaultValue = false)]
+        public SonicDnsSecurityTunnelSonicDnsSecurity SonicDnsSecurity { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,8 +54,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecurityTunnel {\n");
-            sb.Append("  DnsSecurity: ").Append(DnsSecurity).Append("\n");
+            sb.Append("class SonicDnsSecurityTunnel {\n");
+            sb.Append("  SonicDnsSecurity: ").Append(SonicDnsSecurity).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecurityTunnel);
+            return this.Equals(input as SonicDnsSecurityTunnel);
         }
 
         /// <summary>
-        /// Returns true if DnsSecurityTunnel instances are equal
+        /// Returns true if SonicDnsSecurityTunnel instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecurityTunnel to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecurityTunnel to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecurityTunnel input)
+        public bool Equals(SonicDnsSecurityTunnel input)
         {
             if (input == null)
             {
@@ -92,9 +92,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.DnsSecurity == input.DnsSecurity ||
-                    (this.DnsSecurity != null &&
-                    this.DnsSecurity.Equals(input.DnsSecurity))
+                    this.SonicDnsSecurity == input.SonicDnsSecurity ||
+                    (this.SonicDnsSecurity != null &&
+                    this.SonicDnsSecurity.Equals(input.SonicDnsSecurity))
                 );
         }
 
@@ -107,9 +107,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.DnsSecurity != null)
+                if (this.SonicDnsSecurity != null)
                 {
-                    hashCode = (hashCode * 59) + this.DnsSecurity.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDnsSecurity.GetHashCode();
                 }
                 return hashCode;
             }

@@ -27,24 +27,24 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// LogNameResolutionNameResolutionDnsInherit
+    /// LogNameResolutionNameResolutionSonicDnsInherit
     /// </summary>
-    [DataContract(Name = "log_name_resolution_name_resolution_dns_inherit")]
-    public partial class LogNameResolutionNameResolutionDnsInherit : IEquatable<LogNameResolutionNameResolutionDnsInherit>, IValidatableObject
+    [DataContract(Name = "log_name_resolution_name_resolution_SonicDns_inherit")]
+    public partial class LogNameResolutionNameResolutionSonicDnsInherit : IEquatable<LogNameResolutionNameResolutionSonicDnsInherit>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="LogNameResolutionNameResolutionDnsInherit" /> class.
+        /// Initializes a new instance of the <see cref="LogNameResolutionNameResolutionSonicDnsInherit" /> class.
         /// </summary>
-        /// <param name="inherit">Inherit DNS servers..</param>
-        public LogNameResolutionNameResolutionDnsInherit(bool inherit = default(bool))
+        /// <param name="inherit">Inherit SonicDns servers..</param>
+        public LogNameResolutionNameResolutionSonicDnsInherit(bool inherit = default(bool))
         {
             this.Inherit = inherit;
         }
 
         /// <summary>
-        /// Inherit DNS servers.
+        /// Inherit SonicDns servers.
         /// </summary>
-        /// <value>Inherit DNS servers.</value>
+        /// <value>Inherit SonicDns servers.</value>
         [DataMember(Name = "inherit", EmitDefaultValue = true)]
         public bool Inherit { get; set; }
 
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class LogNameResolutionNameResolutionDnsInherit {\n");
+            sb.Append("class LogNameResolutionNameResolutionSonicDnsInherit {\n");
             sb.Append("  Inherit: ").Append(Inherit).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as LogNameResolutionNameResolutionDnsInherit);
+            return this.Equals(input as LogNameResolutionNameResolutionSonicDnsInherit);
         }
 
         /// <summary>
-        /// Returns true if LogNameResolutionNameResolutionDnsInherit instances are equal
+        /// Returns true if LogNameResolutionNameResolutionSonicDnsInherit instances are equal
         /// </summary>
-        /// <param name="input">Instance of LogNameResolutionNameResolutionDnsInherit to be compared</param>
+        /// <param name="input">Instance of LogNameResolutionNameResolutionSonicDnsInherit to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(LogNameResolutionNameResolutionDnsInherit input)
+        public bool Equals(LogNameResolutionNameResolutionSonicDnsInherit input)
         {
             if (input == null)
             {

@@ -28,18 +28,18 @@ using System.Reflection;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS server configuration.
+    /// SonicDns server configuration.
     /// </summary>
-    [JsonConverter(typeof(DhcpServerScopeDynamicDnsServerJsonConverter))]
-    [DataContract(Name = "dhcp_server_scope_dynamic_dns_server")]
-    public partial class DhcpServerScopeDynamicDnsServer : AbstractOpenAPISchema, IEquatable<DhcpServerScopeDynamicDnsServer>, IValidatableObject
+    [JsonConverter(typeof(DhcpServerScopeDynamicSonicDnsServerJsonConverter))]
+    [DataContract(Name = "dhcp_server_scope_dynamic_SonicDns_server")]
+    public partial class DhcpServerScopeDynamicSonicDnsServer : AbstractOpenAPISchema, IEquatable<DhcpServerScopeDynamicSonicDnsServer>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DhcpServerScopeDynamicDnsServer" /> class
-        /// with the <see cref="DhcpServerScopeDynamicDnsServerInherit" /> class
+        /// Initializes a new instance of the <see cref="DhcpServerScopeDynamicSonicDnsServer" /> class
+        /// with the <see cref="DhcpServerScopeDynamicSonicDnsServerInherit" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DhcpServerScopeDynamicDnsServerInherit.</param>
-        public DhcpServerScopeDynamicDnsServer(DhcpServerScopeDynamicDnsServerInherit actualInstance)
+        /// <param name="actualInstance">An instance of DhcpServerScopeDynamicSonicDnsServerInherit.</param>
+        public DhcpServerScopeDynamicSonicDnsServer(DhcpServerScopeDynamicSonicDnsServerInherit actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -47,11 +47,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DhcpServerScopeDynamicDnsServer" /> class
-        /// with the <see cref="DhcpServerScopeDynamicDnsServerStatic" /> class
+        /// Initializes a new instance of the <see cref="DhcpServerScopeDynamicSonicDnsServer" /> class
+        /// with the <see cref="DhcpServerScopeDynamicSonicDnsServerStatic" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DhcpServerScopeDynamicDnsServerStatic.</param>
-        public DhcpServerScopeDynamicDnsServer(DhcpServerScopeDynamicDnsServerStatic actualInstance)
+        /// <param name="actualInstance">An instance of DhcpServerScopeDynamicSonicDnsServerStatic.</param>
+        public DhcpServerScopeDynamicSonicDnsServer(DhcpServerScopeDynamicSonicDnsServerStatic actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -72,39 +72,39 @@ namespace SonicWallGen7.Model
             }
             set
             {
-                if (value.GetType() == typeof(DhcpServerScopeDynamicDnsServerInherit))
+                if (value.GetType() == typeof(DhcpServerScopeDynamicSonicDnsServerInherit))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(DhcpServerScopeDynamicDnsServerStatic))
+                else if (value.GetType() == typeof(DhcpServerScopeDynamicSonicDnsServerStatic))
                 {
                     this._actualInstance = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid instance found. Must be the following types: DhcpServerScopeDynamicDnsServerInherit, DhcpServerScopeDynamicDnsServerStatic");
+                    throw new ArgumentException("Invalid instance found. Must be the following types: DhcpServerScopeDynamicSonicDnsServerInherit, DhcpServerScopeDynamicSonicDnsServerStatic");
                 }
             }
         }
 
         /// <summary>
-        /// Get the actual instance of `DhcpServerScopeDynamicDnsServerInherit`. If the actual instance is not `DhcpServerScopeDynamicDnsServerInherit`,
+        /// Get the actual instance of `DhcpServerScopeDynamicSonicDnsServerInherit`. If the actual instance is not `DhcpServerScopeDynamicSonicDnsServerInherit`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DhcpServerScopeDynamicDnsServerInherit</returns>
-        public DhcpServerScopeDynamicDnsServerInherit GetDhcpServerScopeDynamicDnsServerInherit()
+        /// <returns>An instance of DhcpServerScopeDynamicSonicDnsServerInherit</returns>
+        public DhcpServerScopeDynamicSonicDnsServerInherit GetDhcpServerScopeDynamicSonicDnsServerInherit()
         {
-            return (DhcpServerScopeDynamicDnsServerInherit)this.ActualInstance;
+            return (DhcpServerScopeDynamicSonicDnsServerInherit)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `DhcpServerScopeDynamicDnsServerStatic`. If the actual instance is not `DhcpServerScopeDynamicDnsServerStatic`,
+        /// Get the actual instance of `DhcpServerScopeDynamicSonicDnsServerStatic`. If the actual instance is not `DhcpServerScopeDynamicSonicDnsServerStatic`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DhcpServerScopeDynamicDnsServerStatic</returns>
-        public DhcpServerScopeDynamicDnsServerStatic GetDhcpServerScopeDynamicDnsServerStatic()
+        /// <returns>An instance of DhcpServerScopeDynamicSonicDnsServerStatic</returns>
+        public DhcpServerScopeDynamicSonicDnsServerStatic GetDhcpServerScopeDynamicSonicDnsServerStatic()
         {
-            return (DhcpServerScopeDynamicDnsServerStatic)this.ActualInstance;
+            return (DhcpServerScopeDynamicSonicDnsServerStatic)this.ActualInstance;
         }
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class DhcpServerScopeDynamicDnsServer {\n");
+            sb.Append("class DhcpServerScopeDynamicSonicDnsServer {\n");
             sb.Append("  ActualInstance: ").Append(this.ActualInstance).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -126,21 +126,21 @@ namespace SonicWallGen7.Model
         /// <returns>JSON string presentation of the object</returns>
         public override string ToJson()
         {
-            return JsonConvert.SerializeObject(this.ActualInstance, DhcpServerScopeDynamicDnsServer.SerializerSettings);
+            return JsonConvert.SerializeObject(this.ActualInstance, DhcpServerScopeDynamicSonicDnsServer.SerializerSettings);
         }
 
         /// <summary>
-        /// Converts the JSON string into an instance of DhcpServerScopeDynamicDnsServer
+        /// Converts the JSON string into an instance of DhcpServerScopeDynamicSonicDnsServer
         /// </summary>
         /// <param name="jsonString">JSON string</param>
-        /// <returns>An instance of DhcpServerScopeDynamicDnsServer</returns>
-        public static DhcpServerScopeDynamicDnsServer FromJson(string jsonString)
+        /// <returns>An instance of DhcpServerScopeDynamicSonicDnsServer</returns>
+        public static DhcpServerScopeDynamicSonicDnsServer FromJson(string jsonString)
         {
-            DhcpServerScopeDynamicDnsServer newDhcpServerScopeDynamicDnsServer = null;
+            DhcpServerScopeDynamicSonicDnsServer newDhcpServerScopeDynamicSonicDnsServer = null;
 
             if (string.IsNullOrEmpty(jsonString))
             {
-                return newDhcpServerScopeDynamicDnsServer;
+                return newDhcpServerScopeDynamicSonicDnsServer;
             }
             int match = 0;
             List<string> matchedTypes = new List<string>();
@@ -148,41 +148,41 @@ namespace SonicWallGen7.Model
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DhcpServerScopeDynamicDnsServerInherit).GetProperty("AdditionalProperties") == null)
+                if (typeof(DhcpServerScopeDynamicSonicDnsServerInherit).GetProperty("AdditionalProperties") == null)
                 {
-                    newDhcpServerScopeDynamicDnsServer = new DhcpServerScopeDynamicDnsServer(JsonConvert.DeserializeObject<DhcpServerScopeDynamicDnsServerInherit>(jsonString, DhcpServerScopeDynamicDnsServer.SerializerSettings));
+                    newDhcpServerScopeDynamicSonicDnsServer = new DhcpServerScopeDynamicSonicDnsServer(JsonConvert.DeserializeObject<DhcpServerScopeDynamicSonicDnsServerInherit>(jsonString, DhcpServerScopeDynamicSonicDnsServer.SerializerSettings));
                 }
                 else
                 {
-                    newDhcpServerScopeDynamicDnsServer = new DhcpServerScopeDynamicDnsServer(JsonConvert.DeserializeObject<DhcpServerScopeDynamicDnsServerInherit>(jsonString, DhcpServerScopeDynamicDnsServer.AdditionalPropertiesSerializerSettings));
+                    newDhcpServerScopeDynamicSonicDnsServer = new DhcpServerScopeDynamicSonicDnsServer(JsonConvert.DeserializeObject<DhcpServerScopeDynamicSonicDnsServerInherit>(jsonString, DhcpServerScopeDynamicSonicDnsServer.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DhcpServerScopeDynamicDnsServerInherit");
+                matchedTypes.Add("DhcpServerScopeDynamicSonicDnsServerInherit");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DhcpServerScopeDynamicDnsServerInherit: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DhcpServerScopeDynamicSonicDnsServerInherit: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DhcpServerScopeDynamicDnsServerStatic).GetProperty("AdditionalProperties") == null)
+                if (typeof(DhcpServerScopeDynamicSonicDnsServerStatic).GetProperty("AdditionalProperties") == null)
                 {
-                    newDhcpServerScopeDynamicDnsServer = new DhcpServerScopeDynamicDnsServer(JsonConvert.DeserializeObject<DhcpServerScopeDynamicDnsServerStatic>(jsonString, DhcpServerScopeDynamicDnsServer.SerializerSettings));
+                    newDhcpServerScopeDynamicSonicDnsServer = new DhcpServerScopeDynamicSonicDnsServer(JsonConvert.DeserializeObject<DhcpServerScopeDynamicSonicDnsServerStatic>(jsonString, DhcpServerScopeDynamicSonicDnsServer.SerializerSettings));
                 }
                 else
                 {
-                    newDhcpServerScopeDynamicDnsServer = new DhcpServerScopeDynamicDnsServer(JsonConvert.DeserializeObject<DhcpServerScopeDynamicDnsServerStatic>(jsonString, DhcpServerScopeDynamicDnsServer.AdditionalPropertiesSerializerSettings));
+                    newDhcpServerScopeDynamicSonicDnsServer = new DhcpServerScopeDynamicSonicDnsServer(JsonConvert.DeserializeObject<DhcpServerScopeDynamicSonicDnsServerStatic>(jsonString, DhcpServerScopeDynamicSonicDnsServer.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DhcpServerScopeDynamicDnsServerStatic");
+                matchedTypes.Add("DhcpServerScopeDynamicSonicDnsServerStatic");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DhcpServerScopeDynamicDnsServerStatic: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DhcpServerScopeDynamicSonicDnsServerStatic: {1}", jsonString, exception.ToString()));
             }
 
             if (match == 0)
@@ -195,7 +195,7 @@ namespace SonicWallGen7.Model
             }
 
             // deserialization is considered successful at this point if no exception has been thrown.
-            return newDhcpServerScopeDynamicDnsServer;
+            return newDhcpServerScopeDynamicSonicDnsServer;
         }
 
         /// <summary>
@@ -205,15 +205,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DhcpServerScopeDynamicDnsServer);
+            return this.Equals(input as DhcpServerScopeDynamicSonicDnsServer);
         }
 
         /// <summary>
-        /// Returns true if DhcpServerScopeDynamicDnsServer instances are equal
+        /// Returns true if DhcpServerScopeDynamicSonicDnsServer instances are equal
         /// </summary>
-        /// <param name="input">Instance of DhcpServerScopeDynamicDnsServer to be compared</param>
+        /// <param name="input">Instance of DhcpServerScopeDynamicSonicDnsServer to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DhcpServerScopeDynamicDnsServer input)
+        public bool Equals(DhcpServerScopeDynamicSonicDnsServer input)
         {
             if (input == null)
                 return false;
@@ -248,9 +248,9 @@ namespace SonicWallGen7.Model
     }
 
     /// <summary>
-    /// Custom JSON converter for DhcpServerScopeDynamicDnsServer
+    /// Custom JSON converter for DhcpServerScopeDynamicSonicDnsServer
     /// </summary>
-    public class DhcpServerScopeDynamicDnsServerJsonConverter : JsonConverter
+    public class DhcpServerScopeDynamicSonicDnsServerJsonConverter : JsonConverter
     {
         /// <summary>
         /// To write the JSON string
@@ -260,7 +260,7 @@ namespace SonicWallGen7.Model
         /// <param name="serializer">JSON Serializer</param>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            writer.WriteRawValue((string)(typeof(DhcpServerScopeDynamicDnsServer).GetMethod("ToJson").Invoke(value, null)));
+            writer.WriteRawValue((string)(typeof(DhcpServerScopeDynamicSonicDnsServer).GetMethod("ToJson").Invoke(value, null)));
         }
 
         /// <summary>
@@ -275,7 +275,7 @@ namespace SonicWallGen7.Model
         {
             if(reader.TokenType != JsonToken.Null)
             {
-                return DhcpServerScopeDynamicDnsServer.FromJson(JObject.Load(reader).ToString(Formatting.None));
+                return DhcpServerScopeDynamicSonicDnsServer.FromJson(JObject.Load(reader).ToString(Formatting.None));
             }
             return null;
         }

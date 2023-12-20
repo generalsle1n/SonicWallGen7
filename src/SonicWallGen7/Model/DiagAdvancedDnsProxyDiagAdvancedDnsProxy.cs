@@ -27,17 +27,17 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Configure advanced diag DNS proxy settings.
+    /// Configure advanced diag SonicDns proxy settings.
     /// </summary>
-    [DataContract(Name = "diag_advanced_dns_proxy_diag_advanced_dns_proxy")]
-    public partial class DiagAdvancedDnsProxyDiagAdvancedDnsProxy : IEquatable<DiagAdvancedDnsProxyDiagAdvancedDnsProxy>, IValidatableObject
+    [DataContract(Name = "diag_advanced_SonicDns_proxy_diag_advanced_SonicDns_proxy")]
+    public partial class DiagAdvancedSonicDnsProxyDiagAdvancedSonicDnsProxy : IEquatable<DiagAdvancedSonicDnsProxyDiagAdvancedSonicDnsProxy>, IValidatableObject
     {
         /// <summary>
-        /// Configure the DNS over transport protocol.
+        /// Configure the SonicDns over transport protocol.
         /// </summary>
-        /// <value>Configure the DNS over transport protocol.</value>
+        /// <value>Configure the SonicDns over transport protocol.</value>
         [JsonConverter(typeof(StringEnumConverter))]
-        public enum DnsOverTransportEnum
+        public enum SonicDnsOverTransportEnum
         {
             /// <summary>
             /// Enum TcpUdp for value: tcp-udp
@@ -54,27 +54,27 @@ namespace SonicWallGen7.Model
 
 
         /// <summary>
-        /// Configure the DNS over transport protocol.
+        /// Configure the SonicDns over transport protocol.
         /// </summary>
-        /// <value>Configure the DNS over transport protocol.</value>
-        [DataMember(Name = "dns_over_transport", EmitDefaultValue = false)]
-        public DnsOverTransportEnum? DnsOverTransport { get; set; }
+        /// <value>Configure the SonicDns over transport protocol.</value>
+        [DataMember(Name = "SonicDns_over_transport", EmitDefaultValue = false)]
+        public SonicDnsOverTransportEnum? SonicDnsOverTransport { get; set; }
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDnsProxyDiagAdvancedDnsProxy" /> class.
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDnsProxyDiagAdvancedSonicDnsProxy" /> class.
         /// </summary>
         /// <param name="requestSizePercentage">Configure the Percentage of proxy process ability..</param>
-        /// <param name="supportFragmentation">Enable Support fragmentation process on DNS packet..</param>
-        /// <param name="serverFailoverTimes">Resolution failure times that trigger DNS server failover. * Set to null to represent an unconfigured state..</param>
-        /// <param name="cacheLifetime">Lifetime of connection cache for DNS proxy packets. * Set to null to represent an unconfigured state..</param>
-        /// <param name="dnsOverTransport">Configure the DNS over transport protocol..</param>
-        /// <param name="excludeVpnTraffic">Exclude incoming VPN traffic from DNS Proxy processing..</param>
-        public DiagAdvancedDnsProxyDiagAdvancedDnsProxy(decimal requestSizePercentage = default(decimal), bool supportFragmentation = default(bool), decimal? serverFailoverTimes = default(decimal?), decimal? cacheLifetime = default(decimal?), DnsOverTransportEnum? dnsOverTransport = default(DnsOverTransportEnum?), bool excludeVpnTraffic = default(bool))
+        /// <param name="supportFragmentation">Enable Support fragmentation process on SonicDns packet..</param>
+        /// <param name="serverFailoverTimes">Resolution failure times that trigger SonicDns server failover. * Set to null to represent an unconfigured state..</param>
+        /// <param name="cacheLifetime">Lifetime of connection cache for SonicDns proxy packets. * Set to null to represent an unconfigured state..</param>
+        /// <param name="SonicDnsOverTransport">Configure the SonicDns over transport protocol..</param>
+        /// <param name="excludeVpnTraffic">Exclude incoming VPN traffic from SonicDns Proxy processing..</param>
+        public DiagAdvancedSonicDnsProxyDiagAdvancedSonicDnsProxy(decimal requestSizePercentage = default(decimal), bool supportFragmentation = default(bool), decimal? serverFailoverTimes = default(decimal?), decimal? cacheLifetime = default(decimal?), SonicDnsOverTransportEnum? SonicDnsOverTransport = default(SonicDnsOverTransportEnum?), bool excludeVpnTraffic = default(bool))
         {
             this.RequestSizePercentage = requestSizePercentage;
             this.SupportFragmentation = supportFragmentation;
             this.ServerFailoverTimes = serverFailoverTimes;
             this.CacheLifetime = cacheLifetime;
-            this.DnsOverTransport = dnsOverTransport;
+            this.SonicDnsOverTransport = SonicDnsOverTransport;
             this.ExcludeVpnTraffic = excludeVpnTraffic;
         }
 
@@ -86,30 +86,30 @@ namespace SonicWallGen7.Model
         public decimal RequestSizePercentage { get; set; }
 
         /// <summary>
-        /// Enable Support fragmentation process on DNS packet.
+        /// Enable Support fragmentation process on SonicDns packet.
         /// </summary>
-        /// <value>Enable Support fragmentation process on DNS packet.</value>
+        /// <value>Enable Support fragmentation process on SonicDns packet.</value>
         [DataMember(Name = "support_fragmentation", EmitDefaultValue = true)]
         public bool SupportFragmentation { get; set; }
 
         /// <summary>
-        /// Resolution failure times that trigger DNS server failover. * Set to null to represent an unconfigured state.
+        /// Resolution failure times that trigger SonicDns server failover. * Set to null to represent an unconfigured state.
         /// </summary>
-        /// <value>Resolution failure times that trigger DNS server failover. * Set to null to represent an unconfigured state.</value>
+        /// <value>Resolution failure times that trigger SonicDns server failover. * Set to null to represent an unconfigured state.</value>
         [DataMember(Name = "server_failover_times", EmitDefaultValue = true)]
         public decimal? ServerFailoverTimes { get; set; }
 
         /// <summary>
-        /// Lifetime of connection cache for DNS proxy packets. * Set to null to represent an unconfigured state.
+        /// Lifetime of connection cache for SonicDns proxy packets. * Set to null to represent an unconfigured state.
         /// </summary>
-        /// <value>Lifetime of connection cache for DNS proxy packets. * Set to null to represent an unconfigured state.</value>
+        /// <value>Lifetime of connection cache for SonicDns proxy packets. * Set to null to represent an unconfigured state.</value>
         [DataMember(Name = "cache_lifetime", EmitDefaultValue = true)]
         public decimal? CacheLifetime { get; set; }
 
         /// <summary>
-        /// Exclude incoming VPN traffic from DNS Proxy processing.
+        /// Exclude incoming VPN traffic from SonicDns Proxy processing.
         /// </summary>
-        /// <value>Exclude incoming VPN traffic from DNS Proxy processing.</value>
+        /// <value>Exclude incoming VPN traffic from SonicDns Proxy processing.</value>
         [DataMember(Name = "exclude_vpn_traffic", EmitDefaultValue = true)]
         public bool ExcludeVpnTraffic { get; set; }
 
@@ -120,12 +120,12 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DiagAdvancedDnsProxyDiagAdvancedDnsProxy {\n");
+            sb.Append("class DiagAdvancedSonicDnsProxyDiagAdvancedSonicDnsProxy {\n");
             sb.Append("  RequestSizePercentage: ").Append(RequestSizePercentage).Append("\n");
             sb.Append("  SupportFragmentation: ").Append(SupportFragmentation).Append("\n");
             sb.Append("  ServerFailoverTimes: ").Append(ServerFailoverTimes).Append("\n");
             sb.Append("  CacheLifetime: ").Append(CacheLifetime).Append("\n");
-            sb.Append("  DnsOverTransport: ").Append(DnsOverTransport).Append("\n");
+            sb.Append("  SonicDnsOverTransport: ").Append(SonicDnsOverTransport).Append("\n");
             sb.Append("  ExcludeVpnTraffic: ").Append(ExcludeVpnTraffic).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -147,15 +147,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DiagAdvancedDnsProxyDiagAdvancedDnsProxy);
+            return this.Equals(input as DiagAdvancedSonicDnsProxyDiagAdvancedSonicDnsProxy);
         }
 
         /// <summary>
-        /// Returns true if DiagAdvancedDnsProxyDiagAdvancedDnsProxy instances are equal
+        /// Returns true if DiagAdvancedSonicDnsProxyDiagAdvancedSonicDnsProxy instances are equal
         /// </summary>
-        /// <param name="input">Instance of DiagAdvancedDnsProxyDiagAdvancedDnsProxy to be compared</param>
+        /// <param name="input">Instance of DiagAdvancedSonicDnsProxyDiagAdvancedSonicDnsProxy to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DiagAdvancedDnsProxyDiagAdvancedDnsProxy input)
+        public bool Equals(DiagAdvancedSonicDnsProxyDiagAdvancedSonicDnsProxy input)
         {
             if (input == null)
             {
@@ -181,8 +181,8 @@ namespace SonicWallGen7.Model
                     this.CacheLifetime.Equals(input.CacheLifetime))
                 ) && 
                 (
-                    this.DnsOverTransport == input.DnsOverTransport ||
-                    this.DnsOverTransport.Equals(input.DnsOverTransport)
+                    this.SonicDnsOverTransport == input.SonicDnsOverTransport ||
+                    this.SonicDnsOverTransport.Equals(input.SonicDnsOverTransport)
                 ) && 
                 (
                     this.ExcludeVpnTraffic == input.ExcludeVpnTraffic ||
@@ -209,7 +209,7 @@ namespace SonicWallGen7.Model
                 {
                     hashCode = (hashCode * 59) + this.CacheLifetime.GetHashCode();
                 }
-                hashCode = (hashCode * 59) + this.DnsOverTransport.GetHashCode();
+                hashCode = (hashCode * 59) + this.SonicDnsOverTransport.GetHashCode();
                 hashCode = (hashCode * 59) + this.ExcludeVpnTraffic.GetHashCode();
                 return hashCode;
             }

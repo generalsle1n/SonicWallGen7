@@ -41,7 +41,7 @@ namespace SonicWallGen7.Model
         /// <param name="ikeInfo">Enable display of IKE information in tech support report..</param>
         /// <param name="users">users.</param>
         /// <param name="ipStackInfo">Enable display of IP stack info in tech support report..</param>
-        /// <param name="dnsProxyCache">Enable display of DNS proxy cache info in tech support report..</param>
+        /// <param name="SonicDnsProxyCache">Enable display of SonicDns proxy cache info in tech support report..</param>
         /// <param name="debugInfo">Enable display of debug info in tech support report..</param>
         /// <param name="userName">Enable display of user name in tech support report..</param>
         /// <param name="ipv6">ipv6.</param>
@@ -56,7 +56,7 @@ namespace SonicWallGen7.Model
         /// <param name="secureBackup">secureBackup.</param>
         /// <param name="cscReportTimeInterval">Set csc reporting time interval (minutes)..</param>
         /// <param name="sendRawFlowData">Enable include raw flow table data entries when sending diagnostic report..</param>
-        public TsrOptionsTechSupportReportOptions(bool sensitiveKeys = default(bool), bool arpCache = default(bool), bool dhcpBindings = default(bool), bool ikeInfo = default(bool), TsrOptionsTechSupportReportOptionsUsers users = default(TsrOptionsTechSupportReportOptionsUsers), bool ipStackInfo = default(bool), bool dnsProxyCache = default(bool), bool debugInfo = default(bool), bool userName = default(bool), TsrOptionsTechSupportReportOptionsIpv6 ipv6 = default(TsrOptionsTechSupportReportOptionsIpv6), bool geoIpCache = default(bool), bool extraRouting = default(bool), bool atpCache = default(bool), bool vendorOui = default(bool), bool ipReport = default(bool), bool applicationSignature = default(bool), bool abrEntries = default(bool), bool securedCrashAnalysis = default(bool), TsrOptionsTechSupportReportOptionsSecureBackup secureBackup = default(TsrOptionsTechSupportReportOptionsSecureBackup), decimal cscReportTimeInterval = default(decimal), bool sendRawFlowData = default(bool))
+        public TsrOptionsTechSupportReportOptions(bool sensitiveKeys = default(bool), bool arpCache = default(bool), bool dhcpBindings = default(bool), bool ikeInfo = default(bool), TsrOptionsTechSupportReportOptionsUsers users = default(TsrOptionsTechSupportReportOptionsUsers), bool ipStackInfo = default(bool), bool SonicDnsProxyCache = default(bool), bool debugInfo = default(bool), bool userName = default(bool), TsrOptionsTechSupportReportOptionsIpv6 ipv6 = default(TsrOptionsTechSupportReportOptionsIpv6), bool geoIpCache = default(bool), bool extraRouting = default(bool), bool atpCache = default(bool), bool vendorOui = default(bool), bool ipReport = default(bool), bool applicationSignature = default(bool), bool abrEntries = default(bool), bool securedCrashAnalysis = default(bool), TsrOptionsTechSupportReportOptionsSecureBackup secureBackup = default(TsrOptionsTechSupportReportOptionsSecureBackup), decimal cscReportTimeInterval = default(decimal), bool sendRawFlowData = default(bool))
         {
             this.SensitiveKeys = sensitiveKeys;
             this.ArpCache = arpCache;
@@ -64,7 +64,7 @@ namespace SonicWallGen7.Model
             this.IkeInfo = ikeInfo;
             this.Users = users;
             this.IpStackInfo = ipStackInfo;
-            this.DnsProxyCache = dnsProxyCache;
+            this.SonicDnsProxyCache = SonicDnsProxyCache;
             this.DebugInfo = debugInfo;
             this.UserName = userName;
             this.Ipv6 = ipv6;
@@ -123,11 +123,11 @@ namespace SonicWallGen7.Model
         public bool IpStackInfo { get; set; }
 
         /// <summary>
-        /// Enable display of DNS proxy cache info in tech support report.
+        /// Enable display of SonicDns proxy cache info in tech support report.
         /// </summary>
-        /// <value>Enable display of DNS proxy cache info in tech support report.</value>
-        [DataMember(Name = "dns_proxy_cache", EmitDefaultValue = true)]
-        public bool DnsProxyCache { get; set; }
+        /// <value>Enable display of SonicDns proxy cache info in tech support report.</value>
+        [DataMember(Name = "SonicDns_proxy_cache", EmitDefaultValue = true)]
+        public bool SonicDnsProxyCache { get; set; }
 
         /// <summary>
         /// Enable display of debug info in tech support report.
@@ -239,7 +239,7 @@ namespace SonicWallGen7.Model
             sb.Append("  IkeInfo: ").Append(IkeInfo).Append("\n");
             sb.Append("  Users: ").Append(Users).Append("\n");
             sb.Append("  IpStackInfo: ").Append(IpStackInfo).Append("\n");
-            sb.Append("  DnsProxyCache: ").Append(DnsProxyCache).Append("\n");
+            sb.Append("  SonicDnsProxyCache: ").Append(SonicDnsProxyCache).Append("\n");
             sb.Append("  DebugInfo: ").Append(DebugInfo).Append("\n");
             sb.Append("  UserName: ").Append(UserName).Append("\n");
             sb.Append("  Ipv6: ").Append(Ipv6).Append("\n");
@@ -315,8 +315,8 @@ namespace SonicWallGen7.Model
                     this.IpStackInfo.Equals(input.IpStackInfo)
                 ) && 
                 (
-                    this.DnsProxyCache == input.DnsProxyCache ||
-                    this.DnsProxyCache.Equals(input.DnsProxyCache)
+                    this.SonicDnsProxyCache == input.SonicDnsProxyCache ||
+                    this.SonicDnsProxyCache.Equals(input.SonicDnsProxyCache)
                 ) && 
                 (
                     this.DebugInfo == input.DebugInfo ||
@@ -396,7 +396,7 @@ namespace SonicWallGen7.Model
                     hashCode = (hashCode * 59) + this.Users.GetHashCode();
                 }
                 hashCode = (hashCode * 59) + this.IpStackInfo.GetHashCode();
-                hashCode = (hashCode * 59) + this.DnsProxyCache.GetHashCode();
+                hashCode = (hashCode * 59) + this.SonicDnsProxyCache.GetHashCode();
                 hashCode = (hashCode * 59) + this.DebugInfo.GetHashCode();
                 hashCode = (hashCode * 59) + this.UserName.GetHashCode();
                 if (this.Ipv6 != null)

@@ -27,33 +27,33 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// ShowStatusDnsProxyServerListInner
+    /// ShowStatusSonicDnsProxyServerListInner
     /// </summary>
-    [DataContract(Name = "show_status_dns_proxy_server_list_inner")]
-    public partial class ShowStatusDnsProxyServerListInner : IEquatable<ShowStatusDnsProxyServerListInner>, IValidatableObject
+    [DataContract(Name = "show_status_SonicDns_proxy_server_list_inner")]
+    public partial class ShowStatusSonicDnsProxyServerListInner : IEquatable<ShowStatusSonicDnsProxyServerListInner>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ShowStatusDnsProxyServerListInner" /> class.
+        /// Initializes a new instance of the <see cref="ShowStatusSonicDnsProxyServerListInner" /> class.
         /// </summary>
-        /// <param name="dnsServer">dnsServer.</param>
+        /// <param name="SonicDnsServer">SonicDnsServer.</param>
         /// <param name="serverIp">serverIp.</param>
         /// <param name="serverStatus">serverStatus.</param>
-        /// <param name="proxiedDnsPacketsSent">proxiedDnsPacketsSent.</param>
-        /// <param name="successfulDnsProxy">successfulDnsProxy.</param>
-        public ShowStatusDnsProxyServerListInner(string dnsServer = default(string), string serverIp = default(string), string serverStatus = default(string), string proxiedDnsPacketsSent = default(string), string successfulDnsProxy = default(string))
+        /// <param name="proxiedSonicDnsPacketsSent">proxiedSonicDnsPacketsSent.</param>
+        /// <param name="successfulSonicDnsProxy">successfulSonicDnsProxy.</param>
+        public ShowStatusSonicDnsProxyServerListInner(string SonicDnsServer = default(string), string serverIp = default(string), string serverStatus = default(string), string proxiedSonicDnsPacketsSent = default(string), string successfulSonicDnsProxy = default(string))
         {
-            this.DnsServer = dnsServer;
+            this.SonicDnsServer = SonicDnsServer;
             this.ServerIp = serverIp;
             this.ServerStatus = serverStatus;
-            this.ProxiedDnsPacketsSent = proxiedDnsPacketsSent;
-            this.SuccessfulDnsProxy = successfulDnsProxy;
+            this.ProxiedSonicDnsPacketsSent = proxiedSonicDnsPacketsSent;
+            this.SuccessfulSonicDnsProxy = successfulSonicDnsProxy;
         }
 
         /// <summary>
-        /// Gets or Sets DnsServer
+        /// Gets or Sets SonicDnsServer
         /// </summary>
-        [DataMember(Name = "dns_server", EmitDefaultValue = false)]
-        public string DnsServer { get; set; }
+        [DataMember(Name = "SonicDns_server", EmitDefaultValue = false)]
+        public string SonicDnsServer { get; set; }
 
         /// <summary>
         /// Gets or Sets ServerIp
@@ -68,16 +68,16 @@ namespace SonicWallGen7.Model
         public string ServerStatus { get; set; }
 
         /// <summary>
-        /// Gets or Sets ProxiedDnsPacketsSent
+        /// Gets or Sets ProxiedSonicDnsPacketsSent
         /// </summary>
-        [DataMember(Name = "proxied_dns_packets_sent", EmitDefaultValue = false)]
-        public string ProxiedDnsPacketsSent { get; set; }
+        [DataMember(Name = "proxied_SonicDns_packets_sent", EmitDefaultValue = false)]
+        public string ProxiedSonicDnsPacketsSent { get; set; }
 
         /// <summary>
-        /// Gets or Sets SuccessfulDnsProxy
+        /// Gets or Sets SuccessfulSonicDnsProxy
         /// </summary>
-        [DataMember(Name = "successful_dns_proxy", EmitDefaultValue = false)]
-        public string SuccessfulDnsProxy { get; set; }
+        [DataMember(Name = "successful_SonicDns_proxy", EmitDefaultValue = false)]
+        public string SuccessfulSonicDnsProxy { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -86,12 +86,12 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class ShowStatusDnsProxyServerListInner {\n");
-            sb.Append("  DnsServer: ").Append(DnsServer).Append("\n");
+            sb.Append("class ShowStatusSonicDnsProxyServerListInner {\n");
+            sb.Append("  SonicDnsServer: ").Append(SonicDnsServer).Append("\n");
             sb.Append("  ServerIp: ").Append(ServerIp).Append("\n");
             sb.Append("  ServerStatus: ").Append(ServerStatus).Append("\n");
-            sb.Append("  ProxiedDnsPacketsSent: ").Append(ProxiedDnsPacketsSent).Append("\n");
-            sb.Append("  SuccessfulDnsProxy: ").Append(SuccessfulDnsProxy).Append("\n");
+            sb.Append("  ProxiedSonicDnsPacketsSent: ").Append(ProxiedSonicDnsPacketsSent).Append("\n");
+            sb.Append("  SuccessfulSonicDnsProxy: ").Append(SuccessfulSonicDnsProxy).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -112,15 +112,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as ShowStatusDnsProxyServerListInner);
+            return this.Equals(input as ShowStatusSonicDnsProxyServerListInner);
         }
 
         /// <summary>
-        /// Returns true if ShowStatusDnsProxyServerListInner instances are equal
+        /// Returns true if ShowStatusSonicDnsProxyServerListInner instances are equal
         /// </summary>
-        /// <param name="input">Instance of ShowStatusDnsProxyServerListInner to be compared</param>
+        /// <param name="input">Instance of ShowStatusSonicDnsProxyServerListInner to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ShowStatusDnsProxyServerListInner input)
+        public bool Equals(ShowStatusSonicDnsProxyServerListInner input)
         {
             if (input == null)
             {
@@ -128,9 +128,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.DnsServer == input.DnsServer ||
-                    (this.DnsServer != null &&
-                    this.DnsServer.Equals(input.DnsServer))
+                    this.SonicDnsServer == input.SonicDnsServer ||
+                    (this.SonicDnsServer != null &&
+                    this.SonicDnsServer.Equals(input.SonicDnsServer))
                 ) && 
                 (
                     this.ServerIp == input.ServerIp ||
@@ -143,14 +143,14 @@ namespace SonicWallGen7.Model
                     this.ServerStatus.Equals(input.ServerStatus))
                 ) && 
                 (
-                    this.ProxiedDnsPacketsSent == input.ProxiedDnsPacketsSent ||
-                    (this.ProxiedDnsPacketsSent != null &&
-                    this.ProxiedDnsPacketsSent.Equals(input.ProxiedDnsPacketsSent))
+                    this.ProxiedSonicDnsPacketsSent == input.ProxiedSonicDnsPacketsSent ||
+                    (this.ProxiedSonicDnsPacketsSent != null &&
+                    this.ProxiedSonicDnsPacketsSent.Equals(input.ProxiedSonicDnsPacketsSent))
                 ) && 
                 (
-                    this.SuccessfulDnsProxy == input.SuccessfulDnsProxy ||
-                    (this.SuccessfulDnsProxy != null &&
-                    this.SuccessfulDnsProxy.Equals(input.SuccessfulDnsProxy))
+                    this.SuccessfulSonicDnsProxy == input.SuccessfulSonicDnsProxy ||
+                    (this.SuccessfulSonicDnsProxy != null &&
+                    this.SuccessfulSonicDnsProxy.Equals(input.SuccessfulSonicDnsProxy))
                 );
         }
 
@@ -163,9 +163,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.DnsServer != null)
+                if (this.SonicDnsServer != null)
                 {
-                    hashCode = (hashCode * 59) + this.DnsServer.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDnsServer.GetHashCode();
                 }
                 if (this.ServerIp != null)
                 {
@@ -175,13 +175,13 @@ namespace SonicWallGen7.Model
                 {
                     hashCode = (hashCode * 59) + this.ServerStatus.GetHashCode();
                 }
-                if (this.ProxiedDnsPacketsSent != null)
+                if (this.ProxiedSonicDnsPacketsSent != null)
                 {
-                    hashCode = (hashCode * 59) + this.ProxiedDnsPacketsSent.GetHashCode();
+                    hashCode = (hashCode * 59) + this.ProxiedSonicDnsPacketsSent.GetHashCode();
                 }
-                if (this.SuccessfulDnsProxy != null)
+                if (this.SuccessfulSonicDnsProxy != null)
                 {
-                    hashCode = (hashCode * 59) + this.SuccessfulDnsProxy.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SuccessfulSonicDnsProxy.GetHashCode();
                 }
                 return hashCode;
             }

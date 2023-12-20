@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// VpnDnsServerStatic
+    /// VpnSonicDnsServerStatic
     /// </summary>
-    [DataContract(Name = "vpn_dns_server_static")]
-    public partial class VpnDnsServerStatic : IEquatable<VpnDnsServerStatic>, IValidatableObject
+    [DataContract(Name = "vpn_SonicDns_server_static")]
+    public partial class VpnSonicDnsServerStatic : IEquatable<VpnSonicDnsServerStatic>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="VpnDnsServerStatic" /> class.
+        /// Initializes a new instance of the <see cref="VpnSonicDnsServerStatic" /> class.
         /// </summary>
         /// <param name="varStatic">varStatic.</param>
-        public VpnDnsServerStatic(VpnDnsServerStaticStatic varStatic = default(VpnDnsServerStaticStatic))
+        public VpnSonicDnsServerStatic(VpnSonicDnsServerStaticStatic varStatic = default(VpnSonicDnsServerStaticStatic))
         {
             this.VarStatic = varStatic;
         }
@@ -45,7 +45,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets VarStatic
         /// </summary>
         [DataMember(Name = "static", EmitDefaultValue = false)]
-        public VpnDnsServerStaticStatic VarStatic { get; set; }
+        public VpnSonicDnsServerStaticStatic VarStatic { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class VpnDnsServerStatic {\n");
+            sb.Append("class VpnSonicDnsServerStatic {\n");
             sb.Append("  VarStatic: ").Append(VarStatic).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as VpnDnsServerStatic);
+            return this.Equals(input as VpnSonicDnsServerStatic);
         }
 
         /// <summary>
-        /// Returns true if VpnDnsServerStatic instances are equal
+        /// Returns true if VpnSonicDnsServerStatic instances are equal
         /// </summary>
-        /// <param name="input">Instance of VpnDnsServerStatic to be compared</param>
+        /// <param name="input">Instance of VpnSonicDnsServerStatic to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(VpnDnsServerStatic input)
+        public bool Equals(VpnSonicDnsServerStatic input)
         {
             if (input == null)
             {

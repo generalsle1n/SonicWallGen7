@@ -27,41 +27,41 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// dns wan detail schema.
+    /// SonicDns wan detail schema.
     /// </summary>
-    [DataContract(Name = "show_status_dns_wan_detail")]
-    public partial class ShowStatusDnsWanDetail : IEquatable<ShowStatusDnsWanDetail>, IValidatableObject
+    [DataContract(Name = "show_status_SonicDns_wan_detail")]
+    public partial class ShowStatusSonicDnsWanDetail : IEquatable<ShowStatusSonicDnsWanDetail>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ShowStatusDnsWanDetail" /> class.
+        /// Initializes a new instance of the <see cref="ShowStatusSonicDnsWanDetail" /> class.
         /// </summary>
-        /// <param name="dnsServer1">dnsServer1.</param>
-        /// <param name="dnsServer2">dnsServer2.</param>
-        /// <param name="dnsServer3">dnsServer3.</param>
-        public ShowStatusDnsWanDetail(string dnsServer1 = default(string), string dnsServer2 = default(string), string dnsServer3 = default(string))
+        /// <param name="SonicDnsServer1">SonicDnsServer1.</param>
+        /// <param name="SonicDnsServer2">SonicDnsServer2.</param>
+        /// <param name="SonicDnsServer3">SonicDnsServer3.</param>
+        public ShowStatusSonicDnsWanDetail(string SonicDnsServer1 = default(string), string SonicDnsServer2 = default(string), string SonicDnsServer3 = default(string))
         {
-            this.DnsServer1 = dnsServer1;
-            this.DnsServer2 = dnsServer2;
-            this.DnsServer3 = dnsServer3;
+            this.SonicDnsServer1 = SonicDnsServer1;
+            this.SonicDnsServer2 = SonicDnsServer2;
+            this.SonicDnsServer3 = SonicDnsServer3;
         }
 
         /// <summary>
-        /// Gets or Sets DnsServer1
+        /// Gets or Sets SonicDnsServer1
         /// </summary>
-        [DataMember(Name = "dns_server_1", EmitDefaultValue = false)]
-        public string DnsServer1 { get; set; }
+        [DataMember(Name = "SonicDns_server_1", EmitDefaultValue = false)]
+        public string SonicDnsServer1 { get; set; }
 
         /// <summary>
-        /// Gets or Sets DnsServer2
+        /// Gets or Sets SonicDnsServer2
         /// </summary>
-        [DataMember(Name = "dns_server_2", EmitDefaultValue = false)]
-        public string DnsServer2 { get; set; }
+        [DataMember(Name = "SonicDns_server_2", EmitDefaultValue = false)]
+        public string SonicDnsServer2 { get; set; }
 
         /// <summary>
-        /// Gets or Sets DnsServer3
+        /// Gets or Sets SonicDnsServer3
         /// </summary>
-        [DataMember(Name = "dns_server_3", EmitDefaultValue = false)]
-        public string DnsServer3 { get; set; }
+        [DataMember(Name = "SonicDns_server_3", EmitDefaultValue = false)]
+        public string SonicDnsServer3 { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -70,10 +70,10 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class ShowStatusDnsWanDetail {\n");
-            sb.Append("  DnsServer1: ").Append(DnsServer1).Append("\n");
-            sb.Append("  DnsServer2: ").Append(DnsServer2).Append("\n");
-            sb.Append("  DnsServer3: ").Append(DnsServer3).Append("\n");
+            sb.Append("class ShowStatusSonicDnsWanDetail {\n");
+            sb.Append("  SonicDnsServer1: ").Append(SonicDnsServer1).Append("\n");
+            sb.Append("  SonicDnsServer2: ").Append(SonicDnsServer2).Append("\n");
+            sb.Append("  SonicDnsServer3: ").Append(SonicDnsServer3).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -94,15 +94,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as ShowStatusDnsWanDetail);
+            return this.Equals(input as ShowStatusSonicDnsWanDetail);
         }
 
         /// <summary>
-        /// Returns true if ShowStatusDnsWanDetail instances are equal
+        /// Returns true if ShowStatusSonicDnsWanDetail instances are equal
         /// </summary>
-        /// <param name="input">Instance of ShowStatusDnsWanDetail to be compared</param>
+        /// <param name="input">Instance of ShowStatusSonicDnsWanDetail to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ShowStatusDnsWanDetail input)
+        public bool Equals(ShowStatusSonicDnsWanDetail input)
         {
             if (input == null)
             {
@@ -110,19 +110,19 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.DnsServer1 == input.DnsServer1 ||
-                    (this.DnsServer1 != null &&
-                    this.DnsServer1.Equals(input.DnsServer1))
+                    this.SonicDnsServer1 == input.SonicDnsServer1 ||
+                    (this.SonicDnsServer1 != null &&
+                    this.SonicDnsServer1.Equals(input.SonicDnsServer1))
                 ) && 
                 (
-                    this.DnsServer2 == input.DnsServer2 ||
-                    (this.DnsServer2 != null &&
-                    this.DnsServer2.Equals(input.DnsServer2))
+                    this.SonicDnsServer2 == input.SonicDnsServer2 ||
+                    (this.SonicDnsServer2 != null &&
+                    this.SonicDnsServer2.Equals(input.SonicDnsServer2))
                 ) && 
                 (
-                    this.DnsServer3 == input.DnsServer3 ||
-                    (this.DnsServer3 != null &&
-                    this.DnsServer3.Equals(input.DnsServer3))
+                    this.SonicDnsServer3 == input.SonicDnsServer3 ||
+                    (this.SonicDnsServer3 != null &&
+                    this.SonicDnsServer3.Equals(input.SonicDnsServer3))
                 );
         }
 
@@ -135,17 +135,17 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.DnsServer1 != null)
+                if (this.SonicDnsServer1 != null)
                 {
-                    hashCode = (hashCode * 59) + this.DnsServer1.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDnsServer1.GetHashCode();
                 }
-                if (this.DnsServer2 != null)
+                if (this.SonicDnsServer2 != null)
                 {
-                    hashCode = (hashCode * 59) + this.DnsServer2.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDnsServer2.GetHashCode();
                 }
-                if (this.DnsServer3 != null)
+                if (this.SonicDnsServer3 != null)
                 {
-                    hashCode = (hashCode * 59) + this.DnsServer3.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDnsServer3.GetHashCode();
                 }
                 return hashCode;
             }

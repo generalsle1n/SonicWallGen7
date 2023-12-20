@@ -63,14 +63,14 @@ namespace SonicWallGen7.Model
         /// Initializes a new instance of the <see cref="DiagAdvancedAnalyzerNextGenDiagAdvancedAnalyzerNextGen" /> class.
         /// </summary>
         /// <param name="encryption">Enable encryption to Analyzer Next Gen..</param>
-        /// <param name="fqdnServer">Configure the Analyzer Next Gen Server FQDN..</param>
+        /// <param name="fqSonicDnserver">Configure the Analyzer Next Gen Server FQDN..</param>
         /// <param name="serverIpUseMode">Configure the Analyzer Next Gen Server IP Use Mode..</param>
         /// <param name="serverIp">Configure the Analyzer Next Gen Server IP..</param>
         /// <param name="port">Set Analyzer Next Gen Port..</param>
-        public DiagAdvancedAnalyzerNextGenDiagAdvancedAnalyzerNextGen(bool encryption = default(bool), string fqdnServer = default(string), ServerIpUseModeEnum? serverIpUseMode = default(ServerIpUseModeEnum?), string serverIp = default(string), decimal port = default(decimal))
+        public DiagAdvancedAnalyzerNextGenDiagAdvancedAnalyzerNextGen(bool encryption = default(bool), string fqSonicDnserver = default(string), ServerIpUseModeEnum? serverIpUseMode = default(ServerIpUseModeEnum?), string serverIp = default(string), decimal port = default(decimal))
         {
             this.Encryption = encryption;
-            this.FqdnServer = fqdnServer;
+            this.FqSonicDnserver = fqSonicDnserver;
             this.ServerIpUseMode = serverIpUseMode;
             this.ServerIp = serverIp;
             this.Port = port;
@@ -88,7 +88,7 @@ namespace SonicWallGen7.Model
         /// </summary>
         /// <value>Configure the Analyzer Next Gen Server FQDN.</value>
         [DataMember(Name = "fqdn_server", EmitDefaultValue = false)]
-        public string FqdnServer { get; set; }
+        public string FqSonicDnserver { get; set; }
 
         /// <summary>
         /// Configure the Analyzer Next Gen Server IP.
@@ -113,7 +113,7 @@ namespace SonicWallGen7.Model
             StringBuilder sb = new StringBuilder();
             sb.Append("class DiagAdvancedAnalyzerNextGenDiagAdvancedAnalyzerNextGen {\n");
             sb.Append("  Encryption: ").Append(Encryption).Append("\n");
-            sb.Append("  FqdnServer: ").Append(FqdnServer).Append("\n");
+            sb.Append("  FqSonicDnserver: ").Append(FqSonicDnserver).Append("\n");
             sb.Append("  ServerIpUseMode: ").Append(ServerIpUseMode).Append("\n");
             sb.Append("  ServerIp: ").Append(ServerIp).Append("\n");
             sb.Append("  Port: ").Append(Port).Append("\n");
@@ -157,9 +157,9 @@ namespace SonicWallGen7.Model
                     this.Encryption.Equals(input.Encryption)
                 ) && 
                 (
-                    this.FqdnServer == input.FqdnServer ||
-                    (this.FqdnServer != null &&
-                    this.FqdnServer.Equals(input.FqdnServer))
+                    this.FqSonicDnserver == input.FqSonicDnserver ||
+                    (this.FqSonicDnserver != null &&
+                    this.FqSonicDnserver.Equals(input.FqSonicDnserver))
                 ) && 
                 (
                     this.ServerIpUseMode == input.ServerIpUseMode ||
@@ -186,9 +186,9 @@ namespace SonicWallGen7.Model
             {
                 int hashCode = 41;
                 hashCode = (hashCode * 59) + this.Encryption.GetHashCode();
-                if (this.FqdnServer != null)
+                if (this.FqSonicDnserver != null)
                 {
-                    hashCode = (hashCode * 59) + this.FqdnServer.GetHashCode();
+                    hashCode = (hashCode * 59) + this.FqSonicDnserver.GetHashCode();
                 }
                 hashCode = (hashCode * 59) + this.ServerIpUseMode.GetHashCode();
                 if (this.ServerIp != null)

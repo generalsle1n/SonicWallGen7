@@ -24,117 +24,117 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsApiSync : IApiAccessor
+    public interface ISonicDnsApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS configuration.
+        /// Retrieve SonicDns configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>Dns</returns>
-        Dns DnsBaseGet(int operationIndex = 0);
+        /// <returns>SonicDns</returns>
+        SonicDns SonicDnsBaseGet(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS configuration.
+        /// Retrieve SonicDns configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of Dns</returns>
-        ApiResponse<Dns> DnsBaseGetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of SonicDns</returns>
+        ApiResponse<SonicDns> SonicDnsBaseGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update DNS configuration.
+        /// Update SonicDns configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dns"> (optional)</param>
+        /// <param name="SonicDns"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsBasePut(Dns? dns = default(Dns?), int operationIndex = 0);
+        ApiStatus SonicDnsBasePut(SonicDns? SonicDns = default(SonicDns?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update DNS configuration.
+        /// Update SonicDns configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dns"> (optional)</param>
+        /// <param name="SonicDns"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsBasePutWithHttpInfo(Dns? dns = default(Dns?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsBasePutWithHttpInfo(SonicDns? SonicDns = default(SonicDns?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsApiAsync : IApiAccessor
+    public interface ISonicDnsApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS configuration.
+        /// Retrieve SonicDns configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Dns</returns>
-        System.Threading.Tasks.Task<Dns> DnsBaseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of SonicDns</returns>
+        System.Threading.Tasks.Task<SonicDns> SonicDnsBaseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS configuration.
+        /// Retrieve SonicDns configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Dns)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dns>> DnsBaseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (SonicDns)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SonicDns>> SonicDnsBaseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update DNS configuration.
+        /// Update SonicDns configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dns"> (optional)</param>
+        /// <param name="SonicDns"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsBasePutAsync(Dns? dns = default(Dns?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsBasePutAsync(SonicDns? SonicDns = default(SonicDns?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update DNS configuration.
+        /// Update SonicDns configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dns"> (optional)</param>
+        /// <param name="SonicDns"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsBasePutWithHttpInfoAsync(Dns? dns = default(Dns?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsBasePutWithHttpInfoAsync(SonicDns? SonicDns = default(SonicDns?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsApi : IDnsApiSync, IDnsApiAsync
+    public interface ISonicDnsApi : ISonicDnsApiSync, ISonicDnsApiAsync
     {
 
     }
@@ -142,23 +142,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DnsApi : IDnsApi
+    public partial class SonicDnsApi : ISonicDnsApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsApi() : this((string)null)
+        public SonicDnsApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsApi(string basePath)
+        public SonicDnsApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -170,12 +170,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DnsApi(SonicWallGen7.Client.Configuration configuration)
+        public SonicDnsApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -189,13 +189,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DnsApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicDnsApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -249,24 +249,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS configuration.
+        ///  Retrieve SonicDns configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>Dns</returns>
-        public Dns DnsBaseGet(int operationIndex = 0)
+        /// <returns>SonicDns</returns>
+        public SonicDns SonicDnsBaseGet(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<Dns> localVarResponse = DnsBaseGetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<SonicDns> localVarResponse = SonicDnsBaseGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS configuration.
+        ///  Retrieve SonicDns configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of Dns</returns>
-        public SonicWallGen7.Client.ApiResponse<Dns> DnsBaseGetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of SonicDns</returns>
+        public SonicWallGen7.Client.ApiResponse<SonicDns> SonicDnsBaseGetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -291,7 +291,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsApi.DnsBaseGet";
+            localVarRequestOptions.Operation = "SonicDnsApi.SonicDnsBaseGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -302,10 +302,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Dns>("/dns/base", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<SonicDns>("/SonicDns/base", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsBaseGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsBaseGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -316,26 +316,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS configuration.
+        ///  Retrieve SonicDns configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Dns</returns>
-        public async System.Threading.Tasks.Task<Dns> DnsBaseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of SonicDns</returns>
+        public async System.Threading.Tasks.Task<SonicDns> SonicDnsBaseGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<Dns> localVarResponse = await DnsBaseGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<SonicDns> localVarResponse = await SonicDnsBaseGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS configuration.
+        ///  Retrieve SonicDns configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Dns)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<Dns>> DnsBaseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (SonicDns)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<SonicDns>> SonicDnsBaseGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -361,7 +361,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsApi.DnsBaseGet";
+            localVarRequestOptions.Operation = "SonicDnsApi.SonicDnsBaseGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -372,11 +372,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Dns>("/dns/base", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<SonicDns>("/SonicDns/base", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsBaseGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsBaseGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -387,26 +387,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Update DNS configuration.
+        ///  Update SonicDns configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dns"> (optional)</param>
+        /// <param name="SonicDns"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsBasePut(Dns? dns = default(Dns?), int operationIndex = 0)
+        public ApiStatus SonicDnsBasePut(SonicDns? SonicDns = default(SonicDns?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsBasePutWithHttpInfo(dns);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsBasePutWithHttpInfo(SonicDns);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Update DNS configuration.
+        ///  Update SonicDns configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dns"> (optional)</param>
+        /// <param name="SonicDns"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsBasePutWithHttpInfo(Dns? dns = default(Dns?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsBasePutWithHttpInfo(SonicDns? SonicDns = default(SonicDns?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -431,9 +431,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dns;
+            localVarRequestOptions.Data = SonicDns;
 
-            localVarRequestOptions.Operation = "DnsApi.DnsBasePut";
+            localVarRequestOptions.Operation = "SonicDnsApi.SonicDnsBasePut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -444,10 +444,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<ApiStatus>("/dns/base", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<ApiStatus>("/SonicDns/base", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsBasePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsBasePut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -458,28 +458,28 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Update DNS configuration.
+        ///  Update SonicDns configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dns"> (optional)</param>
+        /// <param name="SonicDns"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsBasePutAsync(Dns? dns = default(Dns?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsBasePutAsync(SonicDns? SonicDns = default(SonicDns?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsBasePutWithHttpInfoAsync(dns, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsBasePutWithHttpInfoAsync(SonicDns, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Update DNS configuration.
+        ///  Update SonicDns configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dns"> (optional)</param>
+        /// <param name="SonicDns"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsBasePutWithHttpInfoAsync(Dns? dns = default(Dns?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsBasePutWithHttpInfoAsync(SonicDns? SonicDns = default(SonicDns?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -505,9 +505,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dns;
+            localVarRequestOptions.Data = SonicDns;
 
-            localVarRequestOptions.Operation = "DnsApi.DnsBasePut";
+            localVarRequestOptions.Operation = "SonicDnsApi.SonicDnsBasePut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -518,11 +518,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/dns/base", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/SonicDns/base", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsBasePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsBasePut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

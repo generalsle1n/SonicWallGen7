@@ -27,15 +27,15 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Configure and enter to DNS proxy mode.
+    /// Configure and enter to SonicDns proxy mode.
     /// </summary>
-    [DataContract(Name = "dns_proxy_dns_proxy")]
-    public partial class DnsProxyDnsProxy : IEquatable<DnsProxyDnsProxy>, IValidatableObject
+    [DataContract(Name = "SonicDns_proxy_SonicDns_proxy")]
+    public partial class SonicDnsProxySonicDnsProxy : IEquatable<SonicDnsProxySonicDnsProxy>, IValidatableObject
     {
         /// <summary>
-        /// Set the IP version of sending and receiving DNS proxy packets.
+        /// Set the IP version of sending and receiving SonicDns proxy packets.
         /// </summary>
-        /// <value>Set the IP version of sending and receiving DNS proxy packets.</value>
+        /// <value>Set the IP version of sending and receiving SonicDns proxy packets.</value>
         [JsonConverter(typeof(StringEnumConverter))]
         public enum ModeEnum
         {
@@ -54,46 +54,46 @@ namespace SonicWallGen7.Model
 
 
         /// <summary>
-        /// Set the IP version of sending and receiving DNS proxy packets.
+        /// Set the IP version of sending and receiving SonicDns proxy packets.
         /// </summary>
-        /// <value>Set the IP version of sending and receiving DNS proxy packets.</value>
+        /// <value>Set the IP version of sending and receiving SonicDns proxy packets.</value>
         [DataMember(Name = "mode", EmitDefaultValue = false)]
         public ModeEnum? Mode { get; set; }
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyDnsProxy" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxySonicDnsProxy" /> class.
         /// </summary>
-        /// <param name="enable">Enable DNS proxy.</param>
-        /// <param name="mode">Set the IP version of sending and receiving DNS proxy packets..</param>
-        /// <param name="enforceAllDnsRequests">Enable force DNS proxy for all DNS requests..</param>
-        /// <param name="dnsCache">Enable DNS cache.</param>
-        public DnsProxyDnsProxy(bool enable = default(bool), ModeEnum? mode = default(ModeEnum?), bool enforceAllDnsRequests = default(bool), bool dnsCache = default(bool))
+        /// <param name="enable">Enable SonicDns proxy.</param>
+        /// <param name="mode">Set the IP version of sending and receiving SonicDns proxy packets..</param>
+        /// <param name="enforceAllSonicDnsRequests">Enable force SonicDns proxy for all SonicDns requests..</param>
+        /// <param name="SonicDnsCache">Enable SonicDns cache.</param>
+        public SonicDnsProxySonicDnsProxy(bool enable = default(bool), ModeEnum? mode = default(ModeEnum?), bool enforceAllSonicDnsRequests = default(bool), bool SonicDnsCache = default(bool))
         {
             this.Enable = enable;
             this.Mode = mode;
-            this.EnforceAllDnsRequests = enforceAllDnsRequests;
-            this.DnsCache = dnsCache;
+            this.EnforceAllSonicDnsRequests = enforceAllSonicDnsRequests;
+            this.SonicDnsCache = SonicDnsCache;
         }
 
         /// <summary>
-        /// Enable DNS proxy
+        /// Enable SonicDns proxy
         /// </summary>
-        /// <value>Enable DNS proxy</value>
+        /// <value>Enable SonicDns proxy</value>
         [DataMember(Name = "enable", EmitDefaultValue = true)]
         public bool Enable { get; set; }
 
         /// <summary>
-        /// Enable force DNS proxy for all DNS requests.
+        /// Enable force SonicDns proxy for all SonicDns requests.
         /// </summary>
-        /// <value>Enable force DNS proxy for all DNS requests.</value>
-        [DataMember(Name = "enforce_all_dns_requests", EmitDefaultValue = true)]
-        public bool EnforceAllDnsRequests { get; set; }
+        /// <value>Enable force SonicDns proxy for all SonicDns requests.</value>
+        [DataMember(Name = "enforce_all_SonicDns_requests", EmitDefaultValue = true)]
+        public bool EnforceAllSonicDnsRequests { get; set; }
 
         /// <summary>
-        /// Enable DNS cache
+        /// Enable SonicDns cache
         /// </summary>
-        /// <value>Enable DNS cache</value>
-        [DataMember(Name = "dns_cache", EmitDefaultValue = true)]
-        public bool DnsCache { get; set; }
+        /// <value>Enable SonicDns cache</value>
+        [DataMember(Name = "SonicDns_cache", EmitDefaultValue = true)]
+        public bool SonicDnsCache { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -102,11 +102,11 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsProxyDnsProxy {\n");
+            sb.Append("class SonicDnsProxySonicDnsProxy {\n");
             sb.Append("  Enable: ").Append(Enable).Append("\n");
             sb.Append("  Mode: ").Append(Mode).Append("\n");
-            sb.Append("  EnforceAllDnsRequests: ").Append(EnforceAllDnsRequests).Append("\n");
-            sb.Append("  DnsCache: ").Append(DnsCache).Append("\n");
+            sb.Append("  EnforceAllSonicDnsRequests: ").Append(EnforceAllSonicDnsRequests).Append("\n");
+            sb.Append("  SonicDnsCache: ").Append(SonicDnsCache).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -127,15 +127,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsProxyDnsProxy);
+            return this.Equals(input as SonicDnsProxySonicDnsProxy);
         }
 
         /// <summary>
-        /// Returns true if DnsProxyDnsProxy instances are equal
+        /// Returns true if SonicDnsProxySonicDnsProxy instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsProxyDnsProxy to be compared</param>
+        /// <param name="input">Instance of SonicDnsProxySonicDnsProxy to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsProxyDnsProxy input)
+        public bool Equals(SonicDnsProxySonicDnsProxy input)
         {
             if (input == null)
             {
@@ -151,12 +151,12 @@ namespace SonicWallGen7.Model
                     this.Mode.Equals(input.Mode)
                 ) && 
                 (
-                    this.EnforceAllDnsRequests == input.EnforceAllDnsRequests ||
-                    this.EnforceAllDnsRequests.Equals(input.EnforceAllDnsRequests)
+                    this.EnforceAllSonicDnsRequests == input.EnforceAllSonicDnsRequests ||
+                    this.EnforceAllSonicDnsRequests.Equals(input.EnforceAllSonicDnsRequests)
                 ) && 
                 (
-                    this.DnsCache == input.DnsCache ||
-                    this.DnsCache.Equals(input.DnsCache)
+                    this.SonicDnsCache == input.SonicDnsCache ||
+                    this.SonicDnsCache.Equals(input.SonicDnsCache)
                 );
         }
 
@@ -171,8 +171,8 @@ namespace SonicWallGen7.Model
                 int hashCode = 41;
                 hashCode = (hashCode * 59) + this.Enable.GetHashCode();
                 hashCode = (hashCode * 59) + this.Mode.GetHashCode();
-                hashCode = (hashCode * 59) + this.EnforceAllDnsRequests.GetHashCode();
-                hashCode = (hashCode * 59) + this.DnsCache.GetHashCode();
+                hashCode = (hashCode * 59) + this.EnforceAllSonicDnsRequests.GetHashCode();
+                hashCode = (hashCode * 59) + this.SonicDnsCache.GetHashCode();
                 return hashCode;
             }
         }

@@ -29,14 +29,14 @@ namespace SonicWallGen7.Model
     /// <summary>
     /// Diagnostic functions.
     /// </summary>
-    [DataContract(Name = "diag_advanced_dns_proxy_diag")]
-    public partial class DiagAdvancedDnsProxyDiag : IEquatable<DiagAdvancedDnsProxyDiag>, IValidatableObject
+    [DataContract(Name = "diag_advanced_SonicDns_proxy_diag")]
+    public partial class DiagAdvancedSonicDnsProxyDiag : IEquatable<DiagAdvancedSonicDnsProxyDiag>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDnsProxyDiag" /> class.
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDnsProxyDiag" /> class.
         /// </summary>
         /// <param name="advanced">advanced.</param>
-        public DiagAdvancedDnsProxyDiag(DiagAdvancedDnsProxyDiagAdvanced advanced = default(DiagAdvancedDnsProxyDiagAdvanced))
+        public DiagAdvancedSonicDnsProxyDiag(DiagAdvancedSonicDnsProxyDiagAdvanced advanced = default(DiagAdvancedSonicDnsProxyDiagAdvanced))
         {
             this.Advanced = advanced;
         }
@@ -45,7 +45,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Advanced
         /// </summary>
         [DataMember(Name = "advanced", EmitDefaultValue = false)]
-        public DiagAdvancedDnsProxyDiagAdvanced Advanced { get; set; }
+        public DiagAdvancedSonicDnsProxyDiagAdvanced Advanced { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DiagAdvancedDnsProxyDiag {\n");
+            sb.Append("class DiagAdvancedSonicDnsProxyDiag {\n");
             sb.Append("  Advanced: ").Append(Advanced).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DiagAdvancedDnsProxyDiag);
+            return this.Equals(input as DiagAdvancedSonicDnsProxyDiag);
         }
 
         /// <summary>
-        /// Returns true if DiagAdvancedDnsProxyDiag instances are equal
+        /// Returns true if DiagAdvancedSonicDnsProxyDiag instances are equal
         /// </summary>
-        /// <param name="input">Instance of DiagAdvancedDnsProxyDiag to be compared</param>
+        /// <param name="input">Instance of DiagAdvancedSonicDnsProxyDiag to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DiagAdvancedDnsProxyDiag input)
+        public bool Equals(DiagAdvancedSonicDnsProxyDiag input)
         {
             if (input == null)
             {

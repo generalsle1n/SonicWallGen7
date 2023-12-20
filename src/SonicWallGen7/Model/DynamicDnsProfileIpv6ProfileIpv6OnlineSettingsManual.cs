@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual
+    /// DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual
     /// </summary>
-    [DataContract(Name = "dynamic_dns_profile_ipv6_profile_ipv6_online_settings_manual")]
-    public partial class DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual : IEquatable<DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual>, IValidatableObject
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv6_profile_ipv6_online_settings_manual")]
+    public partial class DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual : IEquatable<DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual" /> class.
         /// </summary>
         /// <param name="manual">Specify the IP address manually..</param>
-        public DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual(string manual = default(string))
+        public DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual(string manual = default(string))
         {
             this.Manual = manual;
         }
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual {\n");
             sb.Append("  Manual: ").Append(Manual).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual);
+            return this.Equals(input as DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsManual input)
+        public bool Equals(DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsManual input)
         {
             if (input == null)
             {

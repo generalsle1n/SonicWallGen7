@@ -27,17 +27,17 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// ShowStatusDnsSecuritySinkholeStatisticalListInner
+    /// ShowStatusSonicDnsSecuritySinkholeStatisticalListInner
     /// </summary>
-    [DataContract(Name = "show_status_dns_security_sinkhole_statistical_list_inner")]
-    public partial class ShowStatusDnsSecuritySinkholeStatisticalListInner : IEquatable<ShowStatusDnsSecuritySinkholeStatisticalListInner>, IValidatableObject
+    [DataContract(Name = "show_status_SonicDns_security_sinkhole_statistical_list_inner")]
+    public partial class ShowStatusSonicDnsSecuritySinkholeStatisticalListInner : IEquatable<ShowStatusSonicDnsSecuritySinkholeStatisticalListInner>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ShowStatusDnsSecuritySinkholeStatisticalListInner" /> class.
+        /// Initializes a new instance of the <see cref="ShowStatusSonicDnsSecuritySinkholeStatisticalListInner" /> class.
         /// </summary>
         /// <param name="maliciousDomainNameTotalNumber">maliciousDomainNameTotalNumber.</param>
         /// <param name="detectionNumber">detectionNumber.</param>
-        public ShowStatusDnsSecuritySinkholeStatisticalListInner(string maliciousDomainNameTotalNumber = default(string), string detectionNumber = default(string))
+        public ShowStatusSonicDnsSecuritySinkholeStatisticalListInner(string maliciousDomainNameTotalNumber = default(string), string detectionNumber = default(string))
         {
             this.MaliciousDomainNameTotalNumber = maliciousDomainNameTotalNumber;
             this.DetectionNumber = detectionNumber;
@@ -62,7 +62,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class ShowStatusDnsSecuritySinkholeStatisticalListInner {\n");
+            sb.Append("class ShowStatusSonicDnsSecuritySinkholeStatisticalListInner {\n");
             sb.Append("  MaliciousDomainNameTotalNumber: ").Append(MaliciousDomainNameTotalNumber).Append("\n");
             sb.Append("  DetectionNumber: ").Append(DetectionNumber).Append("\n");
             sb.Append("}\n");
@@ -85,15 +85,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as ShowStatusDnsSecuritySinkholeStatisticalListInner);
+            return this.Equals(input as ShowStatusSonicDnsSecuritySinkholeStatisticalListInner);
         }
 
         /// <summary>
-        /// Returns true if ShowStatusDnsSecuritySinkholeStatisticalListInner instances are equal
+        /// Returns true if ShowStatusSonicDnsSecuritySinkholeStatisticalListInner instances are equal
         /// </summary>
-        /// <param name="input">Instance of ShowStatusDnsSecuritySinkholeStatisticalListInner to be compared</param>
+        /// <param name="input">Instance of ShowStatusSonicDnsSecuritySinkholeStatisticalListInner to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ShowStatusDnsSecuritySinkholeStatisticalListInner input)
+        public bool Equals(ShowStatusSonicDnsSecuritySinkholeStatisticalListInner input)
         {
             if (input == null)
             {

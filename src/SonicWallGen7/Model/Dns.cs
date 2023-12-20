@@ -27,25 +27,25 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS configuration.
+    /// SonicDns configuration.
     /// </summary>
-    [DataContract(Name = "dns")]
-    public partial class Dns : IEquatable<Dns>, IValidatableObject
+    [DataContract(Name = "SonicDns")]
+    public partial class SonicDns : IEquatable<SonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Dns" /> class.
+        /// Initializes a new instance of the <see cref="SonicDns" /> class.
         /// </summary>
-        /// <param name="varDns">varDns.</param>
-        public Dns(DnsDns varDns = default(DnsDns))
+        /// <param name="varSonicDns">varSonicDns.</param>
+        public SonicDns(SonicDnsSonicDns varSonicDns = default(SonicDnsSonicDns))
         {
-            this.VarDns = varDns;
+            this.VarSonicDns = varSonicDns;
         }
 
         /// <summary>
-        /// Gets or Sets VarDns
+        /// Gets or Sets VarSonicDns
         /// </summary>
-        [DataMember(Name = "dns", EmitDefaultValue = false)]
-        public DnsDns VarDns { get; set; }
+        [DataMember(Name = "SonicDns", EmitDefaultValue = false)]
+        public SonicDnsSonicDns VarSonicDns { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,8 +54,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class Dns {\n");
-            sb.Append("  VarDns: ").Append(VarDns).Append("\n");
+            sb.Append("class SonicDns {\n");
+            sb.Append("  VarSonicDns: ").Append(VarSonicDns).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as Dns);
+            return this.Equals(input as SonicDns);
         }
 
         /// <summary>
-        /// Returns true if Dns instances are equal
+        /// Returns true if SonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of Dns to be compared</param>
+        /// <param name="input">Instance of SonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(Dns input)
+        public bool Equals(SonicDns input)
         {
             if (input == null)
             {
@@ -92,9 +92,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.VarDns == input.VarDns ||
-                    (this.VarDns != null &&
-                    this.VarDns.Equals(input.VarDns))
+                    this.VarSonicDns == input.VarSonicDns ||
+                    (this.VarSonicDns != null &&
+                    this.VarSonicDns.Equals(input.VarSonicDns))
                 );
         }
 
@@ -107,9 +107,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.VarDns != null)
+                if (this.VarSonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.VarDns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.VarSonicDns.GetHashCode();
                 }
                 return hashCode;
             }

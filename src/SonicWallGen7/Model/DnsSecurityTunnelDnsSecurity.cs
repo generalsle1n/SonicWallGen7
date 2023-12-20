@@ -27,25 +27,25 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Configure and enter DNS Security mode.
+    /// Configure and enter SonicDns Security mode.
     /// </summary>
-    [DataContract(Name = "dns_security_tunnel_dns_security")]
-    public partial class DnsSecurityTunnelDnsSecurity : IEquatable<DnsSecurityTunnelDnsSecurity>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_tunnel_SonicDns_security")]
+    public partial class SonicDnsSecurityTunnelSonicDnsSecurity : IEquatable<SonicDnsSecurityTunnelSonicDnsSecurity>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecurityTunnelDnsSecurity" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecurityTunnelSonicDnsSecurity" /> class.
         /// </summary>
-        /// <param name="dnsTunnel">dnsTunnel.</param>
-        public DnsSecurityTunnelDnsSecurity(DnsSecurityTunnelDnsSecurityDnsTunnel dnsTunnel = default(DnsSecurityTunnelDnsSecurityDnsTunnel))
+        /// <param name="SonicDnsTunnel">SonicDnsTunnel.</param>
+        public SonicDnsSecurityTunnelSonicDnsSecurity(SonicDnsSecurityTunnelSonicDnsSecuritySonicDnsTunnel SonicDnsTunnel = default(SonicDnsSecurityTunnelSonicDnsSecuritySonicDnsTunnel))
         {
-            this.DnsTunnel = dnsTunnel;
+            this.SonicDnsTunnel = SonicDnsTunnel;
         }
 
         /// <summary>
-        /// Gets or Sets DnsTunnel
+        /// Gets or Sets SonicDnsTunnel
         /// </summary>
-        [DataMember(Name = "dns_tunnel", EmitDefaultValue = false)]
-        public DnsSecurityTunnelDnsSecurityDnsTunnel DnsTunnel { get; set; }
+        [DataMember(Name = "SonicDns_tunnel", EmitDefaultValue = false)]
+        public SonicDnsSecurityTunnelSonicDnsSecuritySonicDnsTunnel SonicDnsTunnel { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,8 +54,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecurityTunnelDnsSecurity {\n");
-            sb.Append("  DnsTunnel: ").Append(DnsTunnel).Append("\n");
+            sb.Append("class SonicDnsSecurityTunnelSonicDnsSecurity {\n");
+            sb.Append("  SonicDnsTunnel: ").Append(SonicDnsTunnel).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecurityTunnelDnsSecurity);
+            return this.Equals(input as SonicDnsSecurityTunnelSonicDnsSecurity);
         }
 
         /// <summary>
-        /// Returns true if DnsSecurityTunnelDnsSecurity instances are equal
+        /// Returns true if SonicDnsSecurityTunnelSonicDnsSecurity instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecurityTunnelDnsSecurity to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecurityTunnelSonicDnsSecurity to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecurityTunnelDnsSecurity input)
+        public bool Equals(SonicDnsSecurityTunnelSonicDnsSecurity input)
         {
             if (input == null)
             {
@@ -92,9 +92,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.DnsTunnel == input.DnsTunnel ||
-                    (this.DnsTunnel != null &&
-                    this.DnsTunnel.Equals(input.DnsTunnel))
+                    this.SonicDnsTunnel == input.SonicDnsTunnel ||
+                    (this.SonicDnsTunnel != null &&
+                    this.SonicDnsTunnel.Equals(input.SonicDnsTunnel))
                 );
         }
 
@@ -107,9 +107,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.DnsTunnel != null)
+                if (this.SonicDnsTunnel != null)
                 {
-                    hashCode = (hashCode * 59) + this.DnsTunnel.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDnsTunnel.GetHashCode();
                 }
                 return hashCode;
             }

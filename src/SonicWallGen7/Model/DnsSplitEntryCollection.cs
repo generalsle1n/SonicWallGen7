@@ -27,25 +27,25 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DnsSplitEntryCollection
+    /// SonicDnsSplitEntryCollection
     /// </summary>
-    [DataContract(Name = "dns_split_entry_collection")]
-    public partial class DnsSplitEntryCollection : IEquatable<DnsSplitEntryCollection>, IValidatableObject
+    [DataContract(Name = "SonicDns_split_entry_collection")]
+    public partial class SonicDnsSplitEntryCollection : IEquatable<SonicDnsSplitEntryCollection>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSplitEntryCollection" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSplitEntryCollection" /> class.
         /// </summary>
-        /// <param name="dns">dns.</param>
-        public DnsSplitEntryCollection(DnsSplitEntryCollectionDns dns = default(DnsSplitEntryCollectionDns))
+        /// <param name="SonicDns">SonicDns.</param>
+        public SonicDnsSplitEntryCollection(SonicDnsSplitEntryCollectionSonicDns SonicDns = default(SonicDnsSplitEntryCollectionSonicDns))
         {
-            this.Dns = dns;
+            this.SonicDns = SonicDns;
         }
 
         /// <summary>
-        /// Gets or Sets Dns
+        /// Gets or Sets SonicDns
         /// </summary>
-        [DataMember(Name = "dns", EmitDefaultValue = false)]
-        public DnsSplitEntryCollectionDns Dns { get; set; }
+        [DataMember(Name = "SonicDns", EmitDefaultValue = false)]
+        public SonicDnsSplitEntryCollectionSonicDns SonicDns { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,8 +54,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSplitEntryCollection {\n");
-            sb.Append("  Dns: ").Append(Dns).Append("\n");
+            sb.Append("class SonicDnsSplitEntryCollection {\n");
+            sb.Append("  SonicDns: ").Append(SonicDns).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSplitEntryCollection);
+            return this.Equals(input as SonicDnsSplitEntryCollection);
         }
 
         /// <summary>
-        /// Returns true if DnsSplitEntryCollection instances are equal
+        /// Returns true if SonicDnsSplitEntryCollection instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSplitEntryCollection to be compared</param>
+        /// <param name="input">Instance of SonicDnsSplitEntryCollection to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSplitEntryCollection input)
+        public bool Equals(SonicDnsSplitEntryCollection input)
         {
             if (input == null)
             {
@@ -92,9 +92,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.Dns == input.Dns ||
-                    (this.Dns != null &&
-                    this.Dns.Equals(input.Dns))
+                    this.SonicDns == input.SonicDns ||
+                    (this.SonicDns != null &&
+                    this.SonicDns.Equals(input.SonicDns))
                 );
         }
 
@@ -107,9 +107,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Dns != null)
+                if (this.SonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.Dns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDns.GetHashCode();
                 }
                 return hashCode;
             }

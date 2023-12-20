@@ -27,10 +27,10 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Enable and configure DNS rebinding attack prevention.
+    /// Enable and configure SonicDns rebinding attack prevention.
     /// </summary>
-    [DataContract(Name = "dns_dns_rebinding")]
-    public partial class DnsDnsRebinding : IEquatable<DnsDnsRebinding>, IValidatableObject
+    [DataContract(Name = "SonicDns_SonicDns_rebinding")]
+    public partial class SonicDnsSonicDnsRebinding : IEquatable<SonicDnsSonicDnsRebinding>, IValidatableObject
     {
         /// <summary>
         /// Set action when experiencing attack.
@@ -52,10 +52,10 @@ namespace SonicWallGen7.Model
             ReturnQueryRefused = 2,
 
             /// <summary>
-            /// Enum DropDnsReply for value: drop-dns-reply
+            /// Enum DropSonicDnsReply for value: drop-SonicDns-reply
             /// </summary>
-            [EnumMember(Value = "drop-dns-reply")]
-            DropDnsReply = 3
+            [EnumMember(Value = "drop-SonicDns-reply")]
+            DropSonicDnsReply = 3
         }
 
 
@@ -66,12 +66,12 @@ namespace SonicWallGen7.Model
         [DataMember(Name = "action", EmitDefaultValue = false)]
         public ActionEnum? Action { get; set; }
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsDnsRebinding" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSonicDnsRebinding" /> class.
         /// </summary>
-        /// <param name="enable">Enable DNS rebinding attack prevention..</param>
+        /// <param name="enable">Enable SonicDns rebinding attack prevention..</param>
         /// <param name="action">Set action when experiencing attack..</param>
         /// <param name="allowedDomains">allowedDomains.</param>
-        public DnsDnsRebinding(bool enable = default(bool), ActionEnum? action = default(ActionEnum?), DnsDnsRebindingAllowedDomains allowedDomains = default(DnsDnsRebindingAllowedDomains))
+        public SonicDnsSonicDnsRebinding(bool enable = default(bool), ActionEnum? action = default(ActionEnum?), SonicDnsSonicDnsRebindingAllowedDomains allowedDomains = default(SonicDnsSonicDnsRebindingAllowedDomains))
         {
             this.Enable = enable;
             this.Action = action;
@@ -79,9 +79,9 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Enable DNS rebinding attack prevention.
+        /// Enable SonicDns rebinding attack prevention.
         /// </summary>
-        /// <value>Enable DNS rebinding attack prevention.</value>
+        /// <value>Enable SonicDns rebinding attack prevention.</value>
         [DataMember(Name = "enable", EmitDefaultValue = true)]
         public bool Enable { get; set; }
 
@@ -89,7 +89,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets AllowedDomains
         /// </summary>
         [DataMember(Name = "allowed_domains", EmitDefaultValue = false)]
-        public DnsDnsRebindingAllowedDomains AllowedDomains { get; set; }
+        public SonicDnsSonicDnsRebindingAllowedDomains AllowedDomains { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -98,7 +98,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsDnsRebinding {\n");
+            sb.Append("class SonicDnsSonicDnsRebinding {\n");
             sb.Append("  Enable: ").Append(Enable).Append("\n");
             sb.Append("  Action: ").Append(Action).Append("\n");
             sb.Append("  AllowedDomains: ").Append(AllowedDomains).Append("\n");
@@ -122,15 +122,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsDnsRebinding);
+            return this.Equals(input as SonicDnsSonicDnsRebinding);
         }
 
         /// <summary>
-        /// Returns true if DnsDnsRebinding instances are equal
+        /// Returns true if SonicDnsSonicDnsRebinding instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsDnsRebinding to be compared</param>
+        /// <param name="input">Instance of SonicDnsSonicDnsRebinding to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsDnsRebinding input)
+        public bool Equals(SonicDnsSonicDnsRebinding input)
         {
             if (input == null)
             {

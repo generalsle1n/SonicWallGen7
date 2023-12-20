@@ -24,117 +24,117 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSecuritySinkholeCustomMaliciousEntryApiSync : IApiAccessor
+    public interface ISonicDnsSecuritySinkholeCustomMaliciousEntryApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS security sinkhole custom malicious entries configuration.
+        /// Retrieve SonicDns security sinkhole custom malicious entries configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsSecuritySinkholeCustomMaliciousEntryCollection</returns>
-        DnsSecuritySinkholeCustomMaliciousEntryCollection DnsSecurityDnsSinkholeCustomMaliciousEntriesGet(int operationIndex = 0);
+        /// <returns>SonicDnsSecuritySinkholeCustomMaliciousEntryCollection</returns>
+        SonicDnsSecuritySinkholeCustomMaliciousEntryCollection SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGet(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS security sinkhole custom malicious entries configuration.
+        /// Retrieve SonicDns security sinkhole custom malicious entries configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsSecuritySinkholeCustomMaliciousEntryCollection</returns>
-        ApiResponse<DnsSecuritySinkholeCustomMaliciousEntryCollection> DnsSecurityDnsSinkholeCustomMaliciousEntriesGetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of SonicDnsSecuritySinkholeCustomMaliciousEntryCollection</returns>
+        ApiResponse<SonicDnsSecuritySinkholeCustomMaliciousEntryCollection> SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS security sinkhole custom malicious entry object.
+        /// Create a new SonicDns security sinkhole custom malicious entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsSecurityDnsSinkholeCustomMaliciousEntriesPost(DnsSecuritySinkholeCustomMaliciousEntryCollection? dnsSecuritySinkholeCustomMaliciousEntryCollection = default(DnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0);
+        ApiStatus SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPost(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection? SonicDnsSecuritySinkholeCustomMaliciousEntryCollection = default(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS security sinkhole custom malicious entry object.
+        /// Create a new SonicDns security sinkhole custom malicious entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsSecurityDnsSinkholeCustomMaliciousEntriesPostWithHttpInfo(DnsSecuritySinkholeCustomMaliciousEntryCollection? dnsSecuritySinkholeCustomMaliciousEntryCollection = default(DnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPostWithHttpInfo(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection? SonicDnsSecuritySinkholeCustomMaliciousEntryCollection = default(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSecuritySinkholeCustomMaliciousEntryApiAsync : IApiAccessor
+    public interface ISonicDnsSecuritySinkholeCustomMaliciousEntryApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS security sinkhole custom malicious entries configuration.
+        /// Retrieve SonicDns security sinkhole custom malicious entries configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsSecuritySinkholeCustomMaliciousEntryCollection</returns>
-        System.Threading.Tasks.Task<DnsSecuritySinkholeCustomMaliciousEntryCollection> DnsSecurityDnsSinkholeCustomMaliciousEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of SonicDnsSecuritySinkholeCustomMaliciousEntryCollection</returns>
+        System.Threading.Tasks.Task<SonicDnsSecuritySinkholeCustomMaliciousEntryCollection> SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS security sinkhole custom malicious entries configuration.
+        /// Retrieve SonicDns security sinkhole custom malicious entries configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsSecuritySinkholeCustomMaliciousEntryCollection)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DnsSecuritySinkholeCustomMaliciousEntryCollection>> DnsSecurityDnsSinkholeCustomMaliciousEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (SonicDnsSecuritySinkholeCustomMaliciousEntryCollection)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SonicDnsSecuritySinkholeCustomMaliciousEntryCollection>> SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS security sinkhole custom malicious entry object.
+        /// Create a new SonicDns security sinkhole custom malicious entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsSecurityDnsSinkholeCustomMaliciousEntriesPostAsync(DnsSecuritySinkholeCustomMaliciousEntryCollection? dnsSecuritySinkholeCustomMaliciousEntryCollection = default(DnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPostAsync(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection? SonicDnsSecuritySinkholeCustomMaliciousEntryCollection = default(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS security sinkhole custom malicious entry object.
+        /// Create a new SonicDns security sinkhole custom malicious entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsSecurityDnsSinkholeCustomMaliciousEntriesPostWithHttpInfoAsync(DnsSecuritySinkholeCustomMaliciousEntryCollection? dnsSecuritySinkholeCustomMaliciousEntryCollection = default(DnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPostWithHttpInfoAsync(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection? SonicDnsSecuritySinkholeCustomMaliciousEntryCollection = default(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSecuritySinkholeCustomMaliciousEntryApi : IDnsSecuritySinkholeCustomMaliciousEntryApiSync, IDnsSecuritySinkholeCustomMaliciousEntryApiAsync
+    public interface ISonicDnsSecuritySinkholeCustomMaliciousEntryApi : ISonicDnsSecuritySinkholeCustomMaliciousEntryApiSync, ISonicDnsSecuritySinkholeCustomMaliciousEntryApiAsync
     {
 
     }
@@ -142,23 +142,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DnsSecuritySinkholeCustomMaliciousEntryApi : IDnsSecuritySinkholeCustomMaliciousEntryApi
+    public partial class SonicDnsSecuritySinkholeCustomMaliciousEntryApi : ISonicDnsSecuritySinkholeCustomMaliciousEntryApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeCustomMaliciousEntryApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeCustomMaliciousEntryApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsSecuritySinkholeCustomMaliciousEntryApi() : this((string)null)
+        public SonicDnsSecuritySinkholeCustomMaliciousEntryApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeCustomMaliciousEntryApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeCustomMaliciousEntryApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsSecuritySinkholeCustomMaliciousEntryApi(string basePath)
+        public SonicDnsSecuritySinkholeCustomMaliciousEntryApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -170,12 +170,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeCustomMaliciousEntryApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeCustomMaliciousEntryApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DnsSecuritySinkholeCustomMaliciousEntryApi(SonicWallGen7.Client.Configuration configuration)
+        public SonicDnsSecuritySinkholeCustomMaliciousEntryApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -189,13 +189,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeCustomMaliciousEntryApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeCustomMaliciousEntryApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DnsSecuritySinkholeCustomMaliciousEntryApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicDnsSecuritySinkholeCustomMaliciousEntryApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -249,24 +249,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS security sinkhole custom malicious entries configuration.
+        ///  Retrieve SonicDns security sinkhole custom malicious entries configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsSecuritySinkholeCustomMaliciousEntryCollection</returns>
-        public DnsSecuritySinkholeCustomMaliciousEntryCollection DnsSecurityDnsSinkholeCustomMaliciousEntriesGet(int operationIndex = 0)
+        /// <returns>SonicDnsSecuritySinkholeCustomMaliciousEntryCollection</returns>
+        public SonicDnsSecuritySinkholeCustomMaliciousEntryCollection SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGet(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<DnsSecuritySinkholeCustomMaliciousEntryCollection> localVarResponse = DnsSecurityDnsSinkholeCustomMaliciousEntriesGetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<SonicDnsSecuritySinkholeCustomMaliciousEntryCollection> localVarResponse = SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS security sinkhole custom malicious entries configuration.
+        ///  Retrieve SonicDns security sinkhole custom malicious entries configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsSecuritySinkholeCustomMaliciousEntryCollection</returns>
-        public SonicWallGen7.Client.ApiResponse<DnsSecuritySinkholeCustomMaliciousEntryCollection> DnsSecurityDnsSinkholeCustomMaliciousEntriesGetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of SonicDnsSecuritySinkholeCustomMaliciousEntryCollection</returns>
+        public SonicWallGen7.Client.ApiResponse<SonicDnsSecuritySinkholeCustomMaliciousEntryCollection> SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -291,7 +291,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsSecuritySinkholeCustomMaliciousEntryApi.DnsSecurityDnsSinkholeCustomMaliciousEntriesGet";
+            localVarRequestOptions.Operation = "SonicDnsSecuritySinkholeCustomMaliciousEntryApi.SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -302,10 +302,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<DnsSecuritySinkholeCustomMaliciousEntryCollection>("/dns-security/dns-sinkhole/custom-malicious-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<SonicDnsSecuritySinkholeCustomMaliciousEntryCollection>("/SonicDns-security/SonicDns-sinkhole/custom-malicious-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsSinkholeCustomMaliciousEntriesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -316,26 +316,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS security sinkhole custom malicious entries configuration.
+        ///  Retrieve SonicDns security sinkhole custom malicious entries configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsSecuritySinkholeCustomMaliciousEntryCollection</returns>
-        public async System.Threading.Tasks.Task<DnsSecuritySinkholeCustomMaliciousEntryCollection> DnsSecurityDnsSinkholeCustomMaliciousEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of SonicDnsSecuritySinkholeCustomMaliciousEntryCollection</returns>
+        public async System.Threading.Tasks.Task<SonicDnsSecuritySinkholeCustomMaliciousEntryCollection> SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<DnsSecuritySinkholeCustomMaliciousEntryCollection> localVarResponse = await DnsSecurityDnsSinkholeCustomMaliciousEntriesGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<SonicDnsSecuritySinkholeCustomMaliciousEntryCollection> localVarResponse = await SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS security sinkhole custom malicious entries configuration.
+        ///  Retrieve SonicDns security sinkhole custom malicious entries configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsSecuritySinkholeCustomMaliciousEntryCollection)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<DnsSecuritySinkholeCustomMaliciousEntryCollection>> DnsSecurityDnsSinkholeCustomMaliciousEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (SonicDnsSecuritySinkholeCustomMaliciousEntryCollection)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<SonicDnsSecuritySinkholeCustomMaliciousEntryCollection>> SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -361,7 +361,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsSecuritySinkholeCustomMaliciousEntryApi.DnsSecurityDnsSinkholeCustomMaliciousEntriesGet";
+            localVarRequestOptions.Operation = "SonicDnsSecuritySinkholeCustomMaliciousEntryApi.SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -372,11 +372,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<DnsSecuritySinkholeCustomMaliciousEntryCollection>("/dns-security/dns-sinkhole/custom-malicious-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<SonicDnsSecuritySinkholeCustomMaliciousEntryCollection>("/SonicDns-security/SonicDns-sinkhole/custom-malicious-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsSinkholeCustomMaliciousEntriesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -387,26 +387,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Create a new DNS security sinkhole custom malicious entry object.
+        ///  Create a new SonicDns security sinkhole custom malicious entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsSecurityDnsSinkholeCustomMaliciousEntriesPost(DnsSecuritySinkholeCustomMaliciousEntryCollection? dnsSecuritySinkholeCustomMaliciousEntryCollection = default(DnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0)
+        public ApiStatus SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPost(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection? SonicDnsSecuritySinkholeCustomMaliciousEntryCollection = default(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsSecurityDnsSinkholeCustomMaliciousEntriesPostWithHttpInfo(dnsSecuritySinkholeCustomMaliciousEntryCollection);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPostWithHttpInfo(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Create a new DNS security sinkhole custom malicious entry object.
+        ///  Create a new SonicDns security sinkhole custom malicious entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsSecurityDnsSinkholeCustomMaliciousEntriesPostWithHttpInfo(DnsSecuritySinkholeCustomMaliciousEntryCollection? dnsSecuritySinkholeCustomMaliciousEntryCollection = default(DnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPostWithHttpInfo(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection? SonicDnsSecuritySinkholeCustomMaliciousEntryCollection = default(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -431,9 +431,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsSecuritySinkholeCustomMaliciousEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSecuritySinkholeCustomMaliciousEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSecuritySinkholeCustomMaliciousEntryApi.DnsSecurityDnsSinkholeCustomMaliciousEntriesPost";
+            localVarRequestOptions.Operation = "SonicDnsSecuritySinkholeCustomMaliciousEntryApi.SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPost";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -444,10 +444,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<ApiStatus>("/dns-security/dns-sinkhole/custom-malicious-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<ApiStatus>("/SonicDns-security/SonicDns-sinkhole/custom-malicious-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsSinkholeCustomMaliciousEntriesPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -458,28 +458,28 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Create a new DNS security sinkhole custom malicious entry object.
+        ///  Create a new SonicDns security sinkhole custom malicious entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsSecurityDnsSinkholeCustomMaliciousEntriesPostAsync(DnsSecuritySinkholeCustomMaliciousEntryCollection? dnsSecuritySinkholeCustomMaliciousEntryCollection = default(DnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPostAsync(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection? SonicDnsSecuritySinkholeCustomMaliciousEntryCollection = default(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsSecurityDnsSinkholeCustomMaliciousEntriesPostWithHttpInfoAsync(dnsSecuritySinkholeCustomMaliciousEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPostWithHttpInfoAsync(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Create a new DNS security sinkhole custom malicious entry object.
+        ///  Create a new SonicDns security sinkhole custom malicious entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeCustomMaliciousEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsSecurityDnsSinkholeCustomMaliciousEntriesPostWithHttpInfoAsync(DnsSecuritySinkholeCustomMaliciousEntryCollection? dnsSecuritySinkholeCustomMaliciousEntryCollection = default(DnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPostWithHttpInfoAsync(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection? SonicDnsSecuritySinkholeCustomMaliciousEntryCollection = default(SonicDnsSecuritySinkholeCustomMaliciousEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -505,9 +505,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsSecuritySinkholeCustomMaliciousEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSecuritySinkholeCustomMaliciousEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSecuritySinkholeCustomMaliciousEntryApi.DnsSecurityDnsSinkholeCustomMaliciousEntriesPost";
+            localVarRequestOptions.Operation = "SonicDnsSecuritySinkholeCustomMaliciousEntryApi.SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPost";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -518,11 +518,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/dns-security/dns-sinkhole/custom-malicious-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/SonicDns-security/SonicDns-sinkhole/custom-malicious-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsSinkholeCustomMaliciousEntriesPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsSinkholeCustomMaliciousEntriesPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

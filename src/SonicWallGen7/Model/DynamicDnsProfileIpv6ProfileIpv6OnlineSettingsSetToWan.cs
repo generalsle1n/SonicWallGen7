@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan
+    /// DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan
     /// </summary>
-    [DataContract(Name = "dynamic_dns_profile_ipv6_profile_ipv6_online_settings_set_to_wan")]
-    public partial class DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan : IEquatable<DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan>, IValidatableObject
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv6_profile_ipv6_online_settings_set_to_wan")]
+    public partial class DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan : IEquatable<DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan" /> class.
         /// </summary>
         /// <param name="setToWan">Automatically set the IP address to the primary WAN IP address..</param>
-        public DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan(bool setToWan = default(bool))
+        public DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan(bool setToWan = default(bool))
         {
             this.SetToWan = setToWan;
         }
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan {\n");
             sb.Append("  SetToWan: ").Append(SetToWan).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan);
+            return this.Equals(input as DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan input)
+        public bool Equals(DynamicSonicDnsProfileIpv6ProfileIpv6OnlineSettingsSetToWan input)
         {
             if (input == null)
             {

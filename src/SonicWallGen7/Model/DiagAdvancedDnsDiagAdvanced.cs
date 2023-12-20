@@ -29,23 +29,23 @@ namespace SonicWallGen7.Model
     /// <summary>
     /// Advanced device settings to be used under direction of SonicWall support.
     /// </summary>
-    [DataContract(Name = "diag_advanced_dns_diag_advanced")]
-    public partial class DiagAdvancedDnsDiagAdvanced : IEquatable<DiagAdvancedDnsDiagAdvanced>, IValidatableObject
+    [DataContract(Name = "diag_advanced_SonicDns_diag_advanced")]
+    public partial class DiagAdvancedSonicDnsDiagAdvanced : IEquatable<DiagAdvancedSonicDnsDiagAdvanced>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDnsDiagAdvanced" /> class.
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDnsDiagAdvanced" /> class.
         /// </summary>
-        /// <param name="dns">dns.</param>
-        public DiagAdvancedDnsDiagAdvanced(DiagAdvancedDnsDiagAdvancedDns dns = default(DiagAdvancedDnsDiagAdvancedDns))
+        /// <param name="SonicDns">SonicDns.</param>
+        public DiagAdvancedSonicDnsDiagAdvanced(DiagAdvancedSonicDnsDiagAdvancedSonicDns SonicDns = default(DiagAdvancedSonicDnsDiagAdvancedSonicDns))
         {
-            this.Dns = dns;
+            this.SonicDns = SonicDns;
         }
 
         /// <summary>
-        /// Gets or Sets Dns
+        /// Gets or Sets SonicDns
         /// </summary>
-        [DataMember(Name = "dns", EmitDefaultValue = false)]
-        public DiagAdvancedDnsDiagAdvancedDns Dns { get; set; }
+        [DataMember(Name = "SonicDns", EmitDefaultValue = false)]
+        public DiagAdvancedSonicDnsDiagAdvancedSonicDns SonicDns { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,8 +54,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DiagAdvancedDnsDiagAdvanced {\n");
-            sb.Append("  Dns: ").Append(Dns).Append("\n");
+            sb.Append("class DiagAdvancedSonicDnsDiagAdvanced {\n");
+            sb.Append("  SonicDns: ").Append(SonicDns).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DiagAdvancedDnsDiagAdvanced);
+            return this.Equals(input as DiagAdvancedSonicDnsDiagAdvanced);
         }
 
         /// <summary>
-        /// Returns true if DiagAdvancedDnsDiagAdvanced instances are equal
+        /// Returns true if DiagAdvancedSonicDnsDiagAdvanced instances are equal
         /// </summary>
-        /// <param name="input">Instance of DiagAdvancedDnsDiagAdvanced to be compared</param>
+        /// <param name="input">Instance of DiagAdvancedSonicDnsDiagAdvanced to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DiagAdvancedDnsDiagAdvanced input)
+        public bool Equals(DiagAdvancedSonicDnsDiagAdvanced input)
         {
             if (input == null)
             {
@@ -92,9 +92,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.Dns == input.Dns ||
-                    (this.Dns != null &&
-                    this.Dns.Equals(input.Dns))
+                    this.SonicDns == input.SonicDns ||
+                    (this.SonicDns != null &&
+                    this.SonicDns.Equals(input.SonicDns))
                 );
         }
 
@@ -107,9 +107,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Dns != null)
+                if (this.SonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.Dns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDns.GetHashCode();
                 }
                 return hashCode;
             }

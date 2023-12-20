@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Advanced diag DNS settings configuration.
+    /// Advanced diag SonicDns settings configuration.
     /// </summary>
-    [DataContract(Name = "diag_advanced_dns")]
-    public partial class DiagAdvancedDns : IEquatable<DiagAdvancedDns>, IValidatableObject
+    [DataContract(Name = "diag_advanced_SonicDns")]
+    public partial class DiagAdvancedSonicDns : IEquatable<DiagAdvancedSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDns" /> class.
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDns" /> class.
         /// </summary>
         /// <param name="diag">diag.</param>
-        public DiagAdvancedDns(DiagAdvancedDnsDiag diag = default(DiagAdvancedDnsDiag))
+        public DiagAdvancedSonicDns(DiagAdvancedSonicDnsDiag diag = default(DiagAdvancedSonicDnsDiag))
         {
             this.Diag = diag;
         }
@@ -45,7 +45,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Diag
         /// </summary>
         [DataMember(Name = "diag", EmitDefaultValue = false)]
-        public DiagAdvancedDnsDiag Diag { get; set; }
+        public DiagAdvancedSonicDnsDiag Diag { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DiagAdvancedDns {\n");
+            sb.Append("class DiagAdvancedSonicDns {\n");
             sb.Append("  Diag: ").Append(Diag).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DiagAdvancedDns);
+            return this.Equals(input as DiagAdvancedSonicDns);
         }
 
         /// <summary>
-        /// Returns true if DiagAdvancedDns instances are equal
+        /// Returns true if DiagAdvancedSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of DiagAdvancedDns to be compared</param>
+        /// <param name="input">Instance of DiagAdvancedSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DiagAdvancedDns input)
+        public bool Equals(DiagAdvancedSonicDns input)
         {
             if (input == null)
             {

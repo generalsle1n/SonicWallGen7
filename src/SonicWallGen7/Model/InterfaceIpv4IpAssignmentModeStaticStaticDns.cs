@@ -27,18 +27,18 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Set the DNS server IP address.
+    /// Set the SonicDns server IP address.
     /// </summary>
-    [DataContract(Name = "interface_ipv4_ip_assignment_mode_static_static_dns")]
-    public partial class InterfaceIpv4IpAssignmentModeStaticStaticDns : IEquatable<InterfaceIpv4IpAssignmentModeStaticStaticDns>, IValidatableObject
+    [DataContract(Name = "interface_ipv4_ip_assignment_mode_static_static_SonicDns")]
+    public partial class InterfaceIpv4IpAssignmentModeStaticStaticSonicDns : IEquatable<InterfaceIpv4IpAssignmentModeStaticStaticSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="InterfaceIpv4IpAssignmentModeStaticStaticDns" /> class.
+        /// Initializes a new instance of the <see cref="InterfaceIpv4IpAssignmentModeStaticStaticSonicDns" /> class.
         /// </summary>
-        /// <param name="primary">Primary DNS server IP address..</param>
-        /// <param name="secondary">Secondary DNS server IP address..</param>
-        /// <param name="tertiary">Tertiary DNS server IP address..</param>
-        public InterfaceIpv4IpAssignmentModeStaticStaticDns(string primary = default(string), string secondary = default(string), string tertiary = default(string))
+        /// <param name="primary">Primary SonicDns server IP address..</param>
+        /// <param name="secondary">Secondary SonicDns server IP address..</param>
+        /// <param name="tertiary">Tertiary SonicDns server IP address..</param>
+        public InterfaceIpv4IpAssignmentModeStaticStaticSonicDns(string primary = default(string), string secondary = default(string), string tertiary = default(string))
         {
             this.Primary = primary;
             this.Secondary = secondary;
@@ -46,23 +46,23 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Primary DNS server IP address.
+        /// Primary SonicDns server IP address.
         /// </summary>
-        /// <value>Primary DNS server IP address.</value>
+        /// <value>Primary SonicDns server IP address.</value>
         [DataMember(Name = "primary", EmitDefaultValue = false)]
         public string Primary { get; set; }
 
         /// <summary>
-        /// Secondary DNS server IP address.
+        /// Secondary SonicDns server IP address.
         /// </summary>
-        /// <value>Secondary DNS server IP address.</value>
+        /// <value>Secondary SonicDns server IP address.</value>
         [DataMember(Name = "secondary", EmitDefaultValue = false)]
         public string Secondary { get; set; }
 
         /// <summary>
-        /// Tertiary DNS server IP address.
+        /// Tertiary SonicDns server IP address.
         /// </summary>
-        /// <value>Tertiary DNS server IP address.</value>
+        /// <value>Tertiary SonicDns server IP address.</value>
         [DataMember(Name = "tertiary", EmitDefaultValue = false)]
         public string Tertiary { get; set; }
 
@@ -73,7 +73,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class InterfaceIpv4IpAssignmentModeStaticStaticDns {\n");
+            sb.Append("class InterfaceIpv4IpAssignmentModeStaticStaticSonicDns {\n");
             sb.Append("  Primary: ").Append(Primary).Append("\n");
             sb.Append("  Secondary: ").Append(Secondary).Append("\n");
             sb.Append("  Tertiary: ").Append(Tertiary).Append("\n");
@@ -97,15 +97,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as InterfaceIpv4IpAssignmentModeStaticStaticDns);
+            return this.Equals(input as InterfaceIpv4IpAssignmentModeStaticStaticSonicDns);
         }
 
         /// <summary>
-        /// Returns true if InterfaceIpv4IpAssignmentModeStaticStaticDns instances are equal
+        /// Returns true if InterfaceIpv4IpAssignmentModeStaticStaticSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of InterfaceIpv4IpAssignmentModeStaticStaticDns to be compared</param>
+        /// <param name="input">Instance of InterfaceIpv4IpAssignmentModeStaticStaticSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(InterfaceIpv4IpAssignmentModeStaticStaticDns input)
+        public bool Equals(InterfaceIpv4IpAssignmentModeStaticStaticSonicDns input)
         {
             if (input == null)
             {

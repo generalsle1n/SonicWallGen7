@@ -27,24 +27,24 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DhcpServerIpv6ScopeDynamicDnsServerInherit
+    /// DhcpServerIpv6ScopeDynamicSonicDnsServerInherit
     /// </summary>
-    [DataContract(Name = "dhcp_server_ipv6_scope_dynamic_dns_server_inherit")]
-    public partial class DhcpServerIpv6ScopeDynamicDnsServerInherit : IEquatable<DhcpServerIpv6ScopeDynamicDnsServerInherit>, IValidatableObject
+    [DataContract(Name = "dhcp_server_ipv6_scope_dynamic_SonicDns_server_inherit")]
+    public partial class DhcpServerIpv6ScopeDynamicSonicDnsServerInherit : IEquatable<DhcpServerIpv6ScopeDynamicSonicDnsServerInherit>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DhcpServerIpv6ScopeDynamicDnsServerInherit" /> class.
+        /// Initializes a new instance of the <see cref="DhcpServerIpv6ScopeDynamicSonicDnsServerInherit" /> class.
         /// </summary>
-        /// <param name="inherit">Inherit DNS servers..</param>
-        public DhcpServerIpv6ScopeDynamicDnsServerInherit(bool inherit = default(bool))
+        /// <param name="inherit">Inherit SonicDns servers..</param>
+        public DhcpServerIpv6ScopeDynamicSonicDnsServerInherit(bool inherit = default(bool))
         {
             this.Inherit = inherit;
         }
 
         /// <summary>
-        /// Inherit DNS servers.
+        /// Inherit SonicDns servers.
         /// </summary>
-        /// <value>Inherit DNS servers.</value>
+        /// <value>Inherit SonicDns servers.</value>
         [DataMember(Name = "inherit", EmitDefaultValue = true)]
         public bool Inherit { get; set; }
 
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DhcpServerIpv6ScopeDynamicDnsServerInherit {\n");
+            sb.Append("class DhcpServerIpv6ScopeDynamicSonicDnsServerInherit {\n");
             sb.Append("  Inherit: ").Append(Inherit).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DhcpServerIpv6ScopeDynamicDnsServerInherit);
+            return this.Equals(input as DhcpServerIpv6ScopeDynamicSonicDnsServerInherit);
         }
 
         /// <summary>
-        /// Returns true if DhcpServerIpv6ScopeDynamicDnsServerInherit instances are equal
+        /// Returns true if DhcpServerIpv6ScopeDynamicSonicDnsServerInherit instances are equal
         /// </summary>
-        /// <param name="input">Instance of DhcpServerIpv6ScopeDynamicDnsServerInherit to be compared</param>
+        /// <param name="input">Instance of DhcpServerIpv6ScopeDynamicSonicDnsServerInherit to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DhcpServerIpv6ScopeDynamicDnsServerInherit input)
+        public bool Equals(DhcpServerIpv6ScopeDynamicSonicDnsServerInherit input)
         {
             if (input == null)
             {

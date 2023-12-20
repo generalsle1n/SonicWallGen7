@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DynamicDnsProfileIpv6ProfileIpv6BoundToInterface
+    /// DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface
     /// </summary>
-    [DataContract(Name = "dynamic_dns_profile_ipv6_profile_ipv6_bound_to_interface")]
-    public partial class DynamicDnsProfileIpv6ProfileIpv6BoundToInterface : IEquatable<DynamicDnsProfileIpv6ProfileIpv6BoundToInterface>, IValidatableObject
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv6_profile_ipv6_bound_to_interface")]
+    public partial class DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface : IEquatable<DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv6ProfileIpv6BoundToInterface" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface" /> class.
         /// </summary>
         /// <param name="varInterface">Specify interface..</param>
-        public DynamicDnsProfileIpv6ProfileIpv6BoundToInterface(string varInterface = default(string))
+        public DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface(string varInterface = default(string))
         {
             this.VarInterface = varInterface;
         }
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv6ProfileIpv6BoundToInterface {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface {\n");
             sb.Append("  VarInterface: ").Append(VarInterface).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv6ProfileIpv6BoundToInterface);
+            return this.Equals(input as DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv6ProfileIpv6BoundToInterface instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv6ProfileIpv6BoundToInterface to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv6ProfileIpv6BoundToInterface input)
+        public bool Equals(DynamicSonicDnsProfileIpv6ProfileIpv6BoundToInterface input)
         {
             if (input == null)
             {

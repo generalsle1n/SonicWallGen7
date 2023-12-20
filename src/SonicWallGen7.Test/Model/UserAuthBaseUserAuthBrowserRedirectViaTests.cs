@@ -65,12 +65,12 @@ namespace SonicWallGen7.Test.Model
         }
 
         /// <summary>
-        /// Test the property 'ReverseDns'
+        /// Test the property 'ReverseSonicDns'
         /// </summary>
         [Fact]
-        public void ReverseDnsTest()
+        public void ReverseSonicDnsTest()
         {
-            // TODO unit test for the property 'ReverseDns'
+            // TODO unit test for the property 'ReverseSonicDns'
         }
 
         /// <summary>

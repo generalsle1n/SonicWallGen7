@@ -28,18 +28,18 @@ using System.Reflection;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Configure dynamic DNS offline settings.
+    /// Configure dynamic SonicDns offline settings.
     /// </summary>
-    [JsonConverter(typeof(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsJsonConverter))]
-    [DataContract(Name = "dynamic_dns_profile_ipv4_profile_ipv4_offline_settings")]
-    public partial class DynamicDnsProfileIpv4ProfileIpv4OfflineSettings : AbstractOpenAPISchema, IEquatable<DynamicDnsProfileIpv4ProfileIpv4OfflineSettings>, IValidatableObject
+    [JsonConverter(typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsJsonConverter))]
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv4_profile_ipv4_offline_settings")]
+    public partial class DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings : AbstractOpenAPISchema, IEquatable<DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4ProfileIpv4OfflineSettings" /> class
-        /// with the <see cref="DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing" /> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings" /> class
+        /// with the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing.</param>
-        public DynamicDnsProfileIpv4ProfileIpv4OfflineSettings(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing actualInstance)
+        /// <param name="actualInstance">An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing.</param>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -47,11 +47,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4ProfileIpv4OfflineSettings" /> class
-        /// with the <see cref="DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious" /> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings" /> class
+        /// with the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious.</param>
-        public DynamicDnsProfileIpv4ProfileIpv4OfflineSettings(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious actualInstance)
+        /// <param name="actualInstance">An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious.</param>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -59,11 +59,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4ProfileIpv4OfflineSettings" /> class
-        /// with the <see cref="DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown" /> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings" /> class
+        /// with the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown.</param>
-        public DynamicDnsProfileIpv4ProfileIpv4OfflineSettings(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown actualInstance)
+        /// <param name="actualInstance">An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown.</param>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -71,11 +71,11 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4ProfileIpv4OfflineSettings" /> class
-        /// with the <see cref="DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual" /> class
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings" /> class
+        /// with the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual" /> class
         /// </summary>
-        /// <param name="actualInstance">An instance of DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual.</param>
-        public DynamicDnsProfileIpv4ProfileIpv4OfflineSettings(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual actualInstance)
+        /// <param name="actualInstance">An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual.</param>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual actualInstance)
         {
             this.IsNullable = false;
             this.SchemaType= "oneOf";
@@ -96,67 +96,67 @@ namespace SonicWallGen7.Model
             }
             set
             {
-                if (value.GetType() == typeof(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing))
+                if (value.GetType() == typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown))
+                else if (value.GetType() == typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual))
+                else if (value.GetType() == typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual))
                 {
                     this._actualInstance = value;
                 }
-                else if (value.GetType() == typeof(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious))
+                else if (value.GetType() == typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious))
                 {
                     this._actualInstance = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid instance found. Must be the following types: DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing, DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown, DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual, DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious");
+                    throw new ArgumentException("Invalid instance found. Must be the following types: DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing, DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown, DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual, DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious");
                 }
             }
         }
 
         /// <summary>
-        /// Get the actual instance of `DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing`. If the actual instance is not `DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing`,
+        /// Get the actual instance of `DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing`. If the actual instance is not `DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing</returns>
-        public DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing GetDynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing()
+        /// <returns>An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing</returns>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing GetDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing()
         {
-            return (DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing)this.ActualInstance;
+            return (DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious`. If the actual instance is not `DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious`,
+        /// Get the actual instance of `DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious`. If the actual instance is not `DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious</returns>
-        public DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious GetDynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious()
+        /// <returns>An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious</returns>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious GetDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious()
         {
-            return (DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious)this.ActualInstance;
+            return (DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown`. If the actual instance is not `DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown`,
+        /// Get the actual instance of `DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown`. If the actual instance is not `DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown</returns>
-        public DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown GetDynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown()
+        /// <returns>An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown</returns>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown GetDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown()
         {
-            return (DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown)this.ActualInstance;
+            return (DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown)this.ActualInstance;
         }
 
         /// <summary>
-        /// Get the actual instance of `DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual`. If the actual instance is not `DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual`,
+        /// Get the actual instance of `DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual`. If the actual instance is not `DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual`,
         /// the InvalidClassException will be thrown
         /// </summary>
-        /// <returns>An instance of DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual</returns>
-        public DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual GetDynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual()
+        /// <returns>An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual</returns>
+        public DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual GetDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual()
         {
-            return (DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual)this.ActualInstance;
+            return (DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual)this.ActualInstance;
         }
 
         /// <summary>
@@ -166,7 +166,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv4ProfileIpv4OfflineSettings {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings {\n");
             sb.Append("  ActualInstance: ").Append(this.ActualInstance).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -178,21 +178,21 @@ namespace SonicWallGen7.Model
         /// <returns>JSON string presentation of the object</returns>
         public override string ToJson()
         {
-            return JsonConvert.SerializeObject(this.ActualInstance, DynamicDnsProfileIpv4ProfileIpv4OfflineSettings.SerializerSettings);
+            return JsonConvert.SerializeObject(this.ActualInstance, DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings.SerializerSettings);
         }
 
         /// <summary>
-        /// Converts the JSON string into an instance of DynamicDnsProfileIpv4ProfileIpv4OfflineSettings
+        /// Converts the JSON string into an instance of DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings
         /// </summary>
         /// <param name="jsonString">JSON string</param>
-        /// <returns>An instance of DynamicDnsProfileIpv4ProfileIpv4OfflineSettings</returns>
-        public static DynamicDnsProfileIpv4ProfileIpv4OfflineSettings FromJson(string jsonString)
+        /// <returns>An instance of DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings</returns>
+        public static DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings FromJson(string jsonString)
         {
-            DynamicDnsProfileIpv4ProfileIpv4OfflineSettings newDynamicDnsProfileIpv4ProfileIpv4OfflineSettings = null;
+            DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings newDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings = null;
 
             if (string.IsNullOrEmpty(jsonString))
             {
-                return newDynamicDnsProfileIpv4ProfileIpv4OfflineSettings;
+                return newDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings;
             }
             int match = 0;
             List<string> matchedTypes = new List<string>();
@@ -200,81 +200,81 @@ namespace SonicWallGen7.Model
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing).GetProperty("AdditionalProperties") == null)
+                if (typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing).GetProperty("AdditionalProperties") == null)
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OfflineSettings.SerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings.SerializerSettings));
                 }
                 else
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OfflineSettings.AdditionalPropertiesSerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing");
+                matchedTypes.Add("DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsDoNothing: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown).GetProperty("AdditionalProperties") == null)
+                if (typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown).GetProperty("AdditionalProperties") == null)
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OfflineSettings.SerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings.SerializerSettings));
                 }
                 else
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OfflineSettings.AdditionalPropertiesSerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown");
+                matchedTypes.Add("DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsMakeHostUnknown: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual).GetProperty("AdditionalProperties") == null)
+                if (typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual).GetProperty("AdditionalProperties") == null)
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OfflineSettings.SerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings.SerializerSettings));
                 }
                 else
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OfflineSettings.AdditionalPropertiesSerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual");
+                matchedTypes.Add("DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsManual: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsManual: {1}", jsonString, exception.ToString()));
             }
 
             try
             {
                 // if it does not contains "AdditionalProperties", use SerializerSettings to deserialize
-                if (typeof(DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious).GetProperty("AdditionalProperties") == null)
+                if (typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious).GetProperty("AdditionalProperties") == null)
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OfflineSettings.SerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings.SerializerSettings));
                 }
                 else
                 {
-                    newDynamicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious>(jsonString, DynamicDnsProfileIpv4ProfileIpv4OfflineSettings.AdditionalPropertiesSerializerSettings));
+                    newDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings = new DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings(JsonConvert.DeserializeObject<DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious>(jsonString, DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings.AdditionalPropertiesSerializerSettings));
                 }
-                matchedTypes.Add("DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious");
+                matchedTypes.Add("DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious");
                 match++;
             }
             catch (Exception exception)
             {
                 // deserialization failed, try the next one
-                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious: {1}", jsonString, exception.ToString()));
+                System.Diagnostics.Debug.WriteLine(string.Format("Failed to deserialize `{0}` into DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsUsePrevious: {1}", jsonString, exception.ToString()));
             }
 
             if (match == 0)
@@ -287,7 +287,7 @@ namespace SonicWallGen7.Model
             }
 
             // deserialization is considered successful at this point if no exception has been thrown.
-            return newDynamicDnsProfileIpv4ProfileIpv4OfflineSettings;
+            return newDynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings;
         }
 
         /// <summary>
@@ -297,15 +297,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv4ProfileIpv4OfflineSettings);
+            return this.Equals(input as DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv4ProfileIpv4OfflineSettings instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv4ProfileIpv4OfflineSettings to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv4ProfileIpv4OfflineSettings input)
+        public bool Equals(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings input)
         {
             if (input == null)
                 return false;
@@ -340,9 +340,9 @@ namespace SonicWallGen7.Model
     }
 
     /// <summary>
-    /// Custom JSON converter for DynamicDnsProfileIpv4ProfileIpv4OfflineSettings
+    /// Custom JSON converter for DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings
     /// </summary>
-    public class DynamicDnsProfileIpv4ProfileIpv4OfflineSettingsJsonConverter : JsonConverter
+    public class DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettingsJsonConverter : JsonConverter
     {
         /// <summary>
         /// To write the JSON string
@@ -352,7 +352,7 @@ namespace SonicWallGen7.Model
         /// <param name="serializer">JSON Serializer</param>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            writer.WriteRawValue((string)(typeof(DynamicDnsProfileIpv4ProfileIpv4OfflineSettings).GetMethod("ToJson").Invoke(value, null)));
+            writer.WriteRawValue((string)(typeof(DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings).GetMethod("ToJson").Invoke(value, null)));
         }
 
         /// <summary>
@@ -367,7 +367,7 @@ namespace SonicWallGen7.Model
         {
             if(reader.TokenType != JsonToken.Null)
             {
-                return DynamicDnsProfileIpv4ProfileIpv4OfflineSettings.FromJson(JObject.Load(reader).ToString(Formatting.None));
+                return DynamicSonicDnsProfileIpv4ProfileIpv4OfflineSettings.FromJson(JObject.Load(reader).ToString(Formatting.None));
             }
             return null;
         }

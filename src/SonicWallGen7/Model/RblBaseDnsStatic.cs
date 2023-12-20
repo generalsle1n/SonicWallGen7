@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// RblBaseDnsStatic
+    /// RblBaseSonicDnsStatic
     /// </summary>
-    [DataContract(Name = "rbl_base_dns_static")]
-    public partial class RblBaseDnsStatic : IEquatable<RblBaseDnsStatic>, IValidatableObject
+    [DataContract(Name = "rbl_base_SonicDns_static")]
+    public partial class RblBaseSonicDnsStatic : IEquatable<RblBaseSonicDnsStatic>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="RblBaseDnsStatic" /> class.
+        /// Initializes a new instance of the <see cref="RblBaseSonicDnsStatic" /> class.
         /// </summary>
         /// <param name="varStatic">varStatic.</param>
-        public RblBaseDnsStatic(LogNameResolutionNameResolutionDnsStaticStatic varStatic = default(LogNameResolutionNameResolutionDnsStaticStatic))
+        public RblBaseSonicDnsStatic(LogNameResolutionNameResolutionSonicDnsStaticStatic varStatic = default(LogNameResolutionNameResolutionSonicDnsStaticStatic))
         {
             this.VarStatic = varStatic;
         }
@@ -45,7 +45,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets VarStatic
         /// </summary>
         [DataMember(Name = "static", EmitDefaultValue = false)]
-        public LogNameResolutionNameResolutionDnsStaticStatic VarStatic { get; set; }
+        public LogNameResolutionNameResolutionSonicDnsStaticStatic VarStatic { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class RblBaseDnsStatic {\n");
+            sb.Append("class RblBaseSonicDnsStatic {\n");
             sb.Append("  VarStatic: ").Append(VarStatic).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as RblBaseDnsStatic);
+            return this.Equals(input as RblBaseSonicDnsStatic);
         }
 
         /// <summary>
-        /// Returns true if RblBaseDnsStatic instances are equal
+        /// Returns true if RblBaseSonicDnsStatic instances are equal
         /// </summary>
-        /// <param name="input">Instance of RblBaseDnsStatic to be compared</param>
+        /// <param name="input">Instance of RblBaseSonicDnsStatic to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(RblBaseDnsStatic input)
+        public bool Equals(RblBaseSonicDnsStatic input)
         {
             if (input == null)
             {

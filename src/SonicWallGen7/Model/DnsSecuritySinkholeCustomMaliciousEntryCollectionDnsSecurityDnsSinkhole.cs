@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Enter DNS Sinkhole mode
+    /// Enter SonicDns Sinkhole mode
     /// </summary>
-    [DataContract(Name = "dns_security_sinkhole_custom_malicious_entry_collection_dns_security_dns_sinkhole")]
-    public partial class DnsSecuritySinkholeCustomMaliciousEntryCollectionDnsSecurityDnsSinkhole : IEquatable<DnsSecuritySinkholeCustomMaliciousEntryCollectionDnsSecurityDnsSinkhole>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_sinkhole_custom_malicious_entry_collection_SonicDns_security_SonicDns_sinkhole")]
+    public partial class SonicDnsSecuritySinkholeCustomMaliciousEntryCollectionSonicDnsSecuritySonicDnsSinkhole : IEquatable<SonicDnsSecuritySinkholeCustomMaliciousEntryCollectionSonicDnsSecuritySonicDnsSinkhole>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeCustomMaliciousEntryCollectionDnsSecurityDnsSinkhole" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeCustomMaliciousEntryCollectionSonicDnsSecuritySonicDnsSinkhole" /> class.
         /// </summary>
         /// <param name="customMaliciousEntry">Add custom malicious entry..</param>
-        public DnsSecuritySinkholeCustomMaliciousEntryCollectionDnsSecurityDnsSinkhole(List<DnsSecuritySinkholeCustomMaliciousEntry> customMaliciousEntry = default(List<DnsSecuritySinkholeCustomMaliciousEntry>))
+        public SonicDnsSecuritySinkholeCustomMaliciousEntryCollectionSonicDnsSecuritySonicDnsSinkhole(List<SonicDnsSecuritySinkholeCustomMaliciousEntry> customMaliciousEntry = default(List<SonicDnsSecuritySinkholeCustomMaliciousEntry>))
         {
             this.CustomMaliciousEntry = customMaliciousEntry;
         }
@@ -46,7 +46,7 @@ namespace SonicWallGen7.Model
         /// </summary>
         /// <value>Add custom malicious entry.</value>
         [DataMember(Name = "custom_malicious_entry", EmitDefaultValue = false)]
-        public List<DnsSecuritySinkholeCustomMaliciousEntry> CustomMaliciousEntry { get; set; }
+        public List<SonicDnsSecuritySinkholeCustomMaliciousEntry> CustomMaliciousEntry { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecuritySinkholeCustomMaliciousEntryCollectionDnsSecurityDnsSinkhole {\n");
+            sb.Append("class SonicDnsSecuritySinkholeCustomMaliciousEntryCollectionSonicDnsSecuritySonicDnsSinkhole {\n");
             sb.Append("  CustomMaliciousEntry: ").Append(CustomMaliciousEntry).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecuritySinkholeCustomMaliciousEntryCollectionDnsSecurityDnsSinkhole);
+            return this.Equals(input as SonicDnsSecuritySinkholeCustomMaliciousEntryCollectionSonicDnsSecuritySonicDnsSinkhole);
         }
 
         /// <summary>
-        /// Returns true if DnsSecuritySinkholeCustomMaliciousEntryCollectionDnsSecurityDnsSinkhole instances are equal
+        /// Returns true if SonicDnsSecuritySinkholeCustomMaliciousEntryCollectionSonicDnsSecuritySonicDnsSinkhole instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecuritySinkholeCustomMaliciousEntryCollectionDnsSecurityDnsSinkhole to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecuritySinkholeCustomMaliciousEntryCollectionSonicDnsSecuritySonicDnsSinkhole to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecuritySinkholeCustomMaliciousEntryCollectionDnsSecurityDnsSinkhole input)
+        public bool Equals(SonicDnsSecuritySinkholeCustomMaliciousEntryCollectionSonicDnsSecuritySonicDnsSinkhole input)
         {
             if (input == null)
             {

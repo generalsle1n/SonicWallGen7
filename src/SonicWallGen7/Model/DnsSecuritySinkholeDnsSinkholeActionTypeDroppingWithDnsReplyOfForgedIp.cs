@@ -27,25 +27,25 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp
+    /// SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp
     /// </summary>
-    [DataContract(Name = "dns_security_sinkhole_dns_sinkhole_action_type_dropping_with_dns_reply_of_forged_ip")]
-    public partial class DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp : IEquatable<DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp>, IValidatableObject
+    [DataContract(Name = "SonicDns_security_sinkhole_SonicDns_sinkhole_action_type_dropping_with_SonicDns_reply_of_forged_ip")]
+    public partial class SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp : IEquatable<SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp" /> class.
         /// </summary>
-        /// <param name="droppingWithDnsReplyOfForgedIp">droppingWithDnsReplyOfForgedIp.</param>
-        public DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIpDroppingWithDnsReplyOfForgedIp droppingWithDnsReplyOfForgedIp = default(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIpDroppingWithDnsReplyOfForgedIp))
+        /// <param name="droppingWithSonicDnsReplyOfForgedIp">droppingWithSonicDnsReplyOfForgedIp.</param>
+        public SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIpDroppingWithSonicDnsReplyOfForgedIp droppingWithSonicDnsReplyOfForgedIp = default(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIpDroppingWithSonicDnsReplyOfForgedIp))
         {
-            this.DroppingWithDnsReplyOfForgedIp = droppingWithDnsReplyOfForgedIp;
+            this.DroppingWithSonicDnsReplyOfForgedIp = droppingWithSonicDnsReplyOfForgedIp;
         }
 
         /// <summary>
-        /// Gets or Sets DroppingWithDnsReplyOfForgedIp
+        /// Gets or Sets DroppingWithSonicDnsReplyOfForgedIp
         /// </summary>
-        [DataMember(Name = "dropping_with_dns_reply_of_forged_ip", EmitDefaultValue = false)]
-        public DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIpDroppingWithDnsReplyOfForgedIp DroppingWithDnsReplyOfForgedIp { get; set; }
+        [DataMember(Name = "dropping_with_SonicDns_reply_of_forged_ip", EmitDefaultValue = false)]
+        public SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIpDroppingWithSonicDnsReplyOfForgedIp DroppingWithSonicDnsReplyOfForgedIp { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,8 +54,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp {\n");
-            sb.Append("  DroppingWithDnsReplyOfForgedIp: ").Append(DroppingWithDnsReplyOfForgedIp).Append("\n");
+            sb.Append("class SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp {\n");
+            sb.Append("  DroppingWithSonicDnsReplyOfForgedIp: ").Append(DroppingWithSonicDnsReplyOfForgedIp).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp);
+            return this.Equals(input as SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp);
         }
 
         /// <summary>
-        /// Returns true if DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp instances are equal
+        /// Returns true if SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp to be compared</param>
+        /// <param name="input">Instance of SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsSecuritySinkholeDnsSinkholeActionTypeDroppingWithDnsReplyOfForgedIp input)
+        public bool Equals(SonicDnsSecuritySinkholeSonicDnsSinkholeActionTypeDroppingWithSonicDnsReplyOfForgedIp input)
         {
             if (input == null)
             {
@@ -92,9 +92,9 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.DroppingWithDnsReplyOfForgedIp == input.DroppingWithDnsReplyOfForgedIp ||
-                    (this.DroppingWithDnsReplyOfForgedIp != null &&
-                    this.DroppingWithDnsReplyOfForgedIp.Equals(input.DroppingWithDnsReplyOfForgedIp))
+                    this.DroppingWithSonicDnsReplyOfForgedIp == input.DroppingWithSonicDnsReplyOfForgedIp ||
+                    (this.DroppingWithSonicDnsReplyOfForgedIp != null &&
+                    this.DroppingWithSonicDnsReplyOfForgedIp.Equals(input.DroppingWithSonicDnsReplyOfForgedIp))
                 );
         }
 
@@ -107,9 +107,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.DroppingWithDnsReplyOfForgedIp != null)
+                if (this.DroppingWithSonicDnsReplyOfForgedIp != null)
                 {
-                    hashCode = (hashCode * 59) + this.DroppingWithDnsReplyOfForgedIp.GetHashCode();
+                    hashCode = (hashCode * 59) + this.DroppingWithSonicDnsReplyOfForgedIp.GetHashCode();
                 }
                 return hashCode;
             }

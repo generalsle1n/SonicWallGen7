@@ -27,26 +27,26 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Configure and enter to DNS proxy mode.
+    /// Configure and enter to SonicDns proxy mode.
     /// </summary>
-    [DataContract(Name = "dns_proxy_cache_entry_collection_dns_proxy")]
-    public partial class DnsProxyCacheEntryCollectionDnsProxy : IEquatable<DnsProxyCacheEntryCollectionDnsProxy>, IValidatableObject
+    [DataContract(Name = "SonicDns_proxy_cache_entry_collection_SonicDns_proxy")]
+    public partial class SonicDnsProxyCacheEntryCollectionSonicDnsProxy : IEquatable<SonicDnsProxyCacheEntryCollectionSonicDnsProxy>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsProxyCacheEntryCollectionDnsProxy" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsProxyCacheEntryCollectionSonicDnsProxy" /> class.
         /// </summary>
-        /// <param name="cacheEntry">Add/edit the static DNS cache and enter its configuration mode..</param>
-        public DnsProxyCacheEntryCollectionDnsProxy(List<DnsProxyCacheEntry> cacheEntry = default(List<DnsProxyCacheEntry>))
+        /// <param name="cacheEntry">Add/edit the static SonicDns cache and enter its configuration mode..</param>
+        public SonicDnsProxyCacheEntryCollectionSonicDnsProxy(List<SonicDnsProxyCacheEntry> cacheEntry = default(List<SonicDnsProxyCacheEntry>))
         {
             this.CacheEntry = cacheEntry;
         }
 
         /// <summary>
-        /// Add/edit the static DNS cache and enter its configuration mode.
+        /// Add/edit the static SonicDns cache and enter its configuration mode.
         /// </summary>
-        /// <value>Add/edit the static DNS cache and enter its configuration mode.</value>
+        /// <value>Add/edit the static SonicDns cache and enter its configuration mode.</value>
         [DataMember(Name = "cache_entry", EmitDefaultValue = false)]
-        public List<DnsProxyCacheEntry> CacheEntry { get; set; }
+        public List<SonicDnsProxyCacheEntry> CacheEntry { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsProxyCacheEntryCollectionDnsProxy {\n");
+            sb.Append("class SonicDnsProxyCacheEntryCollectionSonicDnsProxy {\n");
             sb.Append("  CacheEntry: ").Append(CacheEntry).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsProxyCacheEntryCollectionDnsProxy);
+            return this.Equals(input as SonicDnsProxyCacheEntryCollectionSonicDnsProxy);
         }
 
         /// <summary>
-        /// Returns true if DnsProxyCacheEntryCollectionDnsProxy instances are equal
+        /// Returns true if SonicDnsProxyCacheEntryCollectionSonicDnsProxy instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsProxyCacheEntryCollectionDnsProxy to be compared</param>
+        /// <param name="input">Instance of SonicDnsProxyCacheEntryCollectionSonicDnsProxy to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsProxyCacheEntryCollectionDnsProxy input)
+        public bool Equals(SonicDnsProxyCacheEntryCollectionSonicDnsProxy input)
         {
             if (input == null)
             {

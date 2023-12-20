@@ -110,12 +110,12 @@ namespace SonicWallGen7.Test.Model
         }
 
         /// <summary>
-        /// Test the property 'DnsProxyCache'
+        /// Test the property 'SonicDnsProxyCache'
         /// </summary>
         [Fact]
-        public void DnsProxyCacheTest()
+        public void SonicDnsProxyCacheTest()
         {
-            // TODO unit test for the property 'DnsProxyCache'
+            // TODO unit test for the property 'SonicDnsProxyCache'
         }
 
         /// <summary>

@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DynamicDnsProfileIpv4ProfileIpv4BoundToInterface
+    /// DynamicSonicDnsProfileIpv4ProfileIpv4BoundToInterface
     /// </summary>
-    [DataContract(Name = "dynamic_dns_profile_ipv4_profile_ipv4_bound_to_interface")]
-    public partial class DynamicDnsProfileIpv4ProfileIpv4BoundToInterface : IEquatable<DynamicDnsProfileIpv4ProfileIpv4BoundToInterface>, IValidatableObject
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv4_profile_ipv4_bound_to_interface")]
+    public partial class DynamicSonicDnsProfileIpv4ProfileIpv4BoundToInterface : IEquatable<DynamicSonicDnsProfileIpv4ProfileIpv4BoundToInterface>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4ProfileIpv4BoundToInterface" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4ProfileIpv4BoundToInterface" /> class.
         /// </summary>
         /// <param name="varInterface">Specify interface..</param>
-        public DynamicDnsProfileIpv4ProfileIpv4BoundToInterface(string varInterface = default(string))
+        public DynamicSonicDnsProfileIpv4ProfileIpv4BoundToInterface(string varInterface = default(string))
         {
             this.VarInterface = varInterface;
         }
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv4ProfileIpv4BoundToInterface {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv4ProfileIpv4BoundToInterface {\n");
             sb.Append("  VarInterface: ").Append(VarInterface).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv4ProfileIpv4BoundToInterface);
+            return this.Equals(input as DynamicSonicDnsProfileIpv4ProfileIpv4BoundToInterface);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv4ProfileIpv4BoundToInterface instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv4ProfileIpv4BoundToInterface instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv4ProfileIpv4BoundToInterface to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv4ProfileIpv4BoundToInterface to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv4ProfileIpv4BoundToInterface input)
+        public bool Equals(DynamicSonicDnsProfileIpv4ProfileIpv4BoundToInterface input)
         {
             if (input == null)
             {

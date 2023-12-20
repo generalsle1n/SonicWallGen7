@@ -24,48 +24,48 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface ISslVpnDeviceProfileClientDnsInheritApiSync : IApiAccessor
+    public interface ISslVpnDeviceProfileClientSonicDnsInheritApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Inherit DNS servers.
+        /// Inherit SonicDns servers.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="NAME">Device name in the form: WORD or \&quot;QUOTED STRING\&quot;</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus SslVpnDeviceProfileClientDnsInheritNameNAMEPut(string NAME, Object? body = default(Object?), int operationIndex = 0);
+        ApiStatus SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPut(string NAME, Object? body = default(Object?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Inherit DNS servers.
+        /// Inherit SonicDns servers.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="NAME">Device name in the form: WORD or \&quot;QUOTED STRING\&quot;</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> SslVpnDeviceProfileClientDnsInheritNameNAMEPutWithHttpInfo(string NAME, Object? body = default(Object?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPutWithHttpInfo(string NAME, Object? body = default(Object?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface ISslVpnDeviceProfileClientDnsInheritApiAsync : IApiAccessor
+    public interface ISslVpnDeviceProfileClientSonicDnsInheritApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Inherit DNS servers.
+        /// Inherit SonicDns servers.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="NAME">Device name in the form: WORD or \&quot;QUOTED STRING\&quot;</param>
@@ -73,13 +73,13 @@ namespace SonicWallGen7.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> SslVpnDeviceProfileClientDnsInheritNameNAMEPutAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPutAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Inherit DNS servers.
+        /// Inherit SonicDns servers.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="NAME">Device name in the form: WORD or \&quot;QUOTED STRING\&quot;</param>
@@ -87,14 +87,14 @@ namespace SonicWallGen7.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SslVpnDeviceProfileClientDnsInheritNameNAMEPutWithHttpInfoAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPutWithHttpInfoAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface ISslVpnDeviceProfileClientDnsInheritApi : ISslVpnDeviceProfileClientDnsInheritApiSync, ISslVpnDeviceProfileClientDnsInheritApiAsync
+    public interface ISslVpnDeviceProfileClientSonicDnsInheritApi : ISslVpnDeviceProfileClientSonicDnsInheritApiSync, ISslVpnDeviceProfileClientSonicDnsInheritApiAsync
     {
 
     }
@@ -102,23 +102,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class SslVpnDeviceProfileClientDnsInheritApi : ISslVpnDeviceProfileClientDnsInheritApi
+    public partial class SslVpnDeviceProfileClientSonicDnsInheritApi : ISslVpnDeviceProfileClientSonicDnsInheritApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientDnsInheritApi"/> class.
+        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientSonicDnsInheritApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public SslVpnDeviceProfileClientDnsInheritApi() : this((string)null)
+        public SslVpnDeviceProfileClientSonicDnsInheritApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientDnsInheritApi"/> class.
+        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientSonicDnsInheritApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public SslVpnDeviceProfileClientDnsInheritApi(string basePath)
+        public SslVpnDeviceProfileClientSonicDnsInheritApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -130,12 +130,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientDnsInheritApi"/> class
+        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientSonicDnsInheritApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public SslVpnDeviceProfileClientDnsInheritApi(SonicWallGen7.Client.Configuration configuration)
+        public SslVpnDeviceProfileClientSonicDnsInheritApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -149,13 +149,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientDnsInheritApi"/> class
+        /// Initializes a new instance of the <see cref="SslVpnDeviceProfileClientSonicDnsInheritApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public SslVpnDeviceProfileClientDnsInheritApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SslVpnDeviceProfileClientSonicDnsInheritApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -209,33 +209,33 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Inherit DNS servers.
+        ///  Inherit SonicDns servers.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="NAME">Device name in the form: WORD or \&quot;QUOTED STRING\&quot;</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus SslVpnDeviceProfileClientDnsInheritNameNAMEPut(string NAME, Object? body = default(Object?), int operationIndex = 0)
+        public ApiStatus SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPut(string NAME, Object? body = default(Object?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SslVpnDeviceProfileClientDnsInheritNameNAMEPutWithHttpInfo(NAME, body);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPutWithHttpInfo(NAME, body);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Inherit DNS servers.
+        ///  Inherit SonicDns servers.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="NAME">Device name in the form: WORD or \&quot;QUOTED STRING\&quot;</param>
         /// <param name="body"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> SslVpnDeviceProfileClientDnsInheritNameNAMEPutWithHttpInfo(string NAME, Object? body = default(Object?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPutWithHttpInfo(string NAME, Object? body = default(Object?), int operationIndex = 0)
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SslVpnDeviceProfileClientDnsInheritApi->SslVpnDeviceProfileClientDnsInheritNameNAMEPut");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SslVpnDeviceProfileClientSonicDnsInheritApi->SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPut");
             }
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -264,7 +264,7 @@ namespace SonicWallGen7.Api
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
             localVarRequestOptions.Data = body;
 
-            localVarRequestOptions.Operation = "SslVpnDeviceProfileClientDnsInheritApi.SslVpnDeviceProfileClientDnsInheritNameNAMEPut";
+            localVarRequestOptions.Operation = "SslVpnDeviceProfileClientSonicDnsInheritApi.SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -275,10 +275,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<ApiStatus>("/ssl-vpn/device-profile-client-dns-inherit/name/{NAME}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<ApiStatus>("/ssl-vpn/device-profile-client-SonicDns-inherit/name/{NAME}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("SslVpnDeviceProfileClientDnsInheritNameNAMEPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -289,7 +289,7 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Inherit DNS servers.
+        ///  Inherit SonicDns servers.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="NAME">Device name in the form: WORD or \&quot;QUOTED STRING\&quot;</param>
@@ -297,14 +297,14 @@ namespace SonicWallGen7.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> SslVpnDeviceProfileClientDnsInheritNameNAMEPutAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPutAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SslVpnDeviceProfileClientDnsInheritNameNAMEPutWithHttpInfoAsync(NAME, body, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPutWithHttpInfoAsync(NAME, body, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Inherit DNS servers.
+        ///  Inherit SonicDns servers.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="NAME">Device name in the form: WORD or \&quot;QUOTED STRING\&quot;</param>
@@ -312,12 +312,12 @@ namespace SonicWallGen7.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SslVpnDeviceProfileClientDnsInheritNameNAMEPutWithHttpInfoAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPutWithHttpInfoAsync(string NAME, Object? body = default(Object?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'NAME' is set
             if (NAME == null)
             {
-                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SslVpnDeviceProfileClientDnsInheritApi->SslVpnDeviceProfileClientDnsInheritNameNAMEPut");
+                throw new SonicWallGen7.Client.ApiException(400, "Missing required parameter 'NAME' when calling SslVpnDeviceProfileClientSonicDnsInheritApi->SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPut");
             }
 
 
@@ -347,7 +347,7 @@ namespace SonicWallGen7.Api
             localVarRequestOptions.PathParameters.Add("NAME", SonicWallGen7.Client.ClientUtils.ParameterToString(NAME)); // path parameter
             localVarRequestOptions.Data = body;
 
-            localVarRequestOptions.Operation = "SslVpnDeviceProfileClientDnsInheritApi.SslVpnDeviceProfileClientDnsInheritNameNAMEPut";
+            localVarRequestOptions.Operation = "SslVpnDeviceProfileClientSonicDnsInheritApi.SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPut";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -358,11 +358,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/ssl-vpn/device-profile-client-dns-inherit/name/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<ApiStatus>("/ssl-vpn/device-profile-client-SonicDns-inherit/name/{NAME}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("SslVpnDeviceProfileClientDnsInheritNameNAMEPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SslVpnDeviceProfileClientSonicDnsInheritNameNAMEPut", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

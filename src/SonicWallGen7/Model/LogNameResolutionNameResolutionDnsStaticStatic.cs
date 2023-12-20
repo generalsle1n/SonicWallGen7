@@ -27,18 +27,18 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Set static DNS server
+    /// Set static SonicDns server
     /// </summary>
-    [DataContract(Name = "log_name_resolution_name_resolution_dns_static_static")]
-    public partial class LogNameResolutionNameResolutionDnsStaticStatic : IEquatable<LogNameResolutionNameResolutionDnsStaticStatic>, IValidatableObject
+    [DataContract(Name = "log_name_resolution_name_resolution_SonicDns_static_static")]
+    public partial class LogNameResolutionNameResolutionSonicDnsStaticStatic : IEquatable<LogNameResolutionNameResolutionSonicDnsStaticStatic>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="LogNameResolutionNameResolutionDnsStaticStatic" /> class.
+        /// Initializes a new instance of the <see cref="LogNameResolutionNameResolutionSonicDnsStaticStatic" /> class.
         /// </summary>
-        /// <param name="primary">Specify primary DNS server IP address..</param>
-        /// <param name="secondary">Specify secondary DNS server IP address..</param>
-        /// <param name="tertiary">Specify tertiary DNS server IP address..</param>
-        public LogNameResolutionNameResolutionDnsStaticStatic(string primary = default(string), string secondary = default(string), string tertiary = default(string))
+        /// <param name="primary">Specify primary SonicDns server IP address..</param>
+        /// <param name="secondary">Specify secondary SonicDns server IP address..</param>
+        /// <param name="tertiary">Specify tertiary SonicDns server IP address..</param>
+        public LogNameResolutionNameResolutionSonicDnsStaticStatic(string primary = default(string), string secondary = default(string), string tertiary = default(string))
         {
             this.Primary = primary;
             this.Secondary = secondary;
@@ -46,23 +46,23 @@ namespace SonicWallGen7.Model
         }
 
         /// <summary>
-        /// Specify primary DNS server IP address.
+        /// Specify primary SonicDns server IP address.
         /// </summary>
-        /// <value>Specify primary DNS server IP address.</value>
+        /// <value>Specify primary SonicDns server IP address.</value>
         [DataMember(Name = "primary", EmitDefaultValue = false)]
         public string Primary { get; set; }
 
         /// <summary>
-        /// Specify secondary DNS server IP address.
+        /// Specify secondary SonicDns server IP address.
         /// </summary>
-        /// <value>Specify secondary DNS server IP address.</value>
+        /// <value>Specify secondary SonicDns server IP address.</value>
         [DataMember(Name = "secondary", EmitDefaultValue = false)]
         public string Secondary { get; set; }
 
         /// <summary>
-        /// Specify tertiary DNS server IP address.
+        /// Specify tertiary SonicDns server IP address.
         /// </summary>
-        /// <value>Specify tertiary DNS server IP address.</value>
+        /// <value>Specify tertiary SonicDns server IP address.</value>
         [DataMember(Name = "tertiary", EmitDefaultValue = false)]
         public string Tertiary { get; set; }
 
@@ -73,7 +73,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class LogNameResolutionNameResolutionDnsStaticStatic {\n");
+            sb.Append("class LogNameResolutionNameResolutionSonicDnsStaticStatic {\n");
             sb.Append("  Primary: ").Append(Primary).Append("\n");
             sb.Append("  Secondary: ").Append(Secondary).Append("\n");
             sb.Append("  Tertiary: ").Append(Tertiary).Append("\n");
@@ -97,15 +97,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as LogNameResolutionNameResolutionDnsStaticStatic);
+            return this.Equals(input as LogNameResolutionNameResolutionSonicDnsStaticStatic);
         }
 
         /// <summary>
-        /// Returns true if LogNameResolutionNameResolutionDnsStaticStatic instances are equal
+        /// Returns true if LogNameResolutionNameResolutionSonicDnsStaticStatic instances are equal
         /// </summary>
-        /// <param name="input">Instance of LogNameResolutionNameResolutionDnsStaticStatic to be compared</param>
+        /// <param name="input">Instance of LogNameResolutionNameResolutionSonicDnsStaticStatic to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(LogNameResolutionNameResolutionDnsStaticStatic input)
+        public bool Equals(LogNameResolutionNameResolutionSonicDnsStaticStatic input)
         {
             if (input == null)
             {

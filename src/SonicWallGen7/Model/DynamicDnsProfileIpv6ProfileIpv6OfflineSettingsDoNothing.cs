@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing
+    /// DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing
     /// </summary>
-    [DataContract(Name = "dynamic_dns_profile_ipv6_profile_ipv6_offline_settings_do_nothing")]
-    public partial class DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing : IEquatable<DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing>, IValidatableObject
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv6_profile_ipv6_offline_settings_do_nothing")]
+    public partial class DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing : IEquatable<DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing" /> class.
         /// </summary>
         /// <param name="doNothing">Allows the previously registered IP address to remain current with the Provider..</param>
-        public DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing(bool doNothing = default(bool))
+        public DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing(bool doNothing = default(bool))
         {
             this.DoNothing = doNothing;
         }
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing {\n");
+            sb.Append("class DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing {\n");
             sb.Append("  DoNothing: ").Append(DoNothing).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing);
+            return this.Equals(input as DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing input)
+        public bool Equals(DynamicSonicDnsProfileIpv6ProfileIpv6OfflineSettingsDoNothing input)
         {
             if (input == null)
             {

@@ -24,69 +24,69 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsWanIpv6ApiSync : IApiAccessor
+    public interface ISonicDnsWanIpv6ApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve WAN DNS.
+        /// Retrieve WAN SonicDns.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ShowStatusDnsWanIpv6Detail</returns>
-        ShowStatusDnsWanIpv6Detail ReportingDnsWanIpv6Get(int operationIndex = 0);
+        /// <returns>ShowStatusSonicDnsWanIpv6Detail</returns>
+        ShowStatusSonicDnsWanIpv6Detail ReportingSonicDnsWanIpv6Get(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve WAN DNS.
+        /// Retrieve WAN SonicDns.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of ShowStatusDnsWanIpv6Detail</returns>
-        ApiResponse<ShowStatusDnsWanIpv6Detail> ReportingDnsWanIpv6GetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of ShowStatusSonicDnsWanIpv6Detail</returns>
+        ApiResponse<ShowStatusSonicDnsWanIpv6Detail> ReportingSonicDnsWanIpv6GetWithHttpInfo(int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsWanIpv6ApiAsync : IApiAccessor
+    public interface ISonicDnsWanIpv6ApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve WAN DNS.
+        /// Retrieve WAN SonicDns.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ShowStatusDnsWanIpv6Detail</returns>
-        System.Threading.Tasks.Task<ShowStatusDnsWanIpv6Detail> ReportingDnsWanIpv6GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ShowStatusSonicDnsWanIpv6Detail</returns>
+        System.Threading.Tasks.Task<ShowStatusSonicDnsWanIpv6Detail> ReportingSonicDnsWanIpv6GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve WAN DNS.
+        /// Retrieve WAN SonicDns.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (ShowStatusDnsWanIpv6Detail)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ShowStatusDnsWanIpv6Detail>> ReportingDnsWanIpv6GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (ShowStatusSonicDnsWanIpv6Detail)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ShowStatusSonicDnsWanIpv6Detail>> ReportingSonicDnsWanIpv6GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsWanIpv6Api : IDnsWanIpv6ApiSync, IDnsWanIpv6ApiAsync
+    public interface ISonicDnsWanIpv6Api : ISonicDnsWanIpv6ApiSync, ISonicDnsWanIpv6ApiAsync
     {
 
     }
@@ -94,23 +94,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DnsWanIpv6Api : IDnsWanIpv6Api
+    public partial class SonicDnsWanIpv6Api : ISonicDnsWanIpv6Api
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsWanIpv6Api"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsWanIpv6Api"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsWanIpv6Api() : this((string)null)
+        public SonicDnsWanIpv6Api() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsWanIpv6Api"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsWanIpv6Api"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsWanIpv6Api(string basePath)
+        public SonicDnsWanIpv6Api(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -122,12 +122,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsWanIpv6Api"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsWanIpv6Api"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DnsWanIpv6Api(SonicWallGen7.Client.Configuration configuration)
+        public SonicDnsWanIpv6Api(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -141,13 +141,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsWanIpv6Api"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsWanIpv6Api"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DnsWanIpv6Api(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicDnsWanIpv6Api(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -201,24 +201,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve WAN DNS.
+        ///  Retrieve WAN SonicDns.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ShowStatusDnsWanIpv6Detail</returns>
-        public ShowStatusDnsWanIpv6Detail ReportingDnsWanIpv6Get(int operationIndex = 0)
+        /// <returns>ShowStatusSonicDnsWanIpv6Detail</returns>
+        public ShowStatusSonicDnsWanIpv6Detail ReportingSonicDnsWanIpv6Get(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ShowStatusDnsWanIpv6Detail> localVarResponse = ReportingDnsWanIpv6GetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<ShowStatusSonicDnsWanIpv6Detail> localVarResponse = ReportingSonicDnsWanIpv6GetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve WAN DNS.
+        ///  Retrieve WAN SonicDns.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of ShowStatusDnsWanIpv6Detail</returns>
-        public SonicWallGen7.Client.ApiResponse<ShowStatusDnsWanIpv6Detail> ReportingDnsWanIpv6GetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of ShowStatusSonicDnsWanIpv6Detail</returns>
+        public SonicWallGen7.Client.ApiResponse<ShowStatusSonicDnsWanIpv6Detail> ReportingSonicDnsWanIpv6GetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -243,7 +243,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsWanIpv6Api.ReportingDnsWanIpv6Get";
+            localVarRequestOptions.Operation = "SonicDnsWanIpv6Api.ReportingSonicDnsWanIpv6Get";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -254,10 +254,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<ShowStatusDnsWanIpv6Detail>("/reporting/dns/wan/ipv6", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<ShowStatusSonicDnsWanIpv6Detail>("/reporting/SonicDns/wan/ipv6", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDnsWanIpv6Get", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingSonicDnsWanIpv6Get", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -268,26 +268,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve WAN DNS.
+        ///  Retrieve WAN SonicDns.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ShowStatusDnsWanIpv6Detail</returns>
-        public async System.Threading.Tasks.Task<ShowStatusDnsWanIpv6Detail> ReportingDnsWanIpv6GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ShowStatusSonicDnsWanIpv6Detail</returns>
+        public async System.Threading.Tasks.Task<ShowStatusSonicDnsWanIpv6Detail> ReportingSonicDnsWanIpv6GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ShowStatusDnsWanIpv6Detail> localVarResponse = await ReportingDnsWanIpv6GetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ShowStatusSonicDnsWanIpv6Detail> localVarResponse = await ReportingSonicDnsWanIpv6GetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve WAN DNS.
+        ///  Retrieve WAN SonicDns.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (ShowStatusDnsWanIpv6Detail)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ShowStatusDnsWanIpv6Detail>> ReportingDnsWanIpv6GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (ShowStatusSonicDnsWanIpv6Detail)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ShowStatusSonicDnsWanIpv6Detail>> ReportingSonicDnsWanIpv6GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -313,7 +313,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsWanIpv6Api.ReportingDnsWanIpv6Get";
+            localVarRequestOptions.Operation = "SonicDnsWanIpv6Api.ReportingSonicDnsWanIpv6Get";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -324,11 +324,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<ShowStatusDnsWanIpv6Detail>("/reporting/dns/wan/ipv6", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<ShowStatusSonicDnsWanIpv6Detail>("/reporting/SonicDns/wan/ipv6", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ReportingDnsWanIpv6Get", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ReportingSonicDnsWanIpv6Get", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

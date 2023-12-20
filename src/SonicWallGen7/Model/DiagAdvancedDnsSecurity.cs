@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Advanced diag DNS security settings configuration.
+    /// Advanced diag SonicDns security settings configuration.
     /// </summary>
-    [DataContract(Name = "diag_advanced_dns_security")]
-    public partial class DiagAdvancedDnsSecurity : IEquatable<DiagAdvancedDnsSecurity>, IValidatableObject
+    [DataContract(Name = "diag_advanced_SonicDns_security")]
+    public partial class DiagAdvancedSonicDnsSecurity : IEquatable<DiagAdvancedSonicDnsSecurity>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDnsSecurity" /> class.
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDnsSecurity" /> class.
         /// </summary>
         /// <param name="diag">diag.</param>
-        public DiagAdvancedDnsSecurity(DiagAdvancedDnsSecurityDiag diag = default(DiagAdvancedDnsSecurityDiag))
+        public DiagAdvancedSonicDnsSecurity(DiagAdvancedSonicDnsSecurityDiag diag = default(DiagAdvancedSonicDnsSecurityDiag))
         {
             this.Diag = diag;
         }
@@ -45,7 +45,7 @@ namespace SonicWallGen7.Model
         /// Gets or Sets Diag
         /// </summary>
         [DataMember(Name = "diag", EmitDefaultValue = false)]
-        public DiagAdvancedDnsSecurityDiag Diag { get; set; }
+        public DiagAdvancedSonicDnsSecurityDiag Diag { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,7 +54,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DiagAdvancedDnsSecurity {\n");
+            sb.Append("class DiagAdvancedSonicDnsSecurity {\n");
             sb.Append("  Diag: ").Append(Diag).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -76,15 +76,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DiagAdvancedDnsSecurity);
+            return this.Equals(input as DiagAdvancedSonicDnsSecurity);
         }
 
         /// <summary>
-        /// Returns true if DiagAdvancedDnsSecurity instances are equal
+        /// Returns true if DiagAdvancedSonicDnsSecurity instances are equal
         /// </summary>
-        /// <param name="input">Instance of DiagAdvancedDnsSecurity to be compared</param>
+        /// <param name="input">Instance of DiagAdvancedSonicDnsSecurity to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DiagAdvancedDnsSecurity input)
+        public bool Equals(DiagAdvancedSonicDnsSecurity input)
         {
             if (input == null)
             {

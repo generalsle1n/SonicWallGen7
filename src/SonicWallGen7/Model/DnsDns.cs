@@ -27,60 +27,60 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DNS configuration.
+    /// SonicDns configuration.
     /// </summary>
-    [DataContract(Name = "dns_dns")]
-    public partial class DnsDns : IEquatable<DnsDns>, IValidatableObject
+    [DataContract(Name = "SonicDns_SonicDns")]
+    public partial class SonicDnsSonicDns : IEquatable<SonicDnsSonicDns>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsDns" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSonicDns" /> class.
         /// </summary>
         /// <param name="server">server.</param>
         /// <param name="rebinding">rebinding.</param>
-        /// <param name="fqdnBinding">Enable FQDN object only cache DNS reply from sanctioned server.</param>
-        /// <param name="splitServers">Enable proxying of split DNS servers..</param>
-        /// <param name="fqdnOverTcpDns">Enable DNS host name lookup over TCP for FQDN..</param>
-        public DnsDns(DnsDnsServer server = default(DnsDnsServer), DnsDnsRebinding rebinding = default(DnsDnsRebinding), bool fqdnBinding = default(bool), bool splitServers = default(bool), bool fqdnOverTcpDns = default(bool))
+        /// <param name="fqdnBinding">Enable FQDN object only cache SonicDns reply from sanctioned server.</param>
+        /// <param name="splitServers">Enable proxying of split SonicDns servers..</param>
+        /// <param name="fqdnOverTcpSonicDns">Enable SonicDns host name lookup over TCP for FQDN..</param>
+        public SonicDnsSonicDns(SonicDnsSonicDnsServer server = default(SonicDnsSonicDnsServer), SonicDnsSonicDnsRebinding rebinding = default(SonicDnsSonicDnsRebinding), bool fqdnBinding = default(bool), bool splitServers = default(bool), bool fqdnOverTcpSonicDns = default(bool))
         {
             this.Server = server;
             this.Rebinding = rebinding;
             this.FqdnBinding = fqdnBinding;
             this.SplitServers = splitServers;
-            this.FqdnOverTcpDns = fqdnOverTcpDns;
+            this.FqdnOverTcpSonicDns = fqdnOverTcpSonicDns;
         }
 
         /// <summary>
         /// Gets or Sets Server
         /// </summary>
         [DataMember(Name = "server", EmitDefaultValue = false)]
-        public DnsDnsServer Server { get; set; }
+        public SonicDnsSonicDnsServer Server { get; set; }
 
         /// <summary>
         /// Gets or Sets Rebinding
         /// </summary>
         [DataMember(Name = "rebinding", EmitDefaultValue = false)]
-        public DnsDnsRebinding Rebinding { get; set; }
+        public SonicDnsSonicDnsRebinding Rebinding { get; set; }
 
         /// <summary>
-        /// Enable FQDN object only cache DNS reply from sanctioned server
+        /// Enable FQDN object only cache SonicDns reply from sanctioned server
         /// </summary>
-        /// <value>Enable FQDN object only cache DNS reply from sanctioned server</value>
+        /// <value>Enable FQDN object only cache SonicDns reply from sanctioned server</value>
         [DataMember(Name = "fqdn_binding", EmitDefaultValue = true)]
         public bool FqdnBinding { get; set; }
 
         /// <summary>
-        /// Enable proxying of split DNS servers.
+        /// Enable proxying of split SonicDns servers.
         /// </summary>
-        /// <value>Enable proxying of split DNS servers.</value>
+        /// <value>Enable proxying of split SonicDns servers.</value>
         [DataMember(Name = "split_servers", EmitDefaultValue = true)]
         public bool SplitServers { get; set; }
 
         /// <summary>
-        /// Enable DNS host name lookup over TCP for FQDN.
+        /// Enable SonicDns host name lookup over TCP for FQDN.
         /// </summary>
-        /// <value>Enable DNS host name lookup over TCP for FQDN.</value>
-        [DataMember(Name = "fqdn_over_tcp_dns", EmitDefaultValue = true)]
-        public bool FqdnOverTcpDns { get; set; }
+        /// <value>Enable SonicDns host name lookup over TCP for FQDN.</value>
+        [DataMember(Name = "fqdn_over_tcp_SonicDns", EmitDefaultValue = true)]
+        public bool FqdnOverTcpSonicDns { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -89,12 +89,12 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsDns {\n");
+            sb.Append("class SonicDnsSonicDns {\n");
             sb.Append("  Server: ").Append(Server).Append("\n");
             sb.Append("  Rebinding: ").Append(Rebinding).Append("\n");
             sb.Append("  FqdnBinding: ").Append(FqdnBinding).Append("\n");
             sb.Append("  SplitServers: ").Append(SplitServers).Append("\n");
-            sb.Append("  FqdnOverTcpDns: ").Append(FqdnOverTcpDns).Append("\n");
+            sb.Append("  FqdnOverTcpSonicDns: ").Append(FqdnOverTcpSonicDns).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -115,15 +115,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsDns);
+            return this.Equals(input as SonicDnsSonicDns);
         }
 
         /// <summary>
-        /// Returns true if DnsDns instances are equal
+        /// Returns true if SonicDnsSonicDns instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsDns to be compared</param>
+        /// <param name="input">Instance of SonicDnsSonicDns to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsDns input)
+        public bool Equals(SonicDnsSonicDns input)
         {
             if (input == null)
             {
@@ -149,8 +149,8 @@ namespace SonicWallGen7.Model
                     this.SplitServers.Equals(input.SplitServers)
                 ) && 
                 (
-                    this.FqdnOverTcpDns == input.FqdnOverTcpDns ||
-                    this.FqdnOverTcpDns.Equals(input.FqdnOverTcpDns)
+                    this.FqdnOverTcpSonicDns == input.FqdnOverTcpSonicDns ||
+                    this.FqdnOverTcpSonicDns.Equals(input.FqdnOverTcpSonicDns)
                 );
         }
 
@@ -173,7 +173,7 @@ namespace SonicWallGen7.Model
                 }
                 hashCode = (hashCode * 59) + this.FqdnBinding.GetHashCode();
                 hashCode = (hashCode * 59) + this.SplitServers.GetHashCode();
-                hashCode = (hashCode * 59) + this.FqdnOverTcpDns.GetHashCode();
+                hashCode = (hashCode * 59) + this.FqdnOverTcpSonicDns.GetHashCode();
                 return hashCode;
             }
         }

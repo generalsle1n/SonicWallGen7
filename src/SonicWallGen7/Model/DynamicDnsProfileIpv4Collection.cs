@@ -27,26 +27,26 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DynamicDnsProfileIpv4Collection
+    /// DynamicSonicDnsProfileIpv4Collection
     /// </summary>
-    [DataContract(Name = "dynamic_dns_profile_ipv4_collection")]
-    public partial class DynamicDnsProfileIpv4Collection : IEquatable<DynamicDnsProfileIpv4Collection>, IValidatableObject
+    [DataContract(Name = "dynamic_SonicDns_profile_ipv4_collection")]
+    public partial class DynamicSonicDnsProfileIpv4Collection : IEquatable<DynamicSonicDnsProfileIpv4Collection>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DynamicDnsProfileIpv4Collection" /> class.
+        /// Initializes a new instance of the <see cref="DynamicSonicDnsProfileIpv4Collection" /> class.
         /// </summary>
-        /// <param name="dynamicDnss">Dynamic DNS configuration..</param>
-        public DynamicDnsProfileIpv4Collection(List<DynamicDnsProfileIpv4> dynamicDnss = default(List<DynamicDnsProfileIpv4>))
+        /// <param name="dynamicSonicDnss">Dynamic SonicDns configuration..</param>
+        public DynamicSonicDnsProfileIpv4Collection(List<DynamicSonicDnsProfileIpv4> dynamicSonicDnss = default(List<DynamicSonicDnsProfileIpv4>))
         {
-            this.DynamicDnss = dynamicDnss;
+            this.DynamicSonicDnss = dynamicSonicDnss;
         }
 
         /// <summary>
-        /// Dynamic DNS configuration.
+        /// Dynamic SonicDns configuration.
         /// </summary>
-        /// <value>Dynamic DNS configuration.</value>
-        [DataMember(Name = "dynamic_dnss", EmitDefaultValue = false)]
-        public List<DynamicDnsProfileIpv4> DynamicDnss { get; set; }
+        /// <value>Dynamic SonicDns configuration.</value>
+        [DataMember(Name = "dynamic_SonicDnss", EmitDefaultValue = false)]
+        public List<DynamicSonicDnsProfileIpv4> DynamicSonicDnss { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -55,8 +55,8 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DynamicDnsProfileIpv4Collection {\n");
-            sb.Append("  DynamicDnss: ").Append(DynamicDnss).Append("\n");
+            sb.Append("class DynamicSonicDnsProfileIpv4Collection {\n");
+            sb.Append("  DynamicSonicDnss: ").Append(DynamicSonicDnss).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DynamicDnsProfileIpv4Collection);
+            return this.Equals(input as DynamicSonicDnsProfileIpv4Collection);
         }
 
         /// <summary>
-        /// Returns true if DynamicDnsProfileIpv4Collection instances are equal
+        /// Returns true if DynamicSonicDnsProfileIpv4Collection instances are equal
         /// </summary>
-        /// <param name="input">Instance of DynamicDnsProfileIpv4Collection to be compared</param>
+        /// <param name="input">Instance of DynamicSonicDnsProfileIpv4Collection to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DynamicDnsProfileIpv4Collection input)
+        public bool Equals(DynamicSonicDnsProfileIpv4Collection input)
         {
             if (input == null)
             {
@@ -93,10 +93,10 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.DynamicDnss == input.DynamicDnss ||
-                    this.DynamicDnss != null &&
-                    input.DynamicDnss != null &&
-                    this.DynamicDnss.SequenceEqual(input.DynamicDnss)
+                    this.DynamicSonicDnss == input.DynamicSonicDnss ||
+                    this.DynamicSonicDnss != null &&
+                    input.DynamicSonicDnss != null &&
+                    this.DynamicSonicDnss.SequenceEqual(input.DynamicSonicDnss)
                 );
         }
 
@@ -109,9 +109,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.DynamicDnss != null)
+                if (this.DynamicSonicDnss != null)
                 {
-                    hashCode = (hashCode * 59) + this.DynamicDnss.GetHashCode();
+                    hashCode = (hashCode * 59) + this.DynamicSonicDnss.GetHashCode();
                 }
                 return hashCode;
             }

@@ -49,13 +49,13 @@ namespace SonicWallGen7.Model
         /// <param name="netmask">Set DHCP static scope subnet mask..</param>
         /// <param name="comment">Set DHCP static scope comment. * Set to null to represent an unconfigured state..</param>
         /// <param name="domainName">Set DHCP domain name. * Set to null to represent an unconfigured state..</param>
-        /// <param name="dns">dns.</param>
+        /// <param name="SonicDns">SonicDns.</param>
         /// <param name="wins">wins.</param>
         /// <param name="callManager">callManager.</param>
         /// <param name="networkBoot">networkBoot.</param>
         /// <param name="genericOption">genericOption.</param>
         /// <param name="alwaysSendOption">Enable send generic options always..</param>
-        public DhcpServerScopeStatic(string ip = default(string), string mac = default(string), bool enable = default(bool), string name = default(string), decimal leaseTime = default(decimal), string defaultGateway = default(string), string netmask = default(string), string comment = default(string), string domainName = default(string), DhcpServerScopeStaticDns dns = default(DhcpServerScopeStaticDns), DhcpServerScopeDynamicWins wins = default(DhcpServerScopeDynamicWins), DhcpServerScopeDynamicCallManager callManager = default(DhcpServerScopeDynamicCallManager), DhcpServerScopeDynamicNetworkBoot networkBoot = default(DhcpServerScopeDynamicNetworkBoot), DhcpServerScopeStaticGenericOption genericOption = default(DhcpServerScopeStaticGenericOption), bool alwaysSendOption = default(bool))
+        public DhcpServerScopeStatic(string ip = default(string), string mac = default(string), bool enable = default(bool), string name = default(string), decimal leaseTime = default(decimal), string defaultGateway = default(string), string netmask = default(string), string comment = default(string), string domainName = default(string), DhcpServerScopeStaticSonicDns SonicDns = default(DhcpServerScopeStaticSonicDns), DhcpServerScopeDynamicWins wins = default(DhcpServerScopeDynamicWins), DhcpServerScopeDynamicCallManager callManager = default(DhcpServerScopeDynamicCallManager), DhcpServerScopeDynamicNetworkBoot networkBoot = default(DhcpServerScopeDynamicNetworkBoot), DhcpServerScopeStaticGenericOption genericOption = default(DhcpServerScopeStaticGenericOption), bool alwaysSendOption = default(bool))
         {
             // to ensure "ip" is required (not null)
             if (ip == null)
@@ -76,7 +76,7 @@ namespace SonicWallGen7.Model
             this.Netmask = netmask;
             this.Comment = comment;
             this.DomainName = domainName;
-            this.Dns = dns;
+            this.SonicDns = SonicDns;
             this.Wins = wins;
             this.CallManager = callManager;
             this.NetworkBoot = networkBoot;
@@ -148,10 +148,10 @@ namespace SonicWallGen7.Model
         public string DomainName { get; set; }
 
         /// <summary>
-        /// Gets or Sets Dns
+        /// Gets or Sets SonicDns
         /// </summary>
-        [DataMember(Name = "dns", EmitDefaultValue = false)]
-        public DhcpServerScopeStaticDns Dns { get; set; }
+        [DataMember(Name = "SonicDns", EmitDefaultValue = false)]
+        public DhcpServerScopeStaticSonicDns SonicDns { get; set; }
 
         /// <summary>
         /// Gets or Sets Wins
@@ -201,7 +201,7 @@ namespace SonicWallGen7.Model
             sb.Append("  Netmask: ").Append(Netmask).Append("\n");
             sb.Append("  Comment: ").Append(Comment).Append("\n");
             sb.Append("  DomainName: ").Append(DomainName).Append("\n");
-            sb.Append("  Dns: ").Append(Dns).Append("\n");
+            sb.Append("  SonicDns: ").Append(SonicDns).Append("\n");
             sb.Append("  Wins: ").Append(Wins).Append("\n");
             sb.Append("  CallManager: ").Append(CallManager).Append("\n");
             sb.Append("  NetworkBoot: ").Append(NetworkBoot).Append("\n");
@@ -286,9 +286,9 @@ namespace SonicWallGen7.Model
                     this.DomainName.Equals(input.DomainName))
                 ) && 
                 (
-                    this.Dns == input.Dns ||
-                    (this.Dns != null &&
-                    this.Dns.Equals(input.Dns))
+                    this.SonicDns == input.SonicDns ||
+                    (this.SonicDns != null &&
+                    this.SonicDns.Equals(input.SonicDns))
                 ) && 
                 (
                     this.Wins == input.Wins ||
@@ -355,9 +355,9 @@ namespace SonicWallGen7.Model
                 {
                     hashCode = (hashCode * 59) + this.DomainName.GetHashCode();
                 }
-                if (this.Dns != null)
+                if (this.SonicDns != null)
                 {
-                    hashCode = (hashCode * 59) + this.Dns.GetHashCode();
+                    hashCode = (hashCode * 59) + this.SonicDns.GetHashCode();
                 }
                 if (this.Wins != null)
                 {

@@ -27,16 +27,16 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// DnsRebindingAllowedDomainsName
+    /// SonicDnsRebindingAllowedDomainsName
     /// </summary>
-    [DataContract(Name = "dns_rebinding_allowed_domains_name")]
-    public partial class DnsRebindingAllowedDomainsName : IEquatable<DnsRebindingAllowedDomainsName>, IValidatableObject
+    [DataContract(Name = "SonicDns_rebinding_allowed_domains_name")]
+    public partial class SonicDnsRebindingAllowedDomainsName : IEquatable<SonicDnsRebindingAllowedDomainsName>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsRebindingAllowedDomainsName" /> class.
+        /// Initializes a new instance of the <see cref="SonicDnsRebindingAllowedDomainsName" /> class.
         /// </summary>
         /// <param name="name">Specify FQDN address object name..</param>
-        public DnsRebindingAllowedDomainsName(string name = default(string))
+        public SonicDnsRebindingAllowedDomainsName(string name = default(string))
         {
             this.Name = name;
         }
@@ -55,7 +55,7 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DnsRebindingAllowedDomainsName {\n");
+            sb.Append("class SonicDnsRebindingAllowedDomainsName {\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -77,15 +77,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DnsRebindingAllowedDomainsName);
+            return this.Equals(input as SonicDnsRebindingAllowedDomainsName);
         }
 
         /// <summary>
-        /// Returns true if DnsRebindingAllowedDomainsName instances are equal
+        /// Returns true if SonicDnsRebindingAllowedDomainsName instances are equal
         /// </summary>
-        /// <param name="input">Instance of DnsRebindingAllowedDomainsName to be compared</param>
+        /// <param name="input">Instance of SonicDnsRebindingAllowedDomainsName to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DnsRebindingAllowedDomainsName input)
+        public bool Equals(SonicDnsRebindingAllowedDomainsName input)
         {
             if (input == null)
             {

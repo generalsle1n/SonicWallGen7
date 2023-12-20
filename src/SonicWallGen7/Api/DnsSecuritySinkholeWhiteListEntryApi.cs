@@ -24,117 +24,117 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSecuritySinkholeWhiteListEntryApiSync : IApiAccessor
+    public interface ISonicDnsSecuritySinkholeWhiteListEntryApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS security sinkhole white list entries configuration.
+        /// Retrieve SonicDns security sinkhole white list entries configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsSecuritySinkholeWhiteListEntryCollection</returns>
-        DnsSecuritySinkholeWhiteListEntryCollection DnsSecurityDnsSinkholeWhiteListEntriesGet(int operationIndex = 0);
+        /// <returns>SonicDnsSecuritySinkholeWhiteListEntryCollection</returns>
+        SonicDnsSecuritySinkholeWhiteListEntryCollection SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGet(int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS security sinkhole white list entries configuration.
+        /// Retrieve SonicDns security sinkhole white list entries configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsSecuritySinkholeWhiteListEntryCollection</returns>
-        ApiResponse<DnsSecuritySinkholeWhiteListEntryCollection> DnsSecurityDnsSinkholeWhiteListEntriesGetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of SonicDnsSecuritySinkholeWhiteListEntryCollection</returns>
+        ApiResponse<SonicDnsSecuritySinkholeWhiteListEntryCollection> SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS security sinkhole white list entry object.
+        /// Create a new SonicDns security sinkhole white list entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        ApiStatus DnsSecurityDnsSinkholeWhiteListEntriesPost(DnsSecuritySinkholeWhiteListEntryCollection? dnsSecuritySinkholeWhiteListEntryCollection = default(DnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0);
+        ApiStatus SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPost(SonicDnsSecuritySinkholeWhiteListEntryCollection? SonicDnsSecuritySinkholeWhiteListEntryCollection = default(SonicDnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS security sinkhole white list entry object.
+        /// Create a new SonicDns security sinkhole white list entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        ApiResponse<ApiStatus> DnsSecurityDnsSinkholeWhiteListEntriesPostWithHttpInfo(DnsSecuritySinkholeWhiteListEntryCollection? dnsSecuritySinkholeWhiteListEntryCollection = default(DnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0);
+        ApiResponse<ApiStatus> SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPostWithHttpInfo(SonicDnsSecuritySinkholeWhiteListEntryCollection? SonicDnsSecuritySinkholeWhiteListEntryCollection = default(SonicDnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSecuritySinkholeWhiteListEntryApiAsync : IApiAccessor
+    public interface ISonicDnsSecuritySinkholeWhiteListEntryApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS security sinkhole white list entries configuration.
+        /// Retrieve SonicDns security sinkhole white list entries configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsSecuritySinkholeWhiteListEntryCollection</returns>
-        System.Threading.Tasks.Task<DnsSecuritySinkholeWhiteListEntryCollection> DnsSecurityDnsSinkholeWhiteListEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of SonicDnsSecuritySinkholeWhiteListEntryCollection</returns>
+        System.Threading.Tasks.Task<SonicDnsSecuritySinkholeWhiteListEntryCollection> SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Retrieve DNS security sinkhole white list entries configuration.
+        /// Retrieve SonicDns security sinkhole white list entries configuration.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsSecuritySinkholeWhiteListEntryCollection)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DnsSecuritySinkholeWhiteListEntryCollection>> DnsSecurityDnsSinkholeWhiteListEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (SonicDnsSecuritySinkholeWhiteListEntryCollection)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SonicDnsSecuritySinkholeWhiteListEntryCollection>> SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS security sinkhole white list entry object.
+        /// Create a new SonicDns security sinkhole white list entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        System.Threading.Tasks.Task<ApiStatus> DnsSecurityDnsSinkholeWhiteListEntriesPostAsync(DnsSecuritySinkholeWhiteListEntryCollection? dnsSecuritySinkholeWhiteListEntryCollection = default(DnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiStatus> SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPostAsync(SonicDnsSecuritySinkholeWhiteListEntryCollection? SonicDnsSecuritySinkholeWhiteListEntryCollection = default(SonicDnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a new DNS security sinkhole white list entry object.
+        /// Create a new SonicDns security sinkhole white list entry object.
         /// </remarks>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> DnsSecurityDnsSinkholeWhiteListEntriesPostWithHttpInfoAsync(DnsSecuritySinkholeWhiteListEntryCollection? dnsSecuritySinkholeWhiteListEntryCollection = default(DnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiStatus>> SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPostWithHttpInfoAsync(SonicDnsSecuritySinkholeWhiteListEntryCollection? SonicDnsSecuritySinkholeWhiteListEntryCollection = default(SonicDnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IDnsSecuritySinkholeWhiteListEntryApi : IDnsSecuritySinkholeWhiteListEntryApiSync, IDnsSecuritySinkholeWhiteListEntryApiAsync
+    public interface ISonicDnsSecuritySinkholeWhiteListEntryApi : ISonicDnsSecuritySinkholeWhiteListEntryApiSync, ISonicDnsSecuritySinkholeWhiteListEntryApiAsync
     {
 
     }
@@ -142,23 +142,23 @@ namespace SonicWallGen7.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class DnsSecuritySinkholeWhiteListEntryApi : IDnsSecuritySinkholeWhiteListEntryApi
+    public partial class SonicDnsSecuritySinkholeWhiteListEntryApi : ISonicDnsSecuritySinkholeWhiteListEntryApi
     {
         private SonicWallGen7.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeWhiteListEntryApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeWhiteListEntryApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsSecuritySinkholeWhiteListEntryApi() : this((string)null)
+        public SonicDnsSecuritySinkholeWhiteListEntryApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeWhiteListEntryApi"/> class.
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeWhiteListEntryApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public DnsSecuritySinkholeWhiteListEntryApi(string basePath)
+        public SonicDnsSecuritySinkholeWhiteListEntryApi(string basePath)
         {
             this.Configuration = SonicWallGen7.Client.Configuration.MergeConfigurations(
                 SonicWallGen7.Client.GlobalConfiguration.Instance,
@@ -170,12 +170,12 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeWhiteListEntryApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeWhiteListEntryApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public DnsSecuritySinkholeWhiteListEntryApi(SonicWallGen7.Client.Configuration configuration)
+        public SonicDnsSecuritySinkholeWhiteListEntryApi(SonicWallGen7.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -189,13 +189,13 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DnsSecuritySinkholeWhiteListEntryApi"/> class
+        /// Initializes a new instance of the <see cref="SonicDnsSecuritySinkholeWhiteListEntryApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public DnsSecuritySinkholeWhiteListEntryApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
+        public SonicDnsSecuritySinkholeWhiteListEntryApi(SonicWallGen7.Client.ISynchronousClient client, SonicWallGen7.Client.IAsynchronousClient asyncClient, SonicWallGen7.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -249,24 +249,24 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS security sinkhole white list entries configuration.
+        ///  Retrieve SonicDns security sinkhole white list entries configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>DnsSecuritySinkholeWhiteListEntryCollection</returns>
-        public DnsSecuritySinkholeWhiteListEntryCollection DnsSecurityDnsSinkholeWhiteListEntriesGet(int operationIndex = 0)
+        /// <returns>SonicDnsSecuritySinkholeWhiteListEntryCollection</returns>
+        public SonicDnsSecuritySinkholeWhiteListEntryCollection SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGet(int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<DnsSecuritySinkholeWhiteListEntryCollection> localVarResponse = DnsSecurityDnsSinkholeWhiteListEntriesGetWithHttpInfo();
+            SonicWallGen7.Client.ApiResponse<SonicDnsSecuritySinkholeWhiteListEntryCollection> localVarResponse = SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS security sinkhole white list entries configuration.
+        ///  Retrieve SonicDns security sinkhole white list entries configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of DnsSecuritySinkholeWhiteListEntryCollection</returns>
-        public SonicWallGen7.Client.ApiResponse<DnsSecuritySinkholeWhiteListEntryCollection> DnsSecurityDnsSinkholeWhiteListEntriesGetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of SonicDnsSecuritySinkholeWhiteListEntryCollection</returns>
+        public SonicWallGen7.Client.ApiResponse<SonicDnsSecuritySinkholeWhiteListEntryCollection> SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGetWithHttpInfo(int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -291,7 +291,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsSecuritySinkholeWhiteListEntryApi.DnsSecurityDnsSinkholeWhiteListEntriesGet";
+            localVarRequestOptions.Operation = "SonicDnsSecuritySinkholeWhiteListEntryApi.SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -302,10 +302,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<DnsSecuritySinkholeWhiteListEntryCollection>("/dns-security/dns-sinkhole/white-list-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<SonicDnsSecuritySinkholeWhiteListEntryCollection>("/SonicDns-security/SonicDns-sinkhole/white-list-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsSinkholeWhiteListEntriesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -316,26 +316,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Retrieve DNS security sinkhole white list entries configuration.
+        ///  Retrieve SonicDns security sinkhole white list entries configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of DnsSecuritySinkholeWhiteListEntryCollection</returns>
-        public async System.Threading.Tasks.Task<DnsSecuritySinkholeWhiteListEntryCollection> DnsSecurityDnsSinkholeWhiteListEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of SonicDnsSecuritySinkholeWhiteListEntryCollection</returns>
+        public async System.Threading.Tasks.Task<SonicDnsSecuritySinkholeWhiteListEntryCollection> SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<DnsSecuritySinkholeWhiteListEntryCollection> localVarResponse = await DnsSecurityDnsSinkholeWhiteListEntriesGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<SonicDnsSecuritySinkholeWhiteListEntryCollection> localVarResponse = await SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Retrieve DNS security sinkhole white list entries configuration.
+        ///  Retrieve SonicDns security sinkhole white list entries configuration.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (DnsSecuritySinkholeWhiteListEntryCollection)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<DnsSecuritySinkholeWhiteListEntryCollection>> DnsSecurityDnsSinkholeWhiteListEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (SonicDnsSecuritySinkholeWhiteListEntryCollection)</returns>
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<SonicDnsSecuritySinkholeWhiteListEntryCollection>> SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -361,7 +361,7 @@ namespace SonicWallGen7.Api
             }
 
 
-            localVarRequestOptions.Operation = "DnsSecuritySinkholeWhiteListEntryApi.DnsSecurityDnsSinkholeWhiteListEntriesGet";
+            localVarRequestOptions.Operation = "SonicDnsSecuritySinkholeWhiteListEntryApi.SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -372,11 +372,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<DnsSecuritySinkholeWhiteListEntryCollection>("/dns-security/dns-sinkhole/white-list-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<SonicDnsSecuritySinkholeWhiteListEntryCollection>("/SonicDns-security/SonicDns-sinkhole/white-list-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsSinkholeWhiteListEntriesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -387,26 +387,26 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Create a new DNS security sinkhole white list entry object.
+        ///  Create a new SonicDns security sinkhole white list entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiStatus</returns>
-        public ApiStatus DnsSecurityDnsSinkholeWhiteListEntriesPost(DnsSecuritySinkholeWhiteListEntryCollection? dnsSecuritySinkholeWhiteListEntryCollection = default(DnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0)
+        public ApiStatus SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPost(SonicDnsSecuritySinkholeWhiteListEntryCollection? SonicDnsSecuritySinkholeWhiteListEntryCollection = default(SonicDnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0)
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = DnsSecurityDnsSinkholeWhiteListEntriesPostWithHttpInfo(dnsSecuritySinkholeWhiteListEntryCollection);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPostWithHttpInfo(SonicDnsSecuritySinkholeWhiteListEntryCollection);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Create a new DNS security sinkhole white list entry object.
+        ///  Create a new SonicDns security sinkhole white list entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiStatus</returns>
-        public SonicWallGen7.Client.ApiResponse<ApiStatus> DnsSecurityDnsSinkholeWhiteListEntriesPostWithHttpInfo(DnsSecuritySinkholeWhiteListEntryCollection? dnsSecuritySinkholeWhiteListEntryCollection = default(DnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0)
+        public SonicWallGen7.Client.ApiResponse<ApiStatus> SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPostWithHttpInfo(SonicDnsSecuritySinkholeWhiteListEntryCollection? SonicDnsSecuritySinkholeWhiteListEntryCollection = default(SonicDnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0)
         {
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
 
@@ -431,9 +431,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsSecuritySinkholeWhiteListEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSecuritySinkholeWhiteListEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSecuritySinkholeWhiteListEntryApi.DnsSecurityDnsSinkholeWhiteListEntriesPost";
+            localVarRequestOptions.Operation = "SonicDnsSecuritySinkholeWhiteListEntryApi.SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPost";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -444,10 +444,10 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<ApiStatus>("/dns-security/dns-sinkhole/white-list-entries", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<ApiStatus>("/SonicDns-security/SonicDns-sinkhole/white-list-entries", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsSinkholeWhiteListEntriesPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -458,28 +458,28 @@ namespace SonicWallGen7.Api
         }
 
         /// <summary>
-        ///  Create a new DNS security sinkhole white list entry object.
+        ///  Create a new SonicDns security sinkhole white list entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiStatus</returns>
-        public async System.Threading.Tasks.Task<ApiStatus> DnsSecurityDnsSinkholeWhiteListEntriesPostAsync(DnsSecuritySinkholeWhiteListEntryCollection? dnsSecuritySinkholeWhiteListEntryCollection = default(DnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiStatus> SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPostAsync(SonicDnsSecuritySinkholeWhiteListEntryCollection? SonicDnsSecuritySinkholeWhiteListEntryCollection = default(SonicDnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await DnsSecurityDnsSinkholeWhiteListEntriesPostWithHttpInfoAsync(dnsSecuritySinkholeWhiteListEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
+            SonicWallGen7.Client.ApiResponse<ApiStatus> localVarResponse = await SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPostWithHttpInfoAsync(SonicDnsSecuritySinkholeWhiteListEntryCollection, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Create a new DNS security sinkhole white list entry object.
+        ///  Create a new SonicDns security sinkhole white list entry object.
         /// </summary>
         /// <exception cref="SonicWallGen7.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="dnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
+        /// <param name="SonicDnsSecuritySinkholeWhiteListEntryCollection"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiStatus)</returns>
-        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> DnsSecurityDnsSinkholeWhiteListEntriesPostWithHttpInfoAsync(DnsSecuritySinkholeWhiteListEntryCollection? dnsSecuritySinkholeWhiteListEntryCollection = default(DnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SonicWallGen7.Client.ApiResponse<ApiStatus>> SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPostWithHttpInfoAsync(SonicDnsSecuritySinkholeWhiteListEntryCollection? SonicDnsSecuritySinkholeWhiteListEntryCollection = default(SonicDnsSecuritySinkholeWhiteListEntryCollection?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             SonicWallGen7.Client.RequestOptions localVarRequestOptions = new SonicWallGen7.Client.RequestOptions();
@@ -505,9 +505,9 @@ namespace SonicWallGen7.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.Data = dnsSecuritySinkholeWhiteListEntryCollection;
+            localVarRequestOptions.Data = SonicDnsSecuritySinkholeWhiteListEntryCollection;
 
-            localVarRequestOptions.Operation = "DnsSecuritySinkholeWhiteListEntryApi.DnsSecurityDnsSinkholeWhiteListEntriesPost";
+            localVarRequestOptions.Operation = "SonicDnsSecuritySinkholeWhiteListEntryApi.SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPost";
             localVarRequestOptions.OperationIndex = operationIndex;
 
             // authentication (bearerAuth) required
@@ -518,11 +518,11 @@ namespace SonicWallGen7.Api
             }
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/dns-security/dns-sinkhole/white-list-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<ApiStatus>("/SonicDns-security/SonicDns-sinkhole/white-list-entries", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DnsSecurityDnsSinkholeWhiteListEntriesPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SonicDnsSecuritySonicDnsSinkholeWhiteListEntriesPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

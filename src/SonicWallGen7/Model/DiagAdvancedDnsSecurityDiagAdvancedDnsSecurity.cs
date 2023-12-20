@@ -27,44 +27,44 @@ using OpenAPIDateConverter = SonicWallGen7.Client.OpenAPIDateConverter;
 namespace SonicWallGen7.Model
 {
     /// <summary>
-    /// Configure advanced diag DNS security settings.
+    /// Configure advanced diag SonicDns security settings.
     /// </summary>
-    [DataContract(Name = "diag_advanced_dns_security_diag_advanced_dns_security")]
-    public partial class DiagAdvancedDnsSecurityDiagAdvancedDnsSecurity : IEquatable<DiagAdvancedDnsSecurityDiagAdvancedDnsSecurity>, IValidatableObject
+    [DataContract(Name = "diag_advanced_SonicDns_security_diag_advanced_SonicDns_security")]
+    public partial class DiagAdvancedSonicDnsSecurityDiagAdvancedSonicDnsSecurity : IEquatable<DiagAdvancedSonicDnsSecurityDiagAdvancedSonicDnsSecurity>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiagAdvancedDnsSecurityDiagAdvancedDnsSecurity" /> class.
+        /// Initializes a new instance of the <see cref="DiagAdvancedSonicDnsSecurityDiagAdvancedSonicDnsSecurity" /> class.
         /// </summary>
-        /// <param name="dnsTunnelMinimumPacketNumber">Configure the minimum DNS packet number for DNS tunnel detection..</param>
-        /// <param name="dnsTunnelRatioThreshold">Configure the ratio threshold for corner DNS types..</param>
-        /// <param name="dnsTunnelNumberThreshold">Configure the number threshold for normal DNS types..</param>
-        public DiagAdvancedDnsSecurityDiagAdvancedDnsSecurity(decimal dnsTunnelMinimumPacketNumber = default(decimal), decimal dnsTunnelRatioThreshold = default(decimal), decimal dnsTunnelNumberThreshold = default(decimal))
+        /// <param name="SonicDnsTunnelMinimumPacketNumber">Configure the minimum SonicDns packet number for SonicDns tunnel detection..</param>
+        /// <param name="SonicDnsTunnelRatioThreshold">Configure the ratio threshold for corner SonicDns types..</param>
+        /// <param name="SonicDnsTunnelNumberThreshold">Configure the number threshold for normal SonicDns types..</param>
+        public DiagAdvancedSonicDnsSecurityDiagAdvancedSonicDnsSecurity(decimal SonicDnsTunnelMinimumPacketNumber = default(decimal), decimal SonicDnsTunnelRatioThreshold = default(decimal), decimal SonicDnsTunnelNumberThreshold = default(decimal))
         {
-            this.DnsTunnelMinimumPacketNumber = dnsTunnelMinimumPacketNumber;
-            this.DnsTunnelRatioThreshold = dnsTunnelRatioThreshold;
-            this.DnsTunnelNumberThreshold = dnsTunnelNumberThreshold;
+            this.SonicDnsTunnelMinimumPacketNumber = SonicDnsTunnelMinimumPacketNumber;
+            this.SonicDnsTunnelRatioThreshold = SonicDnsTunnelRatioThreshold;
+            this.SonicDnsTunnelNumberThreshold = SonicDnsTunnelNumberThreshold;
         }
 
         /// <summary>
-        /// Configure the minimum DNS packet number for DNS tunnel detection.
+        /// Configure the minimum SonicDns packet number for SonicDns tunnel detection.
         /// </summary>
-        /// <value>Configure the minimum DNS packet number for DNS tunnel detection.</value>
-        [DataMember(Name = "dns_tunnel_minimum_packet_number", EmitDefaultValue = false)]
-        public decimal DnsTunnelMinimumPacketNumber { get; set; }
+        /// <value>Configure the minimum SonicDns packet number for SonicDns tunnel detection.</value>
+        [DataMember(Name = "SonicDns_tunnel_minimum_packet_number", EmitDefaultValue = false)]
+        public decimal SonicDnsTunnelMinimumPacketNumber { get; set; }
 
         /// <summary>
-        /// Configure the ratio threshold for corner DNS types.
+        /// Configure the ratio threshold for corner SonicDns types.
         /// </summary>
-        /// <value>Configure the ratio threshold for corner DNS types.</value>
-        [DataMember(Name = "dns_tunnel_ratio_threshold", EmitDefaultValue = false)]
-        public decimal DnsTunnelRatioThreshold { get; set; }
+        /// <value>Configure the ratio threshold for corner SonicDns types.</value>
+        [DataMember(Name = "SonicDns_tunnel_ratio_threshold", EmitDefaultValue = false)]
+        public decimal SonicDnsTunnelRatioThreshold { get; set; }
 
         /// <summary>
-        /// Configure the number threshold for normal DNS types.
+        /// Configure the number threshold for normal SonicDns types.
         /// </summary>
-        /// <value>Configure the number threshold for normal DNS types.</value>
-        [DataMember(Name = "dns_tunnel_number_threshold", EmitDefaultValue = false)]
-        public decimal DnsTunnelNumberThreshold { get; set; }
+        /// <value>Configure the number threshold for normal SonicDns types.</value>
+        [DataMember(Name = "SonicDns_tunnel_number_threshold", EmitDefaultValue = false)]
+        public decimal SonicDnsTunnelNumberThreshold { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -73,10 +73,10 @@ namespace SonicWallGen7.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class DiagAdvancedDnsSecurityDiagAdvancedDnsSecurity {\n");
-            sb.Append("  DnsTunnelMinimumPacketNumber: ").Append(DnsTunnelMinimumPacketNumber).Append("\n");
-            sb.Append("  DnsTunnelRatioThreshold: ").Append(DnsTunnelRatioThreshold).Append("\n");
-            sb.Append("  DnsTunnelNumberThreshold: ").Append(DnsTunnelNumberThreshold).Append("\n");
+            sb.Append("class DiagAdvancedSonicDnsSecurityDiagAdvancedSonicDnsSecurity {\n");
+            sb.Append("  SonicDnsTunnelMinimumPacketNumber: ").Append(SonicDnsTunnelMinimumPacketNumber).Append("\n");
+            sb.Append("  SonicDnsTunnelRatioThreshold: ").Append(SonicDnsTunnelRatioThreshold).Append("\n");
+            sb.Append("  SonicDnsTunnelNumberThreshold: ").Append(SonicDnsTunnelNumberThreshold).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -97,15 +97,15 @@ namespace SonicWallGen7.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DiagAdvancedDnsSecurityDiagAdvancedDnsSecurity);
+            return this.Equals(input as DiagAdvancedSonicDnsSecurityDiagAdvancedSonicDnsSecurity);
         }
 
         /// <summary>
-        /// Returns true if DiagAdvancedDnsSecurityDiagAdvancedDnsSecurity instances are equal
+        /// Returns true if DiagAdvancedSonicDnsSecurityDiagAdvancedSonicDnsSecurity instances are equal
         /// </summary>
-        /// <param name="input">Instance of DiagAdvancedDnsSecurityDiagAdvancedDnsSecurity to be compared</param>
+        /// <param name="input">Instance of DiagAdvancedSonicDnsSecurityDiagAdvancedSonicDnsSecurity to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DiagAdvancedDnsSecurityDiagAdvancedDnsSecurity input)
+        public bool Equals(DiagAdvancedSonicDnsSecurityDiagAdvancedSonicDnsSecurity input)
         {
             if (input == null)
             {
@@ -113,16 +113,16 @@ namespace SonicWallGen7.Model
             }
             return 
                 (
-                    this.DnsTunnelMinimumPacketNumber == input.DnsTunnelMinimumPacketNumber ||
-                    this.DnsTunnelMinimumPacketNumber.Equals(input.DnsTunnelMinimumPacketNumber)
+                    this.SonicDnsTunnelMinimumPacketNumber == input.SonicDnsTunnelMinimumPacketNumber ||
+                    this.SonicDnsTunnelMinimumPacketNumber.Equals(input.SonicDnsTunnelMinimumPacketNumber)
                 ) && 
                 (
-                    this.DnsTunnelRatioThreshold == input.DnsTunnelRatioThreshold ||
-                    this.DnsTunnelRatioThreshold.Equals(input.DnsTunnelRatioThreshold)
+                    this.SonicDnsTunnelRatioThreshold == input.SonicDnsTunnelRatioThreshold ||
+                    this.SonicDnsTunnelRatioThreshold.Equals(input.SonicDnsTunnelRatioThreshold)
                 ) && 
                 (
-                    this.DnsTunnelNumberThreshold == input.DnsTunnelNumberThreshold ||
-                    this.DnsTunnelNumberThreshold.Equals(input.DnsTunnelNumberThreshold)
+                    this.SonicDnsTunnelNumberThreshold == input.SonicDnsTunnelNumberThreshold ||
+                    this.SonicDnsTunnelNumberThreshold.Equals(input.SonicDnsTunnelNumberThreshold)
                 );
         }
 
@@ -135,9 +135,9 @@ namespace SonicWallGen7.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                hashCode = (hashCode * 59) + this.DnsTunnelMinimumPacketNumber.GetHashCode();
-                hashCode = (hashCode * 59) + this.DnsTunnelRatioThreshold.GetHashCode();
-                hashCode = (hashCode * 59) + this.DnsTunnelNumberThreshold.GetHashCode();
+                hashCode = (hashCode * 59) + this.SonicDnsTunnelMinimumPacketNumber.GetHashCode();
+                hashCode = (hashCode * 59) + this.SonicDnsTunnelRatioThreshold.GetHashCode();
+                hashCode = (hashCode * 59) + this.SonicDnsTunnelNumberThreshold.GetHashCode();
                 return hashCode;
             }
         }
