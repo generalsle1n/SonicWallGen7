@@ -1,0 +1,13 @@
+# SonicWallGen7.Model.EndpointSecurityPolicySourceAddressIncluded
+Included.
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Any** | **bool** | Any address. | [optional] 
+**Name** | **string** | Address object name. | [optional] 
+**Group** | **string** | Address group object name. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

@@ -1,0 +1,10 @@
+# SonicWallGen7.Model.AdministrationSonicosApiIntegrityProtectionEnforced
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Enforced** | **bool** | Enforced | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

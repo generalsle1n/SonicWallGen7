@@ -1,0 +1,14 @@
+# SonicWallGen7.Model.UserLocalUserAccountLifetime
+Set a limited lifetime for the user account.
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Minutes** | **decimal** | Set the lifetime in minutes. | [optional] 
+**Hours** | **decimal** | Set the lifetime in hours. | [optional] 
+**Days** | **decimal** | Set the lifetime in days. | [optional] 
+**Expired** | **bool** | Expired user. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

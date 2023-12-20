@@ -1,0 +1,10 @@
+# SonicWallGen7.Model.DiagAdvancedManagementAdvancedManagementOnlineHelpUrlDefault
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**VarDefault** | **bool** | Use the default global help system URL. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

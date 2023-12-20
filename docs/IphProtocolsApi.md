@@ -1,0 +1,190 @@
+# SonicWallGen7.Api.IphProtocolsApi
+
+All URIs are relative to *https://192.168.168.168:443/api/sonicos*
+
+| Method | HTTP request | Description |
+|--------|--------------|-------------|
+| [**ReportingIpHelperProtocolsGet**](IphProtocolsApi.md#reportingiphelperprotocolsget) | **GET** /reporting/ip-helper/protocols |  |
+| [**ReportingIpHelperProtocolsNameNAMEGet**](IphProtocolsApi.md#reportingiphelperprotocolsnamenameget) | **GET** /reporting/ip-helper/protocols/name/{NAME} |  |
+
+<a id="reportingiphelperprotocolsget"></a>
+# **ReportingIpHelperProtocolsGet**
+> List&lt;ShowStatusIphProtocolListInner&gt; ReportingIpHelperProtocolsGet ()
+
+
+
+Retrieve IP helper protocols statistics.
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using SonicWallGen7.Api;
+using SonicWallGen7.Client;
+using SonicWallGen7.Model;
+
+namespace Example
+{
+    public class ReportingIpHelperProtocolsGetExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://192.168.168.168:443/api/sonicos";
+            // Configure Bearer token for authorization: bearerAuth
+            config.AccessToken = "YOUR_BEARER_TOKEN";
+
+            var apiInstance = new IphProtocolsApi(config);
+
+            try
+            {
+                List<ShowStatusIphProtocolListInner> result = apiInstance.ReportingIpHelperProtocolsGet();
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling IphProtocolsApi.ReportingIpHelperProtocolsGet: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the ReportingIpHelperProtocolsGetWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    ApiResponse<List<ShowStatusIphProtocolListInner>> response = apiInstance.ReportingIpHelperProtocolsGetWithHttpInfo();
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling IphProtocolsApi.ReportingIpHelperProtocolsGetWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+### Return type
+
+[**List&lt;ShowStatusIphProtocolListInner&gt;**](ShowStatusIphProtocolListInner.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** |  |  -  |
+| **0** | API status |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a id="reportingiphelperprotocolsnamenameget"></a>
+# **ReportingIpHelperProtocolsNameNAMEGet**
+> List&lt;ShowStatusIphProtocolListInner&gt; ReportingIpHelperProtocolsNameNAMEGet (string NAME)
+
+
+
+Retrieve IP helper protocols statistics.
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using SonicWallGen7.Api;
+using SonicWallGen7.Client;
+using SonicWallGen7.Model;
+
+namespace Example
+{
+    public class ReportingIpHelperProtocolsNameNAMEGetExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://192.168.168.168:443/api/sonicos";
+            // Configure Bearer token for authorization: bearerAuth
+            config.AccessToken = "YOUR_BEARER_TOKEN";
+
+            var apiInstance = new IphProtocolsApi(config);
+            var NAME = "\"mydns\"";  // string | IP Helper relay protocol name. (default to "mydns")
+
+            try
+            {
+                List<ShowStatusIphProtocolListInner> result = apiInstance.ReportingIpHelperProtocolsNameNAMEGet(NAME);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling IphProtocolsApi.ReportingIpHelperProtocolsNameNAMEGet: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the ReportingIpHelperProtocolsNameNAMEGetWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    ApiResponse<List<ShowStatusIphProtocolListInner>> response = apiInstance.ReportingIpHelperProtocolsNameNAMEGetWithHttpInfo(NAME);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling IphProtocolsApi.ReportingIpHelperProtocolsNameNAMEGetWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **NAME** | **string** | IP Helper relay protocol name. | [default to &quot;mydns&quot;] |
+
+### Return type
+
+[**List&lt;ShowStatusIphProtocolListInner&gt;**](ShowStatusIphProtocolListInner.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** |  |  -  |
+| **0** | API status |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
