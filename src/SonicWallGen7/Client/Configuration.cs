@@ -20,6 +20,8 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Net.Http;
 using System.Net.Security;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 namespace SonicWallGen7.Client
 {
@@ -589,6 +591,65 @@ namespace SonicWallGen7.Client
         public void AllowUntrustedCert()
         {
             RemoteCertificateValidationCallback = new RemoteCertificateValidationCallback((sender, certificate, chain, policyErrors) => { return true; });
+        }
+
+        public async Task LoginWithUserNameAndPasswordAsync()
+        {
+            using(HttpClientHandler _httpHandler= new HttpClientHandler())
+            {
+                _httpHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+                {
+                    return true;
+                };
+                using (HttpClient _client = new HttpClient(_httpHandler))
+                {
+                    HttpRequestMessage _request = new HttpRequestMessage()
+                    {
+                        Method = System.Net.Http.HttpMethod.Post,
+                        RequestUri = new Uri($"{BasePath}/auth")
+                    };
+                    byte[] _authData = Encoding.UTF8.GetBytes($"{Username}:{Password}");
+                    string _authString = Convert.ToBase64String(_authData);
+                    _request.Headers.Authorization = new AuthenticationHeaderValue("Basic", _authString);
+
+                    HttpResponseMessage _response = await _client.SendAsync(_request);
+
+                    if(_response.IsSuccessStatusCode != true)
+                    {
+                        throw new Exception("Login failed (Check Username Password or if Firewall is reachable)");
+                    }
+                }
+            }
+            
+        }
+        public async Task LogoutWithUserNameAndPasswordAsync()
+        {
+            using (HttpClientHandler _httpHandler = new HttpClientHandler())
+            {
+                _httpHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+                {
+                    return true;
+                };
+                using (HttpClient _client = new HttpClient(_httpHandler))
+                {
+                    HttpRequestMessage _request = new HttpRequestMessage()
+                    {
+                        Method = System.Net.Http.HttpMethod.Delete,
+                        RequestUri = new Uri($"{BasePath}/auth")
+                    };
+                    byte[] _authData = Encoding.UTF8.GetBytes($"{Username}:{Password}");
+                    string _authString = Convert.ToBase64String(_authData);
+                    _request.Headers.Authorization = new AuthenticationHeaderValue("Basic", _authString);
+
+                    HttpResponseMessage _response = await _client.SendAsync(_request);
+
+                    if (_response.IsSuccessStatusCode != true)
+                    {
+                        throw new Exception("Login failed (Check Username Password or if Firewall is reachable)");
+                    }
+                }
+            }
+
         }
 
         #endregion Methods
