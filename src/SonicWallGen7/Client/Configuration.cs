@@ -583,6 +583,14 @@ namespace SonicWallGen7.Client
             ApiKeyPrefix[key] = value;
         }
 
+        /// <summary>
+        /// Dont check the Certificates, usefull for untrusted Certs.
+        /// </summary>
+        public void AllowUntrustedCert()
+        {
+            RemoteCertificateValidationCallback = new RemoteCertificateValidationCallback((sender, certificate, chain, policyErrors) => { return true; });
+        }
+
         #endregion Methods
 
         #region Static Members
